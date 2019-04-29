@@ -2,7 +2,7 @@
 title: "habits"
 author: John Doe
 date: March 22, 2019
-geometry: margin=2cm
+geometry: margin=0.1cm
 output: pdf_document
 ---
 
