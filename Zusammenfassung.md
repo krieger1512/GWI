@@ -130,3 +130,92 @@ Das Handeln einer Unternehmung beeinflussen nicht nur ihre Mitarbeiter und ihre 
 4. *Ordnungsmomente* (Strategie, Strukturen, Kultur) stellen das interne Rahmenwerk der Unternehmung dar, indem sie Ziele und formale/informale Kommunikationsstrukturen bestimmen.
 5. *Prozesse* bilden die sachlichen und zeitlichen Bedingungen und Abfolgen der Leistungserbringung ab.
 6. *Entwicklungsmodi* (schattierte Seitenfläche des Polyeders) zeigen Möglichkeiten der Weiterentwicklung auf, die aus der Verbesserung bestehender Prozesse (Optimierung) oder aus der Transformation unter Ausnutzung von Innovationen (Erneuerung) bestehen.
+
+#### Kapitel 2: Informationssysteme
+
+* ##### Definition von IS
+Ein **Informationssystem** ist ein künstliches, konkretes System, das aus
+maschinellen und menschlichen Elementen besteht und seine Nutzer
+mit Informationen versorgt. Es ist gleichzeitig ein Modell und ein
+Element einer Organisation oder verbundener Organisationen.
+
+<img src="img/ISbegriff.png" style="width:100%;"/>
+
+* ##### Evolution der IS
+
+<img src="img/ISEvolution.png" style="width:100%;"/>
+
+Effektivität kann auch umgeschrieben werden als "das Richtige zu tun", während es bei Effizienz darum geht, dass man das, was man tut, "richtige tut".
+* ##### Arten von IS
+
+<img src="img/ISklassan.png" style="width:100%;"/>
+
+Eine Möglichkeit, IS zu klassifizieren, besteht in der Verwendung der Kriterien **Anwendungsbreite** und **Sektorspezifität**. *Individualsoftware* erstellt die Unternehmung selbst oder gibt deren Entwicklung speziell in Auftrag. *Standardsoftware* wird für viele Anwender(Organisationen) entwickelt. *Sektorspezifisch*: z.B. im industriellen Sektor die Branchen Elektrotechnik, Maschinenbau, Chemie und Nachrichtentechnik. *Sektorneutral*: z.B. Handel, Industrie, Banken/Versicherungen, Dienstleistungen allgemein.
+
+<img src="img/ISArten.png" style="width:100%;"/>
+
+Jetzt werden die folgenden Kriterien zur klassifizierung von IS benutzt: **die durch das IS unterstützte Organisationsebene** mit den Ausprägungen Ausführungebene & Leitungsebene, und der generelle **Zweck der Datenverarbeitung** mit den Ausprägungen Transaktion, Information & Entscheidung.
+
+1. **System of Record**
+
+**Transaktionssysteme (Transaction Processing Systems, TPS)** unterstützen die Bearbeitung wiederkehrender Geschäftsvorgänge. Die Systeme helfen den Mitarbeitern auf der Ausführungebene effizienter zu arbeiten. Manchmal ermöglichen sie Transaktionen ohne weitere manuelle Eingriffe. Die Behandlung der Geschäftsvorgänge ist standardisiert. TPS wird auch zur Überprüfung der Korrektheiten von Prozessabläufen genutzt.
+
+TPS wurden als erste IS eingesetzt; sie bilden oft die Basis für andere IS, indem sie die Datengrundlage für sie schaffen.
+
+Beispiele: Enterprise Resource Planning (Programme, die verschiedene betriebwirtschaftliche Funktionen in einem integrierten Softwareprodukt unterstützen), Bankautomaten, Reservierungssysteme.
+
+2. **System of Insight**
+
+<img src="img/sysinsight.png" style="width:100%;"/>
+
+Für die operative und taktische Managementebene eignen sich die **Managementinformationssysteme (MIS)**, die Managern die Beobachtung des Ablaufs des Unternehmensprozesse, den Vergleich mit Planzahlen sowie die kurzfristige Geschäftsplanung erleichtern.
+
+MIS können die Phase der Problemfindung dienen. Die Generierung und Bewertung von Alternativen müssen menschliche Entscheider allein durchführen. Die ersten für diese Phase entwickelten Systeme, werden als **Entscheidungsunterstützumgssysteme (Decision Support Systems, DSS)** bezeichnet. Sie stellen dem Menschen Daten, Methoden und Modelle zum Problemlösen über eine benutzerfreundliche Schnittstelle zur Verfügung.
+
+**Künstliche Intelligenz** ist ein Gebiet der Informatik zur Entwicklung von Verfahren, mit denen das menschliche Problemlösungsverhalten nachgeahmt wird. Manchen Verfahren der KI versuchen, neue Lösungsansätze oder Zusammenhänge in Datenbanken zu entdecken, weswegen sie als Wissensentdeckungssysteme gelten. Dieser Forschungsbereich wird auch als **Knowledge Discovery in Database** bezeichnet. Es werden dazu z.B. künstliche, neuronale Netze (Artificial Neural Networks, ANN) gerechnet.
+
+<img src="img/KI.png" style="width:100%;"/>
+
+Ein **künstliches, neuronales Netzwerk** besteht aus mehreren verbundenen Ebenen von Verarbeitungselementen, die in Analogie zur Informationsverarbeitung im menschlichen Gehirn als Neuronen bezeichnet werden. Die erste Ebene wird als Eingabe- und die letzte als Ausgabeebene bezeichnet. Dazwischen gibt es eine oder mehrere "versteckte" Zwischenebenen. Ein Neuron erhält numerische Eingaben, gewichtet, summiert sie, transformiert die Summe und gibt den transformierten Wert aus, entweder an Neuronen der nächsten Ebene oder als Endausgabe. Ein neuronales Netz kann lernen, indem es die verwendeten Gewichte so lange verändert, bis die gewünschte Güte des ANN erreicht ist. Die Güte kann z.B. danach beurteilt werden, wie stark die Ergebnisse der Berechnungen historischer Fälle mit bekannten Ergebnissen übereinstimmen. ANN werden zur Erkennung von Mustern und zur Klassifikation von Daten eingesetzt.
+
+<img src="img/neuron.png" style="width:100%;"/>
+<img src="img/CNN.png" style="width:100%;"/>
+
+Der Prozess des **Data Mining** wird in einzelnen Phasen aufgeteilt : *Auswahl* der Daten aus geeigneten Datenquellen, *Exploration* der Daten mit den Methoden der Datenanalyse, *Stichprobenziehung* aus ausgewählten Datensätzen, *Vorverarbeitung* der Daten inklusive einer eventuellen Bereinigung der Datenn (Data Cleansing), sowie eine *Transformation* der Daten in die von DM-Algorithmen benötigte Form. Nach Schätzung von Experten werden ca. 80% der Zeit und Kosten des DM für diese Vorarbeiten aufgewandt. Die letzte Phase, die *Wissensgewinnung* schließlich identifiziert Datenmuster.
+
+<img src="img/DMprozess.png"/>
+
+Verfahren des **Data Mining**:
+ * Zur *Klassifikation* sind *Entscheidungsbäume* einsetzbar: Die Verbindungen von der Baumwurzel bis zu einem Endknoten (Blattknoten) stellen eine Regel dar, die aus "und"-verknüpften Bedingungen besteht.
+ * Die *Abweichunganalyse* beschäftigt sich mit Objekten, die sich keinem Datenmuster eindeutig zuordnen lassen.
+ * Die Verfahren der *Assoziationanalyse* suchen nach signifikanten Abhängigkeiten zwischen einzelnen Attributen der Analyseobjekte und bewerten diese mit Häufigkeiten.
+ * Das Ziel der *Reihenfolgeanalyse* ist es, einzelne Phasen und die zeitlichen Distanzen zwischen wiederkehrenden Ereignissen zu entdecken.
+ * Die *Analyse ähnlicher Zeitabfolgen* sucht Zeitabfolgen mit ähnlichem Muster, z.B: Suche alle Aktien, deren Kurs sich in 2015 ähnlich wie der Kurs von ABC bewegt haben.
+
+**Sprachverarbeitung**
+
+<img src="img/sprachver.png" style="width:100%;"/>
+
+**Text Mining**  ist ein Bündel von Algorithmus-basierten Analyseverfahren zur Entdeckung von Bedeutungsstrukturen aus un- oder schwachstrukturierten Textdaten. Mit statistischen und linguistischen Mitteln erschließt Text-Mining-Software aus Texten Strukturen, die die Benutzer in die Lage versetzen sollen, Kerninformationen der verarbeiteten Texte schnell zu erkennen. Im Optimalfall liefern Text-Mining-Systeme Informationen, von denen die Benutzer zuvor nicht wissen, ob und dass sie in den verarbeiteten Texten enthalten sind. Bei zielgerichteter Anwendung sind Werkzeuge des Text Mining außerdem in der Lage, Hypothesen zu generieren, diese zu überprüfen und schrittweise zu verfeinern.
+
+**Visual Analytics**  ist ein interdisziplinärer Ansatz, der die Vorteile aus unterschiedlichen Forschungsgebieten verbindet. Das Ziel der Visual-Analytics-Methode ist, Erkenntnisse aus extrem großen und komplexen Datensätzen zu gewinnen. Der Ansatz kombiniert die Stärken der automatischen Datenanalyse mit den Fähigkeiten des Menschen, schnell Muster oder Trends visuell zu erfassen. Durch geeignete Interaktionsmechanismen können Daten visuell exploriert und Erkenntnisse gewonnen werden.
+
+3. **System of Engagement**
+
+Beispiele: Verknüpfung von Laufschuhen mit Smartphone App. Verknüpfung von Hotelzimmerbuchung mit einem Check-In vor Ort ohne Hotelpersonal (Code-Generierung für Zugang zum Hotelzimmer).
+
+* ##### Wechselwirkungen zwischen Organisationen und IS
+Die Einführung von IS führt zu starken Veränderungen in der betroffenen Organisation und, je nach System, auch in den Beziehungen der Organisation zu ihrer Außenwelt.
+
+Nach der **Theorie des "technologischen Imperativs"** determinieren Informationstechnologien Organisationsstrukturen. So wird bestimmten Hardwaretechnologien ein zwangsläufiger Einfluss auf die De- oder Zentralisierung in Unternehmungen zugesprochen. Bsp: Großrechner unterstützen eine zentrale Organisation, während Client-server-Architekturen führen zu dezentralen Strukturen.
+
+Die **Theorie des "organisatorischen Imperativs"** nimmt hingegen an, dass Organisationen eine vollständige Kontrolle über die Auswahl und den Einsatz von IT besitzen.
+
+Der Zusammenhang zwischen Technologieänderungen und Veränderungen einer Organisation kann wie folgend dargestellt werden.
+
+<img src="img/ITunterbe.png" style="width:100%;"/>
+
+Manche Veränderungen betreffen nur die Ebene der IT, andere durchdringen alle Unternehmungsebenen. Das beginnt bei der Strategie, die festlegt, *was* zu tun ist, und setzt sich auf Organisationsebene fort, die Geschäftsprozesse bestimmt und vorgibt, *wie* etwas erfolgen soll. Daraus ergeben sich die fachlichen Anforderungen für die Gestaltung der benötigten IS, die mithilfe der vorhandenen IT umgesetzt werden. Die letzte Ebene beantwortet also die Frage nach dem *womit*. Die IT ist aber nicht nur Umsetzungsinstrument, sondern die Innovationen der IT eröffnen auch fachliche Möglichkeiten zur Entwicklung neuer Geschäftsmodelle und daraus abgeleiteter Strategien und Geschäftsprozesse (IT als Enabler).
+
+**Phasen von Organisationsveränderungen**
+In der ersten Phase ist die Atmosphäre für Veränderung herzustellen, d.h. Menschen müssen für die Aufgabe des momentanen Zustands gewonnen werden (**Auftauphase**). Erst wenn diese Bereitschaft geschaffen oder, im ungünstigen Fall, erzwungen worden ist, sollte die Veränderung auch durchgeführt werden (**Durchführungsphase**). In der letzten Phase geht es darum, den neuen Zustand für eine bestimmte Zeit ohne Veränderungen beizubehalten (**Einfrierphase**), damit sich die Menschen an ihn anpassen können und dabei die Angst vor der Neuigkeit verlieren.

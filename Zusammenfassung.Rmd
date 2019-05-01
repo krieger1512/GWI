@@ -3,6 +3,9 @@ title: 'Grundlagen der Wirtschaftsinformatik'
 author: "Nguyen Minh Kien"
 output: pdf_document
 ---
+```{r, include=FALSE}
+options(tinytex.verbose = TRUE)
+```
 <style>body {
 text-aligh:justify
 }
