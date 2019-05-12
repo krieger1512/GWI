@@ -123,7 +123,7 @@ Ein **Modell** ist das Ergebnis eines Konstruktionsprozesses, das die Wahrnehmun
 
 Der Zweck eines Modells kann sein, ein System zu beschreiben (**deskriptiv**) oder Handlungen zu empfehlen (**normativ**). Wenn das Modell Größen beinhaltet, die sich auf mehr als einen Zeitpunkt beziehen, wird von einem **dynamischen** (also **mehrperiodigen**) Modell gesprochen. In **statischen** (**einperiodigen**) Modellen beziehen sich alle Variablen auf den gleichen Zeitpunkt bzw. Zeitraum.
 
-* **Modelle von Unternehmungen**
+### Modelle von Unternehmungen
 
 Aus der Sicht der Systemtheorie enthalten Organisationen i.d.R. maschinelle und natürliche Komponenten und sind meistens offene, adaptive Systeme mit Rückkopplung. Da eine Organisation viele Komponenten enthält, ist zwecks Erreichung der Organisationsziele eine Koordination dieser Komponenten notwendig. Diese Koordination wird durch eine Aufbausorganisation, die Aufgaben, Aufgabenträger und ihre formalen Beziehungen untereinander festgelegt, und durch eine Ablauforganisation, die Arbeitsabläufe bestimmt, unterstützt.
 
@@ -223,7 +223,7 @@ Verfahren des **Data Mining**:
 
 Beispiele: Verknüpfung von Laufschuhen mit Smartphone App. Verknüpfung von Hotelzimmerbuchung mit einem Check-In vor Ort ohne Hotelpersonal (Code-Generierung für Zugang zum Hotelzimmer).
 
-* ##### Wechselwirkungen zwischen Organisationen und IS
+### Wechselwirkungen zwischen Organisationen und IS
 Die Einführung von IS führt zu starken Veränderungen in der betroffenen Organisation und, je nach System, auch in den Beziehungen der Organisation zu ihrer Außenwelt.
 
 Nach der **Theorie des "technologischen Imperativs"** determinieren Informationstechnologien Organisationsstrukturen. So wird bestimmten Hardwaretechnologien ein zwangsläufiger Einfluss auf die De- oder Zentralisierung in Unternehmungen zugesprochen. Bsp: Großrechner unterstützen eine zentrale Organisation, während Client-server-Architekturen führen zu dezentralen Strukturen.
@@ -238,3 +238,175 @@ Manche Veränderungen betreffen nur die Ebene der IT, andere durchdringen alle U
 
 **Phasen von Organisationsveränderungen**
 In der ersten Phase ist die Atmosphäre für Veränderung herzustellen, d.h. Menschen müssen für die Aufgabe des momentanen Zustands gewonnen werden (**Auftauphase**). Erst wenn diese Bereitschaft geschaffen oder, im ungünstigen Fall, erzwungen worden ist, sollte die Veränderung auch durchgeführt werden (**Durchführungsphase**). In der letzten Phase geht es darum, den neuen Zustand für eine bestimmte Zeit ohne Veränderungen beizubehalten (**Einfrierphase**), damit sich die Menschen an ihn anpassen können und dabei die Angst vor der Neuigkeit verlieren.
+
+##  Kapitel 3: Planung und Steuerung des Einsatzes von IS
+
+### Informationsmanagement
+
+**Informationsmanagement** (IM) umfasst die Aufgaben der Planung, Überwachung und Steuerung der Informationsinfrastruktur als Ganzes (strategische Ebene) und der einzelnen Komponenten dieser Infrastruktur (administrative Ebene) sowie der Nutzung dieser Infrastruktur (operative Ebene).
+
+**Aufgaben des IM nach den drei Sichten auf das IM:**
+
+* unternehmerische Sicht: prinzipielle Lösung geschäftlicher Fragestellungen mithilfe der IT. Die unternehmerische Sicht erfordert ein "informationsbewusstes" Management. Das beinhaltet das Erkennen der Potenziale der IT und ihre Umsetzung in generelle unternehmerische Lösungen. Träger dieser Aufgabe sind alle Bereiche und Ebenen der Unternehmensführung.
+
+* konzeptionelle Sicht: Entwicklung des logischen Aufbaus der IS. Die konzeptionelle Sicht des IM umfasst die logischen Aspekte aller IS in der Unternehmung und ihrer Beziehungen. Sie bezieht sich auf Daten, Funktionen, Aufgabenträger und Kommunikationsbeziehungen. Es handelt sich hier um eine Gesamtsicht, die es erlaubt, Integrationsbereiche zu erkennen.
+
+* instrumentelle Sicht: Realisierung und Betrieb der IS. Die instrumentelle Sicht bezieht sich schließlich auf das Management der Ressourcen zur Implementierung und zum Betrieb der IS. Zu diesen Ressourcen gehören das zuständige Personal, Software und Hardware.
+
+**Wissensmanagement** umfasst alle Anstrengungen einer Unternehmung, Wissen als eine explizite Unternehmensressource zu betrachten, zu vermehren und erfolgreich einzusetzen.
+
+\centerline{\includegraphics[width=1\textwidth]{img/BausteinedesWM.png}}
+
+Die Abbildung stellt zwei Kreisläufe dar. Der „äußere Kreislauf“ beinhaltet die Festlegung der **Wissensziele**, die Umsetzung dieser Ziele und die Bewertung des daraus gewonnenen Wissens. Die Umsetzung der Ziele besteht aus einem „inneren Kreislauf“, der mit der Prüfung des bestehenden Wissens beginnt und mit der Wahrung des evtl. gewonnenen Wissens endet. Die Aktivität der Festlegung von Wissenszielen dient der Verknüpfung des WM mit der allgemeinen strategischen Planung des Unternehmens sowie der Definition von Zielen, die kommunizierbar sind und deren Zielerreichung nachprüfbar ist. Diese Prüfung findet in der Teilaktivität der **Wissensbewertung** statt, die damit zur Regelung des äußeren Kreislaufs beiträgt.
+
+Der erste Baustein in der Umsetzung der gesetzten Ziele ist die **Wissensidentifikation**, die einem Unternehmen helfen soll zu erkennen, welche Wissenselemente vorhanden sind und welche fehlen. Danach kann bei Bedarf ein **Wissenserwerb** betrieben werden, wobei dafür unterschiedlichste Quellen und Bezugsmöglichkeiten existieren (z. B. eigene Kunden, andere Unternehmen, Manager auf Zeit). Die **Wissensentwicklung** ist ein nur bedingt steuerbarer Prozess. Hier kommt es hauptsächlich auf die Schaffung von geeigneten Rahmenbedingungen für Kreativität an. Das kann auf Algorithmen basierende Verfahren wie das beschriebene Data Mining beinhalten, aber auch einfach die Teilnahme an bestimmten Fortbildungskursen. Gezielte **Wissensverteilung** sichert, dass aus individuellem oder Gruppenwissen organisationales Wissen wird. Das bedeutet natürlich nicht, dass alle Mitglieder einer Organisation schließlich über das gleiche Wissen verfügen sollen. Die Bestimmung, wer in einem Unternehmen welches Wissen benötigt, stellt eine schwierige Aufgabe der **Wissensverteilung** dar. Die **Wissensnutzung** ist ebenfalls eine Aktivität, die gezielt gefördert werden muss, da Individuen Wissen oft nicht nutzen, selbst wenn sie seine Existenz kennen. Die Schaffung geeigneter Anreizsysteme zur Nutzung fremden Wissens ist eine solche Maßnahme. Die **Wissensbewahrung** dient schließlich der Sicherstellung, dass das benötigte Wissen auch stets verfügbar ist. Dies beinhaltet auch Entscheidungen und Maßnahmen bezüglich der legalen Vernichtung von Wissen, das den Zwecken des Unternehmens nicht mehr dient.
+
+Nochmals sei betont, dass es sich bei WM um keine Funktion handelt, die nur oder vorwiegend von Mitarbeitern der IT-Abteilung ausgeführt wird. In manchen Unternehmen befindet sich WM nicht in der gleichen Abteilung wie IM. Doch unabhängig davon, wo WM organisatorisch angesiedelt wird, muss es in enger Abstimmung mit dem IM durchgeführt werden.
+
+### Controlling von IS
+
+Der Begriff **Controlling** wird durch die beiden folgenden Aufgabenklassen zur Unterstützung der Unternehmensführung definiert
+* Gestaltung und Betreuung einer Informationsversorgung bei der Planung, Steuerung und Kontrolle (systemgestaltende Aufgabe),
+* Durchführung und Koordination von Planung, Steuerung und Kontrolle (systemnutzende Aufgaben).
+
+Beim IS-Controlling (in der Praxis **IT-Controlling**) ist das Controllingobjekt der IT-Bereich eines Unternehmens, der die Planung, Steuerung und Kontrolle des Hardware- und Softwareeinsatzes sowie die hierbei beteiligten personellen und räumlichen Ressourcen verantwortet. Gegenstand des IT-Controllings ist die Planung einer Infrastruktur, durch die das IM mit allen erforderlichen Informationen versorgt wird, um die Wirtschaftlichkeit des IT-Bereichs zu sichern und um Potenziale von IS aufzuspüren.
+
+#### Strategisches IT-Controlling
+
+Das **strategische IT-Controlling** bezeichnet die Schaffung einer Infrastruktur zur langfristigen Planung und Kontrolle des IT-Bereichs sowie die Koordination und Durchführung dieser Aktivitäten.
+
+**Aufgaben des strategischen IT-Controlling**
+* die systematische Erschließung von Erfolgspotenzialen, die einen Betrag zur langfristigen Sicherung der Unternehmung leisten,
+* die Koordination zwischen der Unternehmensstrategie und der langfristigen Ausrichtung der IS,
+* die langfristige Planung der Ressourcen, die der Informationsverarbeitung zur Verfügung gestellt werden,
+* die Auswahl strategisch wichtiger IS und
+* die Auswahl von Methoden und Instrumenten zur Planung  und zum Betrieb der IS.
+
+**Methoden der strategischen IS-Planung**
+
+\centerline{\includegraphics[width=1\textwidth]{img/Porter5.png}}
+
+Zur Entwicklung von Strategien wird empfohlen, zunächst die Branchenstruktur des Unternehmens zu untersuchen. Zur Analyse dieser Struktur dient das bekannte Fünf-Kräfte-Modell (Porter 1985). In seinem Modell geht Porter von der These aus, dass die Branchenstruktur einen wichtigen Einfluss auf die Unternehmensstrategie ausübt.
+Eine offensichtliche Schwäche des Fünf-Kräfte-Modells ist darin zu sehen, dass konkurrierende Ersatzprodukte auch in anderen Branchen entstehen können, sodass nicht nur die eigene Branche untersucht werden sollte, sondern ein „Blick über den Tellerrand“ erforderlich ist.
+
+\centerline{\includegraphics[width=1\textwidth]{img/Porterkette.png}}
+
+Der zweite Ansatz stellt ebenfalls eine Anwendung einer Methode der generellen Strategieplanung dar - die Wertschöpfungskette (Value Chain) nach (Porter 1985). Diese Methode versucht, in der Wertschöpfungskette eines Unternehmens diejenigen Wertaktivitäten zu identifizieren, die noch nicht durch IS angemessen unterstützt werden. Dabei kann es zu mehr Integration von Wertaktivitäten, zu Reorganisationen von Geschäftsprozessen oder zur Auslagerung von Aktivitäten kommen. Wenn z. B. die Wertkette eines Herstellers mit der Wertkette einer Handelsorganisation besser integriert wird, indem dem Hersteller Informationen vom Point-of-Sale direkt weitergeleitet und an die Funktionen der Disposition und Lagerversorgung übergeben werden, können nach Praxiserfahrungen 10–15 % der Prozesskosten eingespart werden.
+
+#### Operatives IT-Controlling
+
+Gegenstand des operativen IT-Controllings ist die Sicherung der Rationalität des für den IT-Bereich zuständigen Managements durch kurzfristige Planung und Kontrolle der Aktivitäten zur Nutzung von IS sowie die dabei notwendige Koordination. Auf der operativen Ebene sind die Vorgaben des strategischen IT-Controllings zu berücksichtigen. Im Einzelnen ergeben sich für das operative IT-Controlling folgende Aufgaben
+* Transparente Planung, Überwachung und Abrechnung von Kosten und Leistungen
+* IT-Budgetierung und Kontrolle
+* Operative Koordinierung des IT-Ressourceneinsatzes
+* Überwachung von IT-Projekten im gesamten Projektverlauf
+* Erstellung von Erfahrungsbilanzen und -statistiken sowie Ermittlung von zeit- bzw. projektbezogenen Kennzahlen.
+
+In der Praxis hat sich eine Reihe von Instrumenten für das operative IS-Controlling bereits bewährt. Im Folgenden wird zunächst auf das *Monitoring* eingegangen, das bedeutsame Leistungsdaten ermittelt. Anschließend ist die Verdichtung zu *Kennzahlen* kurz zu betrachten. Schließlich ist auf die *IT-Kosten- und Leistungsrechnung* einzugehen, die als Bestandteil des internen Rechnungswesens eines Unternehmens zusammen mit der Budgetierung die administrative Grundlage für das operative IT-Controlling darstellt.
+
+ * **Monitoring**
+
+ Unter Monitoring wird die Leistungsmessung und -beobachtung in IS verstanden. Es gewinnt Informationen, die für eine bessere Lastenverteilung auf die IS-Ressourcen, für die Ermittlung von Schwachstellen und für die damit verbundene Einleitung von Verbesserungen von Programm- oder Datenstrukturen oder für Aufstockungsmaßnahmen herangezogen werden
+ können. Es existieren fünf verschiedene Arten von Monitoring:
+
+  * *Hardware Monitoring*: Mittels Sensoren werden die Leistungen der Hardwarekomponenten, wie z. B. der Zentralprozessor (CPU) oder der internen Datenleitungen, aufgrund physikalisch messbarer Signale erfasst.
+  * *Software Monitoring*: Bei zentraler Informationsverarbeitung werden mittels Monitoren für das Betriebssystem oder für Anwendungsprogramme Informationen über das Einsatzverhalten dieser Software gewonnen. Bei diesen Monitoren handelt es sich um Programme, die ständig im internen Speicher eines Rechners verbleiben. Ein Betriebssystemmonitor liefert Informationen über die Leistung des zentralen Rechnersystems. Mithilfe der Anwendungsmonitore kann eine Verbindung der gemessenen  Leistungsdaten zu den Anwendungen, die den Ressourcenverbrauch verursacht haben, hergestellt werden. Messgrößen sind hierbei z. B. die verbrauchte Zeit der Zentraleinheit (s. Glossar) oder die Anzahl der Dateizugriffe je Benutzer. Bei dezentraler Informationsverarbeitung verfügen die Benutzer über eigene Kapazitäten. Eine Leistungsüberwachung dieser lokalen Ressourcen ist daher aus Sicht der Abteilung i. d. R. nicht erforderlich.
+  * *Netzwerk-Monitoring*: Durch die Anwendung von Hard- und Software Monitoren kann auch eine Überwachung und Leistungsmessung des Netzwerks erfolgen. Sie können Messgrößen, wie z. B. Arbeitslast, Durchsatz, Wartezeit auf die Nutzung einer Ressource sowie die Antwortzeit und die Verfügbarkeit einer Ressource ermitteln.
+  * *Datenbank-Monitoring*: Das Datenbank-Monitoring überwacht das Datenbankmanagementsystem. Wichtige Informationen in diesem Zusammenhang sind beispielsweise die Speicherplatzbelegung einer Datenbank, die Zugriffshäufigkeiten auf bestimmte Datenbestände sowie Antwort- oder Wartezeiten bei der Abfrage von Daten.
+  * *Accounting*: Eine spezielle Form der Ablaufüberwachung von Anwendungsprogrammen ist das Accounting. Als Ziel ist hierbei die kostenmäßige Weiterverrechnung der von Nutzern beanspruchten Systemressourcen anzusehen. Dazu dienen sogenannte Job-Accounting-Systeme, die mit der IT-Kosten- und Leistungsrechnung verbunden sind.
+
+ * **Kennzahlen und Kennzahlensysteme**
+
+ Kennzahlen sind Zahlen, die in verdichteter Form über quantifizierbare Sachverhalte rückwirkend informieren oder diese vorausschauend festlegen. Die wichtigsten Kennzahlen werden als Schlüsselkennzahlen (Key Goal Indicators oder Key Performance Indicators, KPI) bezeichnet. Eine Kombination mehrerer Kennzahlen führt zu einem Kennzahlensystem, in dem die einzelnen Kennzahlen in einer sachlich sinnvollen Beziehung zueinander stehen, sich ergänzen und/oder aufeinander aufbauen. Letztlich sind sie auf ein gemeinsames übergeordnetes Ziel ausgerichtet. Beispielhafte Kennzahlen aus dem IT-Bereich sind:
+  * Durchschnittliche Antwortzeit = Summe Antwortzeiten/Anzahl Transaktionen
+  * Durchschnittliche Nutzungsdauer = Summe Nutzungsdauer/Anzahl Programmnutzungen
+  * Relevanz einer Anwendung = Summe der Aufrufe dieser Anwendung/Anzahl aller Programmaufrufe
+  * Zuverlässigkeit = Summe fehlerfreier Ausführungen/Summe aller Programmausführungen
+
+ * **IT-Kosten- und Leistungsrechnung**
+ Die Kosten- und Leistungsrechnung für den IT-Bereich dient zum einen der Erfassung und Bewertung des Verbrauchs sowie zur Abbildung, Steuerung und Kontrolle der IT-Ressourcen; zum anderen sind die Leistungen des IT-Bereichs abzurechnen. Die Kostenrechnung hat folgende Funktionen zu erfüllen:
+  * *Ermittlungsfunktion*: Die Kosten der Informationsverarbeitung müssen erhoben werden.
+  * *Prognosefunktion*: Die wirtschaftlichen Konsequenzen einzelner, die Infrastruktur betreffenden Handlungen müssen vorhergesagt werden können.
+  * *Vorgabefunktion*: Für einzelne Objekte des IT-Bereichs (z. B. bestimmte Leistungen) sind in Absprache mit den jeweiligen Verantwortlichen Sollwerte für die entstehenden Kosten vorzugeben.
+  * *Kontrollfunktion*: Die vorgegebenen Sollwerte gilt es nach Abschluss einer Planungsperiode mit den tatsächlichen Kosten der zu kontrollierenden Objekte zu vergleichen. Im Falle von signifikanten Abweichungen sind die Ursachen zu analysieren.
+
+ Durch die Erfüllung dieser Funktionen können IT-Leistungen kalkuliert und mit den Preisen von Angeboten Dritter verglichen werden. Des Weiteren kann die Wirtschaftlichkeit einzelner Objekte des IT-Bereichs kontrolliert werden, und die gewonnenen Informationen können zur Entscheidungs- und kurzfristigen Erfolgsrechnung herangezogen werden.
+
+#### Balanced Scorecard als Integrationsinstrument
+
+Ein Beispiel für ein Instrument des strategischen und operativen IT-Controllings ist die Balanced Scorecard. Die Balanced Scorecard ist entwickelt worden, um die Leistung eines Unternehmens über die finanziellen Kennzahlen hinaus zu beobachten und zu steuern. Dabei geht es insbesondere darum, nicht nur die Leistung vergangener Perioden zu messen, sondern auch Größen zu beobachten, deren Entwicklung die zukünftige Entwicklung des Unternehmens beeinflusst. Die Balanced Scorecard soll ein Instrument sein, das sowohl die Umsetzung der operativen wie auch der strategischen Ziele fördert. Zur Klassifikation der Anwendungsbereiche werden Perspektiven formuliert. Zusätzlich zur finanziellen Perspektive gibt es die Kundenperspektive, die Perspektive der internen Geschäftsprozesse sowie die Perspektive des Lernens und des Wachstums. Für jede der vier Perspektiven sollen Kennzahlen definiert werden, mit deren Hilfe das Unternehmen so gesteuert werden kann, dass die Erreichung seiner Ziele über eine ausgeglichene Zielerreichung bei allen Perspektiven erfolgen kann.
+
+\centerline{\includegraphics[width=1\textwidth]{img/scorecard.png}}
+
+### Wertbeitrag von IS
+\centerline{\includegraphics[width=1\textwidth]{img/modellwertgene.png}}
+
+Die Ansätze zur Bestimmung des Wertbeitrags eines IS können dem Modell entsprechend nach verschiedenen Kriterien klassifiziert werden, z. B. nach der Organisationsebene, auf der ein Verfahren angewendet werden kann, oder der Anzahl von betrachteten Transformationsstufen vom IS-Einsatz bis zur organisationalen Performanz. Ein Kriterium kann auch der generelle Einsatzzweck der Anwendungen sein, dessen Wert gemessen werden soll. Dabei wird zwischen drei Anwendungsgruppen unterschieden.
+
+**Verfahren zur Bewertung von IS: Anwendungsgruppen**
+* *Substitutive Anwendungen* ersetzen die menschliche Arbeitskraft, dazu gehört z. B. die Lohnbuchhaltung. Diese Anwendungen werden bezüglich ihrer Bewertbarkeit als „rechenbar“ bezeichnet.
+* *Komplementäre Anwendungen* werden eingesetzt, um die Produktivität und Effektivität ihrer Nutzer bei bestehenden Aktivitäten zu erhöhen; hierzu gehören z. B. Tabellenkalkulationsprogramme. Diese Anwendungen werden in Bezug auf die Bewertung als „kalkulierbar“ bezeichnet.
+* *Innovative Anwendungen* dienen dazu, Wettbewerbsvorteile zu gewinnen oder zu erhalten. Hierzu gehören z. B. IS, die differenzierte oder neue Produkte oder Dienstleistungen schaffen. Diese Anwendungen werden in Hinblick auf die Bewertbarkeit als „entscheidbar“ bezeichnet.
+
+\centerline{\includegraphics[width=1\textwidth]{img/wibewertungis.png}}
+
+Wenn die aufbauorganisatorische Dimension als Klassifikationskriterium gewählt wird, berücksichtigen wir hier auch die Ebene der Volkswirtschaft. Tendenziell gilt: Je höher die Ebene, desto komplexer das Verfahren. Es kann auch notwendig sein, mehrere Verfahren einzusetzen und Ebenen zu analysieren, um ein vollständiges Bild aller Kosten- und Nutzenaspekte zu erhalten.
+
+Das Verfahren **Time-Saving Time-Salary** versucht, über die eingesparte und bewertete Zeit der Mitarbeiter den Wert eines IS zu berechnen. Das Verfahren verläuft in fünf Schritten:
+1. Klassifikation der Mitarbeiter zu Mitarbeitergruppen (z. B. Führungskräfte, technische Fachkräfte, Sachbearbeiter),
+2. Identifikation von Aufgabenklassen und ihren Zeitanteilen für die Mitarbeitergruppen (z. B. Dokumente erstellen, Schriftgut verwalten),
+3. Ermitteln individueller IS-unterstützter Arbeitsinhalte (z. B. Texterfassung, Retrieval),
+4. Ableiten und Abschätzen von Einsparungspotenzialen bei den Arbeitsinhalten, und
+5. Monetäre Bewertung der Gesamteinsparungen.
+
+Das **Hedonistische Verfahren** geht einen Schritt weiter, indem es, vereinfacht zusammengefasst, die durch das betrachtete IS eingesparte Zeit vorwiegend höherwertigen Aktivitäten zuordnet und daraus den zusätzlichen Nutzen berechnet. Dabei berechnet es für die einzelnen Aktivitäten implizite hedonistische Preise unter der Annahme eines effizienten Einsatzes der Ressource Arbeit.
+
+Ein Verfahren, das über mehrere Bereiche und Ebenen einsetzbar ist, sind die **Nutzeffektketten**. Dieses versucht, alle Auswirkungen des Einsatzes eines IS zu verfolgen, um dadurch ein konzeptionelles Verständnis der Wirkungszusammenhänge zu erreichen. Allerdings lässt der Ansatz die Frage nach der genauen quantitativen Bewertung offen.
+
+\centerline{\includegraphics[width=1\textwidth]{img/cadnutz.png}}
+
+Die obige Abbildung zeigt ein Beispiel für die Analyse von Nutzeffektketten bei der Einführung einer Computer Aided Design (CAD) Software über zwei Ebenen. Auf der ersten Ebene sind die Effekte an den Arbeitsplätzen im Konstruktionsbereich dargestellt, während die zweite Ebene die Auswirkungen in verschiedenen, nachfolgenden Bereichen zusammenfasst.
+
+### IT-Gorvernance
+#### Bezugsrahmen
+Mangelnde Transparenz der Unternehmensführung, Verletzungen gesetzlicher Bestimmungen wie auch nicht gesetzeswidrige, aber unverantwortliche Handlungen von Unternehmensleitungen haben in den letzten Jahren zum Wunsch geführt, Regeln für eine gute und verantwortungsbewusste Unternehmensführung vorzuschreiben.
+
+**Corporate Governance** Die Grundsätze der Unternehmensführung, die die Rechte und Pflichten der Unternehmensleitung, Aufsichtsorgane, Anteilseigner und verschiedener anderer am Unternehmen interessierter Gruppen (Stakeholder) bestimmen, werden als Regeln der Corporate Governance bezeichnet.
+
+Die Erreichung von Unternehmenszielen unterstützen heute meist IS, deren Betrieb wiederum Risiken birgt. Daher lassen sich aus den Anforderungen der Corporate Governance auch Ziele und Anforderungen für die Entwicklung, Beschaffung und den Betrieb von IS ableiten, die als IT-Governance bezeichnet werden.
+
+**IT-Governance** beinhaltet Regeln und Methoden zur Planung, Steuerung und Kontrolle des Einsatzes von IS in einem Unternehmen, die sicherstellen, dass sie an Unternehmenszielen ausgerichtet sind und unter Beachtung von Risiken effizient und effektiv eingesetzt werden.
+
+Damit diese anspruchsvolle Aufgabe planmäßig und nachvollziehbar organisiert und durchgeführt werden kann, sind entsprechende Ansätze entwickelt worden, von denen das Rahmenwerk Control Objectives for Information and Related Technologies (COBIT) die größte Praxisrelevanz aufweist.
+
+#### COBIT - Control Objectives for Information and Related Technologies
+Aus der Sicht von COBIT betrifft IT-Governance fünf Bereiche:
+* Die *strategische Ausrichtung* (Strategic Alignment) konzentriert sich auf den Abgleich von Unternehmens- und IT-Zielen sowie auf die Festlegung, Beibehaltung und Validierung des Wertbeitrags von IS.
+* Die *Wertschöpfung* (Value Delivery) beschäftigt sich mit der Realisierung des Wertbeitrags im Leistungszyklus sowie der Sicherstellung, dass IS den strategisch geplanten Nutzen generieren können und dabei kostenoptimal agieren.
+* Das *Ressourcenmanagement* umfasst die Optimierung von Investitionen in IT- Ressourcen und ein geregeltes Management derselben. IT-Ressourcen sind Anwendungen, Information, Infrastruktur und Personal. Ebenso sollte Wissen optimal eingesetzt werden.
+* Das *Risikomanagement* erfordert ein Risikobewusstsein bei der Unternehmensleitung, ein klares Verständnis über die Risikobereitschaft, ein Verständnis für Compliance- Erfordernisse, Transparenz über die für das Unternehmen wichtigsten Risiken und die Verankerung des Risikomanagement in der Ablauf- und Aufbauorganisation.
+* Die *Leistungsmessung* (Performance Measurement) überwacht die Umsetzung der Strategie und der Projekte, die Verwendung von Ressourcen sowie die Prozess- und Outputperformance. Die Messung geht hierbei über die Anforderungen des Rechnungswesens hinaus.
+
+Aus der Unternehmensstrategie ergeben sich Unternehmensziele, deren Erreichung IS unterstützen sollen. Deswegen können aus ihnen Ziele für die Informationsverarbeitung abgeleitet werden, die COBIT als IT-Ziele bezeichnet. Die nächste Tabelle zeigt beispielhaft einige Unternehmensziele und daraus ableitbare IT-Ziele.
+
+\centerline{\includegraphics[width=1\textwidth]{img/cobitbsp.png}}
+
+Zur Erreichung der IT-Ziele müssen geeignete Prozesse festgelegt und durchgeführt werden. Die aus den Prozessen gewonnenen Informationen müssen bestimmte Qualitätskriterien erfüllen, um den Geschäftsanforderungen zu entsprechen. Diese sogenannten Informationskriterien sind aus den Anforderungen zur Einhaltung von Gesetzen und abgeschlossenen Verträgen, Sicherheitsbedürfnissen und wirtschaftlichen Erfordernissen abgeleitet. In COBIT werden sieben Informationskriterien für relevant gehalten.
+
+\centerline{\includegraphics[width=1\textwidth]{img/cobitmeaning.png}}
+
+Die Dimensionen Informationskriterien, IT-Prozesse sowie IT-Ressourcen, mit denen die Prozesse durchgeführt werden, bilden den **COBIT-Würfel**. Während die *Informationskriterien* unterschiedliche Geschäftsanforderungen darstellen und die *IT-Ressourcen* die involvierten Objekte gruppieren, stellen die Ausprägungen der Dimension *IT-Prozesse* eine Hierarchie dar. Aktivitäten werden zu Prozessen und Prozesse zu vier Domänen zusammengefasst, die einen Regelkreis bilden. Die IT-Ressource Infrastruktur fasst Hardware, Systemsoftware, Netze, Gebäude u. ä. zusammen.
+
+\centerline{\includegraphics[width=1\textwidth]{img/cobitcube.png}}
+
+Prozesse dienen der Erreichung der Ziele (Control Objectives), also den Geschäftsanforderungen. Die Prozesse sind auf die Anforderungen unterschiedlich stark ausgerichtet. Bei der intendierten Wirkung ist zwischen primären (P) oder sekundären (S) Einflüssen zu unterscheiden. Den Zusammenhang zwischen Prozessen und Geschäftsanforderungen stellt Tab. 3.5 dar. Wenn weder ein P noch ein S eingetragen sind, besteht ein geringer Einfluss. Ein „X“ kennzeichnet, welche Ressourcen im Prozess zum Einsatz  kommen. Tab. 3.5 veranschaulicht Prozesse der Domäne Planung und Organisation (PO).
+
+\centerline{\includegraphics[width=1\textwidth]{img/tab35.png}}
+
+Die erreichte Güte des Prozessmanagements wird mithilfe eines Reifegradmodells ausgedrückt, das ursprünglich im Bereich der Softwareentwicklung entstanden ist (nächste Abbildung).
+
+\centerline{\includegraphics[width=1\textwidth]{img/modellreifeprozess.png}}
+
+Die spezifische Messung der Erreichung von Zielen und Leistungen der Prozesse erfolgt mithilfe von KPI. Jeder Prozess besteht aus Aktivitäten, deren Folge Flussdiagramme darstellen. Rechtecke repräsentieren Aktivitäten und Rauten Entscheidungen. Den Ablauf kennzeichnen gerichtete Kanten. Die nächste Abbildung zeigt als Beispiel den Ablauf der Aktivitäten des Prozesses PO1 („definiere einen strategischen IT-Plan“).
+
+\centerline{\includegraphics[width=1\textwidth]{img/ablaufprozess.png}}
