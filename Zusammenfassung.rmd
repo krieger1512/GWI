@@ -1,13 +1,12 @@
 ---
 title: 'Grundlagen der Wirtschaftsinformatik'
 author: "Author: Nguyen Minh Kien, Editor: Truong Hoang Tung"
-output: pdf_document
+output:
+    pdf_document:
+        number_sections: true
 ---
-```{r, include=FALSE}
-options(tinytex.verbose = TRUE)
-```
 <style>body {
-text-aligh:justify
+text-align:justify
 }
 </style>
 
@@ -46,7 +45,7 @@ Die obige Definition von Information ist nicht leicht quantifizierbar. Deshalb (
 
 \centerline{\includegraphics[width=0.8\textwidth]{img/Entropie.png}}
 
-wobei p(i) die Wahrscheinlichkeit eines Ereignisses ist. Je höher der Wert von H ist, desto größer sind die Unsicherheit und damit die Möglichkeit, mithilfe von Informationen die Unsicherheit zu reduzieren. Wenn keine Unsicherheit besteht, also ein Ereignis mit Sicherheit von p(i) = 1 auftritt, dann ist H = 0 bzw. zusätzliche Informationen haben keinen Wert.
+wobei $p_i$ die Wahrscheinlichkeit eines Ereignisses ist. Je höher der Wert von H ist, desto größer sind die Unsicherheit und damit die Möglichkeit, mithilfe von Informationen die Unsicherheit zu reduzieren. Wenn keine Unsicherheit besteht, also ein Ereignis mit Sicherheit von $p_i$ = 1 auftritt, dann ist H = 0 bzw. zusätzliche Informationen haben keinen Wert.
 
 *Beispiele für Entropie bei fairen und unfairen Münzwurf:*
 
@@ -74,7 +73,7 @@ Die Persönlichkeit des Entscheidungsträgers drückt sich auch in seiner Risiko
 
 \centerline{\includegraphics[width=0.8\textwidth]{img/nutzerwert.png}}
 
-wobei p(i) die Eintrittswahrscheinlichkeit des Ereignisses x(i) ist und N(x(i)) der Nutzen, den der Entscheidungsträger dem Eintreten des Ereignisses x(i) beimisst. Der Nutzenerwartungswert kann mit einem sicheren Wert verglichen werden, dem sog. *Sicherheitsäquivalent*, den der Entscheider auswählt bzw. bei einem Glücksspiel als Spieleinsatz akzeptiert. Wenn die beiden Werte gleich sind, dann wird der Entscheider als **risikoneutral** bezeichnet. Wenn sich der Entscheider für ein ihm angbotenes Sicherheitsäquivalent entscheidet, das kleiner als der Nutzenerwartungswert ist, dann ist der Entscheider **risikoscheu**; wenn er sich für den höheren Nutzenerwartungswert entscheidet, ist er **risikofreudig**. Im letzteren Fall zieht er die Chance auf den Erhalt eines größeren Nutzens einem sicheren, kleineren Nutzen vor.
+wobei $p_i$ die Eintrittswahrscheinlichkeit des Ereignisses $x_i$ ist und $N(x_i)$ der Nutzen, den der Entscheidungsträger dem Eintreten des Ereignisses $x_i$ beimisst. Der Nutzenerwartungswert kann mit einem sicheren Wert verglichen werden, dem sog. *Sicherheitsäquivalent*, den der Entscheider auswählt bzw. bei einem Glücksspiel als Spieleinsatz akzeptiert. Wenn die beiden Werte gleich sind, dann wird der Entscheider als **risikoneutral** bezeichnet. Wenn sich der Entscheider für ein ihm angbotenes Sicherheitsäquivalent entscheidet, das kleiner als der Nutzenerwartungswert ist, dann ist der Entscheider **risikoscheu**; wenn er sich für den höheren Nutzenerwartungswert entscheidet, ist er **risikofreudig**. Im letzteren Fall zieht er die Chance auf den Erhalt eines größeren Nutzens einem sicheren, kleineren Nutzen vor.
 
 ### Wert von Informationen
 1. **Subjektiver Ansatz**:
@@ -121,7 +120,7 @@ In vielen Organisationen werden die realisierten Ergebnisse regelmäßig mit ang
 
 Ein **Modell** ist das Ergebnis eines Konstruktionsprozesses, das die Wahrnehmung von Inhalten eines ausgewählten Gegenstands zweckorientiert repräsentiert. In Modellen werden die für nicht relevant angesehenen Eigenschaften eines Systems weggelassen. Mit einem Modell kan somit einfacher experimentiert werden, um das zu analysierende System bzw. das Original besser verstehen bzw. steuern zu können, ohne dieses selbst zu beeinflussen. Die Qualität des Modells ist daran zu beurteilen, inwiefern die Repräsentation geeignet ist, die Zwecke des Modellnutzers zu erfüllen.
 
-\centerline{\includegraphics[width=0.8\textwidth]{img/modellcl.png}}
+\centerline{\includegraphics[width=0.8\textwidth, trim={0 0 0 60pt},clip]{img/modellcl.png}}
 
 Der Zweck eines Modells kann sein, ein System zu beschreiben (**deskriptiv**) oder Handlungen zu empfehlen (**normativ**). Wenn das Modell Größen beinhaltet, die sich auf mehr als einen Zeitpunkt beziehen, wird von einem **dynamischen** (also **mehrperiodigen**) Modell gesprochen. In **statischen** (**einperiodigen**) Modellen beziehen sich alle Variablen auf den gleichen Zeitpunkt bzw. Zeitraum.
 
@@ -131,7 +130,7 @@ Aus der Sicht der Systemtheorie enthalten Organisationen i.d.R. maschinelle und 
 
 In vielen Organisationen herrscht hierarchische Koordination mit einer oder mehreren Leitungsebenen vor. Die Leitungs- oder Managementfunktionen werden oft in drei Ebenen unterteilt. Die Manager einer Ebene haben Mitarbeiterverantwortung für die unteren Ebenen. In der näschten Abbildung sind die Leitungsebenen um die Ausführungebenen ergänzt, damit die gesamte Unternehmung in dem Modell repräsentiert wird. Die Linien die die Pyramide vertikal unterteilen, trennen die verschiedenen funktionalen Bereiche, wie etwa Beschaffung, Produktion oder Vertrieb, voneinander ab.
 
-\centerline{\includegraphics[width=1\textwidth]{img/orgaeben.png}}
+\centerline{\includegraphics[width=0.7\textwidth]{img/orgaeben.png}}
 
 Die unterschiedlichen Aufgaben der Manager auf den drei Ebenen führen zu unterschiedlichen Informationsbedürfnissen. Diese werden in der nächsten Tabelle dargestellt. Dabei sind die Einträge so zu interpretieren, dass z.B. bezüglich der Herkunft der Informationen die operative Ebene vorwiegend interne Informationen benötigt, die strategische Ebene vorwiegend externe Informationen und die taktische Ebene dazwischen liegt.
 
@@ -165,14 +164,15 @@ Element einer Organisation oder verbundener Organisationen.
 
 ### Evolution der IS
 
-\centerline{\includegraphics[width=1\textwidth]{img/ISEvolution.png}}
-
 Effektivität kann auch umgeschrieben werden als "das Richtige zu tun", während es bei Effizienz darum geht, dass man das, was man tut, "richtige tut".
+
+\centerline{\includegraphics[width=1\textwidth]{img/ISEvolution.png}}
 
 ### Arten von IS
 
-\centerline{\includegraphics[width=1\textwidth]{img/ISklassan.png}}
+\centerline{\includegraphics[width=1\textwidth, trim={0 0 0 120pt},clip]{img/ISklassan.png}}
 
+\pagebreak
 Eine Möglichkeit, IS zu klassifizieren, besteht in der Verwendung der Kriterien **Anwendungsbreite** und **Sektorspezifität**. *Individualsoftware* erstellt die Unternehmung selbst oder gibt deren Entwicklung speziell in Auftrag. *Standardsoftware* wird für viele Anwender(Organisationen) entwickelt. *Sektorspezifisch*: z.B. im industriellen Sektor die Branchen Elektrotechnik, Maschinenbau, Chemie und Nachrichtentechnik. *Sektorneutral*: z.B. Handel, Industrie, Banken/Versicherungen, Dienstleistungen allgemein.
 
 \centerline{\includegraphics[width=1\textwidth]{img/ISArten.png}}
@@ -189,7 +189,7 @@ Beispiele: Enterprise Resource Planning (Programme, die verschiedene betriebwirt
 
 2. **System of Insight**
 
-\centerline{\includegraphics[width=1\textwidth]{img/sysinsight.png}}
+\centerline{\includegraphics[width=1\textwidth, trim={0 0 0 120pt},clip]{img/sysinsight.png}}
 
 Für die operative und taktische Managementebene eignen sich die **Managementinformationssysteme (MIS)**, die Managern die Beobachtung des Ablaufs des Unternehmensprozesse, den Vergleich mit Planzahlen sowie die kurzfristige Geschäftsplanung erleichtern.
 
@@ -197,7 +197,7 @@ MIS können die Phase der Problemfindung dienen. Die Generierung und Bewertung v
 
 **Künstliche Intelligenz** ist ein Gebiet der Informatik zur Entwicklung von Verfahren, mit denen das menschliche Problemlösungsverhalten nachgeahmt wird. Manchen Verfahren der KI versuchen, neue Lösungsansätze oder Zusammenhänge in Datenbanken zu entdecken, weswegen sie als Wissensentdeckungssysteme gelten. Dieser Forschungsbereich wird auch als **Knowledge Discovery in Database** bezeichnet. Es werden dazu z.B. künstliche, neuronale Netze (Artificial Neural Networks, ANN) gerechnet.
 
-\centerline{\includegraphics[width=1\textwidth]{img/KI.png}}
+\centerline{\includegraphics[width=0.7\textwidth, trim={0 0 0 100pt},clip]{img/KI.png}}
 
 Ein **künstliches, neuronales Netzwerk** besteht aus mehreren verbundenen Ebenen von Verarbeitungselementen, die in Analogie zur Informationsverarbeitung im menschlichen Gehirn als Neuronen bezeichnet werden. Die erste Ebene wird als Eingabe- und die letzte als Ausgabeebene bezeichnet. Dazwischen gibt es eine oder mehrere "versteckte" Zwischenebenen. Ein Neuron erhält numerische Eingaben, gewichtet, summiert sie, transformiert die Summe und gibt den transformierten Wert aus, entweder an Neuronen der nächsten Ebene oder als Endausgabe. Ein neuronales Netz kann lernen, indem es die verwendeten Gewichte so lange verändert, bis die gewünschte Güte des ANN erreicht ist. Die Güte kann z.B. danach beurteilt werden, wie stark die Ergebnisse der Berechnungen historischer Fälle mit bekannten Ergebnissen übereinstimmen. ANN werden zur Erkennung von Mustern und zur Klassifikation von Daten eingesetzt.
 
@@ -206,14 +206,16 @@ Ein **künstliches, neuronales Netzwerk** besteht aus mehreren verbundenen Ebene
 
 Der Prozess des **Data Mining** wird in einzelnen Phasen aufgeteilt : *Auswahl* der Daten aus geeigneten Datenquellen, *Exploration* der Daten mit den Methoden der Datenanalyse, *Stichprobenziehung* aus ausgewählten Datensätzen, *Vorverarbeitung* der Daten inklusive einer eventuellen Bereinigung der Datenn (Data Cleansing), sowie eine *Transformation* der Daten in die von DM-Algorithmen benötigte Form. Nach Schätzung von Experten werden ca. 80% der Zeit und Kosten des DM für diese Vorarbeiten aufgewandt. Die letzte Phase, die *Wissensgewinnung* schließlich identifiziert Datenmuster.
 
-\centerline{\includegraphics[width=1\textwidth]{img/DMprozess.png}}
+\centerline{\includegraphics[width=0.5\textwidth]{img/DMprozess.png}}
 
 Verfahren des **Data Mining**:
- * Zur *Klassifikation* sind *Entscheidungsbäume* einsetzbar: Die Verbindungen von der Baumwurzel bis zu einem Endknoten (Blattknoten) stellen eine Regel dar, die aus "und"-verknüpften Bedingungen besteht.
- * Die *Abweichunganalyse* beschäftigt sich mit Objekten, die sich keinem Datenmuster eindeutig zuordnen lassen.
- * Die Verfahren der *Assoziationanalyse* suchen nach signifikanten Abhängigkeiten zwischen einzelnen Attributen der Analyseobjekte und bewerten diese mit Häufigkeiten.
- * Das Ziel der *Reihenfolgeanalyse* ist es, einzelne Phasen und die zeitlichen Distanzen zwischen wiederkehrenden Ereignissen zu entdecken.
- * Die *Analyse ähnlicher Zeitabfolgen* sucht Zeitabfolgen mit ähnlichem Muster, z.B: Suche alle Aktien, deren Kurs sich in 2015 ähnlich wie der Kurs von ABC bewegt haben.
+
+ - Zur *Klassifikation* sind *Entscheidungsbäume* einsetzbar: Die Verbindungen von der Baumwurzel bis zu einem Endknoten (Blattknoten) stellen eine Regel dar, die aus "und"-verknüpften Bedingungen besteht.
+ - Die *Abweichunganalyse* beschäftigt sich mit Objekten, die sich keinem Datenmuster eindeutig zuordnen lassen.
+ - Die Verfahren der *Assoziationanalyse* suchen nach signifikanten Abhängigkeiten zwischen einzelnen Attributen der Analyseobjekte und bewerten diese mit Häufigkeiten.
+ - Das Ziel der *Reihenfolgeanalyse* ist es, einzelne Phasen und die zeitlichen Distanzen zwischen wiederkehrenden Ereignissen zu entdecken.
+ - Die *Analyse ähnlicher Zeitabfolgen* sucht Zeitabfolgen mit ähnlichem Muster, z.B: Suche alle Aktien, deren Kurs sich in 2015 ähnlich wie der Kurs von ABC bewegt haben.
+\pagebreak
 
 **Sprachverarbeitung**
 
@@ -242,6 +244,8 @@ Manche Veränderungen betreffen nur die Ebene der IT, andere durchdringen alle U
 
 **Phasen von Organisationsveränderungen**
 In der ersten Phase ist die Atmosphäre für Veränderung herzustellen, d.h. Menschen müssen für die Aufgabe des momentanen Zustands gewonnen werden (**Auftauphase**). Erst wenn diese Bereitschaft geschaffen oder, im ungünstigen Fall, erzwungen worden ist, sollte die Veränderung auch durchgeführt werden (**Durchführungsphase**). In der letzten Phase geht es darum, den neuen Zustand für eine bestimmte Zeit ohne Veränderungen beizubehalten (**Einfrierphase**), damit sich die Menschen an ihn anpassen können und dabei die Angst vor der Neuigkeit verlieren.
+
+\pagebreak
 
 ##  Kapitel 3: Planung und Steuerung des Einsatzes von IS
 
@@ -272,21 +276,23 @@ Nochmals sei betont, dass es sich bei WM um keine Funktion handelt, die nur oder
 ### Controlling von IS
 
 Der Begriff **Controlling** wird durch die beiden folgenden Aufgabenklassen zur Unterstützung der Unternehmensführung definiert
-* Gestaltung und Betreuung einer Informationsversorgung bei der Planung, Steuerung und Kontrolle (systemgestaltende Aufgabe),
-* Durchführung und Koordination von Planung, Steuerung und Kontrolle (systemnutzende Aufgaben).
+
+- Gestaltung und Betreuung einer Informationsversorgung bei der Planung, Steuerung und Kontrolle (systemgestaltende Aufgabe),
+- Durchführung und Koordination von Planung, Steuerung und Kontrolle (systemnutzende Aufgaben).
 
 Beim IS-Controlling (in der Praxis **IT-Controlling**) ist das Controllingobjekt der IT-Bereich eines Unternehmens, der die Planung, Steuerung und Kontrolle des Hardware- und Softwareeinsatzes sowie die hierbei beteiligten personellen und räumlichen Ressourcen verantwortet. Gegenstand des IT-Controllings ist die Planung einer Infrastruktur, durch die das IM mit allen erforderlichen Informationen versorgt wird, um die Wirtschaftlichkeit des IT-Bereichs zu sichern und um Potenziale von IS aufzuspüren.
 
-#### Strategisches IT-Controlling
+#### **Strategisches IT-Controlling**
 
 Das **strategische IT-Controlling** bezeichnet die Schaffung einer Infrastruktur zur langfristigen Planung und Kontrolle des IT-Bereichs sowie die Koordination und Durchführung dieser Aktivitäten.
 
 **Aufgaben des strategischen IT-Controlling**
-* die systematische Erschließung von Erfolgspotenzialen, die einen Betrag zur langfristigen Sicherung der Unternehmung leisten,
-* die Koordination zwischen der Unternehmensstrategie und der langfristigen Ausrichtung der IS,
-* die langfristige Planung der Ressourcen, die der Informationsverarbeitung zur Verfügung gestellt werden,
-* die Auswahl strategisch wichtiger IS und
-* die Auswahl von Methoden und Instrumenten zur Planung  und zum Betrieb der IS.
+
+- die systematische Erschließung von Erfolgspotenzialen, die einen Betrag zur langfristigen Sicherung der Unternehmung leisten,
+- die Koordination zwischen der Unternehmensstrategie und der langfristigen Ausrichtung der IS,
+- die langfristige Planung der Ressourcen, die der Informationsverarbeitung zur Verfügung gestellt werden,
+- die Auswahl strategisch wichtiger IS und
+- die Auswahl von Methoden und Instrumenten zur Planung  und zum Betrieb der IS.
 
 **Methoden der strategischen IS-Planung**
 
@@ -299,42 +305,42 @@ Eine offensichtliche Schwäche des Fünf-Kräfte-Modells ist darin zu sehen, das
 
 Der zweite Ansatz stellt ebenfalls eine Anwendung einer Methode der generellen Strategieplanung dar - die Wertschöpfungskette (Value Chain) nach (Porter 1985). Diese Methode versucht, in der Wertschöpfungskette eines Unternehmens diejenigen Wertaktivitäten zu identifizieren, die noch nicht durch IS angemessen unterstützt werden. Dabei kann es zu mehr Integration von Wertaktivitäten, zu Reorganisationen von Geschäftsprozessen oder zur Auslagerung von Aktivitäten kommen. Wenn z. B. die Wertkette eines Herstellers mit der Wertkette einer Handelsorganisation besser integriert wird, indem dem Hersteller Informationen vom Point-of-Sale direkt weitergeleitet und an die Funktionen der Disposition und Lagerversorgung übergeben werden, können nach Praxiserfahrungen 10–15 % der Prozesskosten eingespart werden.
 
-#### Operatives IT-Controlling
+#### **Operatives IT-Controlling**
 
 Gegenstand des operativen IT-Controllings ist die Sicherung der Rationalität des für den IT-Bereich zuständigen Managements durch kurzfristige Planung und Kontrolle der Aktivitäten zur Nutzung von IS sowie die dabei notwendige Koordination. Auf der operativen Ebene sind die Vorgaben des strategischen IT-Controllings zu berücksichtigen. Im Einzelnen ergeben sich für das operative IT-Controlling folgende Aufgaben
-* Transparente Planung, Überwachung und Abrechnung von Kosten und Leistungen
-* IT-Budgetierung und Kontrolle
-* Operative Koordinierung des IT-Ressourceneinsatzes
-* Überwachung von IT-Projekten im gesamten Projektverlauf
-* Erstellung von Erfahrungsbilanzen und -statistiken sowie Ermittlung von zeit- bzw. projektbezogenen Kennzahlen.
+
+- Transparente Planung, Überwachung und Abrechnung von Kosten und Leistungen
+- IT-Budgetierung und Kontrolle
+- Operative Koordinierung des IT-Ressourceneinsatzes
+- Überwachung von IT-Projekten im gesamten Projektverlauf
+- Erstellung von Erfahrungsbilanzen und -statistiken sowie Ermittlung von zeit- bzw. projektbezogenen Kennzahlen.
 
 In der Praxis hat sich eine Reihe von Instrumenten für das operative IS-Controlling bereits bewährt. Im Folgenden wird zunächst auf das *Monitoring* eingegangen, das bedeutsame Leistungsdaten ermittelt. Anschließend ist die Verdichtung zu *Kennzahlen* kurz zu betrachten. Schließlich ist auf die *IT-Kosten- und Leistungsrechnung* einzugehen, die als Bestandteil des internen Rechnungswesens eines Unternehmens zusammen mit der Budgetierung die administrative Grundlage für das operative IT-Controlling darstellt.
 
- * **Monitoring**
+**Monitoring**
 
  Unter Monitoring wird die Leistungsmessung und -beobachtung in IS verstanden. Es gewinnt Informationen, die für eine bessere Lastenverteilung auf die IS-Ressourcen, für die Ermittlung von Schwachstellen und für die damit verbundene Einleitung von Verbesserungen von Programm- oder Datenstrukturen oder für Aufstockungsmaßnahmen herangezogen werden
  können. Es existieren fünf verschiedene Arten von Monitoring:
 
-  * *Hardware Monitoring*: Mittels Sensoren werden die Leistungen der Hardwarekomponenten, wie z. B. der Zentralprozessor (CPU) oder der internen Datenleitungen, aufgrund physikalisch messbarer Signale erfasst.
-  * *Software Monitoring*: Bei zentraler Informationsverarbeitung werden mittels Monitoren für das Betriebssystem oder für Anwendungsprogramme Informationen über das Einsatzverhalten dieser Software gewonnen. Bei diesen Monitoren handelt es sich um Programme, die ständig im internen Speicher eines Rechners verbleiben. Ein Betriebssystemmonitor liefert Informationen über die Leistung des zentralen Rechnersystems. Mithilfe der Anwendungsmonitore kann eine Verbindung der gemessenen  Leistungsdaten zu den Anwendungen, die den Ressourcenverbrauch verursacht haben, hergestellt werden. Messgrößen sind hierbei z. B. die verbrauchte Zeit der Zentraleinheit (s. Glossar) oder die Anzahl der Dateizugriffe je Benutzer. Bei dezentraler Informationsverarbeitung verfügen die Benutzer über eigene Kapazitäten. Eine Leistungsüberwachung dieser lokalen Ressourcen ist daher aus Sicht der Abteilung i. d. R. nicht erforderlich.
-  * *Netzwerk-Monitoring*: Durch die Anwendung von Hard- und Software Monitoren kann auch eine Überwachung und Leistungsmessung des Netzwerks erfolgen. Sie können Messgrößen, wie z. B. Arbeitslast, Durchsatz, Wartezeit auf die Nutzung einer Ressource sowie die Antwortzeit und die Verfügbarkeit einer Ressource ermitteln.
-  * *Datenbank-Monitoring*: Das Datenbank-Monitoring überwacht das Datenbankmanagementsystem. Wichtige Informationen in diesem Zusammenhang sind beispielsweise die Speicherplatzbelegung einer Datenbank, die Zugriffshäufigkeiten auf bestimmte Datenbestände sowie Antwort- oder Wartezeiten bei der Abfrage von Daten.
-  * *Accounting*: Eine spezielle Form der Ablaufüberwachung von Anwendungsprogrammen ist das Accounting. Als Ziel ist hierbei die kostenmäßige Weiterverrechnung der von Nutzern beanspruchten Systemressourcen anzusehen. Dazu dienen sogenannte Job-Accounting-Systeme, die mit der IT-Kosten- und Leistungsrechnung verbunden sind.
+- *Hardware Monitoring*: Mittels Sensoren werden die Leistungen der Hardwarekomponenten, wie z. B. der Zentralprozessor (CPU) oder der internen Datenleitungen, aufgrund physikalisch messbarer Signale erfasst.
+- *Software Monitoring*: Bei zentraler Informationsverarbeitung werden mittels Monitoren für das Betriebssystem oder für Anwendungsprogramme Informationen über das Einsatzverhalten dieser Software gewonnen. Bei diesen Monitoren handelt es sich um Programme, die ständig im internen Speicher eines Rechners verbleiben. Ein Betriebssystemmonitor liefert Informationen über die Leistung des zentralen Rechnersystems. Mithilfe der Anwendungsmonitore kann eine Verbindung der gemessenen  Leistungsdaten zu den Anwendungen, die den Ressourcenverbrauch verursacht haben, hergestellt werden. Messgrößen sind hierbei z. B. die verbrauchte Zeit der Zentraleinheit (s. Glossar) oder die Anzahl der Dateizugriffe je Benutzer. Bei dezentraler Informationsverarbeitung verfügen die Benutzer über eigene Kapazitäten. Eine Leistungsüberwachung dieser lokalen Ressourcen ist daher aus Sicht der Abteilung i. d. R. nicht erforderlich.
+- *Netzwerk-Monitoring*: Durch die Anwendung von Hard- und Software Monitoren kann auch eine Überwachung und Leistungsmessung des Netzwerks erfolgen. Sie können Messgrößen, wie z. B. Arbeitslast, Durchsatz, Wartezeit auf die Nutzung einer Ressource sowie die Antwortzeit und die Verfügbarkeit einer Ressource ermitteln.
+- *Datenbank-Monitoring*: Das Datenbank-Monitoring überwacht das Datenbankmanagementsystem. Wichtige Informationen in diesem Zusammenhang sind beispielsweise die Speicherplatzbelegung einer Datenbank, die Zugriffshäufigkeiten auf bestimmte Datenbestände sowie Antwort- oder Wartezeiten bei der Abfrage von Daten.
+- *Accounting*: Eine spezielle Form der Ablaufüberwachung von Anwendungsprogrammen ist das Accounting. Als Ziel ist hierbei die kostenmäßige Weiterverrechnung der von Nutzern beanspruchten Systemressourcen anzusehen. Dazu dienen sogenannte Job-Accounting-Systeme, die mit der IT-Kosten- und Leistungsrechnung verbunden sind.
 
- * **Kennzahlen und Kennzahlensysteme**
+**Kennzahlen und Kennzahlensysteme**
 
  Kennzahlen sind Zahlen, die in verdichteter Form über quantifizierbare Sachverhalte rückwirkend informieren oder diese vorausschauend festlegen. Die wichtigsten Kennzahlen werden als Schlüsselkennzahlen (Key Goal Indicators oder Key Performance Indicators, KPI) bezeichnet. Eine Kombination mehrerer Kennzahlen führt zu einem Kennzahlensystem, in dem die einzelnen Kennzahlen in einer sachlich sinnvollen Beziehung zueinander stehen, sich ergänzen und/oder aufeinander aufbauen. Letztlich sind sie auf ein gemeinsames übergeordnetes Ziel ausgerichtet. Beispielhafte Kennzahlen aus dem IT-Bereich sind:
-  * Durchschnittliche Antwortzeit = Summe Antwortzeiten/Anzahl Transaktionen
-  * Durchschnittliche Nutzungsdauer = Summe Nutzungsdauer/Anzahl Programmnutzungen
-  * Relevanz einer Anwendung = Summe der Aufrufe dieser Anwendung/Anzahl aller Programmaufrufe
-  * Zuverlässigkeit = Summe fehlerfreier Ausführungen/Summe aller Programmausführungen
 
- * **IT-Kosten- und Leistungsrechnung**
- Die Kosten- und Leistungsrechnung für den IT-Bereich dient zum einen der Erfassung und Bewertung des Verbrauchs sowie zur Abbildung, Steuerung und Kontrolle der IT-Ressourcen; zum anderen sind die Leistungen des IT-Bereichs abzurechnen. Die Kostenrechnung hat folgende Funktionen zu erfüllen:
-  * *Ermittlungsfunktion*: Die Kosten der Informationsverarbeitung müssen erhoben werden.
-  * *Prognosefunktion*: Die wirtschaftlichen Konsequenzen einzelner, die Infrastruktur betreffenden Handlungen müssen vorhergesagt werden können.
-  * *Vorgabefunktion*: Für einzelne Objekte des IT-Bereichs (z. B. bestimmte Leistungen) sind in Absprache mit den jeweiligen Verantwortlichen Sollwerte für die entstehenden Kosten vorzugeben.
-  * *Kontrollfunktion*: Die vorgegebenen Sollwerte gilt es nach Abschluss einer Planungsperiode mit den tatsächlichen Kosten der zu kontrollierenden Objekte zu vergleichen. Im Falle von signifikanten Abweichungen sind die Ursachen zu analysieren.
+- Durchschnittliche Antwortzeit = Summe Antwortzeiten/Anzahl Transaktionen
+- Durchschnittliche Nutzungsdauer = Summe Nutzungsdauer/Anzahl Programmnutzungen
+- Relevanz einer Anwendung = Summe der Aufrufe dieser Anwendung/Anzahl aller Programmaufrufe
+- Zuverlässigkeit = Summe fehlerfreier Ausführungen/Summe aller Programmausführungen
+- *IT-Kosten- und Leistungsrechnung*: die Kosten- und Leistungsrechnung für den IT-Bereich dient zum einen der Erfassung und Bewertung des Verbrauchs sowie zur Abbildung, Steuerung und Kontrolle der IT-Ressourcen; zum anderen sind die Leistungen des IT-Bereichs abzurechnen. Die Kostenrechnung hat folgende Funktionen zu erfüllen:
+- *Ermittlungsfunktion*: Die Kosten der Informationsverarbeitung müssen erhoben werden.
+- *Prognosefunktion*: Die wirtschaftlichen Konsequenzen einzelner, die Infrastruktur betreffenden Handlungen müssen vorhergesagt werden können.
+- *Vorgabefunktion*: Für einzelne Objekte des IT-Bereichs (z. B. bestimmte Leistungen) sind in Absprache mit den jeweiligen Verantwortlichen Sollwerte für die entstehenden Kosten vorzugeben.
+- *Kontrollfunktion*: Die vorgegebenen Sollwerte gilt es nach Abschluss einer Planungsperiode mit den tatsächlichen Kosten der zu kontrollierenden Objekte zu vergleichen. Im Falle von signifikanten Abweichungen sind die Ursachen zu analysieren.
 
  Durch die Erfüllung dieser Funktionen können IT-Leistungen kalkuliert und mit den Preisen von Angeboten Dritter verglichen werden. Des Weiteren kann die Wirtschaftlichkeit einzelner Objekte des IT-Bereichs kontrolliert werden, und die gewonnenen Informationen können zur Entscheidungs- und kurzfristigen Erfolgsrechnung herangezogen werden.
 
@@ -345,20 +351,23 @@ Ein Beispiel für ein Instrument des strategischen und operativen IT-Controlling
 \centerline{\includegraphics[width=1\textwidth]{img/scorecard.png}}
 
 ### Wertbeitrag von IS
+
 \centerline{\includegraphics[width=1\textwidth]{img/modellwertgene.png}}
 
 Die Ansätze zur Bestimmung des Wertbeitrags eines IS können dem Modell entsprechend nach verschiedenen Kriterien klassifiziert werden, z. B. nach der Organisationsebene, auf der ein Verfahren angewendet werden kann, oder der Anzahl von betrachteten Transformationsstufen vom IS-Einsatz bis zur organisationalen Performanz. Ein Kriterium kann auch der generelle Einsatzzweck der Anwendungen sein, dessen Wert gemessen werden soll. Dabei wird zwischen drei Anwendungsgruppen unterschieden.
 
 **Verfahren zur Bewertung von IS: Anwendungsgruppen**
-* *Substitutive Anwendungen* ersetzen die menschliche Arbeitskraft, dazu gehört z. B. die Lohnbuchhaltung. Diese Anwendungen werden bezüglich ihrer Bewertbarkeit als „rechenbar“ bezeichnet.
-* *Komplementäre Anwendungen* werden eingesetzt, um die Produktivität und Effektivität ihrer Nutzer bei bestehenden Aktivitäten zu erhöhen; hierzu gehören z. B. Tabellenkalkulationsprogramme. Diese Anwendungen werden in Bezug auf die Bewertung als „kalkulierbar“ bezeichnet.
-* *Innovative Anwendungen* dienen dazu, Wettbewerbsvorteile zu gewinnen oder zu erhalten. Hierzu gehören z. B. IS, die differenzierte oder neue Produkte oder Dienstleistungen schaffen. Diese Anwendungen werden in Hinblick auf die Bewertbarkeit als „entscheidbar“ bezeichnet.
+
+- *Substitutive Anwendungen* ersetzen die menschliche Arbeitskraft, dazu gehört z. B. die Lohnbuchhaltung. Diese Anwendungen werden bezüglich ihrer Bewertbarkeit als „rechenbar“ bezeichnet.
+- *Komplementäre Anwendungen* werden eingesetzt, um die Produktivität und Effektivität ihrer Nutzer bei bestehenden Aktivitäten zu erhöhen; hierzu gehören z. B. Tabellenkalkulationsprogramme. Diese Anwendungen werden in Bezug auf die Bewertung als „kalkulierbar“ bezeichnet.
+- *Innovative Anwendungen* dienen dazu, Wettbewerbsvorteile zu gewinnen oder zu erhalten. Hierzu gehören z. B. IS, die differenzierte oder neue Produkte oder Dienstleistungen schaffen. Diese Anwendungen werden in Hinblick auf die Bewertbarkeit als „entscheidbar“ bezeichnet.
 
 \centerline{\includegraphics[width=1\textwidth]{img/wibewertungis.png}}
 
 Wenn die aufbauorganisatorische Dimension als Klassifikationskriterium gewählt wird, berücksichtigen wir hier auch die Ebene der Volkswirtschaft. Tendenziell gilt: Je höher die Ebene, desto komplexer das Verfahren. Es kann auch notwendig sein, mehrere Verfahren einzusetzen und Ebenen zu analysieren, um ein vollständiges Bild aller Kosten- und Nutzenaspekte zu erhalten.
 
 Das Verfahren **Time-Saving Time-Salary** versucht, über die eingesparte und bewertete Zeit der Mitarbeiter den Wert eines IS zu berechnen. Das Verfahren verläuft in fünf Schritten:
+
 1. Klassifikation der Mitarbeiter zu Mitarbeitergruppen (z. B. Führungskräfte, technische Fachkräfte, Sachbearbeiter),
 2. Identifikation von Aufgabenklassen und ihren Zeitanteilen für die Mitarbeitergruppen (z. B. Dokumente erstellen, Schriftgut verwalten),
 3. Ermitteln individueller IS-unterstützter Arbeitsinhalte (z. B. Texterfassung, Retrieval),
@@ -388,11 +397,12 @@ Damit diese anspruchsvolle Aufgabe planmäßig und nachvollziehbar organisiert u
 
 #### COBIT - Control Objectives for Information and Related Technologies
 Aus der Sicht von COBIT betrifft IT-Governance fünf Bereiche:
-* Die *strategische Ausrichtung* (Strategic Alignment) konzentriert sich auf den Abgleich von Unternehmens- und IT-Zielen sowie auf die Festlegung, Beibehaltung und Validierung des Wertbeitrags von IS.
-* Die *Wertschöpfung* (Value Delivery) beschäftigt sich mit der Realisierung des Wertbeitrags im Leistungszyklus sowie der Sicherstellung, dass IS den strategisch geplanten Nutzen generieren können und dabei kostenoptimal agieren.
-* Das *Ressourcenmanagement* umfasst die Optimierung von Investitionen in IT- Ressourcen und ein geregeltes Management derselben. IT-Ressourcen sind Anwendungen, Information, Infrastruktur und Personal. Ebenso sollte Wissen optimal eingesetzt werden.
-* Das *Risikomanagement* erfordert ein Risikobewusstsein bei der Unternehmensleitung, ein klares Verständnis über die Risikobereitschaft, ein Verständnis für Compliance- Erfordernisse, Transparenz über die für das Unternehmen wichtigsten Risiken und die Verankerung des Risikomanagement in der Ablauf- und Aufbauorganisation.
-* Die *Leistungsmessung* (Performance Measurement) überwacht die Umsetzung der Strategie und der Projekte, die Verwendung von Ressourcen sowie die Prozess- und Outputperformance. Die Messung geht hierbei über die Anforderungen des Rechnungswesens hinaus.
+
+- Die *strategische Ausrichtung* (Strategic Alignment) konzentriert sich auf den Abgleich von Unternehmens- und IT-Zielen sowie auf die Festlegung, Beibehaltung und Validierung des Wertbeitrags von IS.
+- Die *Wertschöpfung* (Value Delivery) beschäftigt sich mit der Realisierung des Wertbeitrags im Leistungszyklus sowie der Sicherstellung, dass IS den strategisch geplanten Nutzen generieren können und dabei kostenoptimal agieren.
+- Das *Ressourcenmanagement* umfasst die Optimierung von Investitionen in IT- Ressourcen und ein geregeltes Management derselben. IT-Ressourcen sind Anwendungen, Information, Infrastruktur und Personal. Ebenso sollte Wissen optimal eingesetzt werden.
+- Das *Risikomanagement* erfordert ein Risikobewusstsein bei der Unternehmensleitung, ein klares Verständnis über die Risikobereitschaft, ein Verständnis für Compliance- Erfordernisse, Transparenz über die für das Unternehmen wichtigsten Risiken und die Verankerung des Risikomanagement in der Ablauf- und Aufbauorganisation.
+- Die *Leistungsmessung* (Performance Measurement) überwacht die Umsetzung der Strategie und der Projekte, die Verwendung von Ressourcen sowie die Prozess- und Outputperformance. Die Messung geht hierbei über die Anforderungen des Rechnungswesens hinaus.
 
 Aus der Unternehmensstrategie ergeben sich Unternehmensziele, deren Erreichung IS unterstützen sollen. Deswegen können aus ihnen Ziele für die Informationsverarbeitung abgeleitet werden, die COBIT als IT-Ziele bezeichnet. Die nächste Tabelle zeigt beispielhaft einige Unternehmensziele und daraus ableitbare IT-Ziele.
 
@@ -423,6 +433,7 @@ Die spezifische Messung der Erreichung von Zielen und Leistungen der Prozesse er
 Dieses Kapitel erörtert wie der Einsatz der Informationstechnologie in einem Unternehmen organisiert und als eine klar definierte Dienstleistung an organisationsinterne und -externe Abnehmer abgegeben werden kann. Danach werden das zunehmend wichtige Management der Sicherheit im Umgang mit Informationssystemen und die Möglichkeiten des Fremdbezugs der genannten Dienstleistungen betrachtet. Das Kapitel schließt mit einer Übersicht der Berufe im Umfeld der IT.
 
 ### Organisation der IS-Funktion
+
 #### Betriebliche Einordnung der IS-Funktions
 
 Zuordnungsalternativen der IT-Abteilung:
@@ -433,8 +444,8 @@ Zuordnungsalternativen der IT-Abteilung:
 
 *Alternative 3*: Bei einem *divisionalisierten Unternehmen* sind Teile der IT-Abteilung der Zentrale und andere Teile den einzelnen Divisionen (Geschäftsbereichen) zugeordnet. Die Positionierung der Informationsverarbeitung in den Geschäftsbereichen soll die optimale Versorgung dieser Bereiche mit IS-Diensten sicherstellen. Die Mitarbeiter der IT-Abteilung, oder zumindest ihr Leiter, berichten dann primär an die Leitung ihres Geschäftsbereichs und sekundär an die zentrale Informationsverarbeitung. Diese „doppelte“ Zuordnung kann zu Problemen führen. Abb. 4.3 zeigt, dass die Einordnung der dezentralen Informationsverarbeitung innerhalb der Geschäftsbereiche sowohl in der Linie als auch in Form einer Stabsabteilung geschehen kann.
 
-\centerline{\includegraphics[width=1\textwidth]{img/be1.png}}
-\centerline{\includegraphics[width=1\textwidth]{img/be2.png}}
+\centerline{\includegraphics[width=1\textwidth,trim={0 0 0 50pt},clip]{img/be1.png}}
+\centerline{\includegraphics[width=1\textwidth,trim={0 0 0 50pt},clip]{img/be2.png}}
 
 #### Innere Organisation der IT-Abteilung
 \centerline{\includegraphics[width=1\textwidth]{img/internkrit.png}}
@@ -490,6 +501,7 @@ In der noch aktuellen Version, ITIL V3, sind die wichtigsten Aspekte in fünf Ha
 * **Incident Management**: Meldungen über Störungen (Incidents), Servicebeeinträchtigungen und -beschwerden nimmt ein Service Desk entgegen und leitet diese an das Incident Management weiter. Dort werden die Störungen mit dem vorrangigen Ziel der schnellstmöglichen Wiederherstellung der gestörten Funktionen diagnostiziert und klassifiziert. Dieser Prozess stellt die Schnittstelle zwischen der IS-Organisation und den Anwendern dar.
 * **Problem Management**: Ziel des Problem Managements ist die mittel- bis langfristige Reduktion der Anzahl der Störungen durch systematische Fehlersuche und -beseitigung.
 * **Request Fulfillment**: Dieser Aufgabenbereich nimmt vorgesehene Serviceaufträge (Service Requests) der Anwender entgegen, prüft und stößt die Ausführung der Aufträge an und rechnet diese nach erfolgreicher Ausführung ab.
+
 #### Continual Service Improvement
 \centerline{\includegraphics[width=1\textwidth]{img/ci7.png}}
 
@@ -538,6 +550,7 @@ Jede Anwenderorganisation kann ihr Modell für den Grundschutz mit den benötigt
 \centerline{\includegraphics[width=1\textwidth]{img/datenschutz.png}}
 
 Das *Recht auf Vergessenwerden* ist nun Bestandteil der DSGVO. Es gibt Betroffenen die Möglichkeit, die Löschung ihrer personenbezogenen Daten (oder Hinweisen darauf), unter bestimmten Umständen zu verlangen.
+
 #### Blockchain
 
 Wir besprechen die Blockchain-Technologie wegen ihres Potenzials zur Erhöhung der IT-Sicherheit an dieser Stelle. Die Technologie kann aber auch für weitere Zwecke genutzt werden. Ein Beispiel dazu sind Smart Contracts, die eine Automatisierung der Vertragsumsetzung erlauben. Bestimmte Aktionen können angestoßen werden, sobald bestimmte Bedingungen eintreten (z. B. bei Erreichen eines Datums oder bei Erreichen der vereinbarten Zahlungshöhe).
@@ -553,6 +566,7 @@ Die Gültigkeit eines Blocks wird durch einen Proof of Work (oder ein anderes Ko
 Eine eventuelle Gleichzeitigkeit von Aktivitäten kann dazu führen, dass unterschiedliche Kettenverlängerungen möglich erscheinen. Dieser Zustand wird jedoch schnell aufgehoben, indem nur eine Verlängerung (die längste) als valide angesehen wird und andere verworfen werden. Während der Inhalt der Transaktion relativ leicht lesbar ist, können die Teilnehmer der Transaktion dank Anonymisierung unerkannt bleiben, die durch asymmetrische Verschlüsselung realisiert wird. Das führt bei Bitcoins dazu, dass das System manchmal für illegale Transaktionen missbraucht wird (Geldwäsche, Waffenverkauf, usw.).
 
 ### Fremdbezug von IS-Leistungen
+
 #### Theoretische Grundlagen
 Viele kleine Institutionen beziehen aufgrund ihrer Größe IS-Leistungen von anderen Organisationen. Anfang der 90er-Jahre begannen jedoch auch einige Großunternehmen, ihre bestehenden IT-Abteilungen teilweise oder ganz in unabhängige Firmen auszulagern (Outsourcing). Dabei werden Mitarbeiter, ganze Rechenzentren und andere Ressourcen an die neuen Dienstleister übertragen oder verkauft und es wird ein langjähriger Vertrag geschlossen, in dem sich der Auftraggeber verpflichtet, vom Outsourcinganbieter bestimmte Dienstleistungen zu bestimmten Preisen zu beziehen. Es stellt sich die Frage, warum große Unternehmen Outsourcing der IS-Dienstleistungen betreiben, wenn sie im Prinzip selbst von Größendegressionseffekten profitieren können, die durch fallende Durchschnittskosten aufgrund steigender Produktionsmengen entstehen.
 
@@ -573,6 +587,7 @@ Die Wahl der optimalen Organisation von IS-Aktivitäten hängt nach der *Theorie
 Nach Schätzungen von Marktforschern wird der Anteil der über Outsourcing erbrachten IS-Leistungen weiterhin steigen. Das Outsourcing verkleinert die IT-Abteilungen, sodass man in diesem Zusammenhang auch von **Downsizing** spricht. Dieser Begriff kennzeichnet auch den Übergang von Großrechnern auf kleinere Rechner. Da jedoch mit der Zeit erkannt wurde, dass kleinere Rechner und kleinere IT-Abteilungen nicht immer zu besseren Ergebnissen führen, versucht man mittlerweile, die für das jeweilige Unternehmen richtige Größe der IT zu finden (**Rightsizing**, oder **Smartsourcing**) und genau die Leistungen zu beziehen, die andere ökonomisch sinnvoller bereitstellen können.
 
 **Application Service Providing (ASP)** ist eine Form des Outsourcings, bei der der Anbieter eine Anwendung für den Kunden in seinem Rechenzentrum (oder dem eines von ihm beauftragten Unternehmens) mit einer von ihm entwickelten, gekauften oder gemieteten Software betreibt. Der Kunde nutzt die Anwendung in seinen Räumen meist über das Internet mithilfe eines Webbrowsers. Dies ist ein Unterschied zum traditionellen Outsourcing wie auch die Tatsache, dass es beim ASP regelmäßig zu keiner Übertragung von Ressourcen oder zu einem Wechsel der Mitarbeiter zum Outsourcinganbieter kommt. Ein ASP-Anbieter wird die Anwendungen nur in geringem Ausmaß an die Anforderungen einzelner Kunden anpassen wollen, da er sonst seine „Produktionskosten“ nicht niedrig halten kann.
+
 #### Cloud, Edge und Fog Computing
 Eine Erweiterung von ASP stellt das **Cloud Computing** dar. Dabei wird nicht nur der Betrieb von Anwendungen angeboten, sondern auch andere IT-Dienstleistungen, die von einem oder mehreren kooperierenden Anbietern mit ihrer Hardware und Software zur Verfügung gestellt werden. Der Zugriff auf die angebotene Dienstleistung erfolgt i. d. R. über das Internet, das oft als eine Wolke (Cloud) vernetzter Computer dargestellt wird. Die Vorteile von Cloud Computing basieren auf der Vorstellung, dass der Kunde die Dienstleistungen flexibel nach Bedarf (On Demand) nutzen und nach Verbrauch bezahlen kann (Workload Based Billing). Zusätzlich benötigte Ressourcen werden sofort ohne weitere Verhandlungen zur Verfügung gestellt und abgerechnet.
 
