@@ -374,6 +374,7 @@ Ein Verfahren, das über mehrere Bereiche und Ebenen einsetzbar ist, sind die **
 Die obige Abbildung zeigt ein Beispiel für die Analyse von Nutzeffektketten bei der Einführung einer Computer Aided Design (CAD) Software über zwei Ebenen. Auf der ersten Ebene sind die Effekte an den Arbeitsplätzen im Konstruktionsbereich dargestellt, während die zweite Ebene die Auswirkungen in verschiedenen, nachfolgenden Bereichen zusammenfasst.
 
 ### IT-Gorvernance
+
 #### Bezugsrahmen
 Mangelnde Transparenz der Unternehmensführung, Verletzungen gesetzlicher Bestimmungen wie auch nicht gesetzeswidrige, aber unverantwortliche Handlungen von Unternehmensleitungen haben in den letzten Jahren zum Wunsch geführt, Regeln für eine gute und verantwortungsbewusste Unternehmensführung vorzuschreiben.
 
@@ -474,14 +475,17 @@ In der noch aktuellen Version, ITIL V3, sind die wichtigsten Aspekte in fünf Ha
 * **Financial Management**: Wirtschaftliches Handeln in der IS-Organisation ermöglicht das Financial Management. Eine nachvollziehbare Aufstellung von Kosten und Leistungen für IS-Dienste sind die Voraussetzung für sinnvolle Service-Vereinbarungen mit den Kunden.
 * **Service Portfolio Management**: Bestandteil dieses Prozesses ist die Bestimmung der aktuell und der in Zukunft angebotenen Leistungen. Leistungen, die nicht mehr ökonomisch sinnvoll angeboten werden können, sollten möglichst aus dem Portfolio eliminiert werden. Die Nutzer können sie eventuell von anderen Anbietern beziehen.
 * **Demand Management**: Die Nachfrage der Benutzer nach Leistungen sollte vom Anbieter geplant und nach Möglichkeit gesteuert werden, damit die Kapazitäten kontinuierlich ausgelastet werden, und Einschränkungen in der Qualität oder Verfügbarkeit der Leistungen nicht auftreten.
+
 #### Service Design
 * **Service Level Management**: Der Prozess des Service Level Managements ist bei ITIL von zentraler Bedeutung und organisatorisch mit allen Prozessen verflochten. Er steuert die Servicevereinbarungen (**Service Level Agreement**, SLA) und kontrolliert die Qualität der erbrachten Leistungen. SLAs legen dabei Ziele und Messgrößen für den IS-Service fest, sorgen für eine transparente Leistungsfähigkeit der IT-Organisation und erzielen ein ausgewogenes Verhältnis zwischen Kundenanforderungen und den Kosten der Services.
 * **Capacity Management**: Heutige und zukünftige Anforderungen an den Umfang und die Leistungsfähigkeit der IS-Ressourcen werden im Prozess des Kapazitätsmanagements erfasst. Hier werden die benötigten und kostenmäßig vertretbaren Kapazitäten der IS-Ressourcen ermittelt, um die vereinbarten Serviceleistungen termingerecht und in vollem Umfang erfüllen zu können.
 * **Availability Management**: Die Abhängigkeit vieler Unternehmensprozesse von IS verlangt eine hohe Zuverlässigkeit der entsprechenden Systeme. Ziel des Availability Managements ist es, die mit dem Kunden vereinbarten Verfügbarkeiten der IS zu gewährleisten. Zur Überprüfung der Einhaltung von SLAs werden Verfügbarkeitsdaten der IS-Komponenten gesammelt und ausgewertet.
+
 #### Service Transition
 * **Change Management**: Mithilfe des Change Managements sollen effiziente, kostengünstige und termingerechte Veränderungen im IS-Umfeld mit kontrolliertem Risiko für die bestehende IS-Infrastruktur koordiniert und durchgeführt werden. Der **Service Desk** (Kundendienstbüro) ist die zentrale Stelle, an die sich Anwender mit Fragen und Wünschen bzgl. zugesagter Services wenden können. Im Kontext des Change Management kann ein Service Desk Informationen über Status und Verlauf der Änderungen geben.
 * **Release Management**: Prüfung, Freigabe und Einführung neuer Hardware- und Softwarekomponenten erfolgen im Prozess des Release Managements. Dazu werden Releases geplant und gestaltet, notwendige Tests durchgeführt, die Einführung geplant und die betroffenen Anwender informiert und geschult.
 * **Service Asset und Configuration Management**: Alle IS-Objekte werden zur Überwachung und Pflege eindeutig identifizierbar in einer Datenbank (**Configuration Management Database**, CMDB) gespeichert. Die Statusüberwachung der einzelnen Objekte lässt erkennen, bei welcher Stelle die Verantwortlichkeit für sie liegt und wie sie eingesetzt werden können.
+
 #### Service Operation
 * **Incident Management**: Meldungen über Störungen (Incidents), Servicebeeinträchtigungen und -beschwerden nimmt ein Service Desk entgegen und leitet diese an das Incident Management weiter. Dort werden die Störungen mit dem vorrangigen Ziel der schnellstmöglichen Wiederherstellung der gestörten Funktionen diagnostiziert und klassifiziert. Dieser Prozess stellt die Schnittstelle zwischen der IS-Organisation und den Anwendern dar.
 * **Problem Management**: Ziel des Problem Managements ist die mittel- bis langfristige Reduktion der Anzahl der Störungen durch systematische Fehlersuche und -beseitigung.
@@ -490,6 +494,7 @@ In der noch aktuellen Version, ITIL V3, sind die wichtigsten Aspekte in fünf Ha
 \centerline{\includegraphics[width=1\textwidth]{img/ci7.png}}
 
 ### Datensicherheit und Datenschutz
+
 #### Gegenstand der Sicherheitsbemühungen
 Die **DSGVO** verlangt den Schutz der in Organisationen gespeicherten und verarbeiteten persönlichen Daten. Darüber muss u. a. auch ein Datenschutzbeauftragter wachen.
 
@@ -507,7 +512,6 @@ Zu den schützenden Ressourcen zählen Daten, Programme, Hardware und Netze. Sie
 Für jede Ressource oder jedes Konzept in einer Unternehmung sind die spezifischen und konkreten Bedrohungen zu identifizieren. Danach können die geeigneten Maßnahmen geplant werden.
 
 #### Bedrohungen der Sicherheit
-
 * **Höhere Gewalt**: Naturkatastrophen oder Ereignisse wie Feuer
 * **Organisatorische Mängel**: Diese Mängel entstehen, wenn in einer Organisation keine geeigneten Regeln für den Umgang mit IS bestehen oder das Personal dafür nicht adäquat geschult ist. Beispiele sind der Zugriff unberechtiger Personen auf bestimmte Daten oder Unkenntnis über den Initiator einer Transaktion.
 * **Menschliche Fehlhandlungen**: Hierzu gehören Handlungen, die unbeabsichtigt zu Sicherheitsproblemen führen. Ein Beispiel hierfür ist das Aufschreiben eines Passworts auf einem in der Nähe des Computers aufbewahrten Zettel.
@@ -559,6 +563,7 @@ Das Outsourcing birgt aber auch eine Vielzahl von Risiken. Dadurch, dass nun Fir
 Die Wahl der optimalen Organisation von IS-Aktivitäten hängt nach der *Theorie der Transaktionskosten* von der Sicherheit und Häufigkeit einer Transaktion sowie der Spezifität der involvierten Ressourcen (z. B. Maschinen oder Wissen) ab.
 
 \centerline{\includegraphics[width=1\textwidth]{img/outsourcingmecha.png}}
+
 #### Formen von Outsourcing
 * **Cosourcing**: Bildung einer gemeinsamen Tochtereinheit durch die Vertragspartner, i. d. R. einer selbstständigen Firma, die dann auch anderen Parteien Leistungen verkauft.
 * **Insourcing**: Wenn eine Firma vor einer Outsourcing-Entscheidung auch die eigenen Mitarbeiter um ein Angebot bittet und diese den Wettbewerb gewinnen. Dabei schließt sie Verträge über die zu erbringenden Leistungen mit der eigenen Abteilung; die Entlohnung der Mitarbeiter wird an die Erfüllung dieser Verträge gekoppelt.
