@@ -18,9 +18,11 @@ text-aligh:justify
 
 ## Kapitel 1: Information, Kommunikation, Modell und System
 
+Das erste Kapitel definiert grundlegende Begriffe, darunter Daten, Information und System. Es werden auch verschiedene Ansätze vorgestellt, mit denen man den Wert von Informationen ermitteln kann.
+
 ### Bedeutung von informationssystemen in organisationen
 
-gegenstand der **Wirtschaftsinformatik** sind *Informationssysteme* (IS) in Wirtschaft, Verwaltung und dem privaten Bereich.
+Gegenstand der **Wirtschaftsinformatik** sind *Informationssysteme* (IS) in Wirtschaft, Verwaltung und dem privaten Bereich.
 
 IS sind algegenwärtig. Nicht nur in Unternehmen haben sie einen Einfluss auf die Organisation, auf Gruppen und Individuen. Auch privat kommt jeder Mensch direkt oder indirekt mit IS in Berührung.
 
@@ -150,6 +152,8 @@ Das Handeln einer Unternehmung beeinflussen nicht nur ihre Mitarbeiter und ihre 
 
 ## Kapitel 2: Informationssysteme
 
+Dieses Kapitel definiert zuerst auf Basis der im vorherigen Kapitel eingeführten Begriffe den Begriff Informationssystem und betrachtet danach die Evolution des Einsatzes von Informationssystemen in Unternehmen. Der Besprechung alternativer Möglichkeiten zur Gruppierung von Informationssystemen folgt die Erklärung ihrer einzelnen Arten. Das Kapitel wird durch die Betrachtung der Wechselwirkungen zwischen Organisationsformen und Informationstechnologie abgeschlossen.
+
 ### Definition von IS
 
 Ein **Informationssystem** ist ein künstliches, konkretes System, das aus
@@ -240,6 +244,8 @@ Manche Veränderungen betreffen nur die Ebene der IT, andere durchdringen alle U
 In der ersten Phase ist die Atmosphäre für Veränderung herzustellen, d.h. Menschen müssen für die Aufgabe des momentanen Zustands gewonnen werden (**Auftauphase**). Erst wenn diese Bereitschaft geschaffen oder, im ungünstigen Fall, erzwungen worden ist, sollte die Veränderung auch durchgeführt werden (**Durchführungsphase**). In der letzten Phase geht es darum, den neuen Zustand für eine bestimmte Zeit ohne Veränderungen beizubehalten (**Einfrierphase**), damit sich die Menschen an ihn anpassen können und dabei die Angst vor der Neuigkeit verlieren.
 
 ##  Kapitel 3: Planung und Steuerung des Einsatzes von IS
+
+Dieses Kapitel führt in die Aufgaben ein, die sich für die Leitung eines Unternehmens aus der Nutzung der Informationstechnologie ergeben. Dazu gehören vereinfacht Planung, Umsetzung und Überwachung. Überwachung schließt die ökonomische Bewertung des Einsatzes von Informationstechnologie ein.
 
 ### Informationsmanagement
 
@@ -410,3 +416,169 @@ Die erreichte Güte des Prozessmanagements wird mithilfe eines Reifegradmodells 
 Die spezifische Messung der Erreichung von Zielen und Leistungen der Prozesse erfolgt mithilfe von KPI. Jeder Prozess besteht aus Aktivitäten, deren Folge Flussdiagramme darstellen. Rechtecke repräsentieren Aktivitäten und Rauten Entscheidungen. Den Ablauf kennzeichnen gerichtete Kanten. Die nächste Abbildung zeigt als Beispiel den Ablauf der Aktivitäten des Prozesses PO1 („definiere einen strategischen IT-Plan“).
 
 \centerline{\includegraphics[width=1\textwidth]{img/ablaufprozess.png}}
+
+##  Kapitel 4: Organisation des Einsatzes von IS
+
+Dieses Kapitel erörtert wie der Einsatz der Informationstechnologie in einem Unternehmen organisiert und als eine klar definierte Dienstleistung an organisationsinterne und -externe Abnehmer abgegeben werden kann. Danach werden das zunehmend wichtige Management der Sicherheit im Umgang mit Informationssystemen und die Möglichkeiten des Fremdbezugs der genannten Dienstleistungen betrachtet. Das Kapitel schließt mit einer Übersicht der Berufe im Umfeld der IT.
+
+### Organisation der IS-Funktion
+#### Betriebliche Einordnung der IS-Funktions
+
+Zuordnungsalternativen der IT-Abteilung:
+
+*Alternative 1*: Die IT-Abteilung stellt eine Hauptabteilung neben anderen funktionalen Abteilungen dar (s. Abb. 4.1). Damit haben alle anderen Abteilungen formal einen gleichrangigen Zugriff auf die Dienste der IT-Abteilung, und die IT-Abteilung bewirbt sich eigenständig um die Ressourcen des Unternehmens. Die IT-Abteilung stellt ihre Dienste i. d. R. den anderen Bereichen in Rechnung.
+
+*Alternative 2*: Die IT-Abteilung wird als eine Stabsabteilung der Unternehmensleitung etabliert. Abb. 4.2 stellt dies durch die Anordnung der IT-Abteilung außerhalb der Hierarchie grafisch dar. Diese Anordnung wird aus der Einschätzung heraus gewählt, dass die Informationsverarbeitung zwar wichtig, aber keine primäre Aufgabe des Unternehmens ist. Die Informationsverarbeitung ist vornehmlich eine Unterstützungsfunktion. Durch die gute Anbindung an die Unternehmensleitung hat sie zwar ein großes Durchsetzungsvermögen. Allerdings wird ihr häufig Argwohn aus anderen Abteilungen entgegengebracht.
+
+*Alternative 3*: Bei einem *divisionalisierten Unternehmen* sind Teile der IT-Abteilung der Zentrale und andere Teile den einzelnen Divisionen (Geschäftsbereichen) zugeordnet. Die Positionierung der Informationsverarbeitung in den Geschäftsbereichen soll die optimale Versorgung dieser Bereiche mit IS-Diensten sicherstellen. Die Mitarbeiter der IT-Abteilung, oder zumindest ihr Leiter, berichten dann primär an die Leitung ihres Geschäftsbereichs und sekundär an die zentrale Informationsverarbeitung. Diese „doppelte“ Zuordnung kann zu Problemen führen. Abb. 4.3 zeigt, dass die Einordnung der dezentralen Informationsverarbeitung innerhalb der Geschäftsbereiche sowohl in der Linie als auch in Form einer Stabsabteilung geschehen kann.
+
+\centerline{\includegraphics[width=1\textwidth]{img/be1.png}}
+\centerline{\includegraphics[width=1\textwidth]{img/be2.png}}
+
+#### Innere Organisation der IT-Abteilung
+\centerline{\includegraphics[width=1\textwidth]{img/internkrit.png}}
+
+Die Gliederung der IT-Abteilung kann nach verschiedenen Kriterien erfolgen. Es sollten diejenigen Gliederungskriterien gewählt werden, die den jeweiligen Bedürfnissen nach spezifischen Kenntnissen am besten entsprechen. Ein Unternehmen, das die fachliche Spezifität der Anwendungen kritischer als die technische Spezifität der eingesetzten Hardware und Software einschätzt, sollte einer Organisation nach betrieblichen Funktionen oder nach Geschäftsbereichen den Vorzug geben. Im umgekehrten Fall sollte der Vorzug einer organisatorischen Strukturierung nach Plattformen, Art oder Status der Systeme gegeben werden.
+
+Es gibt innerhalb der IT-Abteilung auch Organisationseinheiten, die sich speziell um die Unterstützung der unmittelbaren Benutzer der IS bei ihrer (individuellen) Datenverarbeitung kümmern. Eine solche Einheit bezeichnet man oft als **Information Center** (IC). Die Mitarbeiter eines IC helfen den Benutzern bei der Nutzung von Programmen, wie z. B. bei Werkzeugen für Textverarbeitung und Tabellenkalkulation.
+
+Eine Datenverarbeitung, die nicht unter der (direkten) Kontrolle der zentralen IT-Abteilung stattfindet, gilt als dezentrale Datenverarbeitung. Die IT-Abteilung übt darüber eine indirekte Kontrolle aus, indem sie z. B. den Zugang zu zentralen Datenbeständen regelt oder Richtlinien für die Anschaffung von Soft- und Hardware ausgibt.
+
+Die Position und die Bezeichnung des IT-Leiters spielt eine nicht zu unterschätzende Rolle für die wahrgenommene und die tatsächliche Bedeutung der IS in einem Unternehmen. Je höher der Leiter in der Hierarchie angesiedelt ist, desto besser sind die Bedingungen, dass die IS die Unternehmensziele optimal unterstützen können. Die IT-Abteilung kann sich dann nicht nur an die Gesamtstrategie des Unternehmens anpassen, sondern auch zur Entwicklung dieser Strategie beitragen. Für Großunternehmen bedeutet das, dass der Leiter der IT-Abteilung Mitglied des Vorstands sein sollte.
+
+\centerline{\includegraphics[width=1\textwidth]{img/internorga1.png}}
+
+Abb. 4.4 zeigt die grobe aufbauorganisatorische Verankerung der IS in einer Bank. Der Hauptverantwortliche für die zentral organisierte Funktion, hier Chief Information Technology Officer (CITO) genannt, ist Mitglied des Vorstands. Eine Stabsabteilung (CITO Office) unterstützt ihn. Die Fachabteilungen sind hier nach Softwarekomponenten zusammengefasst. Sie sind nicht Geschäftsbereichen untergeordnet, deren Systeme sie hauptsächlich betreuen, sondern haben designierte Partner im höheren Management der Geschäftsbereiche, um eine optimale Zusammenarbeit sicherzustellen.
+
+\centerline{\includegraphics[width=1\textwidth]{img/internorga2.png}}
+
+Abb. 4.5 zeigt die aufbauorganisatorische Verankerung der IS in einem Industrieunternehmen, in welchem der ranghöchste IT-Manager kein Mitglied der Geschäftsleitung ist. Die Aufteilung der Funktionen in die drei Bereiche beschreiben folgende Begriffe:
+* Anwendungen („Informationsverarbeitung“) - sowohl für betriebswirtschaftliche Anwendungen (z. B. Vertrieb) als auch für technische Anwendungen (z. B. Computer Aided Design) verantwortlich.
+* Systemsoftware und Produktivitätswerkzeuge („Informationstechnik“)
+* Hardware und Betrieb („Rechenzentrum“)
+
+### IT-Servicemanagement mit Hilfe von ITIL
+
+#### ITIL
+
+Die Ergebnisse der Arbeit von Mitarbeitern, die IS entwickeln, betreiben oder warten, schlagen sich bei den Benutzern von IS als Dienstleistungen nieder. Damit diese Dienstleistungen sinnvoll geplant und eingesetzt werden, bedarf es eines IT-Servicemanagements. Der bekannteste Ansatz in diesem Bereich ist die **Information Technology Infrastructure Library** (ITIL). ITIL hat gewisse Überschneidungen mit COBIT. Die Konzepte werden durchaus mit COBIT zusammen eingesetzt, wobei ITIL die spezifische Ausgestaltung der von COBIT nicht konkret benannten Serviceaufgaben übernimmt. In ITIL wurden bewährte Vorgehensweisen (Best Practices) in Form von Büchern (Library, Bibliothek) durch eine britische Regierungsorganisation gesammelt, die heute Office of Government Commerce (OCG) heißt. Die Inhalte beziehen sich dabei vorwiegend darauf, *was* gemacht werden soll und nicht *wie* die Aufgabe auszuführen ist.
+
+*ITIL-Definition eines Service*: Ein *Service* ist eine Dienstleistung, deren Erbringung dem Serviceempfänger einen Nutzen stiftet. Dafür hält der Leistungserbringer die notwendigen Betriebsmittel und das Know-how vor und trägt die entsprechenden Kosten und Risiken.
+
+In der noch aktuellen Version, ITIL V3, sind die wichtigsten Aspekte in fünf Hauptbüchern organsiert, je eines für jeden Kernbereich (ITSMF 2012). Die darin enthaltenen Aufgaben und Prozesse sind in Ebenen angeordnet, die von der Strategie bis zur Ausführung führen (Abb. 4.6). Die kontinuierliche Bewertung und Verbesserung der Prozesse (Continual Service Improvement, links in Abb. 4.6) stellt eine Rückkopplung dar, sodass die fünf Bereiche zusammen einen Servicelebenszyklus repräsentieren. Die Tätigkeiten auf den einzelnen Ebenen verdeutlicht eine Kurzbeschreibung der darin enthaltenen Prozesse.
+
+\centerline{\includegraphics[width=1\textwidth]{img/itil5v3.png}}
+
+#### Service Strategy
+* **Strategy Generation**: Die Entwicklung der Strategie muss auf einer eingehenden Analyse der Benutzerbedürfnisse basieren, damit der Anbieter bestimmen kann, was er wann und an wen liefern kann und will. Ebenso ist frühzeitig zu bestimmen, wie die Performance der Leistungen zu messen und der erbrachte Wert für die Nutzer zu bewerten ist. Dabei sollte auch berücksichtigt werden, dass Nutzer die Wahl zwischen verschiedenen Anbietern haben möchten.
+* **Financial Management**: Wirtschaftliches Handeln in der IS-Organisation ermöglicht das Financial Management. Eine nachvollziehbare Aufstellung von Kosten und Leistungen für IS-Dienste sind die Voraussetzung für sinnvolle Service-Vereinbarungen mit den Kunden.
+* **Service Portfolio Management**: Bestandteil dieses Prozesses ist die Bestimmung der aktuell und der in Zukunft angebotenen Leistungen. Leistungen, die nicht mehr ökonomisch sinnvoll angeboten werden können, sollten möglichst aus dem Portfolio eliminiert werden. Die Nutzer können sie eventuell von anderen Anbietern beziehen.
+* **Demand Management**: Die Nachfrage der Benutzer nach Leistungen sollte vom Anbieter geplant und nach Möglichkeit gesteuert werden, damit die Kapazitäten kontinuierlich ausgelastet werden, und Einschränkungen in der Qualität oder Verfügbarkeit der Leistungen nicht auftreten.
+#### Service Design
+* **Service Level Management**: Der Prozess des Service Level Managements ist bei ITIL von zentraler Bedeutung und organisatorisch mit allen Prozessen verflochten. Er steuert die Servicevereinbarungen (**Service Level Agreement**, SLA) und kontrolliert die Qualität der erbrachten Leistungen. SLAs legen dabei Ziele und Messgrößen für den IS-Service fest, sorgen für eine transparente Leistungsfähigkeit der IT-Organisation und erzielen ein ausgewogenes Verhältnis zwischen Kundenanforderungen und den Kosten der Services.
+* **Capacity Management**: Heutige und zukünftige Anforderungen an den Umfang und die Leistungsfähigkeit der IS-Ressourcen werden im Prozess des Kapazitätsmanagements erfasst. Hier werden die benötigten und kostenmäßig vertretbaren Kapazitäten der IS-Ressourcen ermittelt, um die vereinbarten Serviceleistungen termingerecht und in vollem Umfang erfüllen zu können.
+* **Availability Management**: Die Abhängigkeit vieler Unternehmensprozesse von IS verlangt eine hohe Zuverlässigkeit der entsprechenden Systeme. Ziel des Availability Managements ist es, die mit dem Kunden vereinbarten Verfügbarkeiten der IS zu gewährleisten. Zur Überprüfung der Einhaltung von SLAs werden Verfügbarkeitsdaten der IS-Komponenten gesammelt und ausgewertet.
+#### Service Transition
+* **Change Management**: Mithilfe des Change Managements sollen effiziente, kostengünstige und termingerechte Veränderungen im IS-Umfeld mit kontrolliertem Risiko für die bestehende IS-Infrastruktur koordiniert und durchgeführt werden. Der **Service Desk** (Kundendienstbüro) ist die zentrale Stelle, an die sich Anwender mit Fragen und Wünschen bzgl. zugesagter Services wenden können. Im Kontext des Change Management kann ein Service Desk Informationen über Status und Verlauf der Änderungen geben.
+* **Release Management**: Prüfung, Freigabe und Einführung neuer Hardware- und Softwarekomponenten erfolgen im Prozess des Release Managements. Dazu werden Releases geplant und gestaltet, notwendige Tests durchgeführt, die Einführung geplant und die betroffenen Anwender informiert und geschult.
+* **Service Asset und Configuration Management**: Alle IS-Objekte werden zur Überwachung und Pflege eindeutig identifizierbar in einer Datenbank (**Configuration Management Database**, CMDB) gespeichert. Die Statusüberwachung der einzelnen Objekte lässt erkennen, bei welcher Stelle die Verantwortlichkeit für sie liegt und wie sie eingesetzt werden können.
+#### Service Operation
+* **Incident Management**: Meldungen über Störungen (Incidents), Servicebeeinträchtigungen und -beschwerden nimmt ein Service Desk entgegen und leitet diese an das Incident Management weiter. Dort werden die Störungen mit dem vorrangigen Ziel der schnellstmöglichen Wiederherstellung der gestörten Funktionen diagnostiziert und klassifiziert. Dieser Prozess stellt die Schnittstelle zwischen der IS-Organisation und den Anwendern dar.
+* **Problem Management**: Ziel des Problem Managements ist die mittel- bis langfristige Reduktion der Anzahl der Störungen durch systematische Fehlersuche und -beseitigung.
+* **Request Fulfillment**: Dieser Aufgabenbereich nimmt vorgesehene Serviceaufträge (Service Requests) der Anwender entgegen, prüft und stößt die Ausführung der Aufträge an und rechnet diese nach erfolgreicher Ausführung ab.
+#### Continual Service Improvement
+\centerline{\includegraphics[width=1\textwidth]{img/ci7.png}}
+
+### Datensicherheit und Datenschutz
+#### Gegenstand der Sicherheitsbemühungen
+Die **DSGVO** verlangt den Schutz der in Organisationen gespeicherten und verarbeiteten persönlichen Daten. Darüber muss u. a. auch ein Datenschutzbeauftragter wachen.
+
+Die Buchführung muss die **Grundsätze zur ordnungsmäßigen Führung und Aufbewahrung von Büchern, Aufzeichnungen und Unterlagen in elektronischer Form sowie zum Datenzugriff (GoBD)** beachten. Diese schreiben eine genaue Dokumentationspflicht des eingesetzten Systems und die Aufbewahrung originär digitaler Daten in maschinell auswertbarer Form vor, sodass das Finanzamt bei Bedarf die Daten bei buchführungspflichtigen Steuerzahlern elektronisch auswerten kann.
+
+Seit Mitte 2015 ist das **Gesetz zur Erhöhung der Sicherheit informationstechnischer Systeme (IT- Sicherheitsgesetz)** in Kraft, das vor allem Betreiber von öffentlichen Telekommunikationsnetzen, Webseiten und kritischen Infrastrukturen zur Absicherung der IT und zur Meldung von Sicherheitsvorfällen verpflichtet.
+
+Das **Gesetz zur Kontrolle und Transparenz im Unternehmensbereich (KonTraG)** betrifft den Vorstand von Aktiengesellschaften und die Geschäftsleitung großer GmbHs. Es verpflichtet Leitungsorgane, geeignete Prozesse zur Unternehmenssicherung, inklusive der Sicherheit der IS, zu etablieren. Bei Verstößen können sie persönlich haftbar gemacht werden. Für in den USA operierende Aktiengesellschaften ergeben sich ähnliche Konsequenzen aus dem **Sarbanes- Oxley- Gesetz**.
+
+Andere Bestimmungen lassen wirtschaftliche Sachzwänge entstehen, die Unternehmen zur erhöhten Sicherheit bezüglich ihrer IS und der zugehörigen Prozesse veranlassen. Ein Beispiel hierfür ist die 2007 in Kraft getretene Vereinbarung für **Internationale Konvergenz der Kapitalmessung und Eigenkapitalanforderungen** (besser bekannt als **Basel II**), die Entscheidungen über die Kreditvergabe von Banken standardisiert. Weitere Regelungen (**Basel III**) sind bereits beschlossen und werden seit 2014 stufenweise eingeführt. Dabei ist die individuelle Wahrscheinlichkeit eines Kreditausfalls zu berücksichtigen. Ähnliches gilt beim Abschluss von Versicherungen, da Versicherungsgesellschaften über **Solvency II** zu einer genaueren Steuerung und Kontrolle der Risiken aus ihrer Tätigkeit angehalten sind.
+
+Zu den schützenden Ressourcen zählen Daten, Programme, Hardware und Netze. Sie sind einer Reihe von Bedrohungen ausgesetzt, die frühzeitig erkannt werden müssen. Die Aufgabe des Sicherheitsmanagements (**Security Management**) besteht darin, die Schadensfälle nach Möglichkeit zu verhindern und auf Vorfälle zur Beeinträchtigung der Sicherheit vorbereitet zu sein. Das Bundesamt für Sicherheit in der Informationstechnik (BSI) unterteilt die als Bausteine bezeichnete Ressourcen in seinen IT-Grundschutz-Katalogen (GSK) in folgenden Gruppen:
+\centerline{\includegraphics[width=1\textwidth]{img/gskbaustein.png}}
+
+Für jede Ressource oder jedes Konzept in einer Unternehmung sind die spezifischen und konkreten Bedrohungen zu identifizieren. Danach können die geeigneten Maßnahmen geplant werden.
+
+#### Bedrohungen der Sicherheit
+
+* **Höhere Gewalt**: Naturkatastrophen oder Ereignisse wie Feuer
+* **Organisatorische Mängel**: Diese Mängel entstehen, wenn in einer Organisation keine geeigneten Regeln für den Umgang mit IS bestehen oder das Personal dafür nicht adäquat geschult ist. Beispiele sind der Zugriff unberechtiger Personen auf bestimmte Daten oder Unkenntnis über den Initiator einer Transaktion.
+* **Menschliche Fehlhandlungen**: Hierzu gehören Handlungen, die unbeabsichtigt zu Sicherheitsproblemen führen. Ein Beispiel hierfür ist das Aufschreiben eines Passworts auf einem in der Nähe des Computers aufbewahrten Zettel.
+* **Technisches Versagen**: Dieser Faktor beinhaltet den Ausfall von Programmen, Hardware oder Netzen. Während Programme aufgrund menschlicher Programmierfehler ausfallen können, fallen Hardware und Netze aufgrund der begrenzten Lebensdauer ihrer technischen (auch elektronischen) Komponente aus.
+* **Vorsätzliche Handlungen**: Hierzu zählen Aktionen von Tätern, um daraus einen wirtschaftlichen Nutzen zu ziehen oder aber, um sich "Genugtuung" zu verschaffen. Der Grund für Letztereskann der Wunsch sein, der angegriffenen Organisation Schaden zuzufügen oder sein technisches Können zu beweisen. Neben diesen beiden Sachverhalten umfassen vorsätzliche Handlungen auch Spionage und informationstechnische Kriegsführung. Beispiele sind Diebstahl von Daten, Zerstören von Daten durch Verbreitung von Viren sowie Manipulationen, um Programme zum Stillstand zu bringen oder ihr Verhalten zu verändern.
+
+Das BSI unterteilt auch die Gefahren, Ressourcen und Vorgehensweisen in seinem IT-Grundschutz-Kompendium – Edition 2018 in folgende vier Gruppen (BSI 2018a):
+* Elementare Gefährdungen (Feuer, Wasser, Diebstahl von Ressourcen, fehlerhafte Nutzungvon Ressourcen, Schadprogramme usw.),
+* Bausteine (Organisation und Personal, Anwendungen, Netze und Kommunikation usw.),
+* Umsetzungshinweise (für jeden Baustein), und
+* Anleitung zur Migration (von der alten Version des BSI-Standards).
+Die Bausteine beinhalten zunächst nur einen Teil der in früheren Versionen erfassten Bausteine und werden zügig ergänzt.
+Das zentrale Konzept in diesem Ansatz stellen die Bausteine dar. Sie werden in Prozess-(z. B. Betrieb) und Systembausteine (z. B. Anwendungen) unterteilt. Jeder Baustein erklärt zuerst, worum es im Baustein geht (z. B. Organisation und Personal oder Netze und Kommunikation), was mit der Implementierung entsprechender Sicherheitslinien erreicht werden kann, welche spezifischen Gefährdungen bestehen (die bei elementaren Gefährdungen schon allgemein beschrieben sind) und dann Anforderungen, die umgesetzt werden müssen, um diesen Gefährdungen zu begegnen. Die Anforderungen sind immer in drei Stufen unterteilt:
+* Basis-Anforderungen (müssen vorrangig umgesetzt werden),
+* Standard-Anforderungen (sollten grundsätzlich umgesetzt werden), und
+* Anforderungen bei erhöhtem Schutzbedarf.
+
+Jede Anwenderorganisation kann ihr Modell für den Grundschutz mit den benötigten Bausteinen und Anforderungen planen und umsetzen. Die Entwicklung des Managements der Informationssicherheit kann als ein kontinuierlicher Prozess betrachtet und implementiert werden, wie es die Abb. 4.8 darstellt. ISMS ist hier die Bezeichnung für den Baustein Sicherheitsmanagement.
+
+\centerline{\includegraphics[width=1\textwidth]{img/48.png}}
+
+#### Datenschutz
+\centerline{\includegraphics[width=1\textwidth]{img/49.png}}
+\centerline{\includegraphics[width=1\textwidth]{img/datenschutz.png}}
+
+Das *Recht auf Vergessenwerden* ist nun Bestandteil der DSGVO. Es gibt Betroffenen die Möglichkeit, die Löschung ihrer personenbezogenen Daten (oder Hinweisen darauf), unter bestimmten Umständen zu verlangen.
+#### Blockchain
+
+Wir besprechen die Blockchain-Technologie wegen ihres Potenzials zur Erhöhung der IT-Sicherheit an dieser Stelle. Die Technologie kann aber auch für weitere Zwecke genutzt werden. Ein Beispiel dazu sind Smart Contracts, die eine Automatisierung der Vertragsumsetzung erlauben. Bestimmte Aktionen können angestoßen werden, sobald bestimmte Bedingungen eintreten (z. B. bei Erreichen eines Datums oder bei Erreichen der vereinbarten Zahlungshöhe).
+
+Eine Blockchain speichert Daten in sequenziellen Blöcken auf unterschiedlichen Rechnern redundant ab. Diese Rechner gehören unterschiedlichen Organisationen oder privaten Personen und sind im Allgemeinen alle gleichberechtigt (ein Peer-to-Peer-Netzwerk), so dass eine nachträgliche Manipulation bereits gespeicherter Daten durch Einzelne unmöglich ist. Diese Art der verteilten Datenhaltung entspricht einer verteilten Journalführung (englisch Distributed Ledger). Sie ermöglicht eine hohe Verfügbarkeit der Daten und gleichzeitig eine Art öffentlicher Aufsicht über die Daten. Dadurch entfällt der Bedarf nach einer Vertrauensinstanz, wie sie sonst bei vielen Transaktionen nötig ist. Die momentan bekannteste Anwendung des Ansatzes ist die Verwaltung des elektronischen Geldes Bitcoin. Dabei wird jede Bewegung einer „Münze“ aufgezeichnet, von ihrer Schöpfung bis zum aktuellen Verbleib, so dass eine nachträgliche Änderung einer Überweisung oder eine doppelte Ausgabe dieser Münze nicht möglich ist.
+
+Jeder Block besteht aus den Informationen zur Transaktion und einer „Blocküberschrift“ (Block-Header). Jeder Block-Header erhält einen eindeutigen Hashwert, eine Identifikation, die per Algorithmus berechnet wird. Der nachfolgende Block stellt die Verknüpfung her, indem er auch den Hash seines Vorgängers speichert. Ein weiterer Hashwert fasst die gesamte bisherige Kette über die Wurzel des entsprechenden Hash-Baum zusammen.
+
+Die Gültigkeit eines Blocks wird durch einen Proof of Work (oder ein anderes Konzept) festgestellt, bei dem viele Netzwerkteilnehmer Berechnungen durchführen und dann die Mehrheit den Block als korrekt anerkennt. Ein oder wenige Teilnehmer könnten nicht die Gültigkeit zufällig oder absichtlich abstreiten (oder umgekehrt einen ungültigen Block akzeptieren), denn der Konsens der Mehrheit ist entscheidend. Dieser Prozess verbraucht Rechenressourcen, wird als Mining bezeichnet und geeignet belohnt, z. B. durch (Anteile von) Bitcoins. Bei Bitcoins wird der Proof of Work durch eine nur einmal verwendete Zahl (Nonce, number used only once) repräsentiert. Schließlich enthält der Block-Header auch einen Zeitstempel. Die Verkettung in einer Blockchain wird in der nächsten Abbildung dargestellt.
+
+\centerline{\includegraphics[width=1\textwidth]{img/blockchain.png}}
+
+Eine eventuelle Gleichzeitigkeit von Aktivitäten kann dazu führen, dass unterschiedliche Kettenverlängerungen möglich erscheinen. Dieser Zustand wird jedoch schnell aufgehoben, indem nur eine Verlängerung (die längste) als valide angesehen wird und andere verworfen werden. Während der Inhalt der Transaktion relativ leicht lesbar ist, können die Teilnehmer der Transaktion dank Anonymisierung unerkannt bleiben, die durch asymmetrische Verschlüsselung realisiert wird. Das führt bei Bitcoins dazu, dass das System manchmal für illegale Transaktionen missbraucht wird (Geldwäsche, Waffenverkauf, usw.).
+
+### Fremdbezug von IS-Leistungen
+#### Theoretische Grundlagen
+Viele kleine Institutionen beziehen aufgrund ihrer Größe IS-Leistungen von anderen Organisationen. Anfang der 90er-Jahre begannen jedoch auch einige Großunternehmen, ihre bestehenden IT-Abteilungen teilweise oder ganz in unabhängige Firmen auszulagern (Outsourcing). Dabei werden Mitarbeiter, ganze Rechenzentren und andere Ressourcen an die neuen Dienstleister übertragen oder verkauft und es wird ein langjähriger Vertrag geschlossen, in dem sich der Auftraggeber verpflichtet, vom Outsourcinganbieter bestimmte Dienstleistungen zu bestimmten Preisen zu beziehen. Es stellt sich die Frage, warum große Unternehmen Outsourcing der IS-Dienstleistungen betreiben, wenn sie im Prinzip selbst von Größendegressionseffekten profitieren können, die durch fallende Durchschnittskosten aufgrund steigender Produktionsmengen entstehen.
+
+Ein Motiv hierfür besteht darin, dass sie ihre Aktivitäten auf Kernkompetenzen konzentrieren. In manchen Unternehmen ist die Leitung mit den Leistungen der IT-Abteilungen zwar nicht unzufrieden, aber sie geht nicht davon aus, dass der Wechsel zu einer neuen Technologie mit der bestehenden Organisation erfolgreich realisierbar ist. Weiterhin können die Outsourcinganbieter die benötigten Leistungen oft günstiger produzieren als die nachfragenden Firmen, weil sie sich auf bestimmte Dienste spezialisieren und dadurch noch größere Produktionsmengen erreichen oder weil sie als Hardware- und Softwarehersteller Informations- und Wissensvorsprünge gegenüber Anwenderfirmen besitzen.
+
+Das Outsourcing birgt aber auch eine Vielzahl von Risiken. Dadurch, dass nun Firmenfremde die IS-Leistungen erbringen, verstehen diese eventuell weniger vom Kerngeschäft des Kunden und haben weniger Interesse am Kunden. Das strategische Potenzial des Einsatzes von IS wird dann vielleicht nicht erkannt und realisiert.
+
+Die Wahl der optimalen Organisation von IS-Aktivitäten hängt nach der *Theorie der Transaktionskosten* von der Sicherheit und Häufigkeit einer Transaktion sowie der Spezifität der involvierten Ressourcen (z. B. Maschinen oder Wissen) ab.
+
+\centerline{\includegraphics[width=1\textwidth]{img/outsourcingmecha.png}}
+#### Formen von Outsourcing
+* **Cosourcing**: Bildung einer gemeinsamen Tochtereinheit durch die Vertragspartner, i. d. R. einer selbstständigen Firma, die dann auch anderen Parteien Leistungen verkauft.
+* **Insourcing**: Wenn eine Firma vor einer Outsourcing-Entscheidung auch die eigenen Mitarbeiter um ein Angebot bittet und diese den Wettbewerb gewinnen. Dabei schließt sie Verträge über die zu erbringenden Leistungen mit der eigenen Abteilung; die Entlohnung der Mitarbeiter wird an die Erfüllung dieser Verträge gekoppelt.
+* **Offshore Outsourcing (Offshoring)**: Wenn der Outsourcinganbieter seine Leistungen im Ausland (insbesondere in Übersee) erstellt. Dabei handelt es sich i. d. R. um Länder mit niedrigeren Lohnniveaus, wie sie derzeit z. B. in Indien und China vorherrschen.
+* **Nearshoring**: Outsourcing nach nahen Ländern (z.B Osteuropa - Deutschland).
+
+Nach Schätzungen von Marktforschern wird der Anteil der über Outsourcing erbrachten IS-Leistungen weiterhin steigen. Das Outsourcing verkleinert die IT-Abteilungen, sodass man in diesem Zusammenhang auch von **Downsizing** spricht. Dieser Begriff kennzeichnet auch den Übergang von Großrechnern auf kleinere Rechner. Da jedoch mit der Zeit erkannt wurde, dass kleinere Rechner und kleinere IT-Abteilungen nicht immer zu besseren Ergebnissen führen, versucht man mittlerweile, die für das jeweilige Unternehmen richtige Größe der IT zu finden (**Rightsizing**, oder **Smartsourcing**) und genau die Leistungen zu beziehen, die andere ökonomisch sinnvoller bereitstellen können.
+
+**Application Service Providing (ASP)** ist eine Form des Outsourcings, bei der der Anbieter eine Anwendung für den Kunden in seinem Rechenzentrum (oder dem eines von ihm beauftragten Unternehmens) mit einer von ihm entwickelten, gekauften oder gemieteten Software betreibt. Der Kunde nutzt die Anwendung in seinen Räumen meist über das Internet mithilfe eines Webbrowsers. Dies ist ein Unterschied zum traditionellen Outsourcing wie auch die Tatsache, dass es beim ASP regelmäßig zu keiner Übertragung von Ressourcen oder zu einem Wechsel der Mitarbeiter zum Outsourcinganbieter kommt. Ein ASP-Anbieter wird die Anwendungen nur in geringem Ausmaß an die Anforderungen einzelner Kunden anpassen wollen, da er sonst seine „Produktionskosten“ nicht niedrig halten kann.
+#### Cloud, Edge und Fog Computing
+Eine Erweiterung von ASP stellt das **Cloud Computing** dar. Dabei wird nicht nur der Betrieb von Anwendungen angeboten, sondern auch andere IT-Dienstleistungen, die von einem oder mehreren kooperierenden Anbietern mit ihrer Hardware und Software zur Verfügung gestellt werden. Der Zugriff auf die angebotene Dienstleistung erfolgt i. d. R. über das Internet, das oft als eine Wolke (Cloud) vernetzter Computer dargestellt wird. Die Vorteile von Cloud Computing basieren auf der Vorstellung, dass der Kunde die Dienstleistungen flexibel nach Bedarf (On Demand) nutzen und nach Verbrauch bezahlen kann (Workload Based Billing). Zusätzlich benötigte Ressourcen werden sofort ohne weitere Verhandlungen zur Verfügung gestellt und abgerechnet.
+
+**Cloud Computing** ist eine Architektur, die einen bequemen Netzwerkzugang nach Bedarf zu einem gemeinsam genutzten Vorrat von konfigurierbaren Rechenressourcen (z. B. Netzwerke, Server, Speicherplatz, Anwendungen und Dienste) ermöglicht, die schnell und mit einem geringen Managementaufwand oder mit geringer Anbieterinteraktion bereitgestellt und abgerufen werden können.
+
+Cloud Computing unterscheidet unterschiedliche Dienstkategorien. Das Angebot von standardisierten Anwendungen, die einzelne Softwarekomponenten oder Services umfassen, wird als *Software as a Service (SaaS)* bezeichnet. Wenn Kunden nur die Hardware des Anbieters nutzen möchten, um dort z. B. Daten zu speichern oder eigene Programme ausführen zu lassen, dann wird diese Dienstleistung *Infrastructure as a Service (IaaS)* genannt. Manche Anbieter bieten auch eine Plattform an, auf der flexibel Software mit standardisierten Schnittstellen entwickelt werden kann, was dann als *Platform as a Service (PaaS)* bezeichnet wird. Die genannten Dienstleistungen können auch kombiniert angeboten werden. Diese Kombination kann zu einem kompletten Geschäftsprozess führen. Wenn ein Geschäftsprozess über die Cloud angeboten wird, wird dies als *Business Process as a Service* (BPaaS) bezeichnet.
+
+Wenn die angebotenen Ressourcen und Dienste der Organisation gehören, in der sie genutzt werden, liegt eine *Private Cloud* vor. Wenn Dienstanbieter und Nutzer unterschiedlichen Organisationen angehören, wobei die Nutzer Mitglieder vieler Organisationen (oder Privatpersonen) sind, spricht man von einer *Public Cloud*. Wenn Cloud Computing nur einem geschlossenen Kreis von Nutzern, die bestimmten Organisationen angehören, angeboten wird, ist diese Konfiguration als eine *Community Cloud* zu bezeichnen. Beim *Multi Cloud Computing* liegt der Fokus auf der Verwendung mehrerer Clouds von dritten Anbietern.
+
+\centerline{\includegraphics[width=1\textwidth]{img/cloud.png}}
+
+Wenn an einem Ort sehr viele Daten entstehen, z. B. durch Sensoren, die kontinuierliche Prozesse überwachen, dann kann ihre Verarbeitung an einem anderen Ort wegen der notwendigen Übertragung zu lange dauern oder zu teuer sein.  Diese Verzögerung (Latenz) bei der Übertragung großer Datenmengen kann vermieden werden, wenn die Daten zuerst vor Ort verarbeitet werden (an den Rändern einer Cloud-Architektur), was zu **Edge Computing** führt. Aggregierte Daten können danach in die Cloud gesendet werden, um dort detaillierte Analysen vieler solcher Prozesse, die an verschiedenen anderen Orten ablaufen, durchzuführen und Prozesse mittelfristig zu verbessern. In manchen Umgebungen kann es auch sinnvoll sein, zwischen Rändern und einer (oder mehreren) zentralen Cloud(s) Verarbeitungskapazitäten zu schaffen. Damit können z. B. Engpässe bei der Leistung an Edge-Geräten vermieden werden bei gleichzeitiger Minderung der Probleme der Übertragungslatenz. Eine solche Möglichkeit wird als **Fog Computing** bezeichnet. Dabei kann es mehrere Fog-Schichten geben. Das Zusammenspiel der Schichten wird in Abb. 4.12 dargestellt.
+
+\centerline{\includegraphics[width=1\textwidth]{img/cloudfogedge.png}}
