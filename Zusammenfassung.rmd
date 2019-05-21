@@ -602,3 +602,168 @@ Wenn die angebotenen Ressourcen und Dienste der Organisation gehören, in der si
 Wenn an einem Ort sehr viele Daten entstehen, z. B. durch Sensoren, die kontinuierliche Prozesse überwachen, dann kann ihre Verarbeitung an einem anderen Ort wegen der notwendigen Übertragung zu lange dauern oder zu teuer sein.  Diese Verzögerung (Latenz) bei der Übertragung großer Datenmengen kann vermieden werden, wenn die Daten zuerst vor Ort verarbeitet werden (an den Rändern einer Cloud-Architektur), was zu **Edge Computing** führt. Aggregierte Daten können danach in die Cloud gesendet werden, um dort detaillierte Analysen vieler solcher Prozesse, die an verschiedenen anderen Orten ablaufen, durchzuführen und Prozesse mittelfristig zu verbessern. In manchen Umgebungen kann es auch sinnvoll sein, zwischen Rändern und einer (oder mehreren) zentralen Cloud(s) Verarbeitungskapazitäten zu schaffen. Damit können z. B. Engpässe bei der Leistung an Edge-Geräten vermieden werden bei gleichzeitiger Minderung der Probleme der Übertragungslatenz. Eine solche Möglichkeit wird als **Fog Computing** bezeichnet. Dabei kann es mehrere Fog-Schichten geben. Das Zusammenspiel der Schichten wird in Abb. 4.12 dargestellt.
 
 \centerline{\includegraphics[width=1\textwidth]{img/cloudfogedge.png}}
+
+##  Kapitel 5: Unternehmen in der vernetzten Welt
+
+Dieses Kapitel betrachtet die Rolle der Unternehmen in der durch digitale Kommunikation geprägten Welt. Zuerst werden die grundlegenden Möglichkeiten des Einsatzes des zunächst an einen festen Ort gebundenen Internets für kommerzielle Zwecke entlang der Wertschöpfungskette kurz erläutert. Diese Betrachtung wird dann auf die mobile Nutzung und damit mobile Geschäftsaktivitäten erweitert. Die Kommunikation mit Konsumenten spielt sich zunehmend in sozialen Medien, in die deswegen auch in diesem Kapitel eingeführt wird. Das Kapitel schließt mit der Betrachtung von Möglichkeiten, die sich aus der Kommunikation von Maschinen und Informationssystemen untereinander ergeben.
+
+### Einführung
+
+**Electronic Business** schließt alle Aktivitäten ein, die über ein elektronisches Kommunikationsnetz abgewickelt werden und direkt oder indirekt kommerziellen Zwecken dienen.
+
+Eine häufig verwendete Klassifikation der Erscheinungsformen von E-Business unterscheidet drei gesellschaftliche Bereiche, aus denen die Teilnehmer kommen können: Öffentliche Verwaltungen (Administration), Unternehmen (Business) oder Privatpersonen (Consumer).
+
+\centerline{\includegraphics[width=1\textwidth]{img/ebform.png}}
+
+Wenn ökonomische Transaktionen auf einer elektronischen Plattform erfolgen, liegt ein *elektronischer Marktplatz* vor. Elektronische Marktplätze unterscheiden sich nach der Anzahl der Teilnehmer, die auf der Anbieter- und Nachfragerseite am Zustandekommen einer Transaktion beteiligt sind. Die nächste Tabelle gibt einen Überblick über vier Typen elektronischer Marktplätze.
+
+\centerline{\includegraphics[width=1\textwidth]{img/emarket4.png}}
+
+Der hohe Standardisierungsgrad von Internettechnologien und das große Softwareangebot haben Unternehmen dazu motiviert, diese Technologien auch für firmeninterne Kommunikationsnetze einzusetzen. Solche Netze werden dann als *Intranet* bezeichnet. Wenn Unternehmen ihr Kommunikationsnetz für ausgewählte Geschäftspartner öffnen, spricht man von einem *Extranet*. Sowohl ein Intra- als auch ein Extranet können die Infrastruktur des Internets verwenden, wobei Passworte und Verschlüsselung die Exklusivität der Nutzung sicherstellen.
+
+Websites, die Besucher als zentralen Zugang zum Internet benutzen, werden als **Portal** bezeichnet. Die Portale können Dienste wie Suche, Inhalte (z. B. aktuelle Nachrichten), Gemeinschaftsdienste wie Kommunikation unter den Nutzern oder elektronischen Handel anbieten. Sie können oft vom Benutzer über Parameter seinen Bedürfnissen angepasst werden (*Personalisierung*). Portale, die Benutzern zur Suche nach anderen Websites dienen, werden als *Suchmaschinen* bezeichnet (z. B. Google oder Yahoo). Portale werden oft auch im Intranet als *Unternehmensportale (Enterprise Portal)* zur Verfügung gestellt.
+
+### Ausgehende Aktivitäten
+
+Unter **E-Marketing** ist die Nutzung elektronischer Netzwerke und Medien für die Aufgaben des Marketings zu verstehen. Insbesondere das Internet kann zur Unterstützung vieler Marketinginstrumente sowie zur Marketingforschung genutzt werden.
+
+Beim Werben im Internet wird die Werbebotschaft häufig in einem kleinen, rechteckigen Bereich (*Banner*) auf einer Website präsentiert. Die Werbung kann aus einem Text, einer Grafik oder einer Videosequenz bestehen. Wenn der Betrachter mehr Informationen haben möchte, kann er i. d. R. auf das Banner klicken und so zur beworbenen Website gelangen. Bei dieser Werbeform ergeben sich Vorteile gegenüber den traditionellen Werbeformen wie z. B. Print-Medien, Radio und TV-Werbung:
+
+* Geringere Streuung (Werbung wird auf Websites platziert, die in Zusammenhang mit dem beworbenen Produkt stehen, oder nur denjenigen Besuchern gezeigt, die aufgrund ihrer demografischen oder Verhaltensdaten als Zielgruppe für das beworbene Produkt ermittelt wurden),
+* höhere Flexibilität (die Werbung kann ganz kurzfristig geschaltet werden),
+* geringere Kosten (die Erstellung eines Banners ist kostengünstig und die Präsentation wird automatisch gesteuert) und
+* bessere Erfolgskontrolle (es ist feststellbar, wie Besucher zu einer Website gelangt sind und welche Aktionen sie dort ausgeführt haben).
+
+Ebenso kommen Textanzeigen zur Anwendung, insbesondere auf Suchmaschinen. Die Werbetreibenden buchen Begriffe, sodass bei Verwendung dieser Begriffe in der Suche ihre Textanzeigen eingeblendet werden. Diese Werbeform wird **Search Engine Advertising** (Suchmaschinenwerbung) genannt. Die Anpassung eigener Websites sowie die Platzierung von Verweisen auf das eigene Informationsangebot auf externen Websites, damit die eigene Website einen hohen Rang in Suchergebnissen erhält, wird als **Search Engine Optimization (SEO)** bezeichnet. E-Marketing ist kein Ersatz für traditionelle Marketinginstrumente, sondern stellt eine Ergänzung dar. So führen vielfach Konsumgüterhersteller hybride Marketingkampagnen durch, die unterschiedliche Werbeformen (z. B. TV-Werbung und Websites) kombinieren.
+
+Ein Bestandteil der Marketingforschung im Web ist die Beobachtung des Besucherverhaltens auf der Unternehmenswebsite. Das wird durch die Aufzeichnung aller Seitenaufrufe in einer Logdatei unterstützt. Die spätere Analyse dieser Datei mit Methoden des Data Mining gilt als **Web Log Mining**, was besonders bei einem E-Shop zu wertvollen Erkenntnissen führen kann.
+
+Das Marketing verändert in den letzten Jahren seinen Fokus von transaktions- und produkt- hin zu beziehungsorientierten Aspekten. Es stehen nicht der einzelne Produktverkauf, sondern der Aufbau und die Pflege der langfristigen Kundenbeziehung im Vordergrund, aus der dann ökonomische Vorteile entstehen sollen. Dieser Ansatz, der die Integration kundenorientierter Aktivitäten im Marketing, Vertrieb und Kundendienst erfordert, wird als **Customer Relationship Management (CRM)** bezeichnet. Erfolgreiches CRM erfordert entsprechende organisatorische und mitarbeiterbezogene Maßnahmen, aber die Umsetzung des CRM ist in großen Organisationen ohne Unterstützung durch spezifische IS kaum realisierbar. Der Begriff **E-CRM** steht für die Verwendung von IS für CRM.
+
+### Interne Aktivitäten und Logistik
+
+Die Nutzung elektronischer Netzwerke zur Produktionsunterstützung wird als **E-Production** bezeichnet. Zuerst geht es darum, den Planungsstand und den Fortschritt der Produktion im Intranet oder im Extranet besser zu kommunizieren. Durch die verbesserte Kommunikation können dann notwendige Dispositionen früher getroffen werden.
+
+Logistikprozesse umfassen Güter- und begleitende Informationsflüsse. Logistische Leistungen werden auf der eingehenden Seite eines Unternehmens (Beschaffungslogistik), betriebsintern (Produktionslogistik) und auf der ausgehenden Seite (Distributionslogistik) benötigt. Sofern es sich um digitale (z. B. Software) bzw. digitalisierbare Güter (z. B. Musik) oder Dienstleistungen (z. B. Beratung) handelt, können sämtliche Logistikprozesse mithilfe elektronischer Netzwerke realisiert werden. Andernfalls beschränkt sich die Unterstützung durch IS auf die begleitenden Informationsflüsse. **E-Logistik** schließt also den Versand digitaler Güter über elektronische Kommunikationsnetze wie auch elektronische Marktplätze für logistische Leistungen ein, auf denen z. B. LKW-Transportkapazitäten gehandelt werden.
+
+Die Notwendigkeit der Verbesserung zwischenbetrieblicher Prozesse hat in den letzten Jahren zu Konzepten wie **Supply Chain Management (SCM)** geführt. SCM soll die Zusammenarbeit zwischen einem Produzenten und seinen Zulieferern entlang aller Zulieferstufen (also der gesamten Lieferkette) so fördern, dass ein optimales Ergebnis für alle Beteiligten entsteht. Zur Erreichung dieser Ziele ist u. a. ein präzise geplanter und standardisierter Informationsaustausch notwendig, den **E-SCM** unter Nutzung der Internettechnologien liefern kann.
+
+**E-Procurement** umfasst die elektronische Beschaffung aus Katalogen sowie auf elektronischen Marktplätzen.
+
+### Unterstützende Aktivitäten
+
+#### Personalfunktion
+
+Die Personalfunktion umfasst u. a. die Personalbeschaffung und die Personalentwicklung.
+
+In zunehmendem Maße werden zur Personalbeschaffung internetbasierte Jobportale verwendet, mit denen der Bewerbungsprozess digital unterstützt werden kann. Solche Jobportale werden von Medienunternehmen (z. B. Frankfurter Allgemeine Zeitung) zur Verfügung gestellt, oder aber von personalsuchenden Unternehmen (z. B. Telekom).
+
+Eine der wichtigsten Maßnahmen der Personalentwicklung ist die Weiterbildung der Mitarbeiter. Bei konventionellem Lernen müssen sich die Mitarbeiter an einen bestimmten Ort zu einer bestimmten Zeit befinden (Präsenzlernen). Dadurch entstehen nicht nur direkte Kosten, sondern auch Kosten durch Unterbrechungen der normalen betrieblichen Abläufe. Diese Probleme lassen sich beim Lernen mit vorwiegender Hilfe elektronischer Medien umgehen. Der Begriff des **E-Learning (Computer Assisted Learning)** fasst verschiedene Szenarien zusammen.
+
+Die verschiedenen Formen des E-Learning können nach den Merkmalen der Kommunikationsfähigkeit des Lernenden mit anderen Lernenden oder dem Lehrenden und dem zeitlichen Bezug zwischen Angebot und Nachfrage der Lerninhalte zueinander abgegrenzt werden.
+
+\centerline{\includegraphics[width=1\textwidth]{img/elearningmerkmal.png}}
+
+Im Szenario des **virtuellen Seminarraums** findet Unterricht zu einer bestimmten Zeit statt, aber Lehrende und Lernende können an verschiedenen Orten sein und miteinander audiovisuell kommunizieren. Im Szenario des **Web-Based Training** ist ein Kurs jederzeit über das Internet abrufbar und der Nutzer kann den Ablauf (z. B. Lernpfad und Lerntempo) individuell steuern. **Computer Based Training (CBT)** ist die historisch älteste Form des E-Learning und kann auf einem PC ohne Netzanbindung erfolgen. Bei dem Szenario des **Business TV** wird das Lernprogramm über einen unternehmenseigenen Fernsehkanal oder einen Video on Demand Server bereitgestellt.
+
+#### Forschung und Entwicklung
+
+Eine relativ neue Form zur Erschließung externer Wissensressourcen findet im Bereich der Forschung und Entwicklung Anwendung. Dabei werden externe Personen offen oder verdeckt dazu aufgefordert, bei der Entwicklung neuer Produkte (oder Dienstleistungen) oder der Verbesserung bestehender Produkte mitzuhelfen. Dieser Ansatz des **Open Innovation** kann im Internet in Diskussionsgruppen, auf einfachen Websites oder mithilfe spezieller Plattformen umgesetzt werden.
+
+### Mobile Business
+
+Die rasante Verbreitung mobiler Kommunikationstechniken hat zum zunehmenden Einsatz von mobilen Endgeräten zur Abwicklung von Geschäfts- und Transaktionsprozessen geführt. **M-Business** ist die kommerzielle Nutzung mobiler Geräte über Mobilfunknetze.
+
+Generell ist M-Business als ortsungebundenes E-Business aufzufassen. M-Business liefert gegenüber E-Business zusätzliche Anwendungsmöglichkeiten, die sich insbesondere aus der Lokalisierungsmöglichkeit ergeben, wenn das Zugangsgerät im mobilen Netz angemeldet oder auf andere Weise lokalisierbar ist. Dann können dem Benutzer auch *ortsabhängige Dienste (Location Based Services)* angeboten werden (z. B. Anzeige des nächst gelegenen Restaurants). Zusätzlich kann der Netzbetreiber auch die Bewegung (Motion) des Zugangsgeräts feststellen. Im vorhergehenden Beispiel könnte man eine Werbung einem Benutzer senden, der sich in Richtung des Restaurants bewegt, aber nicht einem, der sich davon entfernt oder sich schon eine bestimmte Zeit gar nicht bewegt, obwohl sie alle im Augenblick gleich entfernt von Restaurant sind. Wenn Lokation und Bewegung vieler Teilnehmer beobachtet wird, können auch neue Anwendungen entstehen, z. B. die Vorhersage von Staus. Dabei sind jedoch stets Fragen des Datenschutzes zu klären.
+
+Auf modernen mobilen Endgeräten wie Smartphones können Anwendungen (Apps als Abkürzung für Applications) installiert werden, womit Nutzer ihre Endgeräte um neue Funktionalitäten erweitern können. Die Potenziale von M-Business fasst wie folgt zusammen:
+
+* **Ubiquität (Allgegenwärtigkeit)**, d. h. die Angebote sind überall und stets verfügbar, da die Endgeräte i. d. R. immer eingeschaltet sind (Always On), nicht gestartet werden müssen und an jeden Ort mitgenommen werden können.
+* **Kontextspezifizität**, d. h. durch die Möglichkeit der Lokalisierung und der Interaktion mit der Umgebung wird der Kontext (Ort, Bewegungsrichtung, Uhrzeit, Temperatur, bekannte Interessen des Nutzers) in das Angebot mit einbezogen.
+* **Datenproaktivität**, d. h. Dienste können nach dem Push-Prinzip automatisiert ausgelöst werden (z. B. Unwetterwarnung).
+* **Abschlussmöglichkeit**, d. h. Abrechnung von Leistungen, indem man das mobile Gerät zur Identifikation des Kunden benutzt (Mobile Payment).
+* **Interaktion**, d. h., dass beispielsweise mittels App mit anderen Kommunikationspartnern im Umkreis kommuniziert werden kann.
+* **Integration von Unterhaltung**, d. h., dass beispielsweise Videos oder Musik im MP3-Format auf das Endgerät übertragen, im Gerät gespeichert und jederzeit abgespielt werden können.
+* **Remote Control (Fernsteuerung)**, d. h., dass beispielsweise aus dem Urlaub per „intelligentem Endgerät“ die Elektronik des eigenen Hauses ferngesteuert werden kann.
+
+### Soziale Medien und Web 2.0
+
+#### Eigenschaften von Web 2.0-Anwendungen
+Der Begriff **Web 2.0** kennzeichnet Anwendungen, die das World Wide Web als technische Plattform nutzen, auf der die Programme und die *benutzergenerierten Inhalte* zur Verfügung gestellt werden. Die *gemeinsame Nutzung der Inhalte und gegenseitige Bezüge* begründen Beziehungen zwischen den Benutzern.
+
+Prägend für diese Anwendungen ist, dass die Inhalte auf den Websites primär von ihren Besuchern generiert werden **(User Generated Content, UGC)**. Sowohl die Programme als auch die Daten werden auf der Webplattform vorgehalten und sind deswegen von überall mithilfe des Browsers nutzbar. Den Unterschied zwischen den Anwendungen des Web 1.0 und 2.0 stellt Abb. 5.2 grafisch dar.
+
+\centerline{\includegraphics[width=1\textwidth]{img/web1and2.png}}
+
+Der Nutzen von Web 2.0-Anwendungen entwickelt sich nach dem Prinzip der **Netzwerkeffekte**. Je mehr Nutzer eine Anwendung hat, desto wertvoller wird sie für sämtliche Nutzer, da mit jedem neuen Benutzer die Anzahl potenzieller Kommunikationsmöglichkeiten überproportional wächst.
+
+Bei einer aktiven Teilnahme vieler Benutzer wachsen meist auch Quantität und Qualität der Inhalte, weil eine Gruppe mehr und bessere Informationen als ein Einzelner oder einige wenige Benutzer beitragen kann. Dieses Prinzip wird als **Crowdsourcing (Wisdom of Crowds)** oder **kollektive Intelligenz** bezeichnet.
+
+Einige Anwendungen erlauben die Bedienung spezieller Interessen, z. B. den Austausch selten gebrauchter Produkte oder die Beantwortung sehr spezifischer Fragen. Diese Art von Nachfrage wird als **Long Tail** bezeichnet. Der Begriff kommt daher, dass die statistische Verteilung der Nachfrage wie ein langes Rumpfende (s. Abb. 5.3) erscheint. Sie ergibt sich daraus, dass einige wenige Güter sich großer Nachfrage erfreuen (*Bestseller*), während viele andere Güter nur selten nachgefragt werden (*Nischenprodukte*). Die Bedienung von Nischenmärkten mit Informationen oder Produkten, die digital geliefert werden können (z. B. Bilder, Musikstücke oder Videos), verursacht relativ geringe Grenzkosten, sodass Geschäftsmodelle, die sich außerhalb der elektronischen Netze nicht lohnen würden, im Internet wirtschaftlich sein können.
+
+\centerline{\includegraphics[width=1\textwidth]{img/longtail.png}}
+
+Die gemeinsame Entwicklung von Inhalten, die Kommunikation mit anderen Benutzern der Anwendung oder der regelmäßige Konsum der Beiträge anderer Benutzer führen zu sozialen Beziehungen zwischen den Benutzern des Web 2.0. Deswegen wird die Gesamtheit der Benutzer einer solchen Anwendung auch als eine **soziale Gemeinschaft (Social Community)** angesehen, und die verschiedenen Anwendungen werden zusammen als **soziale Medien (Social Media)** bezeichnet. Sie stehen damit im Gegensatz zu traditionellen Medien wie Fernsehen oder Druckmedien, bei denen die Anbieter gleiche Inhalte an viele passive Empfänger (Konsumenten) verteilen.
+
+Die unterstützenden Programme werden als **Social (Networking) Software** bezeichnet. Die Kommunikationsbeziehungen zwischen den Benutzern einer Web 2.0-Anwendung können mithilfe von Methoden der **Social Network Analysis (SNA)** untersucht werden.
+
+#### Soziale Netzwerke mit Fokus auf Kommunikation
+Bei kommunikationsfokussierten **sozialen Netzwerken (SN)** stehen die Individuen und deren Kommunikationsprozesse im Vordergrund. Zu diesem Zweck spezifizieren Benutzer ein individuelles Profil. Dieses kann u. a. Fotos, demografische Angaben, Angaben zu Interessen, Freunden oder Kontakten enthalten. Teile des Profils können auch als privat deklariert und so nur ausgewählten Benutzern zugänglich gemacht werden. Meistens gehören zunächst bestehende Bekanntschaften zum eigenen Kommunikationskreis, aber im Laufe der Zeit kommen neue Bekanntschaften aus dem Netzwerk hinzu. Innerhalb des Netzwerkes bilden sich thematische Subnetze z. B. nach Studienort, Beruf oder Hobby.
+
+Die Mitglieder können u. a. mit einzelnen Bekannten Nachrichten austauschen, in Foren diskutieren, multimediale Inhalte in ihrem Bereich publizieren und anderen zur Verfügung stellen, sowie Fragen stellen. SN sind zunächst für private Zwecke, wie z. B. Facebook, oder für berufliche oder geschäftliche Zwecke, wie z. B. LinkedIn, angeboten worden. Weiterhin wird zwischen offenen und geschlossenen Netzwerken unterschieden, die nur für bestimmte Personenkreise zugänglich sind (z. B. nur für Fahrer eines bestimmten Automodells).
+
+#### Soziale Netzwerke mit Fokus auf multimediale Inhalte
+
+Bei multimedialen Netzwerken publizieren die Benutzer Bilder (z. B. bei Flickr), Videoclips (z. B. bei YouTube) oder Audiodateien und stellen sie der Allgemeinheit zur Verfügung (und bekommen manchmal Geld dafür). Derjenige, der einen Beitrag hochlädt, kann diesen mithilfe einiger Stichworte beschreiben, die als Tags bezeichnet werden. Daraus entsteht eine implizite Kategorisierung der Beiträge, nach denen mit Stichworten gesucht werden kann. Benutzer können Beiträge bewerten und kommentieren.
+
+Es wird versucht, die Klassifizierung der multimedialen Inhalte aufgrund der Inhalte selbst vorzunehmen. Dann kann z. B. nach allen Bildern, auf denen ein Sonnenuntergang abgebildet ist, oder nach allen Videoclips, in denen Fußball gespielt wird, gesucht werden, ohne dass diese Begriffe in Tags vorkommen müssen. Dies gestattet auch die zielgenauere Platzierung von Werbung, sodass z. B. ein Werbespot für Fußballschuhe automatisch nur in Videoclips, in denen Fußball gespielt wird, ausgestrahlt wird.
+
+#### Weblogs
+
+Das Wort **Weblog**, abgekürzt **Blog**, setzt sich zusammen aus Web und Logbuch und kennzeichnet damit eine Art Tagebuch im World Wide Web, das von einem oder mehreren Autoren geführt wird. Der neueste Beitrag erscheint auf der Website ganz oben, gefolgt von älteren Beiträgen. Leser können die Beiträge an gleicher Stelle kommentieren. Zum Schreiben in einem Blog sind dank entsprechender Softwarelösungen keine Programmierkenntnisse notwendig. Ein Blog kann mit einer Liste auf andere Weblogs verweisen (**Blogroll**). Ein Blog kann auch Bezüge auf seine Beiträge in anderen Weblogs verzeichnen (**Trackbacks**). Durch alle diese Querbezüge entsteht ein Netzwerk, das als Blogosphäre bezeichnet wird und exemplarisch in Abb. 5.5 dargestellt ist.
+
+\centerline{\includegraphics[width=1\textwidth]{img/weblog.png}}
+
+Während Millionen Blogs nur wenige Einträge und Leser haben, können Beiträge von Blogautoren, die als Meinungsmacher angesehen werden, hohe Relevanz für Unternehmen besitzen. Deswegen betreiben große Unternehmen bisweilen eine regelmäßige, teilweise automatisierte Beobachtung von Blogs, um mögliche Probleme oder Chancen frühzeitig zu erkennen. Immer mehr Unternehmen setzen Blogs auch für die externe und interne Kommunikation ein. Als Autor tritt dort oft der Vorstandsvorsitzende auf.
+
+Eine spezielle Form des Weblogs stellen sog. **Mikroblogs** dar (z. B. Twitter). Wenngleich diese typische Merkmale von Weblogs, wie die umgekehrt chronologische Darstellung der Nachrichten eines Nutzers, besitzen, unterscheiden sie sich insbesondere hinsichtlich des Umfangs eingereichter Nachrichten von dem zuvor dargestellten Weblog. Verschiedene Dienste geben eine maximale Anzahl von Zeichen pro Eintrag vor. Abonnenten werden in diesem Kontext als **Follower** bezeichnet. Im Kontext der nach außen gerichteten Kommunikation benutzen Unternehmen Mikroblogging, um z. B. Mitteilungen über Jobangebote oder über das eigene soziale Engagement zu verbreiten.
+
+#### Wikis
+
+Der Begriff **Wiki** kommt vom hawaiischen Ausdruck wiki wiki für „schnell“. Er soll andeuten, dass mit dieser Technologie eine schnelle und einfache Veröffentlichung von gemeinsam entwickelten Dokumenten möglich ist. Ein Benutzer erstellt einen Text mit der Bearbeitungsfunktion der Wiki-Software, die einfache Textverarbeitungsbefehle zur Verfügung stellt. Der Text kann dann sofort im WWW veröffentlicht, von anderen Benutzern gelesen und geändert werden. Die Zielsetzung besteht darin, dass durch die gemeinsame Entwicklung vieler Autoren Dokumente mit hoher Qualität entstehen, da ein Kollektiv stets über mehr Wissen und Intelligenz verfügt als ein individuelles Mitglied dieses Kollektivs (kollektive Intelligenz). Einzelne Dokumente eines Wikis sind miteinander verknüpft und die Änderungen des Dokuments werden fortlaufend festgehalten, sodass die Änderungshistorie transparent ist. Ungewollt oder absichtlich eingetragene Fehler können schnell entdeckt und korrigiert werden, wenn ein Wiki viele Benutzer hat. Dokumente im Wiki können auch multimediale Inhalte enthalten.
+
+Für Unternehmen stellt diese Technologie eine einfache, kostengünstige und dennoch leistungsfähige Plattform für das Wissensmanagement dar, sodass zunehmend unternehmensinterne Wikis für Projektmanagement, Produkt- oder Kundeninformationen u. a. Zwecke entstehen.
+
+### Internet der Dinge, M2M und Industrie 4.0
+
+#### Internet der Dinge
+
+Da viele Maschinen über Sensoren zur Erhebung von Zustandsdaten verfügen und diese Maschinen wiederum über Programme gesteuert werden, die selbstständig Entscheidungen treffen können, ist auch die autonome Kommunikation zwischen Maschinen (engl. **Machine-to-Machine** oder abgekürzt **M2M**) zu betrachten. Dank der Version 6 des Internet- Protokolls (IPv6) ist es möglich geworden, nicht nur Milliarden von Computern eindeutig zu adressieren und zu vernetzen, sondern auch alle mit IP-Zugang ausgestatteten „Dinge“ oder Maschinen, z.B Haushaltsgeräte, Heizungen in Wohnungen und Häusern (Smart Home), selbstfahrende Autos usw.
+
+Unter dem **Internet der Dinge** wird das Verbinden von selbstständigen physischen Geräten mit dem Internet verstanden. Selbstständig bedeutet, dass die Geräte entweder selbstständig in der physischen Welt agieren bzw. Daten sammeln, im Internet über sie vertretende Programme agieren (Softwareagenten) oder selbstständig in beiden Welten agieren. Die letzte Variante, also Aktivität in der virtuellen und realen Welt, drückt der Begriff der **cyber-physischen Systeme (Cyber-Physical Systems)** aus.
+
+Eine IP-Adresse und eine direkte Verbindung zum Internet ist oft nicht notwendig, sondern die von einem Sensor gesammelten Daten können zunächst an ein an das Internet angeschlossenes Gerät gesendet werden, z. B. über Bluetooth an ein Smartphone, von wo sie mit oder ohne Weiterverarbeitung an andere IS im Internet gelangen.
+
+Die durch Sensoren entstehenden Daten können am Ort ihres Entstehens verarbeitet werden oder mit oder ohne Aggregation an zentralisierte Ressourcen (evtl. in einer Cloud) weitergegeben werden. Dort können sie integriert werden (z. B. mit Daten vieler anderer gleichartigen Maschinen). Daraus kann man evtl. neue Erkenntnisse gewinnen und Handlungsempfehlungen zurück an die Maschinen versenden.
+
+#### Industrie 4.0
+In Deutschland wurde für Anwendungen von IoT im industriellen Bereich der Begriff **Industrie 4.0** geprägt, der diese Entwicklung als die nächste Welle der Industrialisierung kennzeichnet (Kagermann et al. 2013). Die vier Wellen können wie folgt charakterisiert werden:
+
+1. Mechanisierung
+2. Elektrifizierung
+3. Automatisierung mit IT
+4. Vernetzung
+
+Industrie 4.0 basiert auf den beschriebenen cyber-physischen Systemen. Produkte und Produktionsprozesse werden schon lange Zeit am Computer geplant und simuliert. Bei Industrie 4.0 wird nun sowohl der Produktionsprozess weiter kontinuierlich beobachtet als auch die Verwendung des Produkts. Die digitale Abbildung eines realen Systems wird als **digitaler Zwilling** bezeichnet. Sie erlaubt Berechnungen mit dem digitalen Zwilling, deren Ergebnisse dann automatisch zur Steuerung oder Wartung des realen Systems verwendet werden können. Abb. 5.8 zeigt diesen Zusammenhang.
+
+\centerline{\includegraphics[width=1\textwidth]{img/indus4.png}}
+
+Die Voraussetzungen für Industrie 4.0 sind u. a. die Realisierung einer geeigneten technischen Infrastruktur, Standardisierung der Kommunikationsprotokolle für die M2M-Kommunikation (da oft Maschinen und Geräte unterschiedlicher Hersteller zum Einsatz kommen), Verarbeitungskapazitäten für große Datenmengen, Sicherheit der Kommunikation und die Mitarbeiterakzeptanz. Akzeptant bedeutet in diesem Fall z. B. die Erlangung neuer Qualifikationen, Anpassung an neue Prozesse oder das Teilen des Arbeitsplatzes und Zusammenarbeit mit kleinen Robotern (Cobots), die ermüdende oder gefährliche Arbeitsschritte übernehmen.
+
+*Fallbeispiel: Internet der Dinge in der Landwirtschaft*
+
+Die Firma Claas, größter Hersteller von Mähdreschern in Europa, und die Deutsche Telekom betreiben in Sachsen-Anhalt ein Pilotprojekt.
+
+Auf einem Feld voller Landmaschinen werden Informationen über die Fahrrichtung der Fahrzeuge, Fülle der Tankbehälter, Feuchtigkeit des Getreides usw. gesammelt. Sie werden von Sensoren der Fahrzeuge erhoben und per Mobilfunk an Rechner gemeldet. Diese verarbeiten die Daten und zeigen sie auf Bildschirmen der Fahrzeugfahrer an. Der Traktorfahrer kann dann rechtzeitig losfahren, um den vollen Korntank eines Mähdreschers im richtigen Moment zu leeren.
+
+Die Verbesserung der Prozesse wird auf 10–15 % eingeschätzt. Weitere Geräte und Lokationen können leicht einbezogen werden, so dass alle Beteiligten sofort über Menge und Qualität informiert werden und sich bei Bedarf koordinieren können. Weitere Produktivitätsgewinne von bis zu 30 Prozent seien zu erwarten. Die gemeinsam entwickelte Plattform soll auch anderen Unternehmen angeboten werden. Die Landwirtschaft wird als ein gutes Versuchsfeld angesehen, weil in ihr viele Partner mit unterschiedlichen Maschinen agieren und stark vom Wetter abhängen.
