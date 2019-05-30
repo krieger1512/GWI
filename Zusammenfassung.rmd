@@ -767,3 +767,151 @@ Die Firma Claas, größter Hersteller von Mähdreschern in Europa, und die Deuts
 Auf einem Feld voller Landmaschinen werden Informationen über die Fahrrichtung der Fahrzeuge, Fülle der Tankbehälter, Feuchtigkeit des Getreides usw. gesammelt. Sie werden von Sensoren der Fahrzeuge erhoben und per Mobilfunk an Rechner gemeldet. Diese verarbeiten die Daten und zeigen sie auf Bildschirmen der Fahrzeugfahrer an. Der Traktorfahrer kann dann rechtzeitig losfahren, um den vollen Korntank eines Mähdreschers im richtigen Moment zu leeren.
 
 Die Verbesserung der Prozesse wird auf 10–15 % eingeschätzt. Weitere Geräte und Lokationen können leicht einbezogen werden, so dass alle Beteiligten sofort über Menge und Qualität informiert werden und sich bei Bedarf koordinieren können. Weitere Produktivitätsgewinne von bis zu 30 Prozent seien zu erwarten. Die gemeinsam entwickelte Plattform soll auch anderen Unternehmen angeboten werden. Die Landwirtschaft wird als ein gutes Versuchsfeld angesehen, weil in ihr viele Partner mit unterschiedlichen Maschinen agieren und stark vom Wetter abhängen.
+
+# Teil 2: Gestaltung der Digitalisierung
+
+## Kapitel 6: Mehr-Ebenen Betrachtung bei der Gestaltung
+
+Kapitel 6 orientiert sich an der Einbettung von IS in den fachlichen und strategischen Zusammenhang in Unternehmen. Es beschreibt typische multidimensionale Gestaltungsansätze, wie sie beispielsweise das Business Engineering mit den Ebenen Strategie, Organisation und IS vorsieht. Kapitel 6 liefert damit den Überblick für die ebenenbezogenen Detailbetrachtungen in den Kapiteln 7 bis 9.
+
+Gestaltungsziele
+
+* **Multidimensionalität**: Die Gestaltung von Anwendungen berücksichtigt systematisch die Wechselwirkungen zwischen fachlichen und technischen Gestaltungsaspekten. Dazu sind mehrere Gestaltungsebenen bzw. -sichten zu unterscheiden, die zur Sicherung der Konsistenz von Gestaltungsaktivitäten auf den einzelnen Ebenen integrativ bzw. wechselseitig miteinander verbunden sein sollten.
+* **Formalisierung**: Die Gestaltung bzw. Konstruktion von Anwendungen soll systematisch erfolgen, und dabei bewährte sowie untereinander abgestimmte Ergebniskonstrukte/-artefakte verwenden. Das Einhalten vorgegebener Modellierungssprachen bzw. -notationen und die damit einhergehende Formalisierung reduziert die Beliebigkeit der Gestaltung und unterstützt die intersubjektive Verständigung – also das Verständnis zwischen verschiedenen Personen – über die Gestaltungsergebnisse.
+* **Ergebnisorientierung**: Die Gestaltung von Anwendungen soll sich an den Anforderungen der Nutzer orientieren. Ergebnisorientierung bedeutet, dass der Mehrwert für den Nutzer im Vordergrund steht und nicht-mehrwertgenerierende Aspekte wegzulassen sind.
+* **IT als „Enabler“**: Wie Teil 1 dieses Buchs gezeigt hat, gestalten Anwendungen die Aufgaben von Organisationen nicht nur durch (Teil-)Automatisierung rationeller, sondern tragen durch ihre Rolle als „Ermöglicher“ neuer oder verbesserter Lösungen auch zur Differenzierung im Wettbewerb sowie zur Gewinnsteigerung bei.
+
+Ein wichtiges Gestaltungsziel der Wirtschaftsinformatik ist die Integration im Sinne einer Abstimmung aller Gestaltungselemente, um die Effizienz des betrachteten Gesamtsystems zu erhöhen. In der Realität besteht aufgrund der zahlreichen abzustimmenden Gestaltungselemente (z. B. Nutzergruppen, Geschäftsprozesse, Endgeräte) und den zwischen ihnen bestehenden Abhängigkeiten eine hohe Komplexität.
+### Gestaltungansätze
+
+**Gestaltungsansätze** zielen auf eine Reduktion der Gestaltungskomplexität. Häufig als *Methode* bezeichnet, beschreiben sie zeitliche und inhaltliche Abhängigkeiten zwischen Gestaltungsaktivitäten und den dabei verwendeten Modellen bzw. Artefakten.
+
+In der Praxis sind zahlreiche methodische Ansätze zur Spezifikation  fachlicher Zusammenhänge verbreitet. Eine leistungsfähige **Modellierungsmethodik** ist dabei von einem einfacheren **Modellierungsansatz** zu unterscheiden: Während ein Modellierungsansatz sprachliche Konstrukte zur Modellbildung (**Modellierungsobjekte/ Modellelementtypen**) sowie ein **Metamodell** (spezifiziert Modellierungsobjekte als Bausteine einer Modellierungssprache und deren Beziehungen) zur Gewährleistung eines abgestimmten Begriffssystems enthält, umfasst eine Modellierungsmethodik zusätzlich:
+
+* Ein **Architekturmodell**, das Modellierungsebenen, Sichten und die Verwendungsmöglichkeit
+von Submodellen zur Reduzierung der Modellkomplexität spezifiziert,
+* Ein **Vorgehensmodell**, das die Aktivitätsfolge während der Modellierung vorgibt und
+* **(Software-)Werkzeuge** zur Unterstützung der Modellerstellung und -pflege.
+
+Die längste Tradition besitzen **Gestaltungsansätze im Rahmen der Softwareentwicklung** (z.B **Wasserfallmodell**). Mit Aufkommen von betriebswirtschaftlicher Standardsoftware ab den 1980er-Jahren hat sich jedoch gezeigt, dass die Softwareentwicklungsmethoden zwar von fachlichen Anforderungen ausgehen, nicht jedoch die **Gestaltung der Organisationsstrukturen** selbst im Fokus haben.
+
+In den 1990er-Jahren sind daher Methoden des **Business Process (Re-)Design (BPR)** entstanden, die bestehende Organisationsstrukturen in Frage stellen und den Geschäftsprozess als Gestaltungsobjekt in den Vordergrund rücken. Nachdem integrierte Anwendungen Informationen über Organisationseinheiten hinweg bereitstellen und abteilungsübergreifende Abläufe ermöglichen, hat die Gestaltung der Ablauforganisation an Bedeutung gewonnen. Gemäß der Ergebnisorientierung geht es dabei nicht primär um die Unterstützung der intern in einem Unternehmen durchgeführten Funktionen (und der Orientierung an Suboptima einzelner funktionaler Bereiche), sondern um das Zusammenwirken aller Funktionen im Rahmen eines Ablaufs, dessen Nutzen einen Wertbeitrag beim (internen oder externen) Kunden bildet (s. Abb. 6.2). Zur Überwachung der Leistung von Prozessen dienen Messgrößen/Kennzahlen sowie eigene Zuständigkeiten und Aktivitäten der Prozessführung (s. Abschn. 7.5 und 8.5), welche auf die Bewertung, Steuerung und Kontrolle von Unternehmen ausgerichtet sind.
+
+\centerline{\includegraphics[width=1\textwidth]{img/porient.png}}
+
+**Geschäftsprozess** Ein Geschäftsprozess ist eine logisch zusammenhängende Kette von Aktivitäten, die in einer vorgegebenen Ablauffolge durchzuführen und auf die Erzeugung einer bestimmten Prozessleistung ausgerichtet sind. Ausgelöst durch ein definiertes Ereignis transformieren Prozesse bestimmte Einsatzgüter (Input) unter Beachtung bestimmter Regeln und durch Einsatz verschiedener Ressourcen zu Arbeitsergebnissen (Output).
+
+Ein idealtypisches Vorgehen bei der (Neu-)Gestaltung betrieblicher Strukturen verläuft **Top-down** von der Unternehmensstrategie hin zur Implementierung eines konkreten IS (s. Tab. 6.1). Es legt bereits zu Beginn die Zielstellung und die wichtigsten Elemente des geplanten Systems fest und detailliert diese im weiteren Verlauf der Entwicklung.
+
+\centerline{\includegraphics[width=1\textwidth]{img/bpr.png}}
+
+Grundsätzlich können die Veränderungsmaßnahmen nicht nur Top-down von den übergeordneten Themenstellungen der Strategieebene, sondern auch von der Fachseite auf Organisationsebene (z. B. Realisierung effizienterer Bestellprozesse) sowie **Bottom-up** von der IT getrieben sein. Im letzteren Falle sind beispielsweise die Einführung einer neuen betriebswirtschaftlichen Standardsoftware oder das Aufkommen disruptiver Technologien (d. h. neue technologische Entwicklungen, die bestehende Technologien ersetzen, wie z. B. Blockchain , Big Data oder künstliche Intelligenz).
+
+Mit dem BPR sind Ansätze der **kontinuierlichen (Prozess-)Verbesserung (Continuous (Process) Improvement (CI))** entstanden. Das CI geht von der Idee aus, dass grundlegende Neugestaltungen im Sinne des BPR nur periodisch stattfinden sollten, und dazwischen eine kontinuierliche Verbesserung der entworfenen Strukturen durchzuführen ist.
+
+Nach den Ansätzen zur Softwareentwicklung und zur Prozessentwicklung sind in den 2000er-Jahren die **Gestaltungsansätze für die Geschäftsmodellentwicklung** entstanden. Im Mittelpunkt dieser Ansätze stehen die Identifikation und Modellierung neuer IT-basierter Geschäftsmodelle, wobei aufgrund des innovativen Charakters dieser Aufgaben die Einbeziehung kreativer Elemente von Bedeutung ist. Zur Erarbeitung derartiger Lösungen hat sich das **Design Thinking** (s. Abb. 6.3) etabliert, das Prinzipien agiler Softwareentwicklungsmethoden mit Kreativitätstechniken verbindet. Das Ergebnis dieses Ansatzes ist jedoch keine fertiggestellte Software, sondern ein testbarer Prototyp als Basis für (weitere) Diskussionen und Konkretisierungen des Geschäftsmodells.
+
+\centerline{\includegraphics[width=1\textwidth]{img/designthinking.png}}
+
+### Gestaltungebenen
+
+Der **Business Engineering (BE)-Ansatz** unterscheidet drei Gestaltungsebenen:
+
+* Die **Strategieebene** legt für ein Unternehmen die strategischen Eckpunkte fest. Dazu zählen etwa die Identifikation der Prozessvision, die Positionierung im Wettbewerb (Märkte und Leistungen) oder die Zusammenarbeit mit Partnern und die entsprechenden Werte-/ Leistungsflüsse. Daneben liefert die Strategieebene den Ausgangspunkt für die Prozessführung, indem sie aus den Zielstellungen der Kunden und den daraus abgeleiteten kritischen Erfolgsfaktoren die strategischen Führungsgrößen Kennzahlen für das **Prozesscontrolling (Process Performance Management)** ableitet.
+* Die **Organisationsebene** konkretisiert die auf strategischer Ebene festgelegten Strukturen und unterscheidet grundsätzlich zwischen der Prozessgestaltung und der Prozessführung. Die Prozessgestaltung besteht aus dem fachlichen Prozessentwurf und unterscheidet wiederum die Gestaltung der Ablauf- und der Aufbauorganisation (Prozesse), Aufbaustrukturen. Seitens der Ablauforganisation bringen Prozessmodelle die abstrakteren Modelle der Strategieebene in einen zeitlichen Zusammenhang und ordnen die Aktivitäten den verschiedenen ausführenden Organisationseinheiten (Stellen, Verantwortlichkeiten, Organisationseinheiten) zu.
+* Die IS-Ebene spezifiziert, welche softwaretechnischen Bausteine (Anwendungen und „technische Services“) zur Unterstützung von Geschäftsprozessen und -modellen zum Einsatz kommen. Ein zentrales Gestaltungsziel auf IS-Ebene bildet die Abstimmung mit den fachlichen Gestaltungsebenen im Sinne eines Business-/IT-Alignment bzw. Strategic Alignment. Weitere Ziele bilden die Transparenz und Vereinfachung sowie die Flexibilität bzw. Agilität und die Wiederverwendung fachlicher Bausteine/ Softwarekomponenten.
+
+\centerline{\includegraphics[width=1\textwidth]{img/businessengi.png}}
+
+Eine Ausdifferenzierung von Subebenen ist im Business Engineering auf IS-Ebene durch die Unterscheidung von einer Integrations-, einer Software- und einer Infrastrukturebene vorhanden. Weiterhin fasst z. B. das Framework von Zachman (2008) die Strategie- und die Organisationsebene zusammen, während die **Architektur integrierter Informationssysteme (ARIS)** als ein verbreiteter Strukturierungsansatz im deutschsprachigen Raum die Strategieebene nicht unmittelbar erwähnt. Die fünf Sichten von ARIS unterscheiden mit Steuerungs- (bzw. Prozess-), Daten-, Funktions-, Leistungs- und Organisationssicht ähnliche Elemente wie die Organisations- und IS-Ebene des BE (s. Abb. 6.4). Wechselwirkungen zwischen den Gestaltungsebenen zeigen sich etwa darin, dass Anwendungen die Voraussetzung für neue Geschäftsmodelle (z. B. Cloud Computing) liefern, oder innovative Geschäftsprozesse (z. B. das One Click Ordering von Amazon) einen strategischen Wettbewerbsvorteil unterstützen können.
+
+Die Strategie- und Organisationsebene bilden auch den Ausgangspunkt für die *Prozessführung*. Diese leitet aus den strategischen Unternehmenszielen Führungsgrößen ab, die der Prozessmessung und -steuerung dienen. Die nächste Abbildung zeigt die Zuordnung von Beschreibungselementen/ Modelltypen der Strategie- und Organisationsebene (s. Abb. 6.4) zu diesen beiden Bereichen sowie deren Beziehungen.
+
+\centerline{\includegraphics[width=1\textwidth]{img/65.png}}
+
+## Kapitel 7: Strategieebene
+
+Kapitel 7 beschreibt strategische Gestaltungsaspekte der digitalen Transformation. Hier zeigt sich, wie sich Kundenanforderungen mit den grundsätzlichen Fragen des Geschäftsmodells wie der Positionierung im Wettbewerb, den Partnerverflechtungen und den Leistungsbestandteilen modellhaft abbilden lassen. Neben der Gestaltung geht das Kapitel auf die Bedeutung von Unternehmenszielen als Basis für die Umsetzung der strategischen Prozessführung ein.
+
+### Gestaltungsinhalte auf Strategieebene
+
+Die Strategieebene legt in Abstimmung mit der allgemeinen Unternehmensstrategie die grundsätzliche Ausrichtung und Positionierung eines Unternehmens im Wettbewerb fest. Die strategische Positionierung umfasst einerseits die Entwicklung der Kundenvision, die Festlegung der relevanten Kundengruppen. Zum anderen bestimmt sie die eigenen Kernkompetenzen und die daraus resultierenden Produkt-/Leistungsangebote für den Kunden, die Identifizierung von Wertschöpfungspartnern und die Etablierung von Leistungsaustauschbeziehungen, die Grobkonzeptionierung der Prozessarchitektur sowie die Festlegung der strategischen Prozessführung. Zu den Modelltypen der Strategieebene zählen:
+
+* Das **Kundenprozessmodell** beschreibt zunächst aus Kundensicht, welche Aktivitäten zur Lösung seiner Bedürfnisse zu durchlaufen und welche Vorleistungen von anderen Stakeholdern (z. B. Unternehmen) dafür erforderlich sind. Ein Unternehmen kann daraus ableiten, welche Aktivitäten des Kundenprozesses es mit seinem Leistungsprogramm adressieren/unterstützen möchte.
+* Das **Geschäftsmodell** spezifiziert die Positionierung des Unternehmens im Markt. Es enthält Informationen zum Geschäftszweck/ Kundennutzen, den Kernressourcen/-aktivitäten und zu den finanziellen Konsequenzen des Geschäftsbetriebs. Zusätzlich bildet das **Geschäftsnetzwerkmodell** das Zusammenwirken von Unternehmen in einem Geschäfts- bzw. Wertschöpfungsnetzwerk im Sinne einer Geschäftsarchitektur ab.
+
+Die **strategische Prozessführung (Process Performance Management/Prozesscontrolling)** bildet die für ein Unternehmen festgelegten strategischen Ziele und die davon abgeleiteten (kritischen) Erfolgsfaktoren sowie strategischen Führungsgrößen/ Kennzahlen ab und stellt sicher, dass die Gestaltung des fachlichen Entwurfs den geschäftlichen (Ziel-)Vorgaben folgt.
+### Kundenprozessmodell
+
+Ausgangspunkt zur Identifikation der (künftig) angebotenen Leistungen eines Unternehmens sind die Bedürfnisse der Zielkunden als wesentliche Stakeholder eines Unternehmens, die sich in Kunden- bzw. Verwendungsprozessen niederschlagen. Das **Kundenprozessmodell** spezifiziert die Aktivitäten beim Kunden und die benötigten Leistungsbestandteile zur Deckung eines komplexen Kundenbedürfnisses für ein Kundensegment. Ziel ist die Zuordnung der aus Kundensicht nachgefragten zu den aus Unternehmenssicht angebotenen Leistungen.
+
+Zu den möglichen Segmentierungsdimensionen zählen:
+
+* Die **Phase des Kundenprozesses**, wonach sich die Kunden in einer Anforderungs-, Akquisitions-, Besitz- oder Entsorgungsphase befinden können. Beispielsweise unterscheiden sich dadurch Neu- und Bestandskunden.
+* Der *Lebensabschnitt des Kunden*, wonach sich Kundenbedürfnisse an bestimmten „Life Events“, wie Schulabschluss, Berufsanfang, Firmengründung etc. orientieren.
+* Der **Kundenwert (Customer Lifetime Value)** bewertet Kunden nach ihrem getätigten und ihrem zukünftigen Geschäftsvolumen. Ein Beispiel für die Verwendung des Kundenwertes ist die Segmentierung von Kunden im Rahmen von Loyalitätsprogrammen.
+* Die **Rolle im Wertschöpfungsprozess**, z. B. ausgehend von Privatkunden (Business-to-Consumer) und Geschäftskunden (Business-to-Business) in Händler, Endkunden etc.
+* Die **Region des Kunden**, wonach insbesondere international agierende Unternehmen zusätzlich nach lokalen, nationalen oder globalen Kunden segmentieren.
+
+In Kundenprozessmodellen sind häufig einerseits die Aktivitäten auf Kundenseite (rechter Bereich in Abb. 7.1) und andererseits die korrespondierenden Aktivitäten innerhalb des Unternehmens (linker Bereich in Abb. 7.1) aufgeführt.
+
+\centerline{\includegraphics[width=1\textwidth]{img/71.png}}
+
+Abb. 7.1 setzt das Uhren-Beispiel fort. Für den Kundenprozess „Uhr kaufen“ zeigt es, welche Teilaspekte/Aktivitäten aus Kundensicht wichtig sind (z. B. Suche nach Uhrenmodellen, Preisvergleiche) und welche Teilaktivitäten der übergeordneten Leistungsprozesse „Herstellung von Uhren und Kaufabwicklung“ sowie „Kundenwerbung“ auf die Unterstützung der Kundenaktivitäten ausgerichtet sind und mit diesen in Leistungsaustauschbeziehung stehen (gestrichelte Kanten).
+
+Für ausgewählte Gestaltungsaspekte lassen sich zusätzliche Modelle einsetzen. So ist angesichts der zahlreichen, für die Kundeninteraktion verfügbaren Kanäle eine abgestimmte Nutzung im Rahmen von Cross-Channel-Management-Ansätzen notwendig. Eine solche hybride Kundeninteraktion geht von einem Nebeneinander mehrerer Kanäle und einem Wechsel während einer Kundeninteraktion im Sinne von **Customer Journeys** aus. Diese beginnen beim ersten Auftreten eines Kundenbedürfnisses und erstrecken sich über das Informieren und Abwägen verschiedener Leistungsangebote, den Kauf von Produkten und/oder Dienstleistungen sowie dem nachfolgenden Aftersale-Service bis hin zu langfristigen loyalitätsfördernden Maßnahmen. Abb. 7.2 zeigt beispielhaft eine Customer Journey, die auf dem in Abb. 7.1 dargestellten Ablauf des Kundenprozesses aufbaut und den Aktivitäten die genutzten Interaktionskanäle zwischen Kunde und Unternehmen zuordnet.
+
+\centerline{\includegraphics[width=1\textwidth]{img/72.png}}
+### Geschäftsmodell und -netzwerk
+
+Da in arbeitsteilig organisierten Wertschöpfungsstrukturen ein Unternehmen nicht alle Aufgaben selbst ausführt, entstehen Netzwerke von mehreren Unternehmen. Die Unternehmen ergänzen sich dabei idealerweise mit ihren Kernkompetenzen, wobei sich unterschiedliche generische Schwerpunkte für die Gestaltung erkennen lassen:
+
+* **Position in der Wertschöpfungskette**: Wertschöpfungsnetzwerke lassen sich aus Unternehmenssicht in kunden- und lieferantenorientierte Abschnitte untergliedern. Die Leistungsrichtung hin zum Endkunden lässt sich als Downstream und jene hin zum (Rohstoff-) Lieferanten als Upstream bezeichnen.
+* **Bündelungsgrad von Leistungen**: Unternehmen können sowohl Einzelaufgaben in einem Prozess übernehmen als auch Leistungen für einen Prozess bündeln.
+* **Kompetenzen der Leistungserstellung**: Unternehmen vereinen Kompetenzen in den Bereichen Vertrieb, Produkt und Infrastruktur. Spezialisierung ist sinnvoll, weil die drei Bereiche unterschiedliche Ziele verfolgen: Während vertriebsorientierte Unternehmen die umfassende Abdeckung von Kundenbedürfnissen anstreben, ist dies bei produkt- und dienstleistungsorientierten Unternehmen die schnelle Entwicklung Know-how-intensiver Angebote und bei standardisierten Dienstleistungen die Bereitstellung einer effizienten Infrastruktur zur Realisierung von Mengeneffekten im Massengeschäft.
+
+Durch die Kombination von Positionierung, Bündelungsgrad und Leistungserstellungskompetenzen lassen sich *Geschäftsmodelle* ableiten. Ein **Geschäftsmodell** spezifiziert die Geschäftslogik eines Unternehmens. Dieses umfasst u. a. den differenzierenden Geschäftszweck (**Value Proposition**), die beteiligten Akteure mit den sie verbindenden Leistungsflüssen sowie Angaben zu den finanziellen Konsequenzen.
+
+Beispiele für mögliche, aus den drei genannten Schwerpunkten abgeleitete Geschäftsmodelle sind:
+
+* **Schichtenspezialisten (Fokus auf bestimmte Wertschöpfungsstufen)** konzentrieren sich auf eine oder mehrere Wertschöpfungsstufen einer Wertkette und besitzen gegenüber anderen Wettbewerbern einen Wettbewerbsvorteil. Dieser Vorteil kann in einem Wissensvorsprung, in Größenvorteilen und/oder in spezifischen Eigentumsrechten liegen.
+* **Pioniere (Fokus auf das Erweitern von Wertschöpfungsketten)** erweitern bestehende Wertketten um zusätzliche und innovative Wertschöpfungsstufen/Leistungen.
+* **Orchestratoren (: Fokus auf Koordination der Akteure innerhalb einer Wertschöpfungskette)** koordinieren das Zusammenspiel von Leistungen und Akteuren über einen Teil oder die Gesamtheit der Wertschöpfungskette.
+* **Integratoren (Fokus auf das Abdecken eines Großteils der Wertschöpfungskette)** sind für überwiegende Teile der Wertschöpfung entlang der Wertschöpfungskette selbst verantwortlich, wobei der Anteil von fremdbezogenen Leistungen gering bis nicht vorhanden ist. Von zentraler Bedeutung ist hierbei zum einen die Minimierung von Transaktionskosten zwischen den Wertschöpfungsstufen, um damit einen Wettbewerbsvorteil gegenüber den Orchestratoren zu erlangen oder zu behalten. Zum anderen muss ein Integrator jede Wertschöpfungsstufe so effizient gestalten, sodass er nicht gegenüber Schichtenspezialisten ins Hintertreffen gerät.
+
+Zur strukturierten Darstellung von Geschäftsmodellen haben sich zahlreiche Methoden etabliert. Ein in der Praxis verbreiteter Ansatz ist die **Business Model Canvas**, welche die Gestaltungsdimensionen eines Geschäftsmodells in neun Bereiche untergliedert:
+
+* Die **Kundensegmente** umfassen Personengruppen oder Organisationen, die ein Unternehmen mit seinen Produkten und Dienstleistungen erreichen möchte.
+* Ein **Nutzenversprechen (Value Proposition)** stellt ein Bündel von Produkten und/oder Dienstleistungen dar, die für ein Kundensegment einen Nutzen stiften.
+* Die **Kanäle** beziehen sich auf die Wege zur Kommunikation sowie zur Übermittlung der Produkte und Umsetzung der Dienstleistungen gegenüber den Kundensegmenten.
+* Die **Kundenbeziehungen** umfassen die Beziehungen, die ein Unternehmen mit seinen Kundensegmenten besitzt bzw. aufbauen möchte. Dies reicht von Informationsangeboten (z. B. über eine Webseite oder E-Mail-Newsletter) über persönliche Beratung (z. B. Hotlines), Self-Service-Angeboten (z. B. Überweisung per Online Banking) und dem Betreuen von Communities (z. B. zur Verprobung neuer Produktideen) bis hin zum gemeinsamen Entwickeln und Gestalten neuer Produkte und Dienstleistungen (Co-Creation).
+* Die **Schlüsselressourcen** beschreiben die wichtigsten materiellen (z. B. Maschinen) und immateriellen (z. B. Patente, Mitarbeiterwissen) Güter und Fähigkeiten (Assets) einer Organisation zur Umsetzung des Geschäftsmodells.
+* Die **Kernaktivitäten** sind die wichtigsten Aktivitäten und Prozesse zur Umsetzung des Geschäftsmodells.
+* Die **Schlüsselpartnerschaften** beschreiben die wichtigsten Zulieferer und sonstigen Partner im Wertschöpfungsnetzwerk.
+* Die **Erlösquellen** beschreiben die finanziellen Rückflüsse von Seiten der Kundensegmente für gelieferte Produkte und geleistete Dienstleistungen inklusive der quantitativen Kalkulation von Verkaufspreisen und Verkaufsmengen.
+* Die Kostenstruktur umfasst die wesentlichen Kostenpositionen zur Umsetzung des Geschäftsmodells.
+
+Eine Möglichkeit zur Modellierung von Geschäftsnetzwerken ist die in Abb. 7.3 verwendete **e3Value-Notation**. Darin stellen Rechtecke mit spitzen Ecken einen oder mehrere Akteure (Actors), Rechtecke mit abgerundeten Ecken die zentralen Aufgabenbereiche, die Kanten (bzw. Verbindungslinien) die Wertflüsse/Leistungsübergänge (Value Exchanges), die ovalen Symbole die Leistungsschnittstellen (Value Interfaces) mit den gerichteten Kanten (Pfeile) und die roten Punkte Startereignisse (einfacher Kreis) oder Endereignisse (Doppelkreis) dar.
+
+\centerline{\includegraphics[width=1\textwidth]{img/73.png}}
+
+In Abb. 7.3 ist zu erkennen welche Leistungsaustauschbeziehungen notwendig sind, um ausgehend von einem Kundenwunsch eine Uhr zu fertigen und schließlich an den Uhren- Kunden auszuliefern. Dies betrifft zum einen durch den Kunden ausgelöste Austauschbeziehungen (z. B. Spezifikation der Anforderungen an die Ausstattung und Gestaltung der Uhr), die sich daran anschließenden und bei den Unternehmen ablaufenden Leistungsaustausche (z. B. Bestellung von Komponenten) sowie im Vorfeld angesiedelte Interaktionsbeziehungen (z. B. Übermittlung von Sortimentslisten von Zulieferern als Basis für die Zusammenstellung der Uhrenmodelle). Im Rahmen der Kaufabwicklung ist neben den Akteuren (Lieferanten, Uhrenhersteller, Uhren-Onlinehändler) noch eine Auskunftei (z. B. Schufa) als externer Dienstleister zur Beurteilung der Kundenbonität beteiligt.
+
+### Strategische Prozessführung
+
+Das Unternehmen hat sicherzustellen, dass die Gestaltungsaktivitäten auch zu den angestrebten Zielen führen. Zur Entwicklung der fachlichen Vorgaben entlang der strategischen Vorgaben umfasst die strategische Prozessführung (s. Abb. 6.4) zunächst eine genauere Beschreibung von aus der allgemeinen Unternehmensstrategie/dem Geschäftsmodell abgeleiteten **Organisationszielen** sowie die diesen Zielen zuzuordnenden **kritischen Erfolgsfaktoren**. Allerdings sind die kritischen Erfolgsfaktoren (z. B. hohe Kundenbindung, differenziertes Uhrenangebotsportfolio) häufig auf hohem Abstraktionsniveau formuliert und daher nicht direkt messbar. Sie erfordern daher eine Operationalisierung in Form eines detaillierten und konsistenten Systems von **strategischen Führungsgrößen** (Messgrößen), mit denen sich Geschäftsprozesse hinsichtlich der Zielerreichung gegenüber strategischen Vorgaben messen und steuern lassen.
+
+* **Organisationsziele** definieren die langfristige Richtung der betrieblichen Aktivitäten, ohne unmittelbar umsetzbar zu sein. Beispiele für diese unternehmensstrategischen Ziele sind die Erhöhung der Kundenzufriedenheit oder eine größere Innovationskraft.
+* **Kritische Erfolgsfaktoren (KEFs)** konkretisieren die (langfristigen) Organisationsziele und beschreiben gewünschte/notwendige Eigenschaften und Fähigkeiten einer Organisation , z.B. durch kürzere Fristigkeit, durch Bezug zu aktuellen Lösungen und/oder durch Quantifizierung.
+* **Führungsgrößen - Key Performance Indicators (KPI)** sind Messgrößen, die den Umsetzungsgrad einzelner Erfolgsfaktoren quantitativ bewerten, d.h. sie operationalisieren einen Erfolgsfaktor durch eine konkrete Messbarkeit der Zielerreichung. Hierbei ist zwischen den übergeordneten strategischen Führungsgrößen (z. B. durchschnittliche Auftragsdurchlaufzeit von Bestellung bis Auslieferung) und den daraus abgeleiteten Prozessführungsgrößen (z. B. durchschnittliche Wartezeit zwischen Produktionsende und Versand) zur unmittelbaren Beurteilung der Prozessleistung zu unterscheiden. Sollwerte bzw. Prozessziele sorgen für eine weitere Konkretisierung, indem sie die Führungsgrößen um eine Zielvorgabe für einen bestimmten Zeitraum ergänzen (z. B. soll die durchschnittliche Wartezeit eines Artikels zwischen Produktionsende und Versand weniger als ein Tag betragen). Führungsgrößen lassen sich in finanzielle (Prozesskosten oder Umsatz) und direkte Führungsgrößen (z. B. Auftragsabwicklungszeit, Antwortzeit auf Kundenanfragen, Nutzungsanteil von Online-Kanälen) unterscheiden.
+
+Abb. 7.4 zeigt die Beziehungen zwischen Organisationszielen, kritischen Erfolgsfaktoren und Führungsgrößen in Form einer **Balanced Scorecard**. Balanced Scorecards sind aufgrund ihrer Berücksichtigung von nichtfinanziellen sowie zukunfts- und potenzialorientierten Zielen eine Weiterentwicklung traditioneller Controllinginstrumente. Die Bezeichnung „Balanced“ bezieht sich darauf, dass die einzelnen Zieldimensionen ausbalanciert sein sollen und für jede Zieldimension Führungsgrößen definiert sind, also keine Zielkategorie unberücksichtigt bleibt.
+
+\centerline{\includegraphics[width=1\textwidth]{img/74.png}}
+## Kapitel 8: Organisationsebene
+### Gestaltungsziele auf Organisationsebene
+### Prozess- und Leistungsüberblick
+### Ablaufplanung
+### Aufbauorganisation
+### Prozessführung
+### Informationsmodellierung
