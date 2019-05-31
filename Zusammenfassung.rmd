@@ -400,8 +400,8 @@ Aus der Sicht von COBIT betrifft IT-Governance fünf Bereiche:
 
 - Die *strategische Ausrichtung* (Strategic Alignment) konzentriert sich auf den Abgleich von Unternehmens- und IT-Zielen sowie auf die Festlegung, Beibehaltung und Validierung des Wertbeitrags von IS.
 - Die *Wertschöpfung* (Value Delivery) beschäftigt sich mit der Realisierung des Wertbeitrags im Leistungszyklus sowie der Sicherstellung, dass IS den strategisch geplanten Nutzen generieren können und dabei kostenoptimal agieren.
-- Das *Ressourcenmanagement* umfasst die Optimierung von Investitionen in IT- Ressourcen und ein geregeltes Management derselben. IT-Ressourcen sind Anwendungen, Information, Infrastruktur und Personal. Ebenso sollte Wissen optimal eingesetzt werden.
-- Das *Risikomanagement* erfordert ein Risikobewusstsein bei der Unternehmensleitung, ein klares Verständnis über die Risikobereitschaft, ein Verständnis für Compliance- Erfordernisse, Transparenz über die für das Unternehmen wichtigsten Risiken und die Verankerung des Risikomanagement in der Ablauf- und Aufbauorganisation.
+- Das *Ressourcenmanagement* umfasst die Optimierung von Investitionen in IT-Ressourcen und ein geregeltes Management derselben. IT-Ressourcen sind Anwendungen, Information, Infrastruktur und Personal. Ebenso sollte Wissen optimal eingesetzt werden.
+- Das *Risikomanagement* erfordert ein Risikobewusstsein bei der Unternehmensleitung, ein klares Verständnis über die Risikobereitschaft, ein Verständnis für Compliance-Erfordernisse, Transparenz über die für das Unternehmen wichtigsten Risiken und die Verankerung des Risikomanagement in der Ablauf- und Aufbauorganisation.
 - Die *Leistungsmessung* (Performance Measurement) überwacht die Umsetzung der Strategie und der Projekte, die Verwendung von Ressourcen sowie die Prozess- und Outputperformance. Die Messung geht hierbei über die Anforderungen des Rechnungswesens hinaus.
 
 Aus der Unternehmensstrategie ergeben sich Unternehmensziele, deren Erreichung IS unterstützen sollen. Deswegen können aus ihnen Ziele für die Informationsverarbeitung abgeleitet werden, die COBIT als IT-Ziele bezeichnet. Die nächste Tabelle zeigt beispielhaft einige Unternehmensziele und daraus ableitbare IT-Ziele.
@@ -512,9 +512,9 @@ Die **DSGVO** verlangt den Schutz der in Organisationen gespeicherten und verarb
 
 Die Buchführung muss die **Grundsätze zur ordnungsmäßigen Führung und Aufbewahrung von Büchern, Aufzeichnungen und Unterlagen in elektronischer Form sowie zum Datenzugriff (GoBD)** beachten. Diese schreiben eine genaue Dokumentationspflicht des eingesetzten Systems und die Aufbewahrung originär digitaler Daten in maschinell auswertbarer Form vor, sodass das Finanzamt bei Bedarf die Daten bei buchführungspflichtigen Steuerzahlern elektronisch auswerten kann.
 
-Seit Mitte 2015 ist das **Gesetz zur Erhöhung der Sicherheit informationstechnischer Systeme (IT- Sicherheitsgesetz)** in Kraft, das vor allem Betreiber von öffentlichen Telekommunikationsnetzen, Webseiten und kritischen Infrastrukturen zur Absicherung der IT und zur Meldung von Sicherheitsvorfällen verpflichtet.
+Seit Mitte 2015 ist das **Gesetz zur Erhöhung der Sicherheit informationstechnischer Systeme (IT-Sicherheitsgesetz)** in Kraft, das vor allem Betreiber von öffentlichen Telekommunikationsnetzen, Webseiten und kritischen Infrastrukturen zur Absicherung der IT und zur Meldung von Sicherheitsvorfällen verpflichtet.
 
-Das **Gesetz zur Kontrolle und Transparenz im Unternehmensbereich (KonTraG)** betrifft den Vorstand von Aktiengesellschaften und die Geschäftsleitung großer GmbHs. Es verpflichtet Leitungsorgane, geeignete Prozesse zur Unternehmenssicherung, inklusive der Sicherheit der IS, zu etablieren. Bei Verstößen können sie persönlich haftbar gemacht werden. Für in den USA operierende Aktiengesellschaften ergeben sich ähnliche Konsequenzen aus dem **Sarbanes- Oxley- Gesetz**.
+Das **Gesetz zur Kontrolle und Transparenz im Unternehmensbereich (KonTraG)** betrifft den Vorstand von Aktiengesellschaften und die Geschäftsleitung großer GmbHs. Es verpflichtet Leitungsorgane, geeignete Prozesse zur Unternehmenssicherung, inklusive der Sicherheit der IS, zu etablieren. Bei Verstößen können sie persönlich haftbar gemacht werden. Für in den USA operierende Aktiengesellschaften ergeben sich ähnliche Konsequenzen aus dem **Sarbanes-Oxley-Gesetz**.
 
 Andere Bestimmungen lassen wirtschaftliche Sachzwänge entstehen, die Unternehmen zur erhöhten Sicherheit bezüglich ihrer IS und der zugehörigen Prozesse veranlassen. Ein Beispiel hierfür ist die 2007 in Kraft getretene Vereinbarung für **Internationale Konvergenz der Kapitalmessung und Eigenkapitalanforderungen** (besser bekannt als **Basel II**), die Entscheidungen über die Kreditvergabe von Banken standardisiert. Weitere Regelungen (**Basel III**) sind bereits beschlossen und werden seit 2014 stufenweise eingeführt. Dabei ist die individuelle Wahrscheinlichkeit eines Kreditausfalls zu berücksichtigen. Ähnliches gilt beim Abschluss von Versicherungen, da Versicherungsgesellschaften über **Solvency II** zu einer genaueren Steuerung und Kontrolle der Risiken aus ihrer Tätigkeit angehalten sind.
 
@@ -738,7 +738,7 @@ Für Unternehmen stellt diese Technologie eine einfache, kostengünstige und den
 
 #### Internet der Dinge
 
-Da viele Maschinen über Sensoren zur Erhebung von Zustandsdaten verfügen und diese Maschinen wiederum über Programme gesteuert werden, die selbstständig Entscheidungen treffen können, ist auch die autonome Kommunikation zwischen Maschinen (engl. **Machine-to-Machine** oder abgekürzt **M2M**) zu betrachten. Dank der Version 6 des Internet- Protokolls (IPv6) ist es möglich geworden, nicht nur Milliarden von Computern eindeutig zu adressieren und zu vernetzen, sondern auch alle mit IP-Zugang ausgestatteten „Dinge“ oder Maschinen, z.B Haushaltsgeräte, Heizungen in Wohnungen und Häusern (Smart Home), selbstfahrende Autos usw.
+Da viele Maschinen über Sensoren zur Erhebung von Zustandsdaten verfügen und diese Maschinen wiederum über Programme gesteuert werden, die selbstständig Entscheidungen treffen können, ist auch die autonome Kommunikation zwischen Maschinen (engl. **Machine-to-Machine** oder abgekürzt **M2M**) zu betrachten. Dank der Version 6 des Internet-Protokolls (IPv6) ist es möglich geworden, nicht nur Milliarden von Computern eindeutig zu adressieren und zu vernetzen, sondern auch alle mit IP-Zugang ausgestatteten „Dinge“ oder Maschinen, z.B Haushaltsgeräte, Heizungen in Wohnungen und Häusern (Smart Home), selbstfahrende Autos usw.
 
 Unter dem **Internet der Dinge** wird das Verbinden von selbstständigen physischen Geräten mit dem Internet verstanden. Selbstständig bedeutet, dass die Geräte entweder selbstständig in der physischen Welt agieren bzw. Daten sammeln, im Internet über sie vertretende Programme agieren (Softwareagenten) oder selbstständig in beiden Welten agieren. Die letzte Variante, also Aktivität in der virtuellen und realen Welt, drückt der Begriff der **cyber-physischen Systeme (Cyber-Physical Systems)** aus.
 
@@ -866,7 +866,7 @@ Für ausgewählte Gestaltungsaspekte lassen sich zusätzliche Modelle einsetzen.
 
 Da in arbeitsteilig organisierten Wertschöpfungsstrukturen ein Unternehmen nicht alle Aufgaben selbst ausführt, entstehen Netzwerke von mehreren Unternehmen. Die Unternehmen ergänzen sich dabei idealerweise mit ihren Kernkompetenzen, wobei sich unterschiedliche generische Schwerpunkte für die Gestaltung erkennen lassen:
 
-* **Position in der Wertschöpfungskette**: Wertschöpfungsnetzwerke lassen sich aus Unternehmenssicht in kunden- und lieferantenorientierte Abschnitte untergliedern. Die Leistungsrichtung hin zum Endkunden lässt sich als Downstream und jene hin zum (Rohstoff-) Lieferanten als Upstream bezeichnen.
+* **Position in der Wertschöpfungskette**: Wertschöpfungsnetzwerke lassen sich aus Unternehmenssicht in kunden- und lieferantenorientierte Abschnitte untergliedern. Die Leistungsrichtung hin zum Endkunden lässt sich als **Downstream** und jene hin zum (Rohstoff-) Lieferanten als **Upstream** bezeichnen.
 * **Bündelungsgrad von Leistungen**: Unternehmen können sowohl Einzelaufgaben in einem Prozess übernehmen als auch Leistungen für einen Prozess bündeln.
 * **Kompetenzen der Leistungserstellung**: Unternehmen vereinen Kompetenzen in den Bereichen Vertrieb, Produkt und Infrastruktur. Spezialisierung ist sinnvoll, weil die drei Bereiche unterschiedliche Ziele verfolgen: Während vertriebsorientierte Unternehmen die umfassende Abdeckung von Kundenbedürfnissen anstreben, ist dies bei produkt- und dienstleistungsorientierten Unternehmen die schnelle Entwicklung Know-how-intensiver Angebote und bei standardisierten Dienstleistungen die Bereitstellung einer effizienten Infrastruktur zur Realisierung von Mengeneffekten im Massengeschäft.
 
@@ -895,7 +895,7 @@ Eine Möglichkeit zur Modellierung von Geschäftsnetzwerken ist die in Abb. 7.3 
 
 \centerline{\includegraphics[width=1\textwidth]{img/73.png}}
 
-In Abb. 7.3 ist zu erkennen welche Leistungsaustauschbeziehungen notwendig sind, um ausgehend von einem Kundenwunsch eine Uhr zu fertigen und schließlich an den Uhren- Kunden auszuliefern. Dies betrifft zum einen durch den Kunden ausgelöste Austauschbeziehungen (z. B. Spezifikation der Anforderungen an die Ausstattung und Gestaltung der Uhr), die sich daran anschließenden und bei den Unternehmen ablaufenden Leistungsaustausche (z. B. Bestellung von Komponenten) sowie im Vorfeld angesiedelte Interaktionsbeziehungen (z. B. Übermittlung von Sortimentslisten von Zulieferern als Basis für die Zusammenstellung der Uhrenmodelle). Im Rahmen der Kaufabwicklung ist neben den Akteuren (Lieferanten, Uhrenhersteller, Uhren-Onlinehändler) noch eine Auskunftei (z. B. Schufa) als externer Dienstleister zur Beurteilung der Kundenbonität beteiligt.
+In Abb. 7.3 ist zu erkennen welche Leistungsaustauschbeziehungen notwendig sind, um ausgehend von einem Kundenwunsch eine Uhr zu fertigen und schließlich an den Uhren-Kunden auszuliefern. Dies betrifft zum einen durch den Kunden ausgelöste Austauschbeziehungen (z. B. Spezifikation der Anforderungen an die Ausstattung und Gestaltung der Uhr), die sich daran anschließenden und bei den Unternehmen ablaufenden Leistungsaustausche (z. B. Bestellung von Komponenten) sowie im Vorfeld angesiedelte Interaktionsbeziehungen (z. B. Übermittlung von Sortimentslisten von Zulieferern als Basis für die Zusammenstellung der Uhrenmodelle). Im Rahmen der Kaufabwicklung ist neben den Akteuren (Lieferanten, Uhrenhersteller, Uhren-Onlinehändler) noch eine Auskunftei (z. B. Schufa) als externer Dienstleister zur Beurteilung der Kundenbonität beteiligt.
 
 ### Strategische Prozessführung
 
@@ -908,10 +908,150 @@ Das Unternehmen hat sicherzustellen, dass die Gestaltungsaktivitäten auch zu de
 Abb. 7.4 zeigt die Beziehungen zwischen Organisationszielen, kritischen Erfolgsfaktoren und Führungsgrößen in Form einer **Balanced Scorecard**. Balanced Scorecards sind aufgrund ihrer Berücksichtigung von nichtfinanziellen sowie zukunfts- und potenzialorientierten Zielen eine Weiterentwicklung traditioneller Controllinginstrumente. Die Bezeichnung „Balanced“ bezieht sich darauf, dass die einzelnen Zieldimensionen ausbalanciert sein sollen und für jede Zieldimension Führungsgrößen definiert sind, also keine Zielkategorie unberücksichtigt bleibt.
 
 \centerline{\includegraphics[width=1\textwidth]{img/74.png}}
+
 ## Kapitel 8: Organisationsebene
+
+Kapitel 8 fokussiert mit der Organisationsebene auf die Prozessgestaltung und die operative Prozessführung als Bindeglied zwischen der strategischen Unternehmensgestaltung und der technischen Implementierung (IS-Ebene).
+
 ### Gestaltungsziele auf Organisationsebene
+
+Die **Organisationsebene** konkretisiert die Umsetzung der Strategieebene. Dies bezieht sich einerseits auf die in der **Ablauforganisation** zusammengefassten und miteinander in Beziehung stehenden Prozesse. Andererseits ist auch die anschließend erfolgende Gestaltung der **Aufbauorganisation** (einschließlich der Definition von Verantwortlichkeiten, Stellen und Organisationseinheiten) als zweiter wesentlicher Baustein auf der Organisationsebene angesiedelt. Neben der Spezifikation von Sequenz und Leistungsflüssen zwischen Aktivitäten und Prozessen adressiert die organisatorische Gestaltung somit auch die konkrete Umsetzung der auf strategischer Ebene grob vorgegebenen Austauschbeziehungen zwischen einzelnen inner- und überbetrieblichen Einheiten der Aufbauorganisation.
+
+Ausgangspunkt der Prozessmodellierung ist die Beschreibung des Zusammenspiels der Geschäftsprozesse in einer Prozesslandkarte sowie in Prozesskontextdiagrammen (s. Abschn. 8.2). Darauf aufbauend konkretisiert die Leistungsanalyse (s. Abschn. 8.2) die Prozessleistungen hinsichtlich ihrer Bestandteile sowie der (Prozess-)Kunden und eingesetzten Distributions- bzw. Zugangskanäle. Die eigentliche Ablaufplanung (s. Abschn. 8.3) mit Hilfe der Prozessmodellierung ergänzt Abschn. 8.4 um die Ableitung aufbauorganisatorischer Strukturen. Die operative Prozessführung (s. Abschn. 8.5) schließlich leitet aus strategischen Führungsgrößen konkrete Prozessführungsgrößen ab. Auf Basis der Prozessführung und -messung ist schließlich eine kontinuierliche Prozessverbesserung (s. Abschn. 8.6) im Sinne des CI (s. Abschn. 6.1) anzustreben.
+
 ### Prozess- und Leistungsüberblick
+
+Während der Kundenprozess die Abläufe aus Sicht des Kunden (**Outside-In**) betrachtet, geht die Prozessanalyse des Unternehmens von den eigenen Abläufen (**Inside-Out**) aus. Neben Kundenprozessen sind hier drei weitere Prozesstypen zu nennen:
+
+* **Leistungsprozesse** - **Kernprozesse** - **Geschäftsprozesse im engeren Sinne** liefern einen direkten Beitrag zur Wertschöpfung eines Unternehmens. Sie erzeugen Leistungen “nach außen”, d. h. für Kunden.
+* **Unterstützungsprozesse** ergänzen die Leistungsprozesse durch Erzeugung von Vorleistungen.
+* **Führungsprozesse** überwachen und bewerten die Umsetzung von Leistungs- und Unterstützungsprozessen mit Hilfe quantitativer Führungsgrößen und greifen bei Bedarf steuernd ein. Weiterhin dienen Führungsprozesse der Anpassung und Weiterentwicklung der strategischen und operativen Prozessführung.
+
+\centerline{\includegraphics[width=1\textwidth]{img/81.png}}
+
+Die **Prozesslandkarte** liefert einen Überblick zu den übergeordneten Prozessen/Prozessbereichen in einer Organisation. Sie ordnet den aus dem Geschäftsnetzwerk benannten Akteuren die wichtigsten Prozesse zu und verbindet diese mittels Leistungsflüssen. Das obige Beispiel zeigt die übergeordneten Prozesse eines Unternehmens und die Einbettung der unternehmerischen Führungs-, Leistungs- und Unterstützungsprozesse in die unternehmensübergreifenden Wertschöpfungsketten/Prozessstrukturen. Hierbei bestehen insbesondere Beziehungen zwischen den unternehmerischen Leistungsprozessen in Richtung der wertschöpfungsseitig vorgelagerten Leistungsprozesse der Lieferanten (**Upstream**) und den nachgelagerten Kundenprozessen (**Downstream**).
+
+Für das Uhren-Beispiel illustriert Abb. 8.2 eine mögliche Prozesslandkarte. Zur Vereinfachung enthält dieses Modell nur eine integrierte Betrachtung ausgewählter Führungs-, Leistungs- und Unterstützungsprozesse des Uhrenherstellers und des Uhren-Onlinehändlers ohne Berücksichtigung der Kunden- und Lieferantenprozesse.
+
+\centerline{\includegraphics[width=1\textwidth]{img/82.png}}
+
+Für eine genauere Analyse der in der Prozesslandkarte enthaltenen Prozessbereiche dient eine detaillierte Betrachtung der Wechselwirkungen/Leistungsverflechtungen von Prozessen mit ihren vor- und nachgelagerten sowie parallel ablaufenden Umfeld-Prozessen. Die dazu verwendeten **Prozesskontextdiagramme** (s. Abb. 8.3) dienen als Grundlage für die spätere Verfeinerung der Prozessbeschreibungen und detaillieren die auf Strategieebene im Geschäftsnetzwerkmodell grob beschriebenen Leistungen. In
+Abb. 8.3 sind für das Uhren-Beispiel die Leistungsverflechtungen des Leistungsprozesses „Herstellung von Uhren und Kaufabwicklung“ sowohl mit dem Kundenprozess „Uhr kaufen“ als auch mit drei weiteren Leistungsprozessen als Prozesskontextdiagramm dargestellt.
+
+\centerline{\includegraphics[width=1\textwidth]{img/83.png}}
+
+Zumeist ist es sinnvoll, die durch einen Prozess erzeugten Leistungen bezogen auf Leistungsbestandteile (einzelne Elemente einer Leistung) und Leistungsmerkmale (Eigenschaften der Leistungsbestandteile) genauer zu spezifizieren. Ein sog. **Leistungsverzeichnis** fasst zusätzliche Informationen zu den Leistungen, wie etwa adressierte Kundensegmente, geeignete Distributions- bzw. Zugangskanäle, grundlegende Qualitätsmerkmale, technische Produktspezifikationen bzw. finanzielle Kennzahlen, dazu zusammen.
+
+Bei der Spezifizierung der Leistungscharakteristika ist auch zu beurteilen, welche Bedeutung die Leistungsbestandteile/-merkmale für den jeweiligen Prozesskunden haben und wie ihre Qualität insbesondere im Vergleich zu wichtigen Konkurrenten einzuschätzen ist. Abb. 8.4 zeigt links ein solches **Qualitätsprofil** für ausgewählte Leistungen des Prozesses „Herstellung von Uhren und Kaufabwicklung“ im Uhren-Beispiel.
+
+\centerline{\includegraphics[width=1\textwidth]{img/84.png}}
+
 ### Ablaufplanung
+
+Während die Leistungsplanung eine Konkretisierung der stattfindenden Warenflüsse oder Kommunikationsbeziehungen aus Sicht eines Prozesses darstellt, detailliert die Ablaufplanung die Betrachtung der Prozessaktivitäten über die Zeit.
+
+Die **Ablaufplanung** zerlegt die Erstellung der Prozessleistungen sukzessive in feinere Teilschritte. Nach dem Detaillierungsgrad ist zwischen einer **Ablaufplanung im Groben (Makro-Planung)** und einer **Ablaufplanung im Detail (Mikro-Planung)** zu unterscheiden.
+
+#### Makro-Ablaufplanung
+
+Die **Makro-Planung** löst die Prozesslandkarte in einzelne Geschäftsprozesse mit ihren Schnittstellen zu anderen Prozessen auf. Abgeschlossen ist die Makro-Planung, wenn ein Überblick über den gesamten Prozess besteht und eine für das Entwurfsteam und die Prozessbeteiligten ausreichende Verfeinerung gegeben ist.
+
+Abb. 8.5 zeigt für das Uhren-Beispiel, dass der auf der ersten Modellierungsebene angesiedelte übergeordnete Leistungsprozess „Herstellung von Uhren und Kaufabwicklung“ auf der zweiten Modellierungsebene aus acht Subprozessen besteht, die nacheinander auszuführen sind. Jeder dieser Subprozesse ist auf weiteren Modellierungsebenen in weiter detaillierte Subprozesse zerlegbar.
+
+\centerline{\includegraphics[width=1\textwidth]{img/85.png}}
+
+#### Mikro-Ablaufplanung und Workflows
+
+Die Ergebnisse der Grob-Ablaufplanung dienen als Grundlage für die sich anschließende **Ablaufplanung im Detail (Mikro-Planung)**, welche die in der Grobablaufplanung benannten Prozesse auf weiteren Modellierungsebenen spezifiziert. Sind Prozessmodelle bis zu den elementaren Aktivitäten auf der Ausführungsebene spezifiziert, so spricht man bei diesem Detaillierungsgrad nicht mehr von **Prozessmodellen**, sondern von sogenannten **Workflowmodellen**.
+
+Ein **Workflow** ist ein formal beschriebener, ganz oder teilweise automatisierter Prozess, der die zur automatischen Steuerung des Arbeitsablaufs auf operativer Ebene notwendigen zeitlichen, fachlichen und ressourcenbezogenen Spezifikationen beinhaltet.
+
+Workflowmodelle fokussieren gegenüber Prozessmodellen weniger auf die fachlich orientierte Gestaltung von Aktivitätsabfolgen, sondern stärker auf deren schrittweise und (teil-)automatisierte Umsetzung.
+
+\centerline{\includegraphics[width=1\textwidth]{img/86.png}}
+
+#### Prozessmodellierungssprachen am Beispiel eEPK und BPMN
+
+Für die Prozessmodellierung sind eine Vielzahl von semi-formalen Notationen/Modellierungssprachen entstanden, wobei nachfolgend aufgrund ihrer Verbreitung in der Praxis **BPMN** und **EPK** näher beschrieben sind. Wie unten dargestellt, umfassen beide Prozessmodellierungssprachen bzw. -notationen vergleichbare Darstellungselemente und erfüllen daher ähnliche Zwecke.
+
+\centerline{\includegraphics[width=1\textwidth]{img/epk1.png}}
+\centerline{\includegraphics[width=1\textwidth]{img/epk2.png}}
+
+Die **Business Process Model and Notation (BPMN)** umfasst mit dem *Konversationsdiagramm*, dem *Choreografiediagramm* und dem *Kollaborationsdiagramm* drei Modelltypen, wobei die ersten beiden den Nachrichtenaustausch zwischen verschiedenen Akteuren wiedergeben. Das in der Praxis am häufigsten angewendete Kollaborationsdiagramm stellt dabei Aktivitätsfolgen/Prozessflüsse mit Beteiligung von einem oder mehreren Akteuren dar. Vorteile von BPMN sind die Ausdrucksmächtigkeit durch die große Anzahl an Modellierungsobjekten sowie die Möglichkeit zur Überführung von Kollaborationsdiagrammen in technisch-orientierte Workflowspezifikationen (z. B. mittels der *Business Process Execution Language (BPEL)*).
+
+Abb. 8.7 beschreibt für das Uhren-Beispiel den Prozess „Uhrenauswahl und Bestellung“ in grober Form als BPMN-Kollaborationsdiagramm. Die in Abb. 8.7 benutzte BPMN-Notation symbolisiert mit einem Kreuz innerhalb des Prozessschrittes „Konfiguration des Basis-Uhrenmodells“, dass sich dieser Prozessschritt aus weiteren Teilschritten/Aktivitäten zusammensetzt. Diese sind wiederum als (Mikro-)Ablaufmodell in einem separaten BPMN-Modell (s. Abb. 8.8) verfeinert. Da der übergeordnete Prozessschritt „Konfiguration des Basis-Uhrenmodells“ in Abb. 8.7 organisatorisch dem Uhren-Kunden zugeordnet ist, gilt dies auch für alle seine Teilschritte bzw. Aktivitäten in Abb. 8.8. Das verfeinerte Ablaufmodell in Abb. 8.8 beginnt daher nach dem erfolgreichen Abschluss des vorgelagerten Prozessschrittes „Suche nach einem Basis-Uhrenmodell“ (s. Abb. 8.7) und das Startereignis ist in Abb. 8.8 mit „Basis-Uhrenmodell ist ausgewählt“ angegeben.
+
+\centerline{\includegraphics[width=1\textwidth]{img/87.png}}
+\centerline{\includegraphics[width=1\textwidth]{img/88.png}}
+
+Neben BPMN ist insbesondere bei Unternehmen im deutschsprachigen Raum der Ansatz der **Architektur integrierter Informationssysteme (ARIS)** verbreitet. Wie in Abschn. 6.1 und Abb. 6.3 erwähnt, umfasst der ARIS-Ansatz fünf Sichten: Die *Funktionssicht* stellt dabei die hierarchischen Beziehungen zwischen den betrieblichen Funktionen und Unterfunktionen dar. Die *Organisationssicht* enthält die aufbauorganisatorische Struktur, die *Leistungssicht* die materiellen sowie immateriellen Input- und Output-Leistungen und die *Datensicht* die betriebswirtschaftlich relevanten Informationsobjekte (z. B. Angebot, Auftrag, Rechnung). Die *Steuerungs- bzw. Prozesssicht* enthält den eigentlichen Ablauf in Form **Ereignisgesteuerter Prozessketten (EPK)**. Im Kern bestehen diese aus einer Folge von:
+
+* Elementaren Ereignissen sowie
+* elementaren (fachlichen oder technischen) Funktionen.
+
+Ein oder mehrere Funktionen lösen danach eine Funktion aus, die wiederum ihrerseits ein oder mehrere Ereignisse initiiert. In diese Abfolge von Funktionen und Ereignissen fließen die Spezifikationen der Daten-, Leistungs- und Organisationsicht ein, indem eine Zuordnung der Informations-, Material- bzw. Ressourcenobjekte sowie die beteiligten Organisationseinheiten zu den Funktionen erfolgt. Eine derart mit Informationen aus den anderen Sichten angereicherte EPK heißt dann **erweiterte EPK (eEPK)**. Falls mehrere Ereignisse eine Funktion auslösen oder eine Funktion mehrere Ereignisse auslöst, spezifiziert ein Konnektor die Auslösungslogik. Die zulässigen Varianten der Ereignis-Funktions- Verknüpfung mittels Konnektoren fasst Abb. 8.9 zusammen. *eEPK-Modelle besitzen gegenüber BPMN-Kollaborationsdiagrammen einen geringeren Sprachumfang und sind rein auf die fachliche Betrachtung von Prozessen ausgelegt.*
+
+\centerline{\includegraphics[width=1\textwidth]{img/89.png}}
+
+Die nächste Abbildung zeigt den Ablauf des Leistungsprozesses „Zusammenstellung Uhrenmodelle“ aus der Prozesslandkarte des Uhren-Beispiels (s. Abb. 8.2) als eEPK-Modell mit beteiligten Organisationseinheiten und jeweils benötigten bzw. erstellten Informationsobjekten.
+
+\centerline{\includegraphics[width=1\textwidth]{img/810.png}}
+
+Neben Modellen in eEPK- und BPMN-Notation kommen zur Prozessmodellierung auch Notationen aus dem Bereich der Softwareentwicklung zum Einsatz. Dazu zählen *Aktivitätsdiagramme*, *Sequenzdiagramme* und *Use Case-/Anwendungsfall-Diagramme*, wie sie in der Modellierungssprache **UML** enthalten sind.
+
+#### Aktuelle Entwicklungen
+
+Die Ansätze zur Organisations- bzw. Prozessmodellierung haben in den vergangenen Jahren Weiterentwicklungen in verschiedene Richtungen erfahren. Dazu zählen die Prozesssimulation, das Process Mining, die Modellierung von Entscheidungsregeln sowie die robotergesteuerte Automatisierung von Prozessen.
+
+Bei der **Prozesssimulation** ergänzen Mengen- und Zeitgerüste die Prozessmodelle für quantitative Analysen und Simulationen des Prozessablaufs. Diese initialen Vorgaben enthalten z. B. Informationen zur prognostizierten Häufigkeit von Aktivitäten/Prozessen, zu den erwarteten Durchlauf- und Transportzeiten, zu aktivitätsbedingten Kostensätzen und zu Ressourcenkapazitäten.
+
+Das **Process Mining** nutzt einen Bottom-up-Ansatz, da es von den in der Vergangenheit real abgelaufenen Anwendungs-gestützten Prozessen ausgeht. Process-Mining-Werkzeuge, wie etwa ARIS PPM, Celonis, Disco oder ProM, ermitteln aus Protokolldateien (Log Files) historischer Prozessinstanzen die aufgetretenen Varianten in der Aktivitätsabfolge und führen weitere quantitative Analysen durch (z. B. Bestimmung von Häufigkeiten für Prozessvarianten). Aus den tabellarisch oder auch in Form von grafischen Modellen (z. B. Prozessmodelle, **Organigramme**) aufbereiteten Ergebnissen lässt sich etwa die Reihenfolge der durchlaufenen Aktivitäten jeder einzelnen Prozessinstanz herauslesen, welche Organisationseinheiten/Rollen/Mitarbeiter beteiligt waren, wie lange die Aktivitäten gedauert oder welche Prozessinstanzen zum gewünschten Ergebnis geführt haben. In der Gesamtheit liefern Process-Mining-Analysen Hinweise auf Problembereiche und Ansatzpunkte für zukünftige Prozessveränderungen in der Ablaufplanung.
+
+Einen weiteren Entwicklungsschritt bildet die Modellierung von **Entscheidungsregeln (Business Rules)**. Dieser entstand aus der Beobachtung, dass Entscheidungssituationen in Prozessen häufig vorkommen und diese einfach veränderbar sein sollen. Das *Business Rules Management* zielt daher auf separate und damit schnell anpassbare Abbildung von Entscheidungsregeln. Die **Decision Model and Notation (DMN)** ist eine standardisierte Sprache zur Modellierung von Entscheidungsregeln im Prozessmanagement und unterstützt auch deren automatisierte Verarbeitung. Die Basis der DMN bildet das **Decision-Requirements-Diagramm**, das Entscheidungen zusammen mit den hierfür benötigten Hilfsmitteln/Informationen in grafischer Form darstellt.
+
+Die nächste Abbildung zeigt ein solches Diagramm für die Entscheidung „Gutschein für Uhren-Kunden auswählen“. Diese **Entscheidung** (dargestellt als Rechteck) unterstützt ein zusammengefasstes, und hier in Form einer Entscheidungstabelle abgebildetes Geschäftswissen (ein sogenanntes **Business Knowledge Model**, dargestellt als Rechteck mit zwei abgeschrägten Ecken). Diese Tabelle und die darin enthaltene Entscheidungslogik basiert auf zwei sogenannten **Knowledge-Source-Elementen** (dargestellt als Rechtecke mit einer Wellenlinie als untere Kante). Auch sind für die Entscheidungssituation „Gutschein für Uhren-Kunden auswählen“ neben der „Entscheidungstabelle zur Gutscheinvergabe“ weitere **Inputdaten** („Kaufhistorie Uhren-Kunde“, „Stammdaten Uhren-Kunde“) einzubeziehen.
+
+\centerline{\includegraphics[width=1\textwidth]{img/812.png}}
+
+Die **robotergesteuerte Prozessautomatisierung (Robotic Process Automation (RPA))** zielt auf die vollautomatisierte Nachahmung von manuellen Prozessschritten, bei denen bisher eine einfache menschliche Interaktion mit Benutzerschnittstellen von Anwendungen notwendig gewesen ist. Der Vorteil von RPA liegt darin, dass damit eine Automatisierung manueller Arbeitsschritte erfolgt ohne, dass jedoch aufwändig zu programmierende Schnittstellen zwischen den Anwendungen zu schaffen sind. Zudem zielen RPA-Werkzeuge auf eine einfache Konfiguration der zu automatisierenden Schritte, sodass diese auch geschulte Fachanwender durchführen können. Damit entlastet RPA Anwender von monotonen Routineaufgaben und reduziert damit auch das Potenzial menschlicher Benutzerfehler.
 ### Aufbauorganisation
-### Prozessführung
-### Informationsmodellierung
+
+Obgleich im Prozessmanagement die Ablauforganisation dominiert und die Ablaufplanung damit zunächst unabhängig von bestehenden Abteilungsgrenzen erfolgt, ist in einem anschließenden Schritt über die **Aufbauorganisation** zu entscheiden. Die Grundelemente der aufbauorganisatorischen Struktur eines Unternehmens bilden die **Stellen**, die durch die Bündelung inhaltlich zusammenhängender Einzelaufgaben entstehen. Die Beschreibung einer organisatorischen **Rolle** basiert ebenfalls auf der Zuordnung zu spezifischen Aufgaben, enthält aber zusätzlich Informationen zu den Mindestqualifikationen eines Rollenträgers und zu den durch die Rolle übertragenen Kompetenzen.
+
+**Organigramme** sind Modelle, die die aufbauorganisatorische Struktur einer Organisation mit ihren Stellen, den darauf aufbauenden Organisationseinheiten und den sich dabei ergebenden Hierarchiebeziehungen abbilden. Ein **Organigramm** bezeichnet eine modellhafte Darstellung der (durch Berichtswege verknüpften) Organisationseinheiten, der Rollen und allenfalls auch Stellen der Aufbauorganisation.
+
+Die nächste Abbildung zeigt für das Uhren-Beispiel das Organigramm für den aufbauorganisatorischen Bereich des Produktmanagements. Dieser Organisationseinheit sind sechs Rollen zugeordnet, die wiederum jeweils einem oder mehreren Mitarbeitern ausfüllen. Dieses Organigramm enthält zusätzlich Informationen zu den Führungsstrukturen (Abteilungsleiter und Teamleiter) innerhalb dieser Organisationseinheit.
+
+\centerline{\includegraphics[width=1\textwidth]{img/813.png}}
+### Operative Prozessführung und -messung
+
+Die **operative Prozessführung** setzt an der Spezifikation von Organisationszielen, kritischen Erfolgsfaktoren und strategischen Führungsgrößen an.
+
+Prozessführungsgrößen leiten sich aus strategischen Organisationszielen ab und dienen der Messung und Bewertung von Prozessen.
+
+\centerline{\includegraphics[width=1\textwidth]{img/opeprozess.png}}
+
+Die Messung und Bewertung von Prozessen dient vornehmlich zur Identifizierung von Situationen und Prozesszuständen, die die Erreichung von Prozesszielen und damit die performante Ausführung von Prozessen behindern. Die in den 1980er-Jahren entwickelte, und sich am Konzept des *Continuous Improvement (CI)* (s. Abschn. 6.2) orientierende **Six-Sigma-Prozessverbesserungsmethodik**  versucht durch Verbesserung der Prozessqualität und Reduzierung von zuvor gemessenen/identifizierten Prozessfehlern sowohl die Kundenzufriedenheit als auch die Wirtschaftlichkeit von Unternehmen zu erhöhen.
+
+Zur Bestimmung der Qualität von Prozessinstanzen kommt hier die Kennzahl **Defects per Million Opportunities (DPMO)** zur Anwendung. Zur Berechnung der DPMO ist wie folgt vorzugehen:
+
+\centerline{\includegraphics[width=1\textwidth]{img/814.png}}
+
+* Zu jedem Prozess existieren Anforderungen aus Kundensicht, deren Einhaltung mit entsprechenden Messinstrumenten zu überwachen ist. Im Rahmen des Uhren-Beispiels sind dies einerseits der Versand einer bestellten Uhr an den „Uhrenkunden“ innerhalb von sieben Tagen, und andererseits die Ausstattung und Gestaltung der Uhr in Übereinstimmung mit den Kundenwünschen.
+* Bei jeder einzelnen Prozessinstanz (z. B. eine einzelne Bestellung einer Uhr durch einen spezifischen Kunden) besteht die Möglichkeit, dass eine oder mehrere Anforderungen nicht erfüllt sind. Im Uhren-Beispiel gibt es somit pro Prozessinstanz zwei Fehlermöglichkeiten, die bei Nichterreichung jeweils als Defekt zu zählen sind.
+* Nach der Berechnungsformel der DPMO (s. nächste Abb.), stellt die „Anzahl betrachteter Einheiten“ die im Rahmen der Berechnung berücksichtigte Anzahl/Stichprobe von Prozessinstanzen dar (z. B. 200 Uhrenkauf-Prozesse). Die „Gesamtanzahl Defekte“ bezieht sich auf die bei dieser Stichprobe ermittelte Anzahl an Defekten. In diesem Beispiel sollen bei den 200 Prozessinstanzen insgesamt zwölf Defekte (d. h. jeweils ein verspäteter Versand oder eine nicht anforderungsgerecht gestaltete Uhr) vorgekommen sein.
+* Durch die Multiplikation mit 1 Million ergibt sich für dieses Beispiel ein DPMO-Wert von 30.000. Die (idealtypische, und in der Praxis meist nur schwer zu erreichende) Zielstellung beim Six-Sigma-Ansatz besteht darin, den DPMO-Wert auf 3,4 (99,99966 % Fehlerfreiheit) und damit auf das Sigma-Level 6 zu reduzieren. Das Uhrenbeispiel bewegt sich mit einem DPMO-Wert von 30.000 (97 % Fehlerfreiheit) zwischen dem Sigma-Level 3 und 4 und besitzt somit noch Verbesserungspotenzial.
+
+Die Berechnung des DPMO-Werts dient somit zur Bestimmung des Qualitätsgrads für einzelne Prozesse oder ganze Prozess- oder Unternehmensbereiche. Entspricht das Qualitätsniveau nicht den Erwartungen, so bietet sich die Durchführung eines **Six-Sigma-Prozessverbesserungsprojekts** in fünf Phasen an:
+
+* **Define**: Umfasst die Eingrenzung und Beschreibung der Probleme, die Bestimmung der Prozesskunden und ihrer Anforderungen/Projektziele sowie die Projektzeitplanung und die Organisation des Projektteams.
+* **Measure**: Fokussiert auf die Konfiguration des Messsystems, die Detailmessung der Prozessleistungen und den anschließenden Vergleich mit den Kundenanforderungen.
+* **Analyze**: Konzentriert sich auf die Analyse der Prozessergebnisse, der Fehlerursachen und der Einflussfaktoren sowie auf die nachfolgende Bestimmung detaillierter Verbesserungsziele.
+* **Improve**: Evaluiert die Gestaltungsoptionen zur Prozessverbesserung sowie die Entwicklung, Pilotierung und Implementierung der Lösung.
+* **Control**: Erstellt einen Kontrollplan und überprüft die neuen Prozessergebnisse hinsichtlich der Zielsetzungen.
+
+Die Six-Sigma-Methodik bietet zahlreiche Techniken und Modelle, die in den einzelnen Projektphasen zum Einsatz kommen können. Das **SIPOC-Diagramm** ist eine Modellform zur groben Beschreibung der Abfolge von Kernaktivitäten in Prozessen und ist für die Makro-Prozessdarstellung in der Define- und Measure-Projektphase sowie ggf. auch in der Improve-Phase einsetzbar. Ein SIPOC-Diagramm enthält zu jedem Prozessschritt (mittlere Spalte **Process**, s. Tab. 8.3) die jeweils notwendigen Vorleistungen (**Input**) und deren Bereitsteller (**Supplier**) sowie die jeweils erzeugten Leistungen (Output) und deren Konsumenten (**Customer**). Tab. 8.3 zeigt ein Teil des aus Abb. 8.7 bekannten Prozesses zur Uhrenauswahl als SIPOC-Diagramm. In Erweiterung zur standardmäßigen Darstellung eines SIPOC-Diagramms sind hier zu den Prozessschritten zusätzlich die verantwortlichen Akteure in Klammern vermerkt.
+
+\centerline{\includegraphics[width=1\textwidth]{img/sipoc.png}}
+
+Während in der Measure-Phase vorwiegend Kennzahlendefinitionen und Kennzahlenmessungen zum Einsatz kommen, sind in der Analyze-Phase u. a. Techniken zur Ursachenermittlung (z. B. **Ishikawa (Fishbone)-Diagramm**) und zur Fehlereffektanalyse (z. B. **Failure Mode and Effects Analysis (FMEA)**) einsetzbar. In der Improve-Phase kommen sowohl Kreativitätstechniken (z. B. Brainstorming) zur Generierung neuer Ideen für die Prozessumgestaltung als auch Techniken zur Vorab-Bewertung von Lösungsalternativen (z. B. Kosten-Nutzen-Matrix, Simulationen zum Einsatz. Die Control-Phase nutzt neben den Prozessmessungstechniken aus der Measure-Phase Instrumente für die langfristige Prozesskontrolle und Problembeseitigung  sowie Techniken für die Replikation von Best Practices auf andere Prozess- oder Unternehmensbereiche (z. B. Einrichtung regelmäßiger Workshops für den innerbetrieblichen Erfahrungsaustausch).
