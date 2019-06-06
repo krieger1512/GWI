@@ -889,7 +889,7 @@ Zur strukturierten Darstellung von Geschäftsmodellen haben sich zahlreiche Meth
 * Die **Kernaktivitäten** sind die wichtigsten Aktivitäten und Prozesse zur Umsetzung des Geschäftsmodells.
 * Die **Schlüsselpartnerschaften** beschreiben die wichtigsten Zulieferer und sonstigen Partner im Wertschöpfungsnetzwerk.
 * Die **Erlösquellen** beschreiben die finanziellen Rückflüsse von Seiten der Kundensegmente für gelieferte Produkte und geleistete Dienstleistungen inklusive der quantitativen Kalkulation von Verkaufspreisen und Verkaufsmengen.
-* Die Kostenstruktur umfasst die wesentlichen Kostenpositionen zur Umsetzung des Geschäftsmodells.
+* Die **Kostenstruktur** umfasst die wesentlichen Kostenpositionen zur Umsetzung des Geschäftsmodells.
 
 Eine Möglichkeit zur Modellierung von Geschäftsnetzwerken ist die in Abb. 7.3 verwendete **e3Value-Notation**. Darin stellen Rechtecke mit spitzen Ecken einen oder mehrere Akteure (Actors), Rechtecke mit abgerundeten Ecken die zentralen Aufgabenbereiche, die Kanten (bzw. Verbindungslinien) die Wertflüsse/Leistungsübergänge (Value Exchanges), die ovalen Symbole die Leistungsschnittstellen (Value Interfaces) mit den gerichteten Kanten (Pfeile) und die roten Punkte Startereignisse (einfacher Kreis) oder Endereignisse (Doppelkreis) dar.
 
