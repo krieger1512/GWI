@@ -1055,3 +1055,108 @@ Die Six-Sigma-Methodik bietet zahlreiche Techniken und Modelle, die in den einze
 \centerline{\includegraphics[width=1\textwidth]{img/sipoc.png}}
 
 Während in der Measure-Phase vorwiegend Kennzahlendefinitionen und Kennzahlenmessungen zum Einsatz kommen, sind in der Analyze-Phase u. a. Techniken zur Ursachenermittlung (z. B. **Ishikawa (Fishbone)-Diagramm**) und zur Fehlereffektanalyse (z. B. **Failure Mode and Effects Analysis (FMEA)**) einsetzbar. In der Improve-Phase kommen sowohl Kreativitätstechniken (z. B. Brainstorming) zur Generierung neuer Ideen für die Prozessumgestaltung als auch Techniken zur Vorab-Bewertung von Lösungsalternativen (z. B. Kosten-Nutzen-Matrix, Simulationen zum Einsatz. Die Control-Phase nutzt neben den Prozessmessungstechniken aus der Measure-Phase Instrumente für die langfristige Prozesskontrolle und Problembeseitigung  sowie Techniken für die Replikation von Best Practices auf andere Prozess- oder Unternehmensbereiche (z. B. Einrichtung regelmäßiger Workshops für den innerbetrieblichen Erfahrungsaustausch).
+
+## Kapitel 9: Informationssystemebene
+
+Kapitel 9 beschreibt zunächst die Gestaltungsziele auf IS-Ebene sowie die prinzipiell zu unterscheidenden Architekturtypen. Im weiteren Verlauf erläutert es den Beitrag serviceorientierter Architekturen (SOA) für die fachlich-technische Integration. Die Darstellung der UML-Modellfamilie als übergreifender Ansatz zur Modellierung von IS und der Entity-Relationship-Notation zur Modellierung von Daten bildet den Abschluss des Kapitels.
+
+### Gestaltungsinhalte auf IS-Ebene
+
+Gegenüber der Strategie- und der Organisationsebene konzentriert sich diese Ebene auf Fragen der Gestaltung von Informationssystemen (IS) mit den darin verwendeten **Anwendungen** und hardwaretechnischen Komponenten.
+
+Eine **Anwendung*** (oder eine Anwendungssoftware bzw. eine **Applikation**) ist ein Softwaresystem, das durch die Abbildung der Geschäftslogik die fachlichen Aufgaben eines Unternehmens unterstützt. Als Teilbereich eines IS konzentriert sich die Anwendung auf eine hohe Integration der darin abgebildeten Funktionen, um einen möglichst hohen Automationsgrad zu erzielen.
+
+Auf der IS-Ebene lassen sich fünf grundsätzliche Gestaltungsziele formulieren:
+
+\centerline{\includegraphics[width=1\textwidth]{img/91ziel.png}}
+
+### Anwendungsarchitektur und Anwendungslandschaft
+
+Zur Realisierung der vorgenannten Gestaltungsziele ist beim Aufbau betrieblicher Anwendungen eine Entwicklung in Richtung modularisierter Architekturkonzepte zu beobachten. Ausgangspunkt ist die Aufteilung von Anwendungen in eine Präsentations-, eine Funktions- und eine Datenschicht. Danach besitzt jede Anwendung eine Benutzerschnittstelle (**Präsentationsschicht**), eine funktionale Verarbeitungslogik zur Abbildung der betriebswirtschaftlichen Prozesse (**Funktionsschicht**) sowie eine Datenbank zur Speicherung der verwendeten Daten (**Datenschicht**).
+
+Während bei den frühen sog. Einschicht-Architekturen („1-Tier“, s. Tab. 9.1) die Anwendung alle Schichten monolithisch zusammengefasst hat, haben Client-Server-Architekturen zunächst zu einer Entkopplung von Anwendungslogik und Datenbank geführt. Auf die Schnittstelle der entkoppelten Datenbank konnten damit mehrere Anwendungen mit ihren Funktionen zugreifen („2-Tier“). In einer späteren Entwicklungsstufe hat in **Client-Server-Architekturen** auch eine Entkopplung von Anwendungslogik und Präsentationsschicht stattgefunden („3-Tier“). Dies ermöglicht den Nutzern den Zugriff auf die Funktionen mehrerer Anwendungen über eine entkoppelte Benutzerschnittstelle (z. B. einen Webbrowser). Die aktuelle Entwicklungsstufe hat zur Bildung einer weiteren Schicht geführt. Eine Integrationsschicht soll als zentrale Instanz die bilateralen Beziehungen vermeiden, sodass sich über eine einzige Verbindung zur Integrationsschicht alle anderen daran angeschlossenen Module darüber ansprechen lassen. Derartige Integrations-Anwendungen erlauben die zentralisierte Verwaltung von Schnittstellen, die Transaktionsabwicklung über mehrere verteilte (operative) Anwendungen hinweg sowie die Bereitstellung zentralisierter Dienste (z. B. Verzeichnisse).
+
+\centerline{\includegraphics[width=1\textwidth]{img/table91.png}}
+
+Aufbauend auf den grundsätzlichen Architekturtypen betrieblicher Anwendungen zeigt die **Anwendungslandschaft** eine Gesamtsicht über die Anwendungen einer organisatorischen Einheit. Eine Anwendungslandschaft besteht aus der Gesamtheit aller Anwendungen eines Untersuchungsobjekts (z. B. einer Abteilung, eines Unternehmens oder eines Unternehmensnetzwerks) einschließlich der zwischen den Anwendungen bestehenden Kommunikationsbeziehungen und Schnittstellen.
+
+Wie in Teil 3 dargestellt, kann eine architektierte Anwendungslandschaft beispielsweise **Transaktionssysteme** (operative Anwendungen, s. Kap. 10) und **Entscheidungsunterstützungssysteme** (analytische Anwendungen, s. Kap. 11) unterscheiden. Für die digitale Transformation sind neben Ist-Architekturmodellen auch die Ziel-Architekturmodelle von Bedeutung. Letztere ermöglichen eine zielgerichtete Entwicklung der Gesamtarchitektur, was insbesondere bei der Umsetzung durchgängig digitaler Geschäftsprozesse notwendig ist.
+
+Zur Unterstützung des Architekturmanagements sind im Laufe der Zeit eigene Modellierungswerkzeuge entstanden, die sich neben Ist- und Ziel-Visualisierungen der Anwendungslandschaft auf die Darstellung von weiteren IS-spezifischen Inhalten konzentrieren. Ein Beispiel bildet die gemeinsame Betrachtung von Anwendungslandschaft und Hardwareinfrastruktur im Rahmen von **IT-Landschaften**. Gleichzeitig berücksichtigen diese Werkzeuge zunehmend auch andere (fachliche) Inhalte aus dem Unternehmenskontext (z. B. die Zuordnung von Anwendungen zu den sie benutzenden Organisationseinheiten), so dass man von Werkzeugen des **Enterprise Architecture Management (EAM)** zur Gestaltung und Modellierung von **Unternehmensarchitekturen** spricht.
+
+Die **Unternehmensarchitektur (Enterprise Architecture)** adressiert den ganzheitlichen Aufbau eines Unternehmens unter Berücksichtigung informationstechnologischer und betriebswirtschaftlicher Elemente. Dies umfasst neben den Elementen des Unternehmens selbst (z. B. Aufbau- und Ablauforganisation, Anwendungen,  Infrastrukturelemente) auch flankierende Aspekte wie Strategien und Ziele, Anforderungen, Projekte, Richtlinien und Muster sowie Kennzahlen.
+
+\centerline{\includegraphics[width=1\textwidth]{img/92.png}}
+
+### Gestaltung und Weiterentwicklung von Services
+
+**Serviceorientierte Architekturen (SOA)** haben als mehrschichtiges Architekturkonzept in den vergangenen Jahren eine hohe Bedeutung erlangt. Services im Sinne einer SOA setzen sich aus einem fachlichen und einem technischen Teil zusammen und schlagen so die Brücke zwischen den auf der Organisationsebene angesiedelten Prozessen und den Anwendungen der IS-Ebene.
+
+**Service (im Kontext Serviceorientierter Architekturen)**: Ein Service ist eine abgeschlossene und plattformunabhängig einsetzbare Softwarekomponente zur Umsetzung einer fachlichen Funktionalität, die andere Anwendungen/Services über eine definierte Schnittstelle ansprechen und nutzen können. Der fachliche Teil eines Service beschreibt dessen Einbettung in den fachlichen Anwendungskontext, z. B. welche fachliche Funktion/Aufgabe der Service erfüllt oder welche Organisationseinheit(en) den Service erstellt, verantwortet und verwendet. Der technische Teil beinhaltet die zugrundeliegenden Anwendungsfunktionen und Datenstrukturen sowie die Beschreibung der technischen Schnittstellen.
+
+\centerline{\includegraphics[width=1\textwidth]{img/servicebsp.png}}
+\centerline{\includegraphics[width=1\textwidth]{img/SOA.png}}
+
+Zur Entwicklung und zum Management von Services sind in der Vergangenheit zahlreiche Modellansätze entstanden. Hierbei ist zunächst bezüglich der initialen Serviceidentifikation zwischen Bottom-up-Ansätzen (Identifikation/Abgrenzung von Services auf Basis (zusammenhängender) technischer Softwarefunktionalitäten), Top-down-Ansätzen (Identifikation auf Basis fachlicher Aktivitäten/Aktivitätsbündel) sowie gemischten (Hybrid)Ansätzen zu unterscheiden. Die notwendigen Aufgaben für das **Service (Lifecycle) Management** können sich an Ansätzen wie etwa ITIL orientieren und reichen von der Serviceidentifikation und -spezifikation über die Servicevereinbarung (Kauf/Verkauf) hin zur Serviceimplementierung und -lieferung sowie zum Servicemonitoring, dem Servicesupport und zur Serviceweiterentwicklung.
+
+### Systemmodellierung mit der Unified Modeling Language (UML)
+
+Ein **Metamodell** beschreibt, wie Phänomene eines Realitätsausschnitts durch entsprechende Modellelemente abgebildet werden können.
+
+Als **Modell** wird dann ein bestimmter, mithilfe eines Metamodells abgebildeter Realitätsausschnitt bezeichnet.
+
+Erfolgt die Dokumentation des Modells mit grafischen Mitteln, wird das Ergebnisdokument als **Diagramm** bezeichnet.
+
+Die *Unified Modeling Language (UML)** ist eine der dominierenden Sprachen zur Modellierung von Softwaresystemen. Sie dient zur Modellierung, Dokumentation, Spezifizierung und Visualisierung komplexer Systeme unabhängig von deren Fach- und Realisierungsgebiet. Sie liefert die **Notationselemente** für die statischen und dynamischen Modelle dieser Modellfamilie. Die **statischen Modelle** oder auch **Strukturdiagramme** beschreiben die strukturelle Sicht auf ein System. Die **dynamischen Modelle** oder auch **Verhaltensdiagramme** legen den Schwerpunkt auf das Verhalten eines Systems.
+
+\centerline{\includegraphics[width=1\textwidth]{img/diagrammUML.png}}
+\centerline{\includegraphics[width=1\textwidth]{img/96.png}}
+
+**Klassendiagramme** (Abb. 9.6) bilden den Kern der meisten objektorientierten Entwicklungen. Sie beschreiben die statische Struktur des zu entwickelnden Softwaresystems. In Abb. 9.6 sind zunächst die beiden Klassen „Uhrenmodell“ und „Einzelkomponente“ mit ihren jeweiligen Attributen (z. B. „Grundpreis“) und Operationen (z. B. „ErmittleVerkaufteStückzahl“) abgebildet. Zwischen den beiden Klassen existiert eine „Besteht aus“-Beziehung, zu der auch die entsprechenden Kardinalitäten (Angabe über die Anzahl der an einer Beziehung beteiligten Objekte, s. auch Abschn. 9.5) vermerkt sind. In diesem Beispiel besteht ein Uhrenmodell aus mindestens drei Einzelkomponenten, wobei eine Einzelkomponente keinem oder einer unbegrenzten Anzahl von Uhrenmodellen zugeordnet sein kann. Weiterhin ist die Klasse „Uhrenmodell“ eine Generalisierung zu den beiden spezifischeren Klassen „Kinderuhr“ und „Sportuhr“, die jeweils noch ein eigenes zusätzliches Attribut besitzen.
+
+**Objektdiagramme** (Abb. 9.6) zeigen den inneren Aufbau eines Systems. Sie stellen die einzelnen Objekte und deren Wertebelegung zu einem bestimmten Zeitpunkt dar. Objektdiagramme und Klassendiagramme besitzen den gleichen Detaillierungsgrad. In Abb. 9.6 basiert das gezeigte Objektdiagramm auf den im Klassendiagramm spezifizierten Inhalten. Hierbei besteht das beispielhafte Uhrenmodell „Gerano“ aus drei spezifischen Einzelkomponenten („ArmbandA15“, „UhrwerkLB7“ und „Gehäuse7BA“), zu denen die jeweiligen „Lieferanten“ und „Güteklassen“ vermerkt sind.
+
+**Paketdiagramme** (Abb. 9.6) eignen sich dazu, ein System in größere Einheiten zu organisieren und Teile des Modells zusammenzufassen. In Abb. 9.6 ist zu sehen, dass das Paket „Preisberechnung“ aus zwei Unterpaketen besteht, und dass das erste Unterpaket „Uhrenmodell-Preisberechnung“ auf alle frei verfügbaren und öffentlichen Elemente des zweiten Unterpakets „Komponenten-Stammdatenverwaltung“ zugreifen darf.
+
+\centerline{\includegraphics[width=1\textwidth]{img/97.png}}
+
+**Sequenzdiagramme** (Abb. 9.7) stellen detailliert den nacheinander erfolgenden Informations- und Nachrichtenaustausch zwischen mehreren Objekten dar. In Abb. 9.7 geht im Sequenzdiagramm „Prototypentwicklung“ die erste Nachrichtenkommunikation vom „Uhrenmodell-Konfigurator“ aus. Die Nachricht „ErstellePrototypen“ an den „Uhrmacher“ ist als synchrone Kommunikation gekennzeichnet, d. h. der „Uhrenmodell-Konfigurator“ wartet als Sender der Nachricht auf das „Prüfprotokoll“ als Rückantwort und pausiert bis zu deren Eintreffen mit seiner weiteren Verarbeitung (s. Balken auf der Lebenslinie).
+
+**Kommunikationsdiagramme** (Abb. 9.7) dienen wie Sequenzdiagramme dazu, das Zusammenspiel und die Kommunikation der Objekte bei der Problemlösung zu spezifizieren. Semantisch sind Sequenzdiagramme und Kommunikationsdiagramme äquivalent. So beziehen sich die in Abb. 9.7 im Kommunikationsdiagramm „Prototypenprüfung“ dargestellten Nachrichtenbeziehungen zwischen dem „Uhrmacher“ und dem „Qualitätsverantwortlichen“ auf die bereits im Sequenzdiagramm dargestellten Inhalte. Hierbei zeigt die ungerichtete Kante zwischen den beiden Objekten das Bestehen einer Kommunikationsbeziehung an. Die Nachrichten sind als zusätzliche gerichtete Kanten unter Angabe der Reihenfolgebeziehung abgebildet.
+
+**Timingdiagramme** (Abb. 9.7) veranschaulichen die durch Nachrichten ausgelösten Zustandsänderungen von Objekten, Klassen oder Schnittstellen im Zeitverlauf. Sie sind wichtig, wenn exakte Zeitpunkte für Ereignisse festzulegen sind. Im Timingdiagramm „Prototypenprüfung“ (Abb. 9.7) befindet sich der „Qualitätsverantwortliche“ im initialen Zustand „Warten“ und der „Uhrmacher“ im initialen Zustand „Bauen“. Die nachfolgend vom „Uhrmacher“ ausgehende Nachrichtenübermittlung „Prototypen prüfen“ verändert ihren Zustand in „Warten“ und versetzt den „Qualitätsverantwortlichen“ in den Zustand „Prüfen“. Spätestens nach zwei Tagen soll der „Qualitätsverantwortliche“ sein „Prüfprotokoll“ an den „Uhrmacher“ versenden, wobei letzterer im Anschluss die Prüfergebnisse analysiert soll und sich damit im Zustand „Auswerten“ befindet.
+
+\centerline{\includegraphics[width=1\textwidth]{img/98.png}}
+
+**Anwendungsfalldiagramme** (Abb. 9.8) (auch Use-Case-Diagramme genannt) stellen aus Anwendersicht die Verknüpfungen zwischen den Akteuren und den Anwendungsfällen eines Systems dar. Weiterhin sind hiermit die Beziehungen zwischen Anwendungsfällen (z. B. Erweiterungen oder Aggregationen) abbildbar. Die Anwendungsfalldiagramme stellen die Außensicht auf das System dar. Das Anwendungsfalldiagramm in Abb. 9.8 zeigt beispielsweise, dass der „Uhrenmodell-Konfigurator“ am Anwendungsfall „Entwurf eines Uhren-Basismodells“ beteiligt ist, wobei dieser Anwendungsfall eine Aggregation aus den beiden Anwendungsfällen „Entwurf einer Kinderuhr“ und „Entwurf einer Sportuhr“ darstellt.
+
+**Aktivitätsdiagramme** (Abb. 9.8) helfen dabei, Prozesse und Aktivitätsfolgen detailliert mit Start- und Endereignissen, Bedingungen, aufbauorganisatorischen Zuordnungen, Schleifen und Verzweigungen zu beschreiben. Das Aktivitätsdiagramm in Abb. 9.8 orientiert sich an den in Abb. 8.10 gezeigten Inhalten und zeigt die Aktivitätsfolge von der Idee zu einem neuen Uhrenmodell bis zur Herstellung eines Uhrenmodell-Prototypen. Hierbei ist wie in der Prozessmodellierungsnotation BPMN (s. Abschn. 8.3) die aufbauorganisatorische Zuordnung der einzelnen Aktivitäten mit Hilfe von Swimlanes abgebildet.
+
+\centerline{\includegraphics[width=1\textwidth]{img/99.png}}
+
+**Interaktionsübersichtsdiagramme (Abb. 9.9) stellen Interaktionen in ihrer sachlogischen und damit auch zeitlichen Reihenfolge dar. Hierbei kommen innerhalb der Modelle Sequenzdiagramme und aus dem UML-Aktivitätsdiagramm stammende Modellelemente zur Anwendung. In Abb. 9.9 zeigt die mit Hilfe eines Sequenzdiagramms dargestellte Interaktion „Preisübermittlung“ im Detail den Nachrichtenaustausch zwischen dem „Onlineshop“ und der „Preisberechnungsfunktion“, während andere Interaktionen auf bestehende Modelle verweisen (z. B. „Suche und Konfiguration Uhrenmodelle“).
+
+**Komponentendiagramme** (Abb. 9.9) stellen Komponenten als wiederverwendbare und austauschbare modulare Einheiten eines Softwaresystems sowie die zwischen ihnen bestehenden Abhängigkeiten und Schnittstellen dar. In Abb. 9.9 ist die Komponente „Uhrenmodell-Preisberechnungsfunktion“ zunächst über zwei Schnittstellen mit ihrer Umwelt zum „Empfangen von Uhrenkonfigurationen“ und zur „Übermittlung von Preisberechnungen“ verbunden. Eine weitere Schnittstelle zur „Komponentenstammdatenverwaltung“ liefert die für die Preisberechnung von Uhrenmodellen notwendigen „Beschaffungspreise der Komponenten“.
+
+**Verteilungsdiagramme** (Abb. 9.9) zeigen die technische/physische IS-Umgebung (z. B. Hardware, Server, Datenbanken) sowie die Zuordnung von Software- zu Hardwarekomponenten. In Abb. 9.9 sind im Verteilungsdiagramm die zwei Serverkomponenten „Onlineshop“ und „ERP_Backend“ über eine „Ethernet“-Verbindung verknüpft. Zudem betreibt der „ERP-Backend“-Server die Softwarefunktion „Komponentenstammdatenverwaltung“ und nutzt in diesem Zusammenhang die beiden Artefakte „preisberechnung.jar“ und „preislistenimport_uhrenkomponenten.csv“.
+
+\centerline{\includegraphics[width=1\textwidth]{img/910.png}}
+
+**Zustandsautomaten** (Abb. 9.10) zeigen, welche Abfolge von Zuständen ein Objekt bei einer Anzahl von nacheinander auftretenden Ereignissen/ausgeführten Aktivitäten einnehmen kann. In Abb. 9.10 sind die Zustandsabfolgen von einem „Uhrenwunsch“ des „Uhren-Kunden“ bis hin zu einem „konfigurierten Uhrenmodell mit Preisangabe“ innerhalb des „Uhren-Onlineshops“ abgebildet. Dabei sind die Zustände unter Verwendung der Swimlane-Darstellung immer denjenigen organisatorischen Einheiten zugeordnet, die (z. B. mit Hilfe einer Aktivität) zur Veränderung dieses Zustands in der Lage sind (z. B. der „Uhren-Kunde“ verändert durch seine Aktivität „Uhren-Basismodell suchen“ den Zustand von „Uhrenmodelle und Varianten sind angezeigt“ hin zu „Uhren-Basismodell ist ausgewählt“).
+
+**Profildiagramme** (Abb. 9.10) dienen der benutzerorientierten Anpassung und Erweiterung der UML-Metamodellebene durch die Definition von sogenannten Profilen, in denen ausgewählter Notationselemente des Klassendiagramms (wie z. B. Stereotypen) zum Einsatz kommen. Das in Abb. 9.10 gezeigte „Uhrenprofil“ erweitert das Metamodell von UML, indem es die „Uhrenklasse“ als neue aggregierte Klasse mit den Unterklassen „Sportuhr“ und „Kinderuhr“ einführt.
+
+### Datenmodellierung mit der ER-Notation
+
+\centerline{\includegraphics[width=1\textwidth]{img/erm1.png}}
+
+**Generalisierung**. Eine Generalisierungsbeziehung ist dann zu verwenden, wenn sich mehrere zunächst voneinander unabhängige Entitätstypen unter einem generelleren Entitätstyp zusammenfassen lassen. Bei Generalisierungen vererben die generellen Entitätstypen ihre Attribute an die verbundenen Einzelentitätstypen, wobei die Einzelentitätstypen jeweils noch zusätzliche individuelle Attribute besitzen können. Im ER-Modell dienen Dreiecke zur Darstellung von Generalisierungsbeziehungen, die über ungerichtete Kanten mit den Einzelentitätstypen und dem generellen Entitätstyp verbunden sind.
+
+**Kardinalität**. Zur vollständigen Modellierung eines Beziehungstyps ist anzugeben, wie viele Datenobjekte der beteiligten Entitätstypen an Beziehungen dieses Typs teilnehmen können (Kardinalität), z. B. 1:1-, 1:n- und m:n-Beziehungen.
+
+In der x:y-Darstellung von Kardinalitäten stehen die jeweiligen Zahlen für die maximale Anzahl der an einer Beziehung beteiligten Entitäten. Um Kardinalitäten vollständig zu beschreiben ist es notwendig, auch die minimal vorkommende Anzahl der Entitäten in einer Beziehung anzugeben. Dies wird mit der Anwendung der sog. **(Min-Max)-Notation** für Kardinalitäten erreicht, die für eine Beziehung auf jeder Seite des Doppelpunkts jeweils in Klammern die minimale und maximale Anzahl der jeweiligen Entitäten angibt:
+
+* (0,1): Die Entitäten des betreffenden Entitätstyps können (müssen aber nicht) an maximal einer Beziehung teilnehmen.
+* (0,n): Die Entitäten des betreffenden Entitätstyps können (müssen aber nicht) an einer oder mehreren Beziehungen teilnehmen.
+* (1,1): Die Entitäten des betreffenden Entitätstyps müssen an genau einer Beziehung teilnehmen (klassische Existenzabhängigkeit).
+* (1,n): Die Entitäten des betreffenden Entitätstyps müssen an einer oder mehreren Beziehungen teilnehmen.
