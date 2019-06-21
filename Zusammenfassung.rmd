@@ -1160,3 +1160,429 @@ In der x:y-Darstellung von Kardinalitäten stehen die jeweiligen Zahlen für die
 * (0,n): Die Entitäten des betreffenden Entitätstyps können (müssen aber nicht) an einer oder mehreren Beziehungen teilnehmen.
 * (1,1): Die Entitäten des betreffenden Entitätstyps müssen an genau einer Beziehung teilnehmen (klassische Existenzabhängigkeit).
 * (1,n): Die Entitäten des betreffenden Entitätstyps müssen an einer oder mehreren Beziehungen teilnehmen.
+
+# Teil 3: Betriebliche Anwendungen
+
+## Kapitel 10: Anwendungen in ERP-Systemen
+
+Dieses Kapitel erläutert, wie Anwendungen in ERP-Systemen Unternehmensprozesse unterstützen und automatisieren können. Es werden sowohl sektorneutrale als auch sektorspezifische Anwendungen vorgestellt. Abschließend wird darauf eingegangen, wie ERP-Systeme als Standardsoftwareprodukte in Unternehmen einzuführen sind.
+
+### Überblick
+
+Ein **Referenzmodell** ist ein Informationsmodell, dessen Inhalt bei der Entwicklung von Anwendungsmodellen wiederverwendet werden kann.
+
+Referenzmodelle werden zumeist auf fachkonzeptioneller Ebene und mit semi- formalen Darstellungstechniken erstellt. Sie beinhalten Modelle zur Beschreibung von Eigenschaftsstrukturen (z. B. Entity-Relationship-Modelle, ERM) und Verhaltensstrukturen z. B. BPMN-Modelle) des ausgewählten betrieblichen Teilgebiets. Eine Übersicht zu Unterscheidungsmerkmalen von Referenzmodellen gibt Abb. 10.1.
+
+\centerline{\includegraphics[width=1\textwidth]{img/101.png}}
+
+Ausgangspunkt der **Referenzmodellentwicklung** bildet die **Problemdefinition**, mit der der Modellierungsbereich und die Ziele der Referenzmodellkonstruktion fixiert sind. Anschließend wird durch **Analyse der Problemdomäne* Wissen über den Modellierungsbereich aufgebaut und ein Modellrahmen definiert. In der folgenden Phase findet die **Konstruktion der strukturellen und dynamischen Aspekte des Modells** statt. Durch die **Evaluation** wird sichergestellt, dass die konstruierten Modelle konsistent sind und den Anforderungen der Anwender genügen. Defizite oder Anforderungsänderungen führen dazu, dass der Entwicklungsprozess erneut ausgeführt wird. Mit dem Entwicklungsprozess ist der **Anwendungsprozess von Referenzmodellen** verknüpft, der durch die **Problemdefinition des Anwenders** angestoßen wird und zu **definierten Anforderungen** führt. In der folgenden Phase erfolgt die **Suche und Selektion** geeigneter Referenzmodelle, die anschließend zur **Konstruktion eines spezifischen Modells** für das Anwenderproblem führen.
+
+\centerline{\includegraphics[width=1\textwidth]{img/102.png}}
+
+### Sektorneutrale Anwendungen
+#### Rechnungswesen als Kern des ERP-Systems
+
+Ein ERP-System unterstützt die Administrations- und Dispositionsaufgaben eines Unternehmens. Das Rechnungswesen stellt den Kern des ERP-Systems dar. Die Teilsysteme **Finanzbuchhaltung** (externes Rechnungswesen) und **Kosten- und Leistungsrechnung** (internes Rechnungswesen) werden als seine zentralen Komponenten betrachtet.
+
+Neben dem System SAP ERP existieren weitere Lösungen im Bereich Customer Relationship Management (SAP CRM), Supplier Relationship Management (SAP SRM), Product Lifecycle Management (SAP PLM) und Supply Chain Management (SAP SCM). Wie aus Abb. 10.5 ersichtlich, sind sämtliche Lösungen Teil der SAP Business Suite. Lösungen aus den Bereichen des CRM, SRM und SCM fokussieren die unternehmensexterne Vernetzung mit Kunden sowie Lieferanten.
+
+\centerline{\includegraphics[width=1\textwidth]{img/105.png}}
+
+Einzelne Softwarefunktionalitäten innerhalb von SAP ERP sind einem der Bereiche Analytics (Analyse, Controlling), Financials (Finanzwesen), Human Capital Management (Personalwesen), Procurement & Logistics Execution (Einkauf und Logistik), Product Development & Manufacturing (Produktentwicklung und Fertigung) und Sales & Service (Vertrieb und Kundendienst) zugeordnet. Abb. 10.6 liefert einen Überblick über die Kernbereiche von SAP ERP.
+
+\centerline{\includegraphics[width=1\textwidth]{img/106.png}}
+
+#### Externes Rechnungswesen
+##### Aufgaben der Finanzbuchhaltung
+Die Aufgabe der Finanzbuchhaltung besteht darin, sämtliche Geschäftsvorfälle eines Unternehmens auf Konten zahlenmäßig abzubilden und durch den Jahresabschluss eine verdichtete Darstellung der unternehmerischen Vermögens- und Erfolgssituation in Form der Bilanz und der Gewinn- und Verlustrechnung (GuV) zu erzeugen.
+
+\centerline{\includegraphics[width=1\textwidth]{img/107.png}}
+
+Als grundlegender Baustein der Finanzbuchhaltung ist die **Hauptbuchhaltung** anzusehen, in der die Buchungen auf den Sachkonten des Kontenplans vorgenommen werden. Als Sachkonten werden diejenigen Bestands- und Erfolgskonten bezeichnet, die im Kontenplan des Unternehmens enthalten sind. Der Abschluss dieser Sachkonten in Form des Jahresabschlusses führt zur Bilanz und zur Gewinn- und Verlustrechnung.
+
+Neben den Sachkonten der Hauptbuchhaltung sind weitere Konten erforderlich. Diese werden im Rahmen von **Nebenbuchhaltungen** erfasst, zu denen die Kontokorrentbuchhaltung, die Lagerbuchhaltung, die Anlagenbuchhaltung und die Lohn- bzw. Personalbuchhaltung gehören.
+
+Der Gegenstand der **Kontokorrentbuchhaltung** (ital. conto corrente = laufende Rechnung) ist die Abbildung der Geschäftsbeziehungen zu Lieferanten (Kreditoren) und Kunden (Debitoren). Durch die Kontokorrentbuchhaltung wird es möglich, für jeden Lieferanten bzw. Kunden den aktuellen Stand der Verbindlichkeiten bzw. Forderungen zu erfassen. Zu diesem Zweck ist es erforderlich, für jeden Lieferanten bzw. Kunden ein eigenes Personenkonto einzurichten, auf dem die entsprechenden Buchungen mit den Verbindlichkeits- bzw. Forderungskonten vorgenommen werden.
+
+Die **Lagerbuchhaltung** dient der Aufzeichnung der Bestände, Abgänge und Zugänge einzelner Materialarten sowie unfertiger und fertiger Erzeugnisse. Die Erfassung der Materialien erfolgt dabei mengenorientiert, sodass für jedes Material der mengenmäßige Bestand buchmäßig ermittelbar ist.
+
+Um das Anlagevermögen des Unternehmens zu verwalten, ist ein Verzeichnis aller zugehörigen Wirtschaftsgüter erforderlich. Da die Anlagekonten des Hauptbuchs als Sammelkonten geführt werden, ist eine Detaillierung in Form einer eigenen **Anlagenbuchhaltung** erforderlich. In der Anlagenbuchhaltung erfolgt die Erfassung der Sach- und Finanzanlagen und der immateriellen Vermögensgegenstände. Für sämtliche Teile des Anlagevermögens werden in der Anlagenbuchhaltung auch die für die Berechnung der Abschreibungen benötigten Daten erfasst.
+
+In der **Lohn- und Personalbuchhaltung** werden die entsprechenden Konten der Mitarbeiter des Unternehmens geführt, auf denen nicht nur die Erfassung von Löhnen und Gehältern erfolgt, sondern auch die Dokumentation sonstiger Leistungen, wie beispielsweise Vorschüsse, Sondervergütungen und Sachleistungen.
+
+##### Stammdaten der Hauptbuchhaltung
+Zur Einrichtung der Finanzbuchhaltung als operatives System der Anwendungsarchitektur wird i. d. R. eine unternehmensspezifische Anpassung vorgenommen, die als **Customizing** bezeichnet wird. Im Rahmen des Customizingprozesses ist die Abbildung der Unternehmensstruktur sowie der landesspezifischen Besonderheiten (z. B. Währung, Steuersätze) erforderlich. Dies erfolgt anhand von Stammdaten.
+
+**Stammdaten** sind Grunddaten eines Unternehmens, die sich auf betriebswirtschaftlich relevante Objekte beziehen. Stammdaten existieren unabhängig von anderen Daten und werden im Zeitablauf selten verändert.
+
+Das SAP ERP-System verwendet zum Customizing einen standardisierten Einführungsleitfaden, der als **SAP-Referenz-IMG (Implementation Guide)** bezeichnet wird. Die einzelnen Schritte dieses Leitfadens müssen zur Einführung des Systems abgearbeitet werden, um ein lauffähiges SAP ERP-Produktivsystem zu erhalten.
+
+Die oberste Hierarchieebene der SAP-Stammdaten ist der Mandant. Ein Mandant ist eine geschlossene Unternehmenseinheit, verfügt über einen eigenen Stammdatenbestand und ist von anderen Mandanten unabhängig. Als nächste organisatorische Einheit unterhalb des Mandanten stellt sich der Buchungskreis dar. Mit Buchungskreisen werden rechtlich selbstständige Tochtergesellschaften abgebildet. Betriebswirtschaftlich stellt ein Buchungskreis eine Gesellschaft im juristischen Sinne dar (z. B. eine GmbH, AG, KG), die innerhalb eines als Mandant abgebildeten Konzerns organisiert sein kann.
+
+In der Terminologie des SAP-Customizingprozesses werden für jeden Mandanten unternehmensinterne und unternehmensexterne Sachverhalte auf **interne** und **externe Organisationseinheiten** abgebildet.
+
+Die externen Organisationseinheiten werden auch als **rechtliche Organisationseinheiten** bezeichnet. Zu diesen rechtlichen Konstrukten gehören der **Buchungskreis** und die **Gesellschaft**. Eine **Gesellschaft** ist eine organisatorische Einheit des Rechnungswesens eines Unternehmens. Ein **Buchungskreis** ist eine organisatorische Einheit des Rechnungswesens, durch die das Unternehmen aus **Sicht der Finanzbuchhaltung** gegliedert wird. In einem Buchungskreis erfolgt eine vollständige Buchhaltung. Ein Buchungskreis umfasst grundsätzlich eine rechtlich selbstständige Gesellschaft. Aber auch rechtlich unselbstständige Einheiten, beispielsweise Betriebsstätten im Ausland, können abgebildet werden. Auf diese Weise lassen sich für diese Einheit eigene Berichtsfunktionen in der jeweiligen Landeswährung nutzen. Zu den Stammdaten, die für einen Buchungskreis zu definieren sind, gehören insbesondere der Kontenplan, die Geschäftsjahresdefinition und die zu verwendenden Parallelwährungen.
+
+Zu den internen Organisationseinheiten gehören die optionalen Konstrukte **Geschäftsbereich** sowie **Kreditkontroll- und Mahnbereich**. Durch die Definition von **Geschäftsbereichen** ist es im Rahmen der Finanzbuchhaltung von SAP ERP möglich, die Buchungen auf den Sachkonten differenziert auszuwerten. Um bei der Buchung von Geschäftsvorfällen eine korrekte Zuweisung zu den verursachenden Geschäftsbereichen sicherzustellen, ist der entsprechende Geschäftsbereichsschlüssel bei jeder Buchung anzugeben. Ein **Kreditkontrollbereich** ist eine interne Organisationseinheit des Rechnungswesens, die für Debitoren ein Kreditlimit definiert und überwacht. Ein Kreditkontrollbereich ist dadurch gekennzeichnet, dass er eine einheitliche Währung aufweist und mehrere Buchungskreise umfassen darf. Das **Mahnwesen** von SAP ERP wird im Allgemeinen auf Buchungskreisebene abgewickelt, sodass jeder Buchungskreis genau einen Mahnbereich bildet. In der Praxis liegt häufig eine divisionalisierte Unternehmensstruktur vor, bei der die Mahnfunktion auf die einzelnen Geschäftsbereiche, Vertriebsorganisationen oder Sparten verteilt wird. Diese Organisationsbereiche können unter SAP ERP als Mahnbereiche erfasst werden.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1011.png}}
+
+Abb. 10.11 stellt den Zusammenhang zwischen Buchungskreisen und Kreditkontrollbereichen her. Der im Beispiel abgebildete Konzern besitzt Niederlassungen in Deutschland, Frankreich, USA und Kanada und verfügt über vier Buchungskreise, die nach den landesspezifischen Rechtsnormen einzeln abgeschlossen werden. In jedem Buchungskreis existieren Geschäftsbeziehungen mit dem Debitor X. Innerhalb des SAP ERP-Systems werden die beiden Kreditkontrollbereiche Europa (Währung Euro) und Nordamerika (Währung USD) angelegt. Für jeden dieser Kreditkontrollbereiche wird ein Kreditlimit in der entsprechenden Währung definiert. Dieses Kreditlimit gilt grundsätzlich für jeden einzelnen Debitor. Für einzelne Debitoren kann jedoch zusätzlich ein individuelles Kreditlimit festgelegt werden.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1013.png}}
+
+Sämtliche Geschäftsvorfälle des Unternehmens werden auf **Sachkonten** der Hauptbuchhaltung gebucht, die durch Kontenrahmen und Kontenplan zu gliedern sind. Der Kontenrahmen ist in zehn Kontenklassen unterteilt, bei denen wiederum einzelne Kontengruppen unterschieden werden.
+
+Bei der Auswahl des Kontenrahmens gibt es die grundlegenden **Gliederungsprinzipien der Abschluss-** (orientiert sich am Jahresabschluss der Kapitalgesellschaften, z.B. Industriekontenrahmen IKR) und **der Prozessgliederung** (nach dem generellen Ablauf der betrieblichen Leistungserstellung gegliedert, z.B. Gemeinschaftskontenrahmen GKR).
+
+Die datenorientierte Modellierung der Konten und des Kontenplans wird durch das Entity-Relationship-Modell in Abb. 10.14 beschrieben, das außerdem den Buchungskreis und den Mandanten erfasst.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1014.png}}
+
+Jeder Mandant (Konzern) kann mehrere Buchungskreise (Konzerntöchter) aufweisen. Dieser Sachverhalt wird durch den Beziehungstypen MBKZO ausgedrückt (Mandant-Buchungskreis-Zuordnung). Jedem Buchungskreis muss genau ein Kontenrahmen (z. B. GKR oder IKR) zugewiesen werden. Dies geschieht durch den Beziehungstypen KPBKZO. Erst wenn die Zuordnung des zum Kontenrahmen gehörenden detaillierten Kontenplans zum Buchungskreis erledigt ist, kann über den Beziehungstyp der Kontenzuordnung die Abbildung der Konten auf den Kontenplan für den gewünschten Buchungskreis erfolgen. Der Aufbau des Kontenplans wird durch den Beziehungstypen KSTRUKTUR erfasst. Die (0,n):(0,n)-Kardinalität erlaubt die Abbildung vernetzter Kontenbeziehungen.
+
+Die Attribute der Sachkonten können in buchungskreis- und kontenplanspezifische Daten differenziert werden. Während sich die **kontenplanspezifischen Daten** aus dem selektierten Kontenplan ableiten lassen, sind die **buchungskreisspezifischen Daten** nur für den aktuellen Buchungskreis (z. B. für eine Konzerntochter) gültig.
+
+Zu den **buchungskreisspezifischen Daten** gehören:
+
+* Die **Währung**
+* Das **Steuerkennzeichen** gibt an, welche Umsatzsteuersätze zu verwenden sind.
+* Die **Kontenabstimmung** stellt sicher, dass entsprechende Abstimmbuchungen mit den Büchern der Nebenbuchhaltung (z. B. Kreditoren-, Debitoren- oder Anlagenbuchhaltung) durchgeführt werden. Durch die Abstimmkontentechnik kann jederzeit ein Abschluss erstellt werden, da die Beträge aus den Nebenbuchhaltungen auch in der Hauptbuchhaltung gebucht werden.
+* Die **Berechtigung** kennzeichnet die Benutzergruppe, die zum Zugriff auf das Konto autorisiert ist.
+
+Zu den **kontenplanspezifischen Daten** des Sachkontenstamms gehören:
+* Die **Kontonummer** und die **Kontenbezeichnung**,
+* der **Kontentyp**, der angibt, ob es sich bei dem Konto um ein Bilanz- oder ein Erfolgskonto handelt und
+* die **Kontengruppe**, die bestimmt, welche Felder beim Anlegen oder Ändern des Sachkontenstammsatzes ausgefüllt werden müssen.
+
+##### Stammdaten der Debitoren- und Kreditorenbuchhaltung
+
+Im Rahmen der Debitoren- und Kreditorenbuchhaltung werden die Geschäftsbeziehungen der Unternehmen zu Kunden und Lieferanten erfasst. Hierzu gehören beispielsweise Adressdaten, Zahlungsbedingungen und Bankverbindungen. Da Debitoren und Kreditoren in mehreren Buchungskreisen eines Konzerns aktiv sein können, ist es sinnvoll, die Daten in einen **allgemeinen** und einen *buchungskreisabhängigen** Bereich zu untergliedern.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1016.png}}
+
+Die **allgemeinen Stammdaten** umfassen diejenigen Attribute, die einen Debitoren bzw. Kreditoren unabhängig von seiner Aktivität in den Buchungskreisen des Mandanten beschreiben. Zu diesen Daten gehören sämtliche **Anschriftdaten** (Namen, Adresse, Kommunikationsmöglichkeiten des Kreditoren bzw. Debitoren), **Steuerdaten (Steuernummer)** des Debitoren und **Referenzdaten** (Global Location Number, GLN) zur eindeutigen Identifikation im Geschäftsverkehr.
+
+Zu den **buchungskreisabhängigen Stammdaten** für Kreditoren und Debitoren gehören die Kontoführungsdaten:
+
+* Die Geschäftsvorfälle, die in der Kreditoren- und Debitorenbuchhaltung gebucht werden, müssen gleichzeitig auf den Konten der Hauptbuchhaltung abgebildet werden. Zu diesem Zweck wird jedem Kreditoren- bzw. Debitorenkonto ein **Abstimmkonto** in der Hauptbuchhaltung zugewiesen.
+* **Zahlungsverkehrs*: Dazu gehört die Erfassung der gewährten Zahlungsbedingungen durch die Kreditoren bzw. Debitoren sowie die Darstellung der Bankverbindungen. Bei der Durchführung des Zahlungsverkehrs ist neben dem Bank Identifier Code (BIC) die IBAN (International Bank Account Number) als zweites Identifikationsmerkmal zu erfassen, die weltweit der eindeutigen Adressierung von Konten dient.
+* Die **Mahndaten** geben an, mit welchen Parametern die Mahnung von Debitoren erfolgen soll. Zu den Parametern des Mahnverfahrens gehört die Anzahl der Mahnstufen, die vor Durchführung eines gerichtlichen Mahnverfahrens durchlaufen werden, sowie die Mahntexte, aus denen automatisch eine schriftliche Mahnung erstellt wird. Für Forderungen mit längerer Laufzeit können Warenkreditversicherungen abgeschlossen werden, die als Teil der Debitorenstammdaten zu erfassen sind.
+
+Die dargestellten Stammdaten verdeutlichen, dass das Anlegen eines neuen Kreditoren bzw. Debitoren mit relativ hohem Aufwand verbunden ist. Für Geschäftspartner, bei denen selten bzw. einmalig Geschäftsvorfälle anfallen, empfiehlt sich die Anlage sog. **Conto-pro-Diverse-Konten (CpD-Konten)**. Bei dieser Art von Personenkonto werden die Stammdaten bei der **Belegerfassung** eingegeben und innerhalb des Belegs gespeichert. Auf diese Weise werden die Datenbestände des Kreditoren- bzw. Debitorenstamms nicht unnötig vergrößert.
+
+##### Stammdaten der Anlagenbuchhaltung
+
+Die Anlagenbuchhaltung dient der Dokumentation des Anlagevermögens der Unternehmen. Dabei werden die Arten des Anlagevermögens in **immaterielle Vermögensgegenstände** (z.B. Rechte, Konzessionen), **Sachanlagen** (z.B. Maschinen, Gebäude) und **Finanzanlagen** (z.B. Unternehmensbeteiligungen, Wertpapiere) unterschieden. Im Folgenden wird nur auf den Bereich der (praktischsten) Sachanlagen eingegangen. Die nächste Abbildung beschreibt die erforderlichen Sachverhalte für die Erfassung von Sachanlagen.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1017.png}}
+
+##### Bewegungsdaten der Finanzbuchhaltung
+
+Die *Bewegungsdaten* resultieren aus den Geschäftsvorfällen eines Mandanten und haben i. d. R. Auswirkungen auf dessen Bestandsdaten. **Bewegungsdaten** sind ereignis- bzw. zeitbezogene Daten, die die Ausprägung von Bestandsdaten verändern. Bestandsdaten beziehen sich auf betriebswirtschaftlich relevante Mengen- und Wertangaben.
+
+Zur korrekten Abbildung der Geschäftsvorfälle sind aber auch Stammdaten, z. B. Kreditoren- und Debitorenkonten, erforderlich. In der Datenmodellierung sind Bewegungsdaten durch Zeitpunkt- und/oder Transaktionsbezüge gekennzeichnet, während Stammdaten entweder unbeschränkt gültig sind oder einen Zeitraumbezug aufweisen (gültig von … bis …).
+
+Bei der Abbildung von Geschäftsvorfällen im System der Finanzbuchhaltung ist das **Belegprinzip** als maßgeblicher Grundsatz zu beachten. Ein Beleg dokumentiert einen Geschäftsvorfall und stellt die Grundlage für die Buchung im System der Finanzbuchhaltung dar.
+
+Um eine möglichst einfache Abbildung der Belegarten im System der Finanzbuchhaltung zu ermöglichen, ist eine einheitliche Belegstruktur für die Bewegungsdatenverwaltung sinnvoll. Abb. 10.19 veranschaulicht eine Modellierungsvariante für den Sachverhalt der Verwaltung von Bewegungsdaten.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1019.png}}
+
+In dem dargestellten ER-Diagramm werden die unterschiedlichen Dokumente der Geschäftsvorfälle  (z. B. Kundenrechnung, Lieferantenrechnung) erfasst und zwecks Vereinheitlichung auf ein generalisiertes Dokument abgebildet. Dieses Dokument, das die Entitätstypen Urbelegkopf und Urbelegposition umfasst, dient dabei lediglich der Standardisierung vielfältiger materieller Belegarten. Es wird benötigt, um die Belegerfassung durch die Entitätstypen Belegkopf und Belegposition zu ermöglichen. Neben dem Belegkopf und den einzelnen Belegpositionen ist es aus Sicht der Datenorganisation erforderlich, den Belegtypen zu erfassen.
+
+SAP ERP orientiert sich am Belegprinzip und speichert Buchungen stets in Belegform.
+
+##### Funktionen der Hauptbuchhaltung
+
+\centerline{\includegraphics[width=1\textwidth]{img/1020.png}}
+
+Im Bereich der **Stammdatenpflege** werden die Sachkonten der Hauptbuchhaltung verwaltet. Zu den zentralen Aufgaben gehören dabei das Anlegen, Ändern, Anzeigen und Löschen der Sachkontenstammdaten.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1023.png}}
+
+**Buchungen durchführen**: Der Prozess der Sachkontenbuchung lässt sich in BPMN-Notation darstellen (s.Abb. 10.23).
+
+* Belegkopf eingeben: Belegdatum (Ausstellungsdatum), Buchungsdatum, Buchungskreis, Währungsschlüssel, Referenz (Referenzbelegnummer zur Erfassung der Belegnummer externer Belege, z. B. der Bank), Belegkopftext (Erläuterungen), Belegart (Nummernkreis im SAP ERP).
+* Belegposition(-Parameter) definieren: Buchungsschlüssel, die Nummer des Sachkontos, das bebucht werden soll, die Buchungsart, und den zu buchenden Betrag. Dabei gibt der Buchungsschlüssel,  wie eine Belegposition im System zu buchen ist. Der Buchungsschlüssel steuert, welche Kontenarten (Kreditoren-, Debitoren-, Sach-, Anlage- und Materialkonten) gebucht werden, ob eine Soll- oder Habenbuchung durchgeführt wird, und ob die Buchung umsatzwirksam ist.
+
+Zur Information und Rechenschaftslegung über die Vermögens-, Finanz- und Ertragslage sind im Rahmen der Hauptbuchhaltung **Abschlussarbeiten** durchzuführen. Die Abschlussarbeiten werden unter SAP ERP zeitlich differenziert (Jahres-, Monats- und Tagesabschluss). Die Abschlussarbeiten des Jahresabschlusses umfassen die periodengerechte Abgrenzung der Aufwendungen und Erträge, die Bestandsaufnahme und Bewertung der Forderungen und Verbindlichkeiten und das Erstellen der Bilanz und GuV-Rechnung.
+
+##### Funktionen der Kreditoren- und Debitorenbuchhaltung
+
+Die Kreditoren- und Debitorenbuchhaltung erfasst alle Belege, die Geschäftsvorfälle mit Geschäftspartnern abbilden. Dazu gehören typischerweise die in Tab. 10.3 dargestellten Fälle.
+
+\centerline{\includegraphics[width=1\textwidth]{img/103.png}}
+
+Da es sich bei der Kreditoren- und Debitorenbuchhaltung um spiegelbildliche Prozesse handelt, wird an dieser Stelle nur auf die Debitorenbuchhaltung eingegangen, deren Funktionen in der nächsten Abbildung dargestellt werden.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1030.png}}
+
+Zu den zentralen Aufgaben der **Stammdatenpflege** gehören das Anlegen, Ändern, Anzeigen und Löschen der Debitorenkonten. Wie bei den Sachkonten der Hauptbuchhaltung können Debitorenkonten auch zum Buchen gesperrt werden.
+
+Der Bereich der **Belegbuchung** der Debitorenbuchhaltung wird hier auf die Basisbelege *Rechnung* und *Zahlungseingang* beschränkt. Die Erstellung einer Debitorenrechnung führt zu einer Sollbuchung auf dem Debitorenkonto und damit zu einer fälligen Forderung, die als *offener Posten* bezeichnet wird. Erfolgt der Zahlungseingang zum Ausgleich beispielsweise auf einem Bankkonto, so wird dieser Eingangsposten analog als *geklärt* gekennzeichnet. Als Ausgleichsvorgänge sind die folgenden Standardvorgänge definiert Zahlungseingang, Lastschrift und Umbuchung.
+
+Das **Kreditmanagement** zählt zu den periodischen Arbeiten der Debitorenbuchhaltung. Kunden weisen im Allgemeinen unterschiedlich hohe Bonitätsgrade auf. Aufgrund dieser Tatsache wird die Annahme von Aufträgen erheblich beeinflusst. Um das Risiko durch einen möglichen Zahlungsausfall zu reduzieren, wird im Bereich des Kreditmanagements häufig mit Kreditlimits gearbeitet, die auf Debitorenebene individuell vergeben werden können.
+
+Eine weitere periodische Funktion der Debitorenbuchhaltung ist das **Mahnwesen**. Voraussetzung für ein effektives Mahnwesen ist das Erfassen von Fälligkeitsterminen für den Zahlungsausgleich. Diese können ggf. automatisch bei der Rechnungserstellung vom System generiert oder manuell vom Sachbearbeiter festgelegt werden. Die im Rahmen des Mahnwesens zu verarbeitenden Daten werden in Abb. 10.33 anhand eines Datenflussdiagramms (DFD) dargestellt.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1033.png}}
+
+Wird ein Mahnlauf durchgeführt, selektiert das Mahnprogramm aus den Debitorenstamm- und Belegdaten alle fälligen Forderungen, also die *offenen Posten*. Diese werden vom Mahnprogramm in einen eigenen *Mahnbestand* übernommen, aus dem der *Mahnvorschlag* zusammengestellt wird. Aus diesem Mahnvorschlag kann der Anwender die tatsächlich zu mahnenden Debitoren auswählen. Soll ein Debitor nicht gemahnt werden, obwohl eine Forderung nicht fristgerecht ausgeglichen wurde, kann eine Mahnsperre verhängt werden. Auch können im Mahnbestand die erforderlichen Mahnstufen vergeben werden, die vor Einleitung des gerichtlichen Mahn-/Zwangsvollstreckungs- bzw. Betreibungsverfahrens zu durchlaufen sind. Nach der Bearbeitung des Mahnvorschlags ist das Druckprogramm zu starten, bei dem standardisierte, unterschiedlich gestufte Mahntexte verwendet werden können.
+
+Das Druckprogramm generiert neben den Mahnungen auch eine Mahnliste, die zur internen Dokumentation des Mahn(ab)laufs benötigt wird. Um beim nächsten Mahnlauf eines Debitors die Mahnstufe erhöhen zu können, ist deren Fortschreibung in den Belegdaten des Debitors erforderlich. Bei Erreichen der höchsten Mahnstufe kann automatisch ein Mahnbescheid generiert werden. Um ein positionsspezifisches Mahnen zu ermöglichen, werden die Mahnstufen auf der Ebene der Belegpositionen erfasst.
+
+##### Funktionen der Anlagenbuchhaltung
+
+Die zentralen Funktionen der Anlagenbuchhaltung zur Verwaltung von Sachanlagen werden in der nächsten Abbildung dargestellt.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1034.png}}
+
+Die Stammdatenpflege der Anlagenbuchhaltung verwaltet alle langfristig konstanten Anlagendaten. Ein Anlagenstammsatz für ein Objekt ist beim Zugang einer Anlage aufgrund von Eigenfertigung oder Kauf zu erstellen. Der Stammsatz enthält sowohl sachbezogene Daten als auch organisatorische Zuordnungen (z. B. Geschäftsbereich, Standort) und Bewertungsparameter für die Fortschreibung der Anlage.
+
+Die Geschäftsvorfälle der Anlagenbuchhaltung lassen sich anhand der folgenden Phasen differenzieren:
+
+* Buchungen während des Baus der Anlage,
+* Buchung bei Anlagenzugang,
+* Buchungen während der Nutzungsphase der Anlage, und
+* Buchungen bei Anlagenabgang.
+
+Zu den grundlegenden Funktionen der Anlagenbuchhaltung gehört die Planung und Durchführung von **Abschreibungen im Zeitablauf (Abschreibungslauf)**. Die möglichen Abschreibungsarten werden differenziert in *Normalabschreibung* durch Werteverzehr im Rahmen des betrieblichen Leistungsprozesses, *Sonderabschreibung* durch wirtschaftspolitisch induzierte Rechtsnormen (z. B. in Form von Sonderabschreibungen für Umweltschutzanlagen) oder außerplanmäßige Abschreibungen durch dauerhafte Wertminderung. Die Basis für den Abschreibungslauf ist der Abschreibungsschlüssel.
+
+#### Internes Rechnungswesen
+
+\centerline{\includegraphics[width=1\textwidth]{img/1036.png}}
+
+Zur Erfüllung der in Abb. 10.36 aufgeführten Funktionen hat die Kostenrechnung sämtliche relevanten Geschäftsvorfälle zu identifizieren und im Rahmen einer Grundrechnung zu erfassen. Auf der Basis dieser Dokumentationsfunktion sind Kontrollen und Entscheidungsunterstützungen möglich. Abb. 10.37 stellt den Weg der Kostenverrechnung bei einem System der *Teilkostenrechnung* dar, bei dem ein Kostenträger nur mit den variablen Kosten belastet wird. Diese Verrechnungsstruktur bildet die logische Grundlage für die hier darzustellenden Abläufe.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1037.png}}
+
+Die Aufgabe der **Kostenartenrechnung** besteht in der Erfassung und Gliederung aller angefallenen Istkosten sowie in der innerbetrieblichen Leistungsverrechnung.
+
+Die **Kostenstellenrechnung** hat die in der Kostenartenrechnung erfassten primären Gemeinkosten verursachungsgerecht weiterzuverrechnen und bildet damit für das Istkostenrechnungssystem auf Vollkostenbasis, in dem auch die fixen Kosten auf Produkte verteilt werden, das Bindeglied zwischen Kostenarten- und Kostenträgerrechnung. Leistungen, die von den Hilfskostenstellen für die Hauptkostenstellen erfolgen, werden dabei über periodenspezifische Bezugswerte abgerechnet. Die Aufgaben der Kostenstellenrechnung bestehen neben der Ermittlung von Gemeinkostenzuschlagssätzen für die Kalkulation in der Wirtschaftlichkeitskontrolle der Kostenstellen.
+
+Die Aufgabe der **Kostenträgerrechnung** besteht darin, die Selbstkosten von Produkten, Aufträgen, Projekten oder anderen Kalkulationseinheiten (Marktleistungen oder innerbetriebliche Leistungen) zu ermitteln. Neben der Ermittlung von Selbstkosten dient die Kalkulation der Ermittlung der Herstellungskosten zur Bewertung von unfertigen und fertigen Erzeugnissen. Die Kostenträgerstückrechnung wird durch das gewählte Fertigungsverfahren bestimmt. Tab. 10.4 liefert einen Überblick über die Kalkulationsverfahren.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1037.png}}
+
+#### Nutzung des SAP Enterprise Portal
+
+Das SAP Enterprise Portal ist ein Portal, das auf dem SAP Application Server basiert und Benutzern eine Infrastruktur (Portal Infrastructure) zur Verfügung stellt, die einen gesicherten, verschlüsselten Zugriff auf Anwendungen und Daten erlaubt. Benutzer, die im SAP-System angelegt sind, können gemäß der ihnen zugewiesenen Rollen (z. B. Marketingleiter, Lagerarbeiter) auf vordefinierte Daten und Anwendungen zugreifen. Dazu ist lediglich ein Webbrowser auf dem lokalen Computer des Benutzers nötig. Über ein **Single Sign-on erfolgt** der Zugriff auf Daten und Applikationen verschiedener Unternehmensanwendungen. Das Single Sign-on-Konzept weist den Vorteil auf, dass der Portalbenutzer sich nicht an jedes einzelne System, das er in seiner personalisierten Portalumgebung eingebunden hat, anmelden muss. Vielmehr wird er nach einer einmaligen Registrierung am Portal automatisch bei den erforderlichen Teilsystemen angemeldet.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1038.png}}
+
+Im Rahmen unternehmensübergreifender Geschäftsprozesse (Supply Chain Management) wird die Zusammenarbeit zwischen einem Unternehmen, seinen Zulieferern und Kunden durch ein solches Portal unterstützt. Durch die informationstechnologische Integration der Geschäftsprozesse können Kostensenkungspotenziale realisiert werden. So sind die Unternehmen in der Lage, individuelle Konditionen, den Lagerbestand des Lieferanten sowie den Lieferfortschritt einzelner Aufträge (Order Tracking) aktuell einzusehen. Lieferanten können ihren Kunden individuelle Kataloge per Internet zur Verfügung stellen und eine Onlinebestellung aus diesen Katalogen heraus ermöglichen. Nicht nur die Ausführung von Transaktionen über ein Portal ist möglich, sondern auch die Realisierung unternehmensinterner und -externer Gruppenarbeit (Collaboration). In virtuellen Gruppen wird internen und externen Personen die Möglichkeit zur Koordination von verteilten Geschäftsprozessen und verteilter Projektarbeit gegeben. Gruppen (z. B. Projektteams) können sich in virtuellen Räumen (Collaboration Rooms) zusammenfinden und die dort bereitgestellten Kollaborationsanwendungen nutzen.
+
+### Sektorspezifische Anwendungen
+#### Industriebetriebe
+#####  Architektur klassischer PPS-Systeme
+
+Die Anwendungsarchitektur für Industriebetriebe wird als Y-Modell dargestellt, dessen linker Ast mit der Produktionsplanung und -steuerung (PPS) vorwiegend betriebswirtschaftliche und dessen rechter Ast primär technische Funktionen enthält. Das Gesamtsystem wird auch als **Computer Integrated Manufacturing (CIM)-Konzept** bezeichnet (s. Abb. 10.40). Zunächst soll auf die **Produktionsplanungsund -steuerungssysteme (PPS-Systeme)** eingegangen werden. Dabei sind folgende Teilbereiche zu koordinieren:
+
+* Programmplanung,
+* Produktionsdurchführungsplanung, und
+* Bereitstellungsplanung.
+
+Zwischen diesen Teilbereichen bestehen vielfältige Abhängigkeiten, die dazu führen, dass für die operative Planung, Steuerung und Überwachung der Produktionsabläufe ein integriertes Softwaresystem erforderlich ist.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1040.png}}
+
+##### Technische Komponenten
+
+Die Gesamtarchitektur umfasst neben dem primär wirtschaftlich ausgerichteten PPS eine Reihe von Komponenten zur Unterstützung der Technik eines Industriebetriebs:
+
+* **Computer Aided Design (CAD)**. CAD umfasst das computergestützte Entwerfen, Zeichnen und Konstruieren einschließlich der zugehörigen technischen Berechnungen. Hierbei werden ökonomische Fragen einbezogen und auch technische Alternativen bewertet, um zu einer effizienten Lösung zu gelangen.
+* **Computer Aided Planning (CAP)**. Das CAP beinhaltet die rechnergestützte Arbeitsplanung, die sowohl eine konventionelle Planung (z. B. Materialbeschreibungen, technischer Fertigungsablauf) als auch eine Planung für NC- (Numeric Control) und DNC (Digital Numeric Control)-gesteuerte Fertigungsanlagen unterstützt.
+* **Computer Aided Manufacturing (CAM)**. Unter CAM ist der Rechnereinsatz im Bereich der Fertigung (NC-Maschinen, Roboter) und der innerbetrieblichen Logistik zu verstehen, bei dem insbesondere der Materialfluss verbessert werden soll.
+
+##### Integration
+
+Wesentlich für das CIM-Konzept ist die Verknüpfung der Software des ERP-Systems mit der Produktionsplanung und -steuerung durch die Nutzung der technisch orientierten Verfahren (CAD, CAM, CAP) und durch den Zugriff auf eine einheitliche Datenbasis. Dadurch wird die Bedeutung einer integrierten Stammdatenbank für die beiden Bereiche des CIM-Konzepts deutlich (s. Abb. 10.41).
+
+\centerline{\includegraphics[width=1\textwidth]{img/1041.png}}
+
+#### Handelsbetriebe
+##### Konzeptionelle Grundlagen
+
+Handelsunternehmen sind dadurch charakterisiert, dass sie die Güterströme zwischen Wirtschaftssubjekten organisieren und koordinieren. Durch die Überbrückung *räumlicher, zeitlicher, qualitativer und quantitativer Diskrepanzen* wird letztlich der Konsum von Gütern und Dienstleistungen ermöglicht. Die zentralen Funktionen des Handels beziehen sich somit auf die *Beschaffung*, *Lagerhaltung* und die *Distribution* von Gütern. Die IS des Handels, die den physischen Warenstrom und sämtliche damit verbundenen Prozesse abbilden, werden als **Warenwirtschaftssysteme** bezeichnet. Ein Referenzmodell, das die Architektur von Warenwirtschaftssystemen beschreibt, ist das Handels-H-Modell in Abb. 10.42.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1042.png}}
+
+##### Funktionen
+
+Warenwirtschaftssysteme, wie sie beispielsweise von Kaufhaus- oder Supermarktketten eingesetzt werden, nutzen regelmäßig voll integrierte Kassensysteme (Point-of-Sale- Systeme). So werden die Artikel an der Kasse durch einen Laserscanner über die globale Artikelidentnummer (Global Trade Item Number, GTIN) mengenmäßig erfasst. So werden mittels GTIN aus den Artikelstammdaten die Artikelbezeichnung, der Preis und der Umsatzsteuersatz festgestellt und auf dem Kassenbeleg ausgedruckt.
+
+Die Mengendaten der abgesetzten Artikel werden an die Lagerhaltung weitergeleitet, um eine Fortschreibung der Bestandsmengen durchzuführen. Bei Unterschreitung des Mindestbestands (Meldemenge) wird automatisch die Bestellung des entsprechenden Artikels beim Lieferanten ausgelöst. Der Umsatz wird auf den Erlöskonten der Buchhaltung gebucht. Aggregierte Umsatzdaten stehen dann zeitnah für Auswertungen durch Berichtssysteme zur Verfügung. Für den Zweck von Warenkorbanalysen im Rahmen innovativer Controllingkonzepte (Data Mining) ist es jedoch erforderlich, die Belegdaten einzelner Kaufereignisse unverdichtet (elementar) zu speichern. So sind die verfügbaren Daten, die einzelne Kaufprozesse charakterisieren, in einem eigenen Datenpool abzulegen, der für analytische Zwecke aufbereitet werden kann.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1043.png}}
+
+#### Finanzdienstleister
+
+Finanzdienstleistungen (FDL) umfassen Dienstleistungen, die in Verbindung mit Finanzgeschäften, aka **Finanzdienstleistungsunternehmungen (FDL-Unternehmungen)** stehen. Dazu zählen die von Bank- und Kreditinstituten sowie von Versicherungen erbrachten Leistungen, die Kundenprozesse mit überwiegend finanziellem Charakter (z. B. Alterssicherung, Zahlungsverkehr, Kredite, Vermögensanlage) durch Herstellung, Vermittlung/Handel, Integration, Beratung und/oder Abwicklung unterstützen.
+
+Zusammenfassend lassen sich die Anwendungen für FDL-Unternehmen nach zwei Dimensionen strukturieren, wie in Abb. 10.44 gezeigt:
+
+* **Kundenprozesse** in der horizontalen Dimension orientieren sich an den Bedürfnissen des Kunden und unterscheiden für den Bankbereich zwischen Finanzieren, Zahlen und Anlegen. Für den Versicherungsbereich stehen die Kundenprozesse Vorsorgen und Absichern im Mittelpunkt. Zusätzlich können Versicherungsprodukte wie Lebensversicherungen auch den Kundenprozess Anlegen betreffen. Sie deuten damit auf Überschneidungen von Versicherungen und Banken hin.
+* **Unternehmensprozesse** in der vertikalen Dimension skizzieren die wesentlichen Geschäftsprozesse eines Finanzdienstleisters. Zu unterscheiden sind Führungs-, Leistungs- und Unterstützungsprozesse, wobei sich die Leistungsprozesse in Vertriebs- und Ausführungs-/Abwicklungsprozesse sowie transaktionsbezogene und -übergreifende Prozesse aufgliedern lassen. Eine Unterscheidung zwischen Banken und Versicherungen ist in der vertikalen Dimension nicht erforderlich.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1044.png}}
+
+Grundsätzlich unterscheiden Finanzdienstleister zwei Anwendungsbereiche:
+
+* **Frontoffice-Anwendungen** unterstützen Vertriebsprozesse zur Kundenberatung und -betreuung „vor Ort“, die in einer (physischen) Filiale ebenso wie im Call Center oder im Bereich der elektronischen Medien (Social, Online oder Mobile Banking) angesiedelt sein können.
+* **Backoffice-Anwendungen** bezeichnen die kundenfernen Anwendungen, die z. B. die Abwicklung und Verwaltung von Krediten, Kapitalanlagen und Zahlungen vornehmen. Die Anwendungen besitzen Schnittstellen zur Bankenwertschöpfungskette, etwa anderen Spezialdienstleistern (z. B. für das Scanning von papierhaften Belegen) oder Dienstleistern aus dem Interbankenbereich (z. B. Swift, Target, Finanzbörsen).
+
+Grundsätzlich sollte sich die Strukturierung von Anwendungen an fachlichen und weniger an technischen oder physischen Aspekten, wie z. B. „Filiale“ oder „Zentralrechenzentrum“, orientieren. Damit stehen längerfristig stabile Dimensionen wie Funktionalitäten, Datenverwendung und Verantwortlichkeiten im Vordergrund, auf denen Entwicklungs-, Integrations- und Architekturprojekte aufbauen können. Mögliche Ausnahmen entstehen, wenn Funktionen, Daten und Verantwortlichkeiten kanalspezifisch ausfallen (z. B. Social Media, Bankschalter in Abb. 10.44). Die IS-Architekturplanung versucht gewachsene, und durch viele Überschneidungen und Lücken gekennzeichnete Anwendungslandschaften in Richtung einer „sauberen“ Zielarchitektur zu entwickeln.Eine solche Anwendungslandschaft besteht aus folgenden Komponenten:
+
+* **Vertikale Anwendungen** unterstützen produktspezifische Abwicklungsprozesse, die meist mit bestimmten Organisationsbereichen verbunden sind (z. B. Kredite, Zahlungsverkehr, Wertpapiere, Lebensversicherung, Nicht-Lebensversicherung).
+* **Horizontale Anwendungen** unterstützen produktübergreifende Zugangs- und Vertriebsprozesse, die an einen bestimmten Kanal gebunden sind, d. h. um bestimmte Funktionalitäten herum integriert sind (z. B. Vertriebsprozesse, transaktionsübergreifende Prozesse).
+* **Analytische Anwendungen** unterstützen Führungsprozesse durch Bereitstellung von aufbereiteten Informationen auf Basis von Daten aus operativen Anwendungen (z. B. Führungsprozesse, Kundensegmentierung).
+
+#### Telekommunikationsdienstleister
+
+Als Basis zur Identifikation und Systematisierung relevanter Prozesse von Telekommunikationsdienstleistern hat die **enhanced Telecom Operations Map (eTOM)** weite Verbreitung gefunden. Dabei handelt es sich um einen Ordnungsrahmen für Geschäftsprozesse (Business Process Framework). Einen Überblick über das eTOM-Modell liefert Abb. 10.45.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1045.png}}
+
+Im eTOM-Modell werden drei Hauptprozessgruppen für Telekommunikationsdienstleister unterschieden:
+
+* Managementprozesse des Unternehmens (**Enterprise Management**),
+* Entwicklungsprozesse (**Strategy, Infrastructure & Product**), und
+* operative Prozesse des Betriebs (**Operations**).
+
+Die erste Hauptprozessgruppe **Enterprise Management** umfasst Tätigkeiten, die generell – d. h. unabhängig vom betrachteten Sektor – zur Führung eines Unternehmens erforderlich sind und in jedem größeren Unternehmen anzutreffen sind.
+
+Die zweite Hauptprozessgruppe hat solche Tätigkeiten zum Gegenstand, die der langfristigen, lebenszyklusübergreifenden Entwicklung und Ausrichtung von Strategien, Infrastrukturen sowie Produkten dienen (**Strategy, Infrastructure & Product**). In diesem Bereich findet auch eine vertikale Aufgliederung in unterschiedliche Ebenen statt, die auf unterschiedliche Phasen der Wertschöpfung vom Lieferanten bis hin zum Kunden Bezug nehmen:
+
+* Die unterste Ebene umfasst den strategischen Einkauf bzw. die Beschaffung notwendiger Ressourcen (Supply Chain Development & Management).
+* Die beschafften Ressourcen fließen dem Unternehmen zu und werden als Komponenten zum Aufbau von Kommunikationsnetzen eingesetzt (Resource Development & Management). Typische Komponenten sind z. B. systemtechnische Elemente wie Router, Ports und Einschubkarten.
+* Im Bereich Service Development & Management findet die Entwicklung von Services statt, die als funktionelle Einheiten zur Abdeckung von Kundenanforderungen dienen. Typische Services von Telekommunikationsdienstleistern sind z. B. Internetzugänge, Telefonanschlüsse, Web Space und E-Mail-Adressen.
+* Auf der Ebene Marketing & Offer Management werden die Services schließlich zu Produkten gebündelt und als kundengerichtete Leistungsangebote am Markt platziert.
+
+Diese vertikale Aufgliederung wird auch in der Hauptprozessgruppe **Operations** berücksichtigt. Gegenstand dieser Gruppe sind die operativen Prozesse der Leistungserstellung, deren inhaltlich-funktionalen Schwerpunkte in der horizontalen Aufgliederung zum Ausdruck gelangen. Neben Supportaktivitäten (Operations Support & Readiness) gehören hierzu vor allem Prozesse zur Belieferung (Fulfillment), Qualitätssicherung (Assurance) und Fakturierung (Billing). Diese drei Prozessbereiche bilden die sog. FAB-Prozesse, die direkt mit dem Kunden interagieren und im operativen Tagesgeschäft von Telekommunikationsdienstleistern von erheblicher Bedeutung sind:
+
+* *Fulfillment-Prozesse* beinhalten solche Tätigkeiten, mit denen bestellte Produkte bzw. deren Services konfiguriert und anschließend an den Kunden bzw. Endanwender ausgeliefert bzw. geschaltet werden.
+* *Assurance-Prozesse* stellen sicher, dass die produktspezifischen Services zur Verfügung stehen und den vertraglichen Vereinbarungen (Service Level Agreements) entsprechen. Hierzu kann z. B. ein proaktives Performance Monitoring erfolgen, das die Verfügbarkeit der zugesicherten Services kontinuierlich überwacht.
+* *Billing-Prozesse* haben die Erstellung und den Versand von Rechnungen zum Inhalt. In diese Fakturierungsprozesse können auch mengenorientierte Daten wie z. B. übertragene Datenvolumina einfließen, die auf der Ressourcen- bzw. Netzwerkebene erhoben worden sind und zur Tarifermittlung dienen.
+
+In der Telekommunikationsindustrie werden üblicherweise Operations- und Business-Support-Systeme unterschieden:
+
+* **Operations-Support-Systeme (OSS)** dienen der Unterstützung von Betrieb und Wartung der Telekommunikationsinfrastruktur. Hierzu gehören Elemente der Linientechnik, wie etwa Erdkabel und Verteiler, sowie Komponenten der Systemtechnik zur Vermittlung und Dienstbereitstellung.
+* **Business-Support-Systeme (BSS)** werden eingesetzt, um kundenorientierte Prozesse zu unterstützen. Hierzu gehören insbesondere Aufgabenstellungen des Vertriebs und des Kundenservice, sodass der Kern eines BSS durch ein CRM-System gebildet wird.
+
+#### Energiewirtschaft
+
+Die für den Energiesektor wesentlichen Prozesse und Akteure werden in Abb. 10.46 dargestellt.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1046.png}}
+
+Aus der Darstellung wird deutlich, dass Energiehandelstransaktionen entweder zentral über die Börse – z. B. die European Energy Exchange in Leipzig (EEX) – oder außerbörslich als Folge einer Direktvermarktung (als OTC-Geschäft, Over the Counter) zustande kommen. Die Abwicklung des börslichen Energiehandels wird von einem Clearinghaus übernommen. Die Aufgabe des Clearinghouse besteht darin, als neutraler, zentraler Kontrahent (Central Counterparty, CCP) zwischen den Vertragspartnern für die Erfüllung der Geschäfte zu sorgen. Zu diesem Zweck werden etwa die gegenseitigen Forderungen und Verbindlichkeiten von Anbietern und Nachfragern gegeneinander aufgerechnet (Netting) und schließlich finanziell ausgeglichen.
+
+Zur physischen Abwicklung der Transaktion ist die gehandelte Strommenge über Netze zu liefern, die durch Netzbetreiber zur Verfügung gestellt werden. Während Übertragungsnetzbetreiber (Transmission System Operator, TSO) die Höchstspannungsnetze zur überregionalen Energieübertragung operativ betreiben, dient das Verteilnetz zur Anbindung von Endverbrauchern (z. B. private Haushalte, Unternehmen).
+
+Zur Koordination der Lieferprozesse erfolgt eine Fahrplananmeldung, mit der die Netzbetreiber über die aus den Handelstransaktionen resultierenden Stromlieferungen informiert werden. Die Produktion der erforderlichen Strommengen findet durch dedizierte Stromerzeuger bzw. Kraftwerke oder aber auch durch dezentrale Haushalte statt, die durch die Nutzung regenerativer Energiequellen als Prosumer auftreten. Die Verbrauchserfassung erfolgt durch entsprechende Messgeräte (z. B. Smart Meter), die von Messstellenbetreibern (MSB) installiert, betrieben und abgelesen werden. Diese Daten bilden schließlich auch die Abrechnungsgrundlage für den Verteilnetzbetreiber, der die verbrauchte Strommenge den Endverbrauchern in Rechnung stellt.
+
+Weitere Impulse erhalten IS in der Energiewirtschaft aktuell durch die Nutzung von Blockchain-Technologien. Mithilfe der Blockchain wird es möglich, direkte Handelstransaktionen (Peer-to-Peer-Transaktionen) mithilfe von Smart Contracts zu initiieren. Ein Smart Contract ist ein Programmcode, der auf einer Blockchain ausgeführt wird und digitale Güter oder Rechte zwischen mehreren Akteuren regelbasiert zuordnet. Ein vereinfachtes Beispiel für einen solchen Smart Contract zeigt die nächste Abbildung.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1047.png}}
+
+In diesem Smart Contract wird mithilfe von Wenn-Dann-Regeln gesteuert, wie selbst erzeugte Energie – etwa aus einem Windkraftwerk – zu handhaben ist. Für jede erzeugte Kilowattstunde (kWh) wird zunächst ein Token als Abrechnungseinheit erzeugt. Anschließend wird geprüft, ob die erzeugte Energie am Markt verkauft werden soll, oder aber einem Speicher zuzuführen ist. Diese Entscheidung erfolgt in Abhängigkeit vom aktuellen Strompreis, der z. B. über die Börse bereitgestellt wird.
+
+### Einführung von ERP-Systemen als Standardsoftware
+#### Vorgehensmodell zur ERP-Einführung
+
+Die Realisierung von ERP-Systemen erfolgt in der Regel auf Grundlage von Standardsoftwareprodukten,
+die am Softwaremarkt verfügbar sind. Ein projektorientiertes
+Vorgehensmodell für die ERP-Einführung zeigt Abb. 10.48.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1048.png}}
+
+Kriterien für die Auswahl von Standardsoftware:
+
+* **Anbieterqualifikation**: Wie hoch ist die Reputation des Anbieters, die Qualifikation seiner Entwickler und Berater sowie die Wahrscheinlichkeit, dass das Softwareprodukt über einen langen Zeitraum weiterentwickelt wird? Gibt es Updates bzw. Upgrades und müssen diese gesondert bestellt und bezahlt werden (Releasepolitik)?
+* **Schnittstellen**: Sind Standardschnittstellen zu umgebenden Systemen vorhanden? Erzielt man eine gewisse Unabhängigkeit von der eingesetzten Betriebssystem- und Kommunikationssoftware? Gibt es Schnittstellen zu bereits in dem Unternehmen vorhandenen Anwendungen bzw. wie hoch sind die Kosten, um diese zu realisieren? Werden die bereits eingesetzten elektronischen Systeme (z. B. Electronic Mail, Workflow- Systeme, EDI) unterstützt?
+* **Endbenutzerfähigkeit**: Wird die Bedienung durch Funktionstasten/Shortcuts und Menüsteuerung unterstützt? Gibt es Auswertungsmöglichkeiten ohne Programmiersprachenkenntnisse?
+* **Softwareanpassungen**: Wie gut werden individuelle Anpassungen unterstützt? Gibt es eine Entwicklungsumgebung bzw. Schnittstellen zu einer Standard-CASE-Umgebung? Sind für einfache Anpassungen Programmierkenntnisse notwendig?
+* **Zugriffsschutz, Datensicherheit**: Wie differenziert und flexibel ist das Berechtigungsund Sicherungskonzept des Softwareprodukts?
+* **Performance**: Ist das Softwareprodukt in der Lage, die aufkommenden Datenvolumina zu bewältigen? Welche Zugriffs- bzw. Laufzeiten können garantiert werden?
+* **Kosten/Nutzen**: Wie hoch sind die Kosten für Softwarelizenz, Wartung und notwendige Hardwareplattform? Wie stark steigert das Softwareprodukt die Effektivität und Effizienz der Geschäftsprozessausführung? Welche finanziellen und personellen Ressourcen müssen für Einführung, Wartung, Schulung und Beratung bereitgestellt werden?
+
+Anpassung von Standardsoftware (Customizing):
+
+* Durch **Parametereinstellung** werden Softwareanpassungen an individuelle Bedürfnisse ohne Programmänderungen vorgenommen. Die gewünschten Anpassungen werden durch Veränderung bestimmter Parameter (z. B. Systemtabellen) erreicht. Voraussetzung ist, dass möglichst viele Programmfunktionen in der Software enthalten sind, deren Ausführung parametrisiert wurde.
+* Unter **Ergänzungsprogrammierung** (oder allgemeiner **Individualprogrammierung**) ist eine Softwareanpassung durch individuell erstellte Programmänderungen zu verstehen. Mit Individualprogrammierung lassen sich zwar spezifische, funktionale Anforderungen am besten realisieren. Es handelt sich aber um eine kostenintensive Anpassung, durch die darüber hinaus die Fähigkeit verloren gehen kann, an Weiterentwicklungen der Standardsoftware durch Einspielen von Upgrades oder Patches automatisch zu partizipieren (sog. **Releasefähigkeit**).
+* Bei der **Konfigurierung** (Modularisierung) wird die Standardsoftware durch die Auswahl benötigter Programmbausteine (Module) und die Definition der Beziehungen zwischen den Programmbausteinen gebildet.
+
+Einführung und Integration von Standardsoftware: Die Einführung von Standardsoftware kann
+
+* zu einem Stichtag unter Ablösung der alten Systeme (welche gegebenenfalls noch eine Zeitlang im Parallelbetrieb laufen) erfolgen, wobei alle abgedeckten Geschäftsprozesse betroffen sind („Big Bang“).
+* stufenweise für einzelne Geschäftsprozesse oder Softwaremodule erfolgen,
+* stufenweise für einzelne Unternehmensbereiche erfolgen (z. B. erst Mutterkonzern und dann die Töchter und Vertriebsgesellschaften).
+
+#### SAP Activate als Vorgehensmodell zur Einführung von SAP ERP
+
+**SAP Activate** ist ein Vorgehensmodell zur Einführung von SAP ERP-Systemen. Dieses basiert auf einem agilen Entwicklungsansatz und wird in der nächsten Abbildung dargestellt. Hervorzuheben ist, dass dieses Vorgehensmodell keine Auswahl zwischen unterschiedlichen Systemalternativen vorsieht, sondern bereits die Entscheidung für ein SAP-System voraussetzt.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1049.png}}
+
+In der ersten Phase **Discover** wird die SAP-Lösung zunächst in einer Cloud-basierten Versuchsumgebung getestet, um erste Erfahrungen mit dem IS zu sammeln. In der anschließenden Phase **Prepare** erfolgt die eigentliche Projektvorbereitung und Projektplanung, die insbesondere auch die notwendigen ERP-Infrastrukturen (z. B. Auslegung von Hardware und Netzwerkressourcen) umfasst. Im Anschluss findet die Definition der geschäftskritischen Anforderungen statt, die ausführlich zu  dokumentieren sind (**Explore**). Die Realisierung (Phase **Realize**) bildet die eigentliche Entwicklungsphase im Vorgehensmodell, in der die SAP ERP-Lösung konfiguriert wird und die notwendigen Anpassungen durchgeführt werden. Sofern die Geschäftsprozessanforderungen durch das ERP-System erfüllt werden, erfolgt die Produktionsvorbereitung (**Deploy**), womit das System mit den notwendigen Daten für den Produktivbetrieb vorbereitet wird. In der letzten Phase (**Run**) wird von der vorproduktiven Umgebung in den Dauerbetrieb gewechselt.
+
+Projektphasen von ASAP (Accelerated SAP – ein Vorgehensmodell, das den schnellen Einstieg in das SAP ERP Einführungsprojekt ermöglichen soll):
+
+* Projektvorbereitung: Ein klares Projektziel und eine effiziente Vorgehensweise werden durch die Entscheidungsträger definiert. Der Projektauftrag wird erstellt, die Einführungsstrategie festgelegt und das Projektteam und das Arbeitsumfeld gebildet.
+* Business Blueprint: Die Dokumentation und Definition der SAP ERP Einführung, der sogenannte Business Blueprint wird erstellt. Der Business Blueprint dient dem Verständnis des Prozessablaufes im SAP ERP. D.h. das Projektteam entwickelt ein Konzept, wie das Handlungsprodukt aussehen soll bzw. wie die Dienstleistung umgesetzt und wie der Lösungsweg aussehen wird.
+* Realisierung: Ziel dieser Phase ist das Customizing des SAP ERP Systems, um zu einer den Geschäftsanforderungen passenden Lösung zu kommen.
+* Produktionsvorbereitung: Mit dem Testen und der Benutzerschulung wird das ERP System auf die Produktivphase vorbereitet.
+* Go live und Support:  In dieser Phase starten bereits Nachfolgeprojekte, um neue Anwendungskomponenten zu implementieren oder Geschäftsprozesse zu automatisieren und zu verbessern.
+
+#### Open Source Software
+
+Bei der Einführung von ERP-Systemen entscheiden sich Unternehmen häufig für kommerzielle Standardsoftwareprodukte spezieller Anbieterunternehmen, für die entsprechende Lizenzen erworben werden müssen. Eine Alternative hierzu bildet Open Source Software, die für unterschiedliche Anwendungsfelder zur Verfügung steht.
+
+**Open Source Software (OSS)** bezeichnet Software, deren Programme als Quellcode (Source Code) in verständlicher Form frei verfügbar sind und bei der die Nutzer auch das Recht haben, den Programmcode zu verändern und ohne Zahlung eines Kaufpreises zu nutzen. Die Nutzer bzw. nutzenden Unternehmen können diese Programme für ihre Zwecke verändern, Verbesserungen entwickeln und Fehler beseitigen. Die Nutzer haben das Recht, alle Änderungen und Verbesserungen am Quellcode weiterzugeben. Kein Unternehmen besitzt die Exklusivrechte an der Software, d. h. die Open Source Software steht allen offen.
+
+Beispiele für Open Source Programme:
+
+* Betriebssysteme: GNU/LINUX, Android
+* Betriebliche Standardsoftware (z. B. ERP Software): ADempiere, Apache OFBiz, Metasfresh
+* Customer Relationship Management Systeme : Vtiger, SuiteCRM, FreeCRM
+* Geschäftsprozess und Workflowmanagement: Bonita BPM, Camunda, Activiti
+* Content Management Systeme : Drupal, Joomla!, Neos, Plone, TYPO3
+* E Learning Software: Moodle, ILIAS, Sakai
+* Büroanwendungen: OpenOffice, LibreOffice, Calligra Suite, NeoOffice
+* Grafikanwendungen: GIMP, Scribus
+* Datenbanken: MySQL, PostgreSQL, Interbase
+* Programmiersprachen: Perl, PHP, Python, Ruby, Free Pascal, FreeBasic
+* Entwicklungswerkzeuge: Ant, Make, Maven, GIMP Toolkit, KDevelop, Eclipse, GNU Compile Collection (GCC), CVS
+
+Die folgenden Stärken von Open-Source-Software beeinflussen die Entscheidung für eine OSS-Lösung in dem Unternehmen:
+
+* Der offene Quellcode der OSS erhöht die Unabhängigkeit von einem Hersteller.
+* Geringerer Lock-In-Effekt, da keine prinzipielle marktbeherrschende Position eines Anbieters vorliegt.
+* Keine Lizenzkosten und geringere Erweiterungs- und Wartungskosten als bei vielen proprietären Programmen.
+* Etwaige Softwarefehler können von der Entwicklergemeinschaft, die sich dem Open-Source-Gedanken verpflichtet fühlen, behoben werden.
+* OSS kann durch unmittelbare Änderung des Quellcode an eigene Bedürfnisse angepasst werden.
+* Das Unternehmen kann gegebenenfalls von fremden Erweiterungen der OSS profitieren.
+* Größere Zukunftssicherheit, da kein einzelnes Unternehmen, sondern eine Gemeinschaft die Weiterentwicklung unabhängig von finanziellen Aspekten sicherstellen kann.
+
+Die folgenden Schwächen von OSS sollten berücksichtigt werden:
+
+* Ggf. Schwierigkeiten beim Daten- und Dokumentenaustausch zwischen einzelnen Lösungen.
+* Die Hardwareunterstützung weist in manchen Fällen, z. B. bei hardwarebeschleunigten Grafikkarten oder bei Multimedia-Geräten, wie z. B. Scannern, Mängel auf.
+* Beschaffung von Informationen zu einzelnen OSS-Lösungen ist teilweise problematisch.
+
+Folgende Punkte sollten bei der Auswahl einer OSS-Lösung bedacht werden:
+
+* *Support*: Da für Anpassung und Support qualifiziertes Personal notwendig ist, muss geprüft werden, ob Dienstleister beauftragt werden können oder hinreichende interne Ressourcen zur Verfügung stehen. Für verbreitete OSS stehen häufig Dienstleistungen über das Internet zur Verfügung.
+* *Dokumentation*: Nicht immer ist eine umfangreiche Nutzerdokumentation zu der OSS verfügbar.
+* *Verbreitungsgrad*: Die Verbreitung der OSS beeinflusst die Größe der Entwicklergemeinschaft.
+
+## Kapitel 11: Anwendungen zur Entscheidungsunterstützung
+### Überblick
+### Allegemeine Komponente von EUS
+### Anwendungsbeispiele für aufgabenorientierte EUS
+
+## Kapitel 12: Anwendungen zur Vernetzung mit Kunden und Lieferanten
+### Überblick
+### Überbetriebliche Anwendungen
+### Nutzen vernetzter Anwendungen
