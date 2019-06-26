@@ -1578,9 +1578,206 @@ Folgende Punkte sollten bei der Auswahl einer OSS-Lösung bedacht werden:
 * *Verbreitungsgrad*: Die Verbreitung der OSS beeinflusst die Größe der Entwicklergemeinschaft.
 
 ## Kapitel 11: Anwendungen zur Entscheidungsunterstützung
+
+Dieses Kapitel stellt solche Anwendungen dar, die der Rationalitätssicherung von Entscheidungsprozessen in Unternehmen dienen. Aufbauend auf den allgemeinen Komponenten solcher dispositiven bzw. analytischen Anwendungen werden Anwendungsbeispiele für aufgabenorientierte Lösungen zur betrieblichen Entscheidungsunterstützung vorgestellt.
+
 ### Überblick
+
+Unter dem Begriff **Entscheidungsunterstützungssystem (EUS)** werden Anwendungen verstanden, die Entscheidungsträger zur Rationalitätssicherung in Entscheidungsprozessen einsetzen. EUS sind zur Kategorie der *Systems of Insight* zu zählen, da sie – aufbauend auf verfügbaren Realdaten – zur Gewinnung neuer Erkenntnisse beitragen.
+
+Kategorien von EUS:
+
+* **Datenorientierte EUS** dienen der Überwachung (Monitoring), Beschaffung, Aufbereitung und Verdichtung von Daten. Im Verarbeitungsfokus solcher datenorientierter Systeme steht die Ermittlung betriebswirtschaftlicher Kennzahlen, die beispielsweise in Form von Berichten (Reports) bereitgestellt werden. Solche EUS werden in der Initialphase von Entscheidungsprozessen eingesetzt, um die Problemidentifikation zu unterstützen, oder aber in der Kontrollphase verwendet, um Abweichungsanalysen durchzuführen.
+* **Modell- bzw. methodenorientierte EUS** gestatten die Anwendung komplexer, formaler Methoden zur Konstruktion problemorientierter Modelle. Hierbei können z. B. Simulations-, Optimierungs- oder auch explorative Methoden zur Anwendung kommen. Solche Verfahren werden vorzugsweise in den späteren Teilphasen des Entscheidungsprozesses eingesetzt, um die Alternativensuche, die Alternativenbewertung sowie die Finalentscheidung zu unterstützen.
+
+Bei der Gestaltung von EUS ist daher kritisch zu hinterfragen, ob deren Informationsangebot am **subjektiven Informationsbedarf** der Entscheidungsträger auszurichten ist, oder aber am **objektiven Informationsbedarf**, der beispielsweise durch den State of the Art in der betriebswirtschaftlichen Literatur, Referenzmodelle oder fachkundige Experten für das jeweilige Entscheidungsproblem vorgegeben wird. Zur Erhebung des subjektiven Informationsbedarfs betrieblicher Entscheidungsträger stehen unterschiedliche Datengewinnungsmethoden zur Verfügung:
+
+* **Befragung** der Entscheidungsträger in Form von Interviews oder schriftlichen Befragungen,
+* **Beobachtung** des Informationsbeschaffungsverhaltens von Entscheidungsträgern in direkter und indirekter Form (z. B. durch Protokollierung des Suchverhaltens im Intranet), und
+* **Inhaltsanalyse** von relevanten Dokumenten (z. B. Prozessbeschreibungen für Planungs- und Entscheidungsprozesse).
+
+Der Nutzerkreis von EUS umfasst grundsätzlich sämtliche Personen der *Leitungsebene*, die in der betrieblichen Praxis mit der Handhabung und Lösung von Entscheidungsproblemen beauftragt sind.
+
+Die aktuelle Diskussion von EUS wird in der Wirtschaftsinformatik durch den Oberbegriff **Business Analytics** geprägt. Dabei werden drei unterschiedliche Ausrichtungen von EUS differenziert:
+
+* **Descriptive Analytics**: Deskriptive Analysesysteme gestatten eine kennzahlenorientierte Auswertung großvolumiger Daten. Ein exemplarischer Anwendungsfall solcher EUS ist etwa die Berichterstattung über diejenigen Kunden, die ihre Geschäftsbeziehung aufgelöst haben (Abwanderer).
+* **Predictive Analytics**: Mithilfe multivariater Analyseverfahren können Modelle generiert werden, die anschließend zur Prognose (Prädiktion) und Klassifikation von Geschäftsobjekten (z. B. Kunden, Aufträge, Maschinen) dienen. Auf diese Weise kann beispielsweise das künftige Abwanderungsverhalten von Kunden prognostiziert werden.
+* **Prescriptive Analytics**: Diese Kategorie umfasst die Konstruktion normativer (präskriptiver) Entscheidungs- bzw. Optimierungsmodelle, die in gut strukturierten Entscheidungssituationen konkrete Handlungsempfehlungen liefern. Mit solchen Techniken können beispielsweise Empfehlungen generiert werden, wie abwanderungsgefährdete Kunden am besten an das Unternehmen gebunden werden können.
+
+Zwar greifen EUS auf die operativen Datenbestände des Unternehmens zu (Systems of Record), doch unterscheiden sie sich in der Art der Verarbeitung dieser Daten erheblich von operativen Anwendungen. Während die operativen Systeme auf dem Grundsatz der transaktionsorientierten Verarbeitung von Massendaten (Online Transaction Processing, OLTP) basieren, fokussieren EUS eine entscheidungsorientierte Verarbeitung von Massendaten. Die Unterschiede dieser beiden Verarbeitungsparadigmen werden in Tab. 11.1 dargestellt.
+
+\centerline{\includegraphics[width=1\textwidth]{img/111.png}}
+
+Unter **Business Intelligence (BI)** ist ein Gesamtansatz zu verstehen, mit dem Komponenten für die Beschaffung, Aufbereitung und Bereitstellung von gut strukturierten, tabellarischen Daten zur Unterstützung betrieblicher Entscheidungsprozesse zusammengeführt werden. Der generelle Aufbau eines BI-Systems stellt die nächste Abbildung dar.
+
+\centerline{\includegraphics[width=1\textwidth]{img/BI.png}}
+
+Die Grundlage von BI-Systemen bildet die **originäre Datenschicht**. Diese umfasst sämtliche Datenbestände, die für die Entscheidungsunterstützung aufzubereiten sind und aus unternehmensinternen bzw. -externen Quellen stammen können. Die Datenbestände werden in einem Data-Warehouse-System abgelegt, das als zentraler Datenspeicher dient und somit die **Bereitstellungsschicht** darstellt. Die bereitgestellten Daten können anschließend mithilfe von Anwendungsprogrammen verarbeitet werden, die auf der **Dialog- und Analyseschicht** angesiedelt sind. Neben Data-Mining-Systemen werden zu diesem Zweck häufig Berichtssysteme und Systeme für das Online Analytical Processing (OLAP) eingesetzt.
+
 ### Allegemeine Komponente von EUS
+#### Data-Warehouse-Konzept
+
+Ein **Data Warehouse** ist ein themenorientierter, integrierter, nicht flüchtiger und zeitvarianter Datenspeicher.
+
+So bedeutet die themenorientierte Datenhaltung, dass die Informationsobjekte eine abbildungsorientierte Aufbereitung der realen Informationsobjekte hergestellt wird. Das Data Warehouse integriert sämtliche Daten aus den verfügbaren Datenbeständen des Unternehmens. Durch diesen Prozess wird im Gegensatz zur klassischen Datenhaltung eine einheitliche Sicht auf den gesamten Unternehmensdatenbestand ermöglicht. Als weiteres Merkmal sind die Datenelemente des Data Warehouse als nicht flüchtig anzusehen, d. h., sie können nicht durch den Eingriff der operativen Systeme gelöscht oder manipuliert werden. Zudem erfolgt im Data Warehouse die explizite Erfassung des Faktors Zeit als Bezugsgröße. Durch dieses Merkmal der Zeitabhängigkeit können dynamische Entwicklungen einzelner Datenelemente verdeutlicht werden.
+
+Beim Data Warehouse handelt es sich nicht um ein monolithisches Element, sondern um ein komplexes System, das in der BI-Architektur zwischen den Analysewerkzeugen und den originären Datenquellen eingegliedert ist.
+
+\centerline{\includegraphics[width=1\textwidth]{img/114.png}}
+
+Bei den *internen Datenquellen* handelt es sich um Daten, die in den operativen Systemen des betreffenden Unternehmens gespeichert werden. Bei den *externen Datenquellen* handelt es sich um Daten, die durch Fernübertragung von externen Anbietern in das Unternehmen gelangen, beispielsweise über das Internet.
+
+Flows in DWH:
+
+* Damit die operativen Daten oder auch Daten aus externen Quellen ins Data Warehouse integriert werden können und dort in einer einheitlichen Form vorliegen (**In-Flow**), sind Extraktions-, Transformations- und Ladeprozesse (ETL-Prozesse) erforderlich.
+* Sind die Daten aus den operativen Systemen herausgezogen und bereinigt, stellt sich die Frage, wo und in welcher Form sie im Data Warehouse abgelegt werden sollen. Diese Aufgabenstellung wird als **Up-Flow** bezeichnet.
+* **Meta Flow**: Bezieht sich auf (Meta)Daten, die die Nutzdaten und ihre Entstehung beschreiben.
+* **Down Flow**: Bezieht sich auf das interne Informationsmanagement innerhalb der DWH Ebene und insb. auf die Archivierung älterer Daten.
+* **Out Flow**: Data Warehouse Prozess, der die Daten dem Anwender durch Export aus dem DWH zur Verfügung stellt.
+
+Der Zweck des Data-Warehouse-Datenbestands, der auch als **Kerndatenbestand** bzw. **Core Data Warehouse** bezeichnet wird, besteht darin, eine möglichst universelle, vielfältig auswertbare Datenbasis zur betrieblichen Entscheidungsunterstützung zur Verfügung zu stellen.
+
+Entscheidungsträger werden mit dispositiven Daten entweder durch unmittelbaren Zugriff auf den Kerndatenbestand oder aber mithilfe von **Data Marts** versorgt, die als abhängige Teildatenbestände aus dem Kerndatenbestand abgeleitet werden.
+
+**Metadaten** dienen der Dokumentation fachlicher und technischer Sachverhalte über die im Data Warehouse vorgehaltenen Daten und der zu deren Erzeugung erforderlichen Prozesse. Sie dienen nicht nur der Steuerung des Data-Warehouse-Betriebs, sondern können auch Endbenutzer bei der Interpretation und Suche nach Daten unterstützen.
+
+Das **Archivierungssystem** übernimmt hingegen die Funktion, (Meta-)Datenbestände des Data-Warehouse-Systems zu sichern. Hiermit wird einerseits die Zielsetzung der Datensicherung verfolgt, sodass nach Eintritt von Fehlern eine Rekonstruktion des Data Warehouse erfolgen kann. Andererseits können im Zuge der Archivierung gezielt solche Daten aus dem Kerndatenbestand ausgelagert werden, die nur selten benötigt werden.
+
+#### Berichtssysteme
+
+Die in diesen Berichtssystemen erzeugten Berichte (Reports) sollen der Leitungsebene inhaltlich richtige und relevante Informationen zur Verfügung stellen.
+
+In **aktiven Berichtssystemen** erfolgt die automatische Erstellung der Reports zu bestimmten Zeitpunkten oder bei bestimmten Datenkonstellationen. Wird die Berichtserstellung periodisch, wird das Ergebnis als **Standardbericht** bezeichnet. Erfolgt die Auslösung der Reportgenerierung hingegen aperiodisch und in Abhängigkeit von bestimmten Datenkonstellationen, werden die erzeugten Berichte als **Ausnahmebericht (Exception Reporting)** charakterisiert.
+
+Dagegen wird in **passiven Berichtssystemen** die Berichtserstellung durch den Benutzer ausgelöst. In derartigen Systemen hat der Benutzer die Möglichkeit, durch Interaktion mit dem Berichtssystem individuelle Reports zu erstellen, die auf die gewünschte Fragestellung Antwort geben. Um die Anfertigung zu erleichtern, stellen Berichtssysteme hierfür häufig vorgefertigte, parametrisierbare Standardberichte zur Verfügung, die in sog. **Berichtsheften (Briefing Books)** verwaltet werden.
+
+Eine grundlegende Eigenschaft von Berichtssystemen ist darin zu sehen, dass Berichte lediglich in der Lage sind, vorab fest definierte Sichten auf die zugrunde liegenden Daten zu erschließen. Eine freie Analyse der Datenbasis wird nicht unterstützt. Diese Möglichkeit wird hingegen von OLAP-Systemen erschlossen, die nun zu erörtern sind.
+
+#### OLAP-Konzept
+
+Während OLTP für die Verwaltung operativer Daten entwickelt wurde, zielt das OLAP-Konzept darauf ab, Daten (auch aus OLTP-Systemen) speziell für *analytische multidimensionale Fragestellungen* aufzubereiten. Das OLAP-Konzept setzt sich aus spezifischen Bausteinen zusammen, die in Abb. 11.6 dargestellt werden.
+
+\centerline{\includegraphics[width=1\textwidth]{img/116.png}}
+
+Im Zentrum der Architektur steht der **OLAP-Server**. Bei diesem System handelt es sich um einen leistungsfähigen Datenbankserver, der die Daten aus Datenquellen extrahiert und in einer multidimensionalen Datenbank (OLAP-Datenbank) speichert. Bei den Datenquellen kann es sich z. B. um Data Marts handeln, die durch das Data-Warehouse-System zur Verfügung gestellt werden. Darüber hinaus können auch weitere Datenquellen angebunden werden, wie z. B. die Datenbestände operativer Anwendungen. Bei den **OLAP Frontends** handelt es sich um Werkzeuge, mit denen die Datenbestände des OLAP Servers interaktiv untersucht werden können.
+
+Die zentralen Funktionalitäten von OLAP Frontends bestehen darin, die verfügbaren Datenbestände für eine dimensionsorientierte Analyse zu erschließen. Zu diesem Zweck werden die Erfolgsgrößen des Unternehmens so strukturiert, dass logisch unabhängige Dimensionen zur Verfügung gestellt werden, in denen der Endanwender über Konsolidierungspfade schrittweise navigieren kann. Der Ausgangspunkt eines Konsolidierungspfads ist die Dimension. Eine Dimension ist eine Menge mit mindestens zwei Elementen, nach der sich Daten eindeutig einordnen und gliedern lassen. Sie eröffnet für den Anwender eine Perspektive, nach der die Daten in der Analyse betrachtet werden. In der Praxis wird eine Vielzahl von Dimensionen benötigt, um alle relevanten Erfolgsgrößen des Unternehmens gliedern zu können. So werden typischerweise die Dimensionen Produkte, Regionen und Vertriebskanäle gebildet und hierarchisiert. Die einzelnen Dimensionen lassen sich miteinander kombinieren.
+
+Um spezifische Sichten aus dem multidimensionalen Datenmodell abzuleiten, sind die Techniken des **Slicing** und **Dicing** anzuwenden. Diese Techniken stellen Sichten in Form von Scheiben bzw. Würfeln dar.
+
+Die Anwendung der **Dicing-Technik** wird in Abb. 11.8 dargestellt. Der Würfel umfasst Elemente für die Dimensionen Zeit, Produkte und Regionen. Durch die Dicing-Technik wird die Extraktion von Teilwürfeln aus dem Würfelkomplex ermöglicht. Dies wird in der Abbildung für den Teilwürfel (Süd, Saft, Quartal 4) durchgeführt. Diesem Teilwürfel wird dabei mindestens eine Erfolgsgröße (z. B. Umsatz oder Deckungsbeitrag) zugeordnet.
+
+\centerline{\includegraphics[width=1\textwidth]{img/dicing.png}}
+
+Die **Slicing-Technik** ermittelt Scheiben, die aus dem Würfel herausgeschnitten werden. Eine Scheibe zeigt beispielsweise den Umsatz im dritten Quartal von sämtlichen Produkten in allen Regionen. Durch Rotation des Würfels zeigt eine andere Scheibe den Umsatz aller Quartale in sämtlichen Regionen des Produkts Saft. Die Anwendung der Slicing-Technik wird in Abb. 11.9 dargestellt.
+
+\centerline{\includegraphics[width=1\textwidth]{img/slicing.png}}
+
+Zur Erstellung solcher multidimensionaler Sichten sind die analyserelevanten Daten zuvor in geeigneter Form zu speichern. In relationalen Datenbankmanagementsystemen wird hierzu das **Sternschema (Star Schema)** eingesetzt. Im Sternschema werden **Faktentabellen** angelegt, welche die relevanten quantitativen Datenwerte (**Fakten**) enthalten, sowie **Dimensionstabellen**, in denen die Elemente einer Dimension mit den zugehörigen Attributen und hierarchischen Zuordnungen gespeichert sind. Die Abb. 11.11 zeigt ein exemplarisches Sternschema für den Handelsbereich zur multidimensionalen Repräsentation von Verkäufen.
+
+\centerline{\includegraphics[width=1\textwidth]{img/star.png}}
+
+Eine Darstellungstechnik zur multidimensionalen Modellierung ist die ADAPT-Notation (Application Design for Analytical Processing Technologies). Die beiden grundlegenden Objekttypen von ADAPT-Modellen sind der Würfel (Cube) und die Dimension. In einem Würfel wird festgehalten, welche Kennzahl abgebildet wird und durch welche Dimensionen dieser strukturiert wird. Im ADAPT-Modell in Abb. 11.12 wird der Würfel Umsatz durch die Dimensionen Zeit, Artikel und Kunde näher bestimmt.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1112.png}}
+
+Eine Stärke der ADAPT-Notation besteht darin, differenzierte Beschreibungsmittel zur Modellierung der einzelnen Dimensionen und deren Konsolidierungspfade bereitzustellen, welche die Grundlage für Drill-Down- und Roll-Up-Operationen sind. Als Beispiel hierfür wird zunächst die Dimension Zeit aus dem oben stehenden Modellbeispiel in Abb. 11.13 detailliert aufgegliedert.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1113.png}}
+
+Neben der Modellierung von Hierarchien gestattet ADAPT die Beschreibung einzelner Elemente durch Attribute und Kategorisierung. Diese beiden Möglichkeiten werden in Abb. 11.14 anhand der beiden Dimensionen Artikel und Kunde des Umsatzwürfels verdeutlicht.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1114.png}}
+
+#### Mobile Business Intelligence
+
+Im Mittelpunkt der Mobile BI steht die Unterstützung mobiler Entscheidungsprozesse, bei denen der Zugriff auf dispositive Daten des Data Warehouse über mobile Endgeräte und unterschiedliche Kommunikationsnetze abgewickelt werden muss.
+
+Mit der Gestaltung mobiler BI-Systeme entsteht die Herausforderung, bestehende BI-Lösungen an die unterschiedlichen Eigenschaften mobiler Umgebungen und Kontexte anzupassen. Hierbei sind nicht nur die teils sehr unterschiedlichen Kommunikationseigenschaften drahtloser Netze zu berücksichtigen, sondern auch die Heterogenität der Endgeräte. Die nächste Abbildung illustriert die Struktur mobiler BI-Systeme, in denen der Zugang sowohl über zellulare Mobilfunknetze (z. B. LTE, 5G) als auch Hotspots (WLAN) stattfinden kann.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1115.png}}
+
+#### BI-Systembeispiel: Microsoft Power BI
+
+Hier wird Microsoft Power BI vorgestellt, das insbesondere BI-Funktionalitäten für Endanwender bereitstellt. Grundgedanke ist dabei, dass der Anwender – z. B. der Entscheidungsträger oder ein Assistent – seine eigenen Analysen (z. B. Berichte, OLAP-Abfragen, Dashboards) entwickelt und ausführt, ohne dass Mitarbeiter der IT-Abteilung involviert sind. Diese Organisationsform der BI-Entwicklung wird auch als **Self Service BI (SSBI)** bezeichnet. Die entsprechenden SSBI-Werkzeuge können von der IT Organisation bereitgestellt, überwacht und betrieben werden. Hinsichtlich der Funktionalitäten von SSBI-Werkzeugen sind drei grundlegende Kategorien zu unterscheiden:
+
+* Eine grundlegende Funktionalität von SSBI-Werkzeugen ist die Unterstützung des Zugriffs und der Navigation in bestehenden Berichten. Diese Funktionalitäten zielen auf Geschäftsanwender (Business User), die vorwiegend als Informationskonsumenten agieren und BI-Anwendungen zur Deckung ihres Informationsbedarfs nutzen.
+* Außerdem unterstützten SSBI-Werkzeuge auch die Konstruktion neuer Berichte und richten sich damit an Kernanwender (Power User), die im oder unmittelbar für den Fachbereich einer Organisation arbeiten, ein tiefes Verständnis über die Geschäftsprozesse sowie die damit verbundenen Datenflüssen besitzen, und darauf aufbauend BI-Anwendungen entwickeln. Dieser Anwenderkreis nutzt SSBI-Werkzeuge vorwiegend in der Rolle des Informationsproduzenten.
+* Mit der zunehmenden Verfügbarkeit und Vielfalt neuer Datenquellen steigt die Notwendigkeit, auch diese für Entscheidungszwecke zu erschließen. Hierfür bieten SSBI-Werkzeuge die Möglichkeit, neue Datenquellen zu importieren und mit bereits vorhandenen Datenbeständen des Unternehmens zu integrieren.
+
+#### Big Data
+
+Unter dem Sammelbegriff Big Data werden Ansätze und Techniken subsumiert, die sich mit der Speicherung, Verwaltung, Analyse und Visualisierung solcher Datenbestände beschäftigen, die aufgrund ihrer quantitativen und qualitativen Eigenschaften mit traditionellen, analytischen Informationssystemen nicht handhabbar sind.
+
+Die charakteristischen Merkmale der skizzierten Datenkategorien des Big Data und die damit verbundenen Herausforderungen für deren Verarbeitung können mithilfe des 3V-Modells anhand der Dimensionen Volume, Velocity sowie Variety systematisiert werden:
+
+* Die kontinuierliche Sammlung von Daten führt dazu, dass sich in Unternehmen Datenkollektionen anhäufen, die zunehmend höhere **Speichervolumina (Volume)** beanspruchen. Hierfür sind Infrastrukturen notwendig, die eine kostengünstige Speicherung gestatten und geeignete Mechanismen bereitstellen, um benötigte Daten in analysefähiger Form zur Verfügung zu stellen.
+* Durch die Nutzung neuer Datengewinnungsinstrumente nimmt die **Geschwindigkeit (Velocity)** zu, mit der Daten in Unternehmen erzeugt werden. Um zeitnah auf kritische Ereignisse reagieren zu können, sind Techniken erforderlich, welche die anfallenden Daten in Echtzeit analysieren.
+* Unternehmen sind zunehmend mit einer höheren **Datenvielfalt (Variety)** konfrontiert. Traditionell konzentriert sich das betriebliche Datenmanagement auf stark strukturierte Datenbestände, die sich mithilfe von RDBMS effizient verwalten und auswerten lassen. Internetbasierte Inhalte (z. B. Blogs, Diskussionsforen, Bilder, Videos) und Sensordaten besitzen jedoch nur einen geringen Strukturierungsgrad, sodass alternative Speicher- und Auswertungstechniken erforderlich werden.
+
+Big-Data-Anwendungen müssen größere, unterschiedlich strukturierte Datenmengen schnell und wirtschaftlich verarbeiten können. Traditionelle BI-Architekturen sind hierfür jedoch nur begrenzt geeignet. Infolgedessen wurden neue Konzepte und Techniken entwickelt, die diesen Anforderungen gerecht werden können. Wesentliche Komponenten eines Big-Data-Systems zeigt die nächste Abbildung.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1119.png}}
+
+Den Kern des dargestellten Architekturmodells bildet ein **Datenspeicher (Data Store)**, der unterschiedliche Datenkategorien speichert. Big-Data-Lösungen basieren schwerpunktmäßig auf **NoSQL (Not Only SQL)**-Datenbanken, die zumeist eine verteilte Datenhaltung unstrukturierter Daten ermöglichen. Durch Verzicht auf eine tabellenorientierte Datenorganisation, wie sie für RDBMS typisch ist, erzielen NoSQL-Datenbanken in Big-Data-Anwendungen eine tendenziell höhere Leistungsfähigkeit und Skalierbarkeit.
+
+Zur Speicherung web-basierter Inhalte (z. B. in Form von HTML- oder XMLDokumenten) werden Dokumentendatenbanken (Document Stores) genutzt, in denen Dokumente beliebiger Länge in Form von Objekten abgelegt werden. Eine einfache und performante Speichertechnik bieten Schlüssel/Werte-Speicher (Key/Value Stores) an. Diese ordnen einem bestimmten Schlüssel (Key) einen Wert zu, der beliebige Datentypen (z. B. Zeichenfolgen, Messdaten, Bilder) besitzen kann. In-Memory-Datenbanken (IMDB) halten die Daten im Arbeitsspeicher und stellen auf diese Weise eine hohe Performanz sicher.
+
+Zur Bewirtschaftung dieser Datenspeicher verfügen Big-Data-Systeme über Komponenten zur **Datenaufnahme (Big Data Ingestion)**. Ähnlich wie ETL-Systeme übernehmen diese Aufgaben zur Extraktion, Transformation und Laden von Daten in den Zieldatenspeicher. Im Unterschied zu traditionellen Data-Warehouse-Systemen müssen diese Komponenten in der Lage sein, unterschiedlich strukturierte Daten mit hoher Geschwindigkeit zu verarbeiten.
+
+Die *Analyseschicht* von Big-Data-Systemen umfasst Komponenten zur Auswertung der Datenbestände. Im Gegensatz zu traditionellen Data-Warehouse-Systemen steht dabei nicht die Erstellung vordefinierter Berichte oder OLAP-Datenbestände mit ex ante definierten Kennzahlen im Mittelpunkt, sondern die explorative Datenanalyse, die häufig ad hoc erfolgt. Analytische Komponenten sind aufgrund der hohen Datenvolumina so ausgelegt, dass eine parallele Verarbeitung der Analyseoperationen auf mehreren Rechnersystemen stattfinden kann.
+
+Zur Erkundung von Datenbeständen werden Instrumente für die **Datenvisualisierung** eingesetzt, die mithilfe von Techniken der grafischen Datenverarbeitung die Präsentation großvolumiger und hochdimensionaler Datenräume gestatten. Im Unterschied zum klassischen Berichtswesen, in dem die visualisierten Sachverhalte durch das Informationsdesign fixiert sind, zeichnen sich Visual-Analytics-Anwendungen dadurch aus, dass die Nutzer die Daten frei und interaktiv explorieren können.
+
+Darüber hinaus verfügen Big-Data-Architekturen über Komponenten, die mithilfe statistisch- mathematischer Methoden Muster in Datenbeständen entdecken können (**Big Data Mining**). Diese Werkzeuge bieten Verfahren an, die der Segmentierung (Clustering), Klassifikation und Regression dienen, und meist nur stark strukturierte, quantitative Daten verarbeiten (s. Kapitel 2 Arten von IS).
+
+Zur Erschließung von Textdokumenten, deren Inhalte nur relativ schwach ausgeprägte Beziehungen zueinander aufweisen, sind hingegen linguistische Ansätze für die **Textanalyse (Text Analytics)** erforderlich. Als grundlegende Aufgabenstellungen bei der Textanalyse sind die folgenden zu nennen:
+
+* Mithilfe der **Textklassifikation** können einzelne Dokumente bestimmten Klassen zugeordnet werden. Ein Anwendungsfeld in Unternehmen ist beispielsweise die Zuordnung von eingehenden E-Mails zu vordefinierten Klassen (z. B. Bestellung, Beschwerde, Stornierung). Zur Textklassifikation stehen Verfahren des maschinellen Lernens zur Verfügung, die mithilfe einer Trainingsmenge von Dokumenten (z. B. historische E-Mails mit bekannter Klassenzugehörigkeit) angelernt werden.
+* Bei der **Textsegmentierung (Clustering)** werden Dokumentkollektionen in Klassen eingeteilt, wobei die Klassen aus den Merkmalen der Dokumente selbst abgeleitet werden und nicht durch den Anwender vorgegeben werden. Auf diese Weise können beispielsweise interessante Subgruppen in bestehenden Dokumentkollektionen aufgedeckt werden, die über ähnliche Inhalte verfügen. Ein exemplarisches Anwendungsfeld der Textsegmentierung ist die Analyse von Störungsmeldungen (Incidents) in einem IT-Servicecenter. Durch Clustering können beispielsweise Störungsmeldungen mit gleichen Inhalten (z. B. mit den Substantiven Login, Anmeldung, Passwort) automatisch erkannt werden.
+* Mithilfe der **Sentimentanalyse (Stimmungsanalyse, Sentiment Detection)** werden Texte im Hinblick auf die positive, neutrale oder negative Einstellung des Autoren gegenüber bestimmten Bewertungsobjekten (z. B. Produkte, Dienstleistungen) untersucht. Ein etabliertes Anwendungsfeld der Sentimentanalyse bildet die Untersuchung, ob der Kursverlauf einer Aktie mit der veröffentlichten Meinung (z. B. Twitter) korreliert.
+
+Unter einem **Datenstrom** ist dabei eine in der Länge meist unbeschränkte Sequenz von Datenelementen zu verstehen, die in Echtzeit verarbeitet werden muss. Solche Datenströme können z. B. Einzelhandels- und Finanzmarkttransaktionen, Ereignisse in Telekommunikationsnetzen oder Messdaten aus Sensornetzwerken abbilden. Zur Analyse solcher „fließender Daten“ dienen Instrumente des **Streaming Analytics**. Diese sind in der Lage, bestimmte Ereignisse und Bedingungskonstellationen in Datenströmen fortlaufend zu erkennen und daraufhin bestimmte Aktionen durchzuführen. Im Mittelpunkt der Entwicklung solcher Analysesysteme steht die Formulierung entsprechender Reaktionen, die bei Erkennung kritischer Ereignisse auszulösen sind, wie etwa die gezielte Steuerung operativer Geschäftsprozesse.
+
+Unter einem **Data Lake** ist ein zentralisierter Datenspeicher zu verstehen, der Datenbestände aus unterschiedlichen Quellen zusammenführt und für analytische Operationen zur Verfügung stellt.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1121.png}}
+
+Der Aufbau eines Data Lake wird in Abb. 11.21 dargestellt. Aus der Abbildung wird deutlich, dass ein Data Lake mit der IT-Landschaft des Unternehmens sowie anderen Data Lakes verknüpft ist. Auf diese Weise können nicht nur die Daten aus operativen Anwendungen (z. B. ERP- und E-Business-Systemen) extrahiert und im Data Lake vorgehalten werden, sondern etwa auch öffentliche Daten (Open Data) integriert und zur Anreicherung genutzt werden. Die Verwaltung der vorgehaltenen Daten übernehmen Informationskuratoren, zu deren Aufgaben auch die Pflege des Datenkatalogs gehört. Das Governance & Compliance Team hat demgegenüber dafür zu sorgen, dass die unternehmensinternen Richtlinien und Regularien für das Datenmanagement auch im Umfeld des Data Lake eingehalten werden. Nach diesen Vorgaben erfolgt auch der Betrieb des Data Lakes als Teil der betrieblichen IT-Infrastruktur. Die Nutzung der bereitgestellten Daten erfolgt einerseits durch die analytischen Anwendungen der Fachabteilungen auf Basis von Self-Service-Schnittstellen. Andererseits nutzen Data Scientists und Big-Data-Analysten das Repositorium zur Konstruktion und Anwendung von Entscheidungsmodellen.
+
+#### Big-Data-Systembeispiel: SAP HANA
+
+Um die unterschiedlichen Anforderungskriterien bei der analytischen und operativen Datenverarbeitung zu erfüllen, werden verstärkt hybride Datenbankarchitekturen eingesetzt, in denen diverse Technologien miteinander kombiniert werden (Färber et al. 2010, S. 81). Als Produktbeispiel für einen solchen hybriden Ansatz wird hier **SAP HANA (High Performance Analytic Appliance)** vorgestellt, das von der SAP SE als Technologie- und Entwicklungsplattform für die operative und dispositive Datenverarbeitung positioniert wird. Die grundlegende Architektur von SAP HANA zeigt Abb. 11.22.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1122.png}}
+
+Zentrale Grundlage von SAP HANA als Big-Data-System bildet die technische Fähigkeit, Daten aus unterschiedlichen Quellsystemen (**Source**) mit verschiedenen Datentypen speichern und verarbeiten zu können. Diese Daten werden in der Speicherschicht (**Store**) des SAP HANA-Systems verfügbar gemacht, wobei unterschiedliche Speichertechnologien zum Einsatz gelangen können.
+
+Zur Analyse von Daten (**Compute**) stellt SAP HANA unterschiedliche Komponenten zur Verfügung:
+
+* **Stream Processing** dient der analytischen Verarbeitung von Datenströmen. Zu diesem Zweck können kontinuierliche Abfragen definiert werden, die dauerhaft auf die eingehenden Datenströme angewendet werden und beispielsweise zur Detektion kritischer Ereignisfolgen dienen.
+* Die Komponente **Analytics Engine** wird eingesetzt, um multidimensionale Auswertungsrechnungen (Abschn. 11.2.3) zu erstellen.
+* Die **Predictive Engine** stellt Verfahren des maschinellen Lernens und der multivariaten Datenanalyse zur Verfügung (z. B. für die Zeitreihenanalyse, Klassifikation und Segmentierung).
+* Zur Analyse von Textdaten bietet die **Text Engine** entsprechende Verfahren an, die ein breites Spektrum unterschiedlicher Aufgabenstellungen unterstützen.
+* Die Komponente **Spatial Processing** enthält Funktionalitäten zur Verarbeitung raumbezogener Daten (Spatial Data). Hiermit kann etwa eine Geokodierung von Adressdaten durchgeführt werden oder aber raumbezogene Relationen (z. B. Distanzen, Nachbarschaften) zwischen Objekten aufgedeckt werden.
+
 ### Anwendungsbeispiele für aufgabenorientierte EUS
+
+#### Integrierte Erfolgs-, Finanz- und Bilanzplanung
+
+Die Planung von erfolgs- und finanzwirtschaftlichen Zielen gehört zu den traditionellen Aufgaben des Controllings. Häufig fehlt eine sachliche Abstimmung zwischen Bilanz-, Erfolgs- und Finanzrechnung. Außerdem ist die Unternehmensplanung regelmäßig durch Brüche zwischen der kurz-, mittel- und langfristigen Planung gekennzeichnet. Zur Handhabung dieser Problematik bietet sich die Anwendung eines integrierten EUS zur Ergebnis- und Finanzplanung und -kontrolle an. Die integrierte Planung umfasst die zielgerichtete Abstimmung in sachlicher, zeitlicher und organisatorischer Hinsicht (s. Abb. 11.24).
+
+\centerline{\includegraphics[width=1\textwidth]{img/1124.png}}
+
+Die strategische Planung hat die gegenwärtige und zukünftige Entwicklungsfähigkeit des Unternehmens zum Inhalt. Der Aufbau strategischer Erfolgspotenziale erfolgt durch die Entwicklung und Realisierung von Gesamtunternehmens- und Geschäftsbereichsstrategien. Im Rahmen der operativen Planung werden die angestrebten Erfolgspotenziale konkretisiert und in quantitative Erfolgsgrößen umgesetzt. Ein zentrales Instrument hierfür stellt die Budgetierung dar. Dabei werden Funktions- oder Geschäftsbereichsbudgets ermittelt und als Vorgaben für die Budgetperiode verwendet. Die anschließende Budgetkontrolle dient der Überwachung der Zielgrößen, um bei Bedarf Anpassungsmaßnahmen und ggf. Budgetkorrekturen einzuleiten.
+
+#### Unternehmensplanung
+
+Anders als bei der starren Planung, bei der der Planende bereits zum Planungszeitpunkt festlegt, wie er sich in den zukünftigen Perioden verhalten will, werden bei der Flexiblen Planung optimale bedingte Pläne für zukünftige Datensituationen festgelegt. Diese mehrstufigen Entscheidungsprobleme unter Unsicherheit können durch Verwendung von Entscheidungsbäumen visualisiert werden. Dabei werden zunächst alle künftig denkbaren Umweltzustände mit ihren Eintrittswahrscheinlichkeiten dargestellt. Danach werden die Wahrscheinlichkeiten mit den Entscheidungskonsequenzen verknüpft und zu Zielwerten (z. B. zum Erwartungswert des Gewinns) verdichtet. Durch die Bewertung der einzelnen Äste des Baums soll eine Aussage über die zu treffenden Entscheidungen gewonnen und so die Unternehmensplanung beim Treffen der richtigen Entscheidung unterstützt werden.
+
+#### Investitionscontrolling mit Simulationswerkzeugen
+
+Investitionsentscheidungen stellen Entscheidungen unter Unsicherheit dar. Zur Handhabung der damit verbundenen Problematik wird in der Investitionsrechnung die Risiko-Chancen-Analyse empfohlen. Bei der Risiko-Chancen-Analyse werden Einflussgrößen (z. B. Absatzmengen) zur Bewertung von Investitionsalternativen anhand von Pseudozufallszahlen unter Verwendung der Monte-Carlo-Simulation quantifiziert. Die simulierten Einflussgrößen werden zu Zielgrößen, wie beispielsweise dem Endwert einer Investitionsalternative, verdichtet und in Risiko-Chancen-Profilen dargestellt. An einem Risiko-Chancen-Profil kann die Wahrscheinlichkeit abgelesen werden, mit der ein Zielwert unter Zugrundelegung der Eingabedaten *mindestens* erreicht wird. Risiko-Chancen-Profile ermöglichen dem Entscheidungsträger den Vergleich unterschiedlicher Alternativen unter expliziter Berücksichtigung der Unsicherheit.
 
 ## Kapitel 12: Anwendungen zur Vernetzung mit Kunden und Lieferanten
 ### Überblick
