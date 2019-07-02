@@ -821,7 +821,7 @@ Der **Business Engineering (BE)-Ansatz** unterscheidet drei Gestaltungsebenen:
 
 * Die **Strategieebene** legt für ein Unternehmen die strategischen Eckpunkte fest. Dazu zählen etwa die Identifikation der Prozessvision, die Positionierung im Wettbewerb (Märkte und Leistungen) oder die Zusammenarbeit mit Partnern und die entsprechenden Werte-/ Leistungsflüsse. Daneben liefert die Strategieebene den Ausgangspunkt für die Prozessführung, indem sie aus den Zielstellungen der Kunden und den daraus abgeleiteten kritischen Erfolgsfaktoren die strategischen Führungsgrößen Kennzahlen für das **Prozesscontrolling (Process Performance Management)** ableitet.
 * Die **Organisationsebene** konkretisiert die auf strategischer Ebene festgelegten Strukturen und unterscheidet grundsätzlich zwischen der Prozessgestaltung und der Prozessführung. Die Prozessgestaltung besteht aus dem fachlichen Prozessentwurf und unterscheidet wiederum die Gestaltung der Ablauf- und der Aufbauorganisation (Prozesse), Aufbaustrukturen. Seitens der Ablauforganisation bringen Prozessmodelle die abstrakteren Modelle der Strategieebene in einen zeitlichen Zusammenhang und ordnen die Aktivitäten den verschiedenen ausführenden Organisationseinheiten (Stellen, Verantwortlichkeiten, Organisationseinheiten) zu.
-* Die IS-Ebene spezifiziert, welche softwaretechnischen Bausteine (Anwendungen und „technische Services“) zur Unterstützung von Geschäftsprozessen und -modellen zum Einsatz kommen. Ein zentrales Gestaltungsziel auf IS-Ebene bildet die Abstimmung mit den fachlichen Gestaltungsebenen im Sinne eines Business-/IT-Alignment bzw. Strategic Alignment. Weitere Ziele bilden die Transparenz und Vereinfachung sowie die Flexibilität bzw. Agilität und die Wiederverwendung fachlicher Bausteine/ Softwarekomponenten.
+* Die **IS-Ebene** spezifiziert, welche softwaretechnischen Bausteine (Anwendungen und „technische Services“) zur Unterstützung von Geschäftsprozessen und -modellen zum Einsatz kommen. Ein zentrales Gestaltungsziel auf IS-Ebene bildet die Abstimmung mit den fachlichen Gestaltungsebenen im Sinne eines Business-/IT-Alignment bzw. Strategic Alignment. Weitere Ziele bilden die Transparenz und Vereinfachung sowie die Flexibilität bzw. Agilität und die Wiederverwendung fachlicher Bausteine/ Softwarekomponenten.
 
 \centerline{\includegraphics[width=1\textwidth]{img/businessengi.png}}
 
@@ -1783,6 +1783,101 @@ Anders als bei der starren Planung, bei der der Planende bereits zum Planungszei
 Investitionsentscheidungen stellen Entscheidungen unter Unsicherheit dar. Zur Handhabung der damit verbundenen Problematik wird in der Investitionsrechnung die Risiko-Chancen-Analyse empfohlen. Bei der Risiko-Chancen-Analyse werden Einflussgrößen (z. B. Absatzmengen) zur Bewertung von Investitionsalternativen anhand von Pseudozufallszahlen unter Verwendung der Monte-Carlo-Simulation quantifiziert. Die simulierten Einflussgrößen werden zu Zielgrößen, wie beispielsweise dem Endwert einer Investitionsalternative, verdichtet und in Risiko-Chancen-Profilen dargestellt. An einem Risiko-Chancen-Profil kann die Wahrscheinlichkeit abgelesen werden, mit der ein Zielwert unter Zugrundelegung der Eingabedaten *mindestens* erreicht wird. Risiko-Chancen-Profile ermöglichen dem Entscheidungsträger den Vergleich unterschiedlicher Alternativen unter expliziter Berücksichtigung der Unsicherheit.
 
 ## Kapitel 12: Anwendungen zur Vernetzung mit Kunden und Lieferanten
+
+Dieses Kapitel beschreibt zunächst die Treiber zur verstärkten Vernetzung mit Kunden und Lieferanten. Zu den, die betrieblichen ERP-Systeme ergänzenden, Anwendungen zählen jene für das Customer Relationship Management, für den elektronischen Handel (E-Commerce) sowie für das Supply Chain Management. Die Systeme sind mit den Kernfunktionalitäten sowie jeweils einem Fallbeispiel dargestellt. Eine Zusammenfassung der betriebswirtschaftlichen Auswirkungen zu diesen überbetrieblich ausgerichteten Anwendungen schließt das Kapitel ab.
+
 ### Überblick
+
+Ziel der mit Kunden und Lieferanten vernetzten Unternehmen ist dabei die Realisierung eines durchgängigen Informationsflusses über die gesamte Wertschöpfungskette hinweg, also vom Kunden über Händler und produzierende Unternehmen hin zu den Zulieferern. Projekte der digitalen Transformation zielen auf eine verbesserte Vernetzung mit Kunden und Lieferanten durch die Nutzung weiterer Anwendungen. Diese Entwicklung beruht auf mehreren Treibern:
+
+* Aus technologischer Sicht besitzen Unternehmen in der vernetzten Welt elektronische Interaktionskanäle mit Kunden und Lieferanten sowie Behörden.
+* Mit dem IT-Einsatz zur Unterstützung überbetrieblicher Kunden-/Lieferantenbeziehungen haben sich die ökonomischen Transaktionskosten verringert und flexible überbetriebliche Organisationsformen verbreitet. Sinkende Transaktionskosten machen koordinationsintensivere Formen – also Netzwerke und Märkte – gegenüber der internen Organisation ökonomisch sinnvoll.
+* Ein weiterer technologischer Treiber ist die Diffusion mobiler Endgeräte. In 2013 haben mobile Endgeräte erstmals die PCs als häufigste internetfähige Geräte übertroffen. Sie erlauben es einerseits den (End-)Kunden ubiquitär in die Abläufe eines Unternehmens einzubeziehen. Anderseits können mobile Geräte wie Tablets und Smartwatches gemeinsam mit intelligenten Maschinen in Industrie 4.0-Konzepten Verwendung finden.
+* Verstärkte überbetriebliche Kontakte ergeben sich auch aus dem Wandel vom Produkt- zum Kundenfokus. Eine wesentliche Aussage der Prozessorientierung (s. Kapitel 6) ist die Ausrichtung sämtlicher Aktivitäten in der Wertschöpfungskette am Kundennutzen.
+
+Für die elektronische Integration von Leistungsbeziehungen mit Kunden und Lieferanten haben sich die Begriffe des **Business Networking** oder des **Electronic Business** etabliert. Beide bezeichnen die Ausweitung des Integrationsgedankens der Wirtschaftsinformatik auf die gesamte Wertschöpfungskette und lassen sich als **integrierte Ausführung aller digitalisierbaren Bestandteile ökonomischer Prozesse** definieren.
+
 ### Überbetriebliche Anwendungen
+
+Die Anwendungen zur Vernetzung mit Kunden und Lieferanten verfolgen unterschiedliche Ziele (s. Abb. 12.1). Während sich Anwendungen im CRM-Bereich auf Kundendaten und im SCM-Bereich auf materialflussbezogene Daten konzentrieren, liegt der Schwerpunkt von Anwendungen für Electronic Commerce (EC) auf der effizienten Transaktionsabwicklung mit Kunden und Lieferanten.
+
+\centerline{\includegraphics[width=1\textwidth]{img/121.png}}
+
+#### Customer Relationship Management
+
+**Customer Relationship Management** ist ein kundenorientierter Managementansatz, bei dem Anwendungen die Informationen für operative, analytische und kooperative CRM-Prozesse integriert bereitstellen und damit zur Verbesserung der Kundengewinnung, -bindung und -profitabilität beitragen. Kernprozesse des CRM sind Marketing, Verkauf und Service.
+
+Die Funktionalitäten von CRM-Anwendungen setzen an den Aufgaben des Kundenbeziehungslebenszyklus an, die vom Marketing über die Evaluation von Angeboten zum Kauf von Produkten bzw. Problemlösungen hin zum Kundendienst (After Sales) reichen. Das Marketing stellt den Kontakt zu Kunden her. Zentrale Aufgaben des Marketings bilden die Planung und Durchführung von Kampagnen. Im positiven Fall schließt sich an das Marketing der Verkaufsprozess an. Als wichtigste Aufgabenfelder gelten hier die Kundenberatung, die Produktkonfiguration und die Konditionsvereinbarung. Neben Marketing und Verkauf bildet der Service den dritten Kernprozess des CRM. Ziel ist hier neben der Erfüllung von Gewährleistungspflichten die Zufriedenheit des Kunden während der Besitz- bzw. Nutzungsphase und damit die Grundlage für eine neue Transaktion zu schaffen. Typische Aufgaben des Service bilden die Aufnahme von Servicefällen, die Durchführung von Wartungsarbeiten oder das Beschwerdemanagement.
+
+Die Funktionalitäten von CRM-Anwendungen lassen sich in drei Bereiche unterteilen:
+
+* Das **operative CRM** erfasst sämtliche Kundendaten in einer Kundendatenbank bzw. einem Data Warehouse und liefert dadurch die Grundlage zur Bildung von Kundenprofilen und -historien.
+* Das **analytische CRM** versucht, aufbauend auf den Daten des operativen CRM, mittels statistischer Verfahren den (wahrscheinlichen) Kundenbedarf, das Kundenverhalten und den Kundenwert zu ermitteln.
+* Das **kooperative (bzw. kommunikative) CRM** soll die kanalübergreifende Transparenz über die Kundenhandlungen sicherstellen. Im Sinne eines Multi Channel Management könnte etwa ein Call-Center-Agent beim Anruf des Kunden davon wissen, dass dieser zuvor ein bestimmtes Produkt im Onlineshop konfiguriert hat oder der Außendienst von den über das Call Center getätigten Beschwerden des Kunden erfahren.
+
+Zusammenfassend steht bei CRM-Anwendungen die Zusammenführung von Informationen über die Kunden, das Bilden von konsistenten Kundenprofilen und -historien, das Durchführen von Kampagnen und Kundenberatungen und das Gewährleisten einer konsistenten bzw. abgestimmten Kundeninteraktion über mehrere Kanäle (z. B. Online, Filiale, Außendienst) hinweg, im Vordergrund.
+
+Auch haben Social Media sowie mobile Geräte ihren Einsatz im CRM gefunden:
+
+* Das **Social CRM** erschließt das Social Web für die Kundeninteraktion. Das Social CRM versucht nun die CRM-Datenbasis um Wissen aus dem Social Web anzureichern, um dadurch einerseits Anhaltspunkte zur Kundenberatung, zur Durchführung von Kampagnen und auch der Kundenbetreuung zu erhalten. Andererseits bieten die sozialen Medien einen interaktiven (z.B. schnelle Antwortzeiten in Facebook oder Twitter) und persönlichen (z.B. persönliche Ansprache mit „Du“, Posten von Bildern) Kommunikationskanal, den Unternehmen für Zwecke des Marketing (z. B. Ideenmanagement, Produktfeedback), des Verkaufs (z. B. Facebook Shops) und des Service (z. B. Beschwerdemanagement, Kundendienstanfragen) einsetzen können.
+* Mittels **Location Based Services** (s. Kapitel 5) können Nutzer von intelligenten Endgeräten Informationen über Kampagnen, Angebote oder Produkte erhalten. Die Kundeninteraktion erfolgt daher situationsspezifisch und soll darüber zusätzliche Umsatzpotenziale erschließen und zur Kundenbindung beitragen.
+
+#### Supply Chain Management
+
+Während das CRM seine Wurzeln im Marketing besitzt, lässt sich das SCM auf den Produktionsbereich, insbesondere die Materialwirtschaft und die Logistik zurückführen. Maßnahmen des SCM zielen einerseits auf eine verbesserte Effektivität der Wertschöpfungskette, die sich im Kundenservice bzw. in einer höheren Kundenzufriedenheit niederschlagen (z. B. durch verkürzte Lieferzeiten, hohe Flexibilität bei variierenden Kundenanforderungen). Andererseits stehen Effizienzverbesserungen wie etwa reduzierte Bestände und verminderte Transport-, Lager- und/oder Umschlagskosten im Mittelpunkt des SCM.
+
+**Supply Chain Management** bezeichnet die Abstimmung sämtlicher Leistungsflüsse und Aktivitäten zwischen den Partnern eines Wertschöpfungsnetzwerks zur Erreichung gemeinsamer Ziele. Die Kernprozesse des SCM sind Planung, Beschaffung, Produktion, Distribution und Entsorgung.
+
+Infolge ihrer Nähe zur betrieblichen Materialwirtschaft müssen SCM-Anwendungen eng mit den ERP-Anwendungen abgestimmt sein.
+
+Die Funktionalitäten von SCM-Anwendungen lassen sich in drei Bereiche unterteilen:
+
+* Die **Supply Chain Konfiguration** dient der Analyse und der Gestaltung längerfristiger Produktions sowie Logistikstrukturen.
+* Die **Supply Chain Planung** dient z.B. der Abstimmung zwischen von Bedarfs und Absatzmengen, Lagerbeständen oder Transportern mit einem kurz bis mittelfristigen Zeitbezug.
+* Die **Supply Chain Ausführung** dient der Abwicklung einzelner Aufträge und umfasst die Auftrags-, Transport-, Lager- und Bestandssteuerung.
+
+Zusammenfassend liegen die Schwerpunkte des SCM in ausdifferenzierten Planungs- und Optimierungsfunktionalitäten, die mithilfe eines großen Hauptspeichers in Echtzeit durchgeführt und in Form geeigneter Darstellungen visualisiert werden können. Das SCM ergänzt dadurch betriebliche ERP-Systeme und hat Schnittstellen zu kundenorientierten Anwendungen, etwa um Lagerbestände, Verfügbarkeiten und Liefertermine in den Angebotsprozess einfließen zu lassen.
+
+#### Electronic Commerce
+
+**Electronic Commerce** bezeichnet die Abwicklung elektronischer Transaktionen über elektronische Medien. Bei den Kernprozessen sind eine Informations-, eine Vereinbarung- und eine Abwicklungsphase zu unterscheiden.
+
+Gegenüber dem breiter gefassten E-Business orientiert sich EC am klassischen ökonomischen Transaktionsverständnis der Transaktionskostentheorie. Danach sind Transaktionen Vorgänge zwischen Wirtschaftssubjekten, die sich bezüglich der Aktivitäten, der Teilnehmer und der Kooperationsformen unterscheiden lassen:
+
+* **Ökonomische Transaktionen** umfassen Informations-, Vereinbarungs- und Abwicklungsfunktionalitäten. Innerhalb der Informationsphase geht es um die Ermittlung relevanter Produkte und Geschäftspartner, wobei mehrheitlich elektronische Kataloge (z. B. Preisvergleichsseiten im Internet) den Vergleich alternativer Angebote unterstützen. Die Vereinbarungsphase beinhaltet die formelle, gegenseitige Bindung an eine vertragliche Vereinbarung. Hier legen die Transaktionspartner die notwendigen Bedingungen wie Preis, Liefertermin oder Serviceleistungen fest. Die Abwicklungsphase schließlich dient der Erfüllung vereinbarter Leistungen, wonach letztlich der Kunde sein Produkt erhält und er dieses als Gegenleistung – möglichst ebenfalls elektronisch – bezahlt.
+* Als **Teilnehmer ökonomischer Transaktionen** sind die in Abschn. 1.5.1 erwähnten Akteure zu nennen. Abhängig von den drei Gruppen Behörden (Administration, A), Unternehmen (Business, B) und Endkunden (Consumer, C) ergeben sich neun mögliche Geschäftsfelder und ein breites Anwendungsspektrum für den elektronischen Handel. Während Anbieter wie Ebay Transaktionen zwischen Endkunden und/oder Unternehmen betreffen (C2C, B2C), sind Lösungen des E-Procurement den volumenmäßig dominierenden Transaktionen zwischen Unternehmen (B2B) zuzuordnen. Abläufe mit öffentlichen Verwaltungen fasst das Anwendungsfeld des E-Government zusammen. Neben der elektronischen Steuererklärung (C2A) sind etwa Transferzahlungen der Behörden an die Bürger (A2C) oder die elektronische Umsatzsteuervoranmeldung von Unternehmen (B2A) sowie der Datenaustausch zwischen Behörden (A2A) zu nennen.
+* Die **Kooperationsformen ökonomischer Transaktionen (Governance Structure)** definieren in der Transaktionskostentheorie die Organisation der Transaktionen (s. Abschn. 1.4.4.1). Diese kann grundsätzlich innerbetrieblich (bzw. hierarchisch), in Netzwerken (bzw. kooperativ) oder marktlich erfolgen. Aus Sicht des EC bezeichnen elektronische Hierarchien einseitig dominierte Formen, etwa die Zusammenarbeit von Automobilzulieferern mit einem mächtigen Automobilhersteller über dessen Lieferantenportal. Elektronische Netzwerke dagegen verbinden mehrere tendenziell gleichberechtigte Unternehmen mit komplementären Kompetenzen zur Verfolgung eines gemeinsamen Geschäftszwecks. Elektronische Märkte bezeichnen multilaterale Systeme, an denen sich mehrere Anbieter und Nachfrager wettbewerblich gegenüberstehen und mit jeder (atomistischen) Transaktion auch die Wahl des Transaktionspartners erfolgt. Zentrales Charakteristikum sind dabei Mechanismen zur dynamischen Preisbildung.
+
+Einen Überblick über die Funktionalitäten von EC-Anwendungen liefern die nachfolgend geschilderten verkaufsseitigen (E-Sales) und einkaufsseitigen (E-Procurement) EC-Anwendungen, welche sich jeweils aus Unternehmenssicht unterscheiden lassen. Während die E-Sales-Anwendungen der elektronischen Produktpräsentation und dem Verkauf über den Online-Kanal dienen, steht beim E-Procurement die Beschaffung von Materialien im Vordergrund, die nicht durch das ERP-System abgedeckt/unterstützt sind (hier handelt es sich typischerweise um unregelmäßig anfallende Bedarfe mit geringer Wertigkeit). Gemeinsame EC-Funktionalitäten beider Bereiche sind:
+
+* Die **Produktauswahl** zur elektronischen Leistungspräsentation und -konfiguration sowie der Leistungsvergleich beruhen auf einer konsistenten und aktuellen Verwaltung von Produktstammdaten und Verfügbarkeiten in einem elektronischen Katalog entlang einer Artikelklassifikationssystematik.
+* Die **Kontrahierung** erlaubt die elektronische Bestellung von Produkten durch den Kunden.
+* Die **Abwicklung** umfasst drei grundlegende Funktionalitäten. Dazu zählen die Auftragsabwicklung (E-Fulfillment) mit Leistungen zur elektronischen Auftragseingabe und -verarbeitung, dem Lagermanagement oder After Sales Services, die Transportabwicklung (E-Logistics) mit Leistungen zur physischen Distribution und zur Sendungsverfolgung sowie die elektronische Zahlungsabwicklung (E-Payment) zur Regelung der Zahlungsmodalitäten wie Überweisungen, Kontoauszüge oder Gutschriften.
+* Die **Auswertung** bezeichnet auf der Protokollierung der EC-Aktivitäten beruhende Funktionalitäten. Hierunter fallen Statistiken zur Häufigkeit der gekauften Produkte, dem Verhalten der Anwender oder Zeitverläufe von der Auftragseingabe bis zur Auslieferung.
+
+Besonderheiten finden sich bei E-Sales in der Verbindung der Online-Produktauswahl mit dem Konzept der Auftragsfertigung (Build to Order). Hier erlauben Konfiguratoren die Zusammenstellung eines individuellen Produkts aus einem vordefinierten Portfolio standardisierter Komponenten. So können Kunden im Automobilbereich die Ausstattung ihrer Fahrzeuge interaktiv spezifizieren (z. B. Motorleistung, Innenausstattung, Zubehör) und damit Grundmodelle auf ihre Anforderungen zuschneiden.
+
+Im Gegensatz dazu richtet sich das E-Procurement an die Mitarbeiter eines Unternehmens und bildet Produkte gemäß vorher verhandelter Rahmenbedingungen und -verträge in der Anwendung ab. Hierbei sind drei Besonderheiten von Bedeutung:
+
+* **Automatische Aktualisierung**: Zunächst gilt es, die regelmäßig erforderlichen Aktualisierungen der Kataloge bezüglich der Artikel(-merkmale) und Preise möglichst automatisiert durchzuführen.
+* Nachdem Mitarbeiter die Produkte im E-Procurement auf Kosten des Unternehmens erwerben, sehen die Anwendungen die Funktionalität des **Genehmigungsworkflows** vor. Bestellanforderungen gelangen dabei zur Freigabe zum Kostenstellenverantwortlichen und erst nach dessen Zustimmung zur Ausführung an den Lieferanten.
+* **Kostenstellenabstimmung**: Nach der Zustellung an den Bedarfsträger im Unternehmen erfolgt die Verrechnung auf die entsprechende Kostenstelle. Damit auch dies automatisiert geschehen kann, sehen Anwendungen für das E-Procurement die Abstimmung mit den jeweiligen betrieblichen Kostenstellensystematiken vor.
+
+Zusammenfassend liegen die Potenziale des EC in der direkten und eineindeutigen – also Fehllieferungen vermeidenden – Produktauswahl, der direkten – und damit aufwandsreduzierenden – Auftragseingabe durch den Kunden bzw. Bedarfsträger sowie der Direktbelieferung vom Lieferanten an den Besteller. Nachdem alle Aktivitäten über die EC-Anwendung stattfinden, verbessern sich vielfach die Möglichkeiten zur Prozessführung erheblich – mit entsprechend positiven Auswirkungen auf Auslieferungszeiten und Prozesskosten.
+
 ### Nutzen vernetzter Anwendungen
+
+Betriebliche Anwendungen haben in Unternehmen wichtige Potenziale erschlossen, die von Rationalisierungseffekten (z. B. reduzierte Antwortzeiten, Durchlaufzeiten, Prozesskosten) hin zu Wettbewerbseffekten (z. B. neue vernetzte Geschäftsmodelle) reichen.
+
+Durch das Wechselspiel von technischer Gestaltung – also dem Einsatz einer integrierten betrieblichen Anwendung – und fachlicher Gestaltung – also der abgestimmten (Neu-)Gestaltung von Geschäfts-, Prozess- und IS-Modell wie im zweiten Teil beschrieben – lassen sich verschiedene Grade der IT-basierten Transformation unterscheiden (s. Abb. 12.5).
+
+\centerline{\includegraphics[width=1\textwidth]{img/125.png}}
+
+Die geringste Veränderung bedeutet die Automation einzelner betrieblicher Funktionen (z. B. des Rechnungswesens), während die Realisierung der innerbetrieblichen Integration mit der ablauf- und funktionsbereichsübergreifenden Sicht weitere Potenziale erschließt. Allerdings sollte bei Einführung betrieblicher Anwendungen nicht die Abbildung bestehender Prozesse, sondern der Neugestaltung (BPR, s. Kapitel 6) unter Berücksichtigung der integrierten Anwendung im Vordergrund stehen. Einen nächsten Schritt bedeutet die Ausweitung der Prozessgestaltung auf die Vernetzung mit Kunden und Lieferanten (Business Network Redesign) durch den Einsatz überbetrieblicher Anwendungen sowie die häufig darauf aufbauende Definition neuer Geschäftsmodelle (Business Scope Redefinition).
+
+Anhand der in Teil 2 eingeführten Ebenen des Business Engineering (s. Kapitel 6) lassen sich die Effekte betrieblicher Anwendungen in vier Kategorien zusammenfassen:
+
+* Die Basis bilden **Kommunikations- und Informationseffekte**, welche die ubiquitäre bzw. ortsunabhängige Verfügbarkeit von Informationen in den Vordergrund stellen und damit auf der IS-Ebene anzusiedeln sind.
+* Die zweite Kategorie bilden die **Prozesseffekte** auf der Organisationsebene. Sie beruhen auf den Effizienz- und Transparenzpotenzialen des Informations- und Kommunikationseffekts und schlagen sich spezifisch in den betroffenen Prozessen nieder.
+* Auf Ebene der Strategie lassen sich vor allem **Struktur- bzw. Akteurseffekte** identifizieren.
+* Ein vierter **Effekt** ist **auf überbetrieblicher Ebene** zu beobachten.
