@@ -465,6 +465,7 @@ Abb. 4.4 zeigt die grobe aufbauorganisatorische Verankerung der IS in einer Bank
 \centerline{\includegraphics[width=1\textwidth]{img/internorga2.png}}
 
 Abb. 4.5 zeigt die aufbauorganisatorische Verankerung der IS in einem Industrieunternehmen, in welchem der ranghöchste IT-Manager kein Mitglied der Geschäftsleitung ist. Die Aufteilung der Funktionen in die drei Bereiche beschreiben folgende Begriffe:
+
 * Anwendungen („Informationsverarbeitung“) - sowohl für betriebswirtschaftliche Anwendungen (z. B. Vertrieb) als auch für technische Anwendungen (z. B. Computer Aided Design) verantwortlich.
 * Systemsoftware und Produktivitätswerkzeuge („Informationstechnik“)
 * Hardware und Betrieb („Rechenzentrum“)
@@ -531,6 +532,7 @@ Für jede Ressource oder jedes Konzept in einer Unternehmung sind die spezifisch
 * **Vorsätzliche Handlungen**: Hierzu zählen Aktionen von Tätern, um daraus einen wirtschaftlichen Nutzen zu ziehen oder aber, um sich "Genugtuung" zu verschaffen. Der Grund für Letztereskann der Wunsch sein, der angegriffenen Organisation Schaden zuzufügen oder sein technisches Können zu beweisen. Neben diesen beiden Sachverhalten umfassen vorsätzliche Handlungen auch Spionage und informationstechnische Kriegsführung. Beispiele sind Diebstahl von Daten, Zerstören von Daten durch Verbreitung von Viren sowie Manipulationen, um Programme zum Stillstand zu bringen oder ihr Verhalten zu verändern.
 
 Das BSI unterteilt auch die Gefahren, Ressourcen und Vorgehensweisen in seinem IT-Grundschutz-Kompendium – Edition 2018 in folgende vier Gruppen (BSI 2018a):
+
 * Elementare Gefährdungen (Feuer, Wasser, Diebstahl von Ressourcen, fehlerhafte Nutzungvon Ressourcen, Schadprogramme usw.),
 * Bausteine (Organisation und Personal, Anwendungen, Netze und Kommunikation usw.),
 * Umsetzungshinweise (für jeden Baustein), und
@@ -1064,7 +1066,7 @@ Kapitel 9 beschreibt zunächst die Gestaltungsziele auf IS-Ebene sowie die prinz
 
 Gegenüber der Strategie- und der Organisationsebene konzentriert sich diese Ebene auf Fragen der Gestaltung von Informationssystemen (IS) mit den darin verwendeten **Anwendungen** und hardwaretechnischen Komponenten.
 
-Eine **Anwendung*** (oder eine Anwendungssoftware bzw. eine **Applikation**) ist ein Softwaresystem, das durch die Abbildung der Geschäftslogik die fachlichen Aufgaben eines Unternehmens unterstützt. Als Teilbereich eines IS konzentriert sich die Anwendung auf eine hohe Integration der darin abgebildeten Funktionen, um einen möglichst hohen Automationsgrad zu erzielen.
+Eine **Anwendung** (oder eine Anwendungssoftware bzw. eine **Applikation**) ist ein Softwaresystem, das durch die Abbildung der Geschäftslogik die fachlichen Aufgaben eines Unternehmens unterstützt. Als Teilbereich eines IS konzentriert sich die Anwendung auf eine hohe Integration der darin abgebildeten Funktionen, um einen möglichst hohen Automationsgrad zu erzielen.
 
 Auf der IS-Ebene lassen sich fünf grundsätzliche Gestaltungsziele formulieren:
 
@@ -1107,7 +1109,7 @@ Als **Modell** wird dann ein bestimmter, mithilfe eines Metamodells abgebildeter
 
 Erfolgt die Dokumentation des Modells mit grafischen Mitteln, wird das Ergebnisdokument als **Diagramm** bezeichnet.
 
-Die *Unified Modeling Language (UML)** ist eine der dominierenden Sprachen zur Modellierung von Softwaresystemen. Sie dient zur Modellierung, Dokumentation, Spezifizierung und Visualisierung komplexer Systeme unabhängig von deren Fach- und Realisierungsgebiet. Sie liefert die **Notationselemente** für die statischen und dynamischen Modelle dieser Modellfamilie. Die **statischen Modelle** oder auch **Strukturdiagramme** beschreiben die strukturelle Sicht auf ein System. Die **dynamischen Modelle** oder auch **Verhaltensdiagramme** legen den Schwerpunkt auf das Verhalten eines Systems.
+Die *Unified Modeling Language (UML)* ist eine der dominierenden Sprachen zur Modellierung von Softwaresystemen. Sie dient zur Modellierung, Dokumentation, Spezifizierung und Visualisierung komplexer Systeme unabhängig von deren Fach- und Realisierungsgebiet. Sie liefert die **Notationselemente** für die statischen und dynamischen Modelle dieser Modellfamilie. Die **statischen Modelle** oder auch **Strukturdiagramme** beschreiben die strukturelle Sicht auf ein System. Die **dynamischen Modelle** oder auch **Verhaltensdiagramme** legen den Schwerpunkt auf das Verhalten eines Systems.
 
 \centerline{\includegraphics[width=1\textwidth]{img/diagrammUML.png}}
 \centerline{\includegraphics[width=1\textwidth]{img/96.png}}
@@ -1134,7 +1136,7 @@ Die *Unified Modeling Language (UML)** ist eine der dominierenden Sprachen zur M
 
 \centerline{\includegraphics[width=1\textwidth]{img/99.png}}
 
-**Interaktionsübersichtsdiagramme (Abb. 9.9) stellen Interaktionen in ihrer sachlogischen und damit auch zeitlichen Reihenfolge dar. Hierbei kommen innerhalb der Modelle Sequenzdiagramme und aus dem UML-Aktivitätsdiagramm stammende Modellelemente zur Anwendung. In Abb. 9.9 zeigt die mit Hilfe eines Sequenzdiagramms dargestellte Interaktion „Preisübermittlung“ im Detail den Nachrichtenaustausch zwischen dem „Onlineshop“ und der „Preisberechnungsfunktion“, während andere Interaktionen auf bestehende Modelle verweisen (z. B. „Suche und Konfiguration Uhrenmodelle“).
+**Interaktionsübersichtsdiagramme** (Abb. 9.9) stellen Interaktionen in ihrer sachlogischen und damit auch zeitlichen Reihenfolge dar. Hierbei kommen innerhalb der Modelle Sequenzdiagramme und aus dem UML-Aktivitätsdiagramm stammende Modellelemente zur Anwendung. In Abb. 9.9 zeigt die mit Hilfe eines Sequenzdiagramms dargestellte Interaktion „Preisübermittlung“ im Detail den Nachrichtenaustausch zwischen dem „Onlineshop“ und der „Preisberechnungsfunktion“, während andere Interaktionen auf bestehende Modelle verweisen (z. B. „Suche und Konfiguration Uhrenmodelle“).
 
 **Komponentendiagramme** (Abb. 9.9) stellen Komponenten als wiederverwendbare und austauschbare modulare Einheiten eines Softwaresystems sowie die zwischen ihnen bestehenden Abhängigkeiten und Schnittstellen dar. In Abb. 9.9 ist die Komponente „Uhrenmodell-Preisberechnungsfunktion“ zunächst über zwei Schnittstellen mit ihrer Umwelt zum „Empfangen von Uhrenkonfigurationen“ und zur „Übermittlung von Preisberechnungen“ verbunden. Eine weitere Schnittstelle zur „Komponentenstammdatenverwaltung“ liefert die für die Preisberechnung von Uhrenmodellen notwendigen „Beschaffungspreise der Komponenten“.
 
@@ -1175,7 +1177,7 @@ Referenzmodelle werden zumeist auf fachkonzeptioneller Ebene und mit semi- forma
 
 \centerline{\includegraphics[width=1\textwidth]{img/101.png}}
 
-Ausgangspunkt der **Referenzmodellentwicklung** bildet die **Problemdefinition**, mit der der Modellierungsbereich und die Ziele der Referenzmodellkonstruktion fixiert sind. Anschließend wird durch **Analyse der Problemdomäne* Wissen über den Modellierungsbereich aufgebaut und ein Modellrahmen definiert. In der folgenden Phase findet die **Konstruktion der strukturellen und dynamischen Aspekte des Modells** statt. Durch die **Evaluation** wird sichergestellt, dass die konstruierten Modelle konsistent sind und den Anforderungen der Anwender genügen. Defizite oder Anforderungsänderungen führen dazu, dass der Entwicklungsprozess erneut ausgeführt wird. Mit dem Entwicklungsprozess ist der **Anwendungsprozess von Referenzmodellen** verknüpft, der durch die **Problemdefinition des Anwenders** angestoßen wird und zu **definierten Anforderungen** führt. In der folgenden Phase erfolgt die **Suche und Selektion** geeigneter Referenzmodelle, die anschließend zur **Konstruktion eines spezifischen Modells** für das Anwenderproblem führen.
+Ausgangspunkt der **Referenzmodellentwicklung** bildet die **Problemdefinition**, mit der der Modellierungsbereich und die Ziele der Referenzmodellkonstruktion fixiert sind. Anschließend wird durch **Analyse der Problemdomäne** Wissen über den Modellierungsbereich aufgebaut und ein Modellrahmen definiert. In der folgenden Phase findet die **Konstruktion der strukturellen und dynamischen Aspekte des Modells** statt. Durch die **Evaluation** wird sichergestellt, dass die konstruierten Modelle konsistent sind und den Anforderungen der Anwender genügen. Defizite oder Anforderungsänderungen führen dazu, dass der Entwicklungsprozess erneut ausgeführt wird. Mit dem Entwicklungsprozess ist der **Anwendungsprozess von Referenzmodellen** verknüpft, der durch die **Problemdefinition des Anwenders** angestoßen wird und zu **definierten Anforderungen** führt. In der folgenden Phase erfolgt die **Suche und Selektion** geeigneter Referenzmodelle, die anschließend zur **Konstruktion eines spezifischen Modells** für das Anwenderproblem führen.
 
 \centerline{\includegraphics[width=1\textwidth]{img/102.png}}
 
@@ -1251,13 +1253,14 @@ Zu den **buchungskreisspezifischen Daten** gehören:
 * Die **Berechtigung** kennzeichnet die Benutzergruppe, die zum Zugriff auf das Konto autorisiert ist.
 
 Zu den **kontenplanspezifischen Daten** des Sachkontenstamms gehören:
+
 * Die **Kontonummer** und die **Kontenbezeichnung**,
 * der **Kontentyp**, der angibt, ob es sich bei dem Konto um ein Bilanz- oder ein Erfolgskonto handelt und
 * die **Kontengruppe**, die bestimmt, welche Felder beim Anlegen oder Ändern des Sachkontenstammsatzes ausgefüllt werden müssen.
 
 ##### Stammdaten der Debitoren- und Kreditorenbuchhaltung
 
-Im Rahmen der Debitoren- und Kreditorenbuchhaltung werden die Geschäftsbeziehungen der Unternehmen zu Kunden und Lieferanten erfasst. Hierzu gehören beispielsweise Adressdaten, Zahlungsbedingungen und Bankverbindungen. Da Debitoren und Kreditoren in mehreren Buchungskreisen eines Konzerns aktiv sein können, ist es sinnvoll, die Daten in einen **allgemeinen** und einen *buchungskreisabhängigen** Bereich zu untergliedern.
+Im Rahmen der Debitoren- und Kreditorenbuchhaltung werden die Geschäftsbeziehungen der Unternehmen zu Kunden und Lieferanten erfasst. Hierzu gehören beispielsweise Adressdaten, Zahlungsbedingungen und Bankverbindungen. Da Debitoren und Kreditoren in mehreren Buchungskreisen eines Konzerns aktiv sein können, ist es sinnvoll, die Daten in einen **allgemeinen** und einen **buchungskreisabhängigen** Bereich zu untergliedern.
 
 \centerline{\includegraphics[width=1\textwidth]{img/1016.png}}
 
@@ -1266,7 +1269,7 @@ Die **allgemeinen Stammdaten** umfassen diejenigen Attribute, die einen Debitore
 Zu den **buchungskreisabhängigen Stammdaten** für Kreditoren und Debitoren gehören die Kontoführungsdaten:
 
 * Die Geschäftsvorfälle, die in der Kreditoren- und Debitorenbuchhaltung gebucht werden, müssen gleichzeitig auf den Konten der Hauptbuchhaltung abgebildet werden. Zu diesem Zweck wird jedem Kreditoren- bzw. Debitorenkonto ein **Abstimmkonto** in der Hauptbuchhaltung zugewiesen.
-* **Zahlungsverkehrs*: Dazu gehört die Erfassung der gewährten Zahlungsbedingungen durch die Kreditoren bzw. Debitoren sowie die Darstellung der Bankverbindungen. Bei der Durchführung des Zahlungsverkehrs ist neben dem Bank Identifier Code (BIC) die IBAN (International Bank Account Number) als zweites Identifikationsmerkmal zu erfassen, die weltweit der eindeutigen Adressierung von Konten dient.
+* **Zahlungsverkehrs**: Dazu gehört die Erfassung der gewährten Zahlungsbedingungen durch die Kreditoren bzw. Debitoren sowie die Darstellung der Bankverbindungen. Bei der Durchführung des Zahlungsverkehrs ist neben dem Bank Identifier Code (BIC) die IBAN (International Bank Account Number) als zweites Identifikationsmerkmal zu erfassen, die weltweit der eindeutigen Adressierung von Konten dient.
 * Die **Mahndaten** geben an, mit welchen Parametern die Mahnung von Debitoren erfolgen soll. Zu den Parametern des Mahnverfahrens gehört die Anzahl der Mahnstufen, die vor Durchführung eines gerichtlichen Mahnverfahrens durchlaufen werden, sowie die Mahntexte, aus denen automatisch eine schriftliche Mahnung erstellt wird. Für Forderungen mit längerer Laufzeit können Warenkreditversicherungen abgeschlossen werden, die als Teil der Debitorenstammdaten zu erfassen sind.
 
 Die dargestellten Stammdaten verdeutlichen, dass das Anlegen eines neuen Kreditoren bzw. Debitoren mit relativ hohem Aufwand verbunden ist. Für Geschäftspartner, bei denen selten bzw. einmalig Geschäftsvorfälle anfallen, empfiehlt sich die Anlage sog. **Conto-pro-Diverse-Konten (CpD-Konten)**. Bei dieser Art von Personenkonto werden die Stammdaten bei der **Belegerfassung** eingegeben und innerhalb des Belegs gespeichert. Auf diese Weise werden die Datenbestände des Kreditoren- bzw. Debitorenstamms nicht unnötig vergrößert.
