@@ -843,6 +843,7 @@ Die Strategieebene legt in Abstimmung mit der allgemeinen Unternehmensstrategie 
 * Das **Geschäftsmodell** spezifiziert die Positionierung des Unternehmens im Markt. Es enthält Informationen zum Geschäftszweck/ Kundennutzen, den Kernressourcen/-aktivitäten und zu den finanziellen Konsequenzen des Geschäftsbetriebs. Zusätzlich bildet das **Geschäftsnetzwerkmodell** das Zusammenwirken von Unternehmen in einem Geschäfts- bzw. Wertschöpfungsnetzwerk im Sinne einer Geschäftsarchitektur ab.
 
 Die **strategische Prozessführung (Process Performance Management/Prozesscontrolling)** bildet die für ein Unternehmen festgelegten strategischen Ziele und die davon abgeleiteten (kritischen) Erfolgsfaktoren sowie strategischen Führungsgrößen/ Kennzahlen ab und stellt sicher, dass die Gestaltung des fachlichen Entwurfs den geschäftlichen (Ziel-)Vorgaben folgt.
+
 ### Kundenprozessmodell
 
 Ausgangspunkt zur Identifikation der (künftig) angebotenen Leistungen eines Unternehmens sind die Bedürfnisse der Zielkunden als wesentliche Stakeholder eines Unternehmens, die sich in Kunden- bzw. Verwendungsprozessen niederschlagen. Das **Kundenprozessmodell** spezifiziert die Aktivitäten beim Kunden und die benötigten Leistungsbestandteile zur Deckung eines komplexen Kundenbedürfnisses für ein Kundensegment. Ziel ist die Zuordnung der aus Kundensicht nachgefragten zu den aus Unternehmenssicht angebotenen Leistungen.
@@ -864,6 +865,7 @@ Abb. 7.1 setzt das Uhren-Beispiel fort. Für den Kundenprozess „Uhr kaufen“ 
 Für ausgewählte Gestaltungsaspekte lassen sich zusätzliche Modelle einsetzen. So ist angesichts der zahlreichen, für die Kundeninteraktion verfügbaren Kanäle eine abgestimmte Nutzung im Rahmen von Cross-Channel-Management-Ansätzen notwendig. Eine solche hybride Kundeninteraktion geht von einem Nebeneinander mehrerer Kanäle und einem Wechsel während einer Kundeninteraktion im Sinne von **Customer Journeys** aus. Diese beginnen beim ersten Auftreten eines Kundenbedürfnisses und erstrecken sich über das Informieren und Abwägen verschiedener Leistungsangebote, den Kauf von Produkten und/oder Dienstleistungen sowie dem nachfolgenden Aftersale-Service bis hin zu langfristigen loyalitätsfördernden Maßnahmen. Abb. 7.2 zeigt beispielhaft eine Customer Journey, die auf dem in Abb. 7.1 dargestellten Ablauf des Kundenprozesses aufbaut und den Aktivitäten die genutzten Interaktionskanäle zwischen Kunde und Unternehmen zuordnet.
 
 \centerline{\includegraphics[width=1\textwidth]{img/72.png}}
+
 ### Geschäftsmodell und -netzwerk
 
 Da in arbeitsteilig organisierten Wertschöpfungsstrukturen ein Unternehmen nicht alle Aufgaben selbst ausführt, entstehen Netzwerke von mehreren Unternehmen. Die Unternehmen ergänzen sich dabei idealerweise mit ihren Kernkompetenzen, wobei sich unterschiedliche generische Schwerpunkte für die Gestaltung erkennen lassen:
@@ -1016,6 +1018,7 @@ Die nächste Abbildung zeigt ein solches Diagramm für die Entscheidung „Gutsc
 \centerline{\includegraphics[width=1\textwidth]{img/812.png}}
 
 Die **robotergesteuerte Prozessautomatisierung (Robotic Process Automation (RPA))** zielt auf die vollautomatisierte Nachahmung von manuellen Prozessschritten, bei denen bisher eine einfache menschliche Interaktion mit Benutzerschnittstellen von Anwendungen notwendig gewesen ist. Der Vorteil von RPA liegt darin, dass damit eine Automatisierung manueller Arbeitsschritte erfolgt ohne, dass jedoch aufwändig zu programmierende Schnittstellen zwischen den Anwendungen zu schaffen sind. Zudem zielen RPA-Werkzeuge auf eine einfache Konfiguration der zu automatisierenden Schritte, sodass diese auch geschulte Fachanwender durchführen können. Damit entlastet RPA Anwender von monotonen Routineaufgaben und reduziert damit auch das Potenzial menschlicher Benutzerfehler.
+
 ### Aufbauorganisation
 
 Obgleich im Prozessmanagement die Ablauforganisation dominiert und die Ablaufplanung damit zunächst unabhängig von bestehenden Abteilungsgrenzen erfolgt, ist in einem anschließenden Schritt über die **Aufbauorganisation** zu entscheiden. Die Grundelemente der aufbauorganisatorischen Struktur eines Unternehmens bilden die **Stellen**, die durch die Bündelung inhaltlich zusammenhängender Einzelaufgaben entstehen. Die Beschreibung einer organisatorischen **Rolle** basiert ebenfalls auf der Zuordnung zu spezifischen Aufgaben, enthält aber zusätzlich Informationen zu den Mindestqualifikationen eines Rollenträgers und zu den durch die Rolle übertragenen Kompetenzen.
@@ -1025,6 +1028,7 @@ Obgleich im Prozessmanagement die Ablauforganisation dominiert und die Ablaufpla
 Die nächste Abbildung zeigt für das Uhren-Beispiel das Organigramm für den aufbauorganisatorischen Bereich des Produktmanagements. Dieser Organisationseinheit sind sechs Rollen zugeordnet, die wiederum jeweils einem oder mehreren Mitarbeitern ausfüllen. Dieses Organigramm enthält zusätzlich Informationen zu den Führungsstrukturen (Abteilungsleiter und Teamleiter) innerhalb dieser Organisationseinheit.
 
 \centerline{\includegraphics[width=1\textwidth]{img/813.png}}
+
 ### Operative Prozessführung und -messung
 
 Die **operative Prozessführung** setzt an der Spezifikation von Organisationszielen, kritischen Erfolgsfaktoren und strategischen Führungsgrößen an.
@@ -1182,6 +1186,7 @@ Ausgangspunkt der **Referenzmodellentwicklung** bildet die **Problemdefinition**
 \centerline{\includegraphics[width=1\textwidth]{img/102.png}}
 
 ### Sektorneutrale Anwendungen
+
 #### Rechnungswesen als Kern des ERP-Systems
 
 Ein ERP-System unterstützt die Administrations- und Dispositionsaufgaben eines Unternehmens. Das Rechnungswesen stellt den Kern des ERP-Systems dar. Die Teilsysteme **Finanzbuchhaltung** (externes Rechnungswesen) und **Kosten- und Leistungsrechnung** (internes Rechnungswesen) werden als seine zentralen Komponenten betrachtet.
@@ -1377,7 +1382,9 @@ Das SAP Enterprise Portal ist ein Portal, das auf dem SAP Application Server bas
 Im Rahmen unternehmensübergreifender Geschäftsprozesse (Supply Chain Management) wird die Zusammenarbeit zwischen einem Unternehmen, seinen Zulieferern und Kunden durch ein solches Portal unterstützt. Durch die informationstechnologische Integration der Geschäftsprozesse können Kostensenkungspotenziale realisiert werden. So sind die Unternehmen in der Lage, individuelle Konditionen, den Lagerbestand des Lieferanten sowie den Lieferfortschritt einzelner Aufträge (Order Tracking) aktuell einzusehen. Lieferanten können ihren Kunden individuelle Kataloge per Internet zur Verfügung stellen und eine Onlinebestellung aus diesen Katalogen heraus ermöglichen. Nicht nur die Ausführung von Transaktionen über ein Portal ist möglich, sondern auch die Realisierung unternehmensinterner und -externer Gruppenarbeit (Collaboration). In virtuellen Gruppen wird internen und externen Personen die Möglichkeit zur Koordination von verteilten Geschäftsprozessen und verteilter Projektarbeit gegeben. Gruppen (z. B. Projektteams) können sich in virtuellen Räumen (Collaboration Rooms) zusammenfinden und die dort bereitgestellten Kollaborationsanwendungen nutzen.
 
 ### Sektorspezifische Anwendungen
+
 #### Industriebetriebe
+
 #####  Architektur klassischer PPS-Systeme
 
 Die Anwendungsarchitektur für Industriebetriebe wird als Y-Modell dargestellt, dessen linker Ast mit der Produktionsplanung und -steuerung (PPS) vorwiegend betriebswirtschaftliche und dessen rechter Ast primär technische Funktionen enthält. Das Gesamtsystem wird auch als **Computer Integrated Manufacturing (CIM)-Konzept** bezeichnet (s. Abb. 10.40). Zunächst soll auf die **Produktionsplanungsund -steuerungssysteme (PPS-Systeme)** eingegangen werden. Dabei sind folgende Teilbereiche zu koordinieren:
@@ -1405,6 +1412,7 @@ Wesentlich für das CIM-Konzept ist die Verknüpfung der Software des ERP-System
 \centerline{\includegraphics[width=1\textwidth]{img/1041.png}}
 
 #### Handelsbetriebe
+
 ##### Konzeptionelle Grundlagen
 
 Handelsunternehmen sind dadurch charakterisiert, dass sie die Güterströme zwischen Wirtschaftssubjekten organisieren und koordinieren. Durch die Überbrückung *räumlicher, zeitlicher, qualitativer und quantitativer Diskrepanzen* wird letztlich der Konsum von Gütern und Dienstleistungen ermöglicht. Die zentralen Funktionen des Handels beziehen sich somit auf die *Beschaffung*, *Lagerhaltung* und die *Distribution* von Gütern. Die IS des Handels, die den physischen Warenstrom und sämtliche damit verbundenen Prozesse abbilden, werden als **Warenwirtschaftssysteme** bezeichnet. Ein Referenzmodell, das die Architektur von Warenwirtschaftssystemen beschreibt, ist das Handels-H-Modell in Abb. 10.42.
@@ -1492,6 +1500,7 @@ Weitere Impulse erhalten IS in der Energiewirtschaft aktuell durch die Nutzung v
 In diesem Smart Contract wird mithilfe von Wenn-Dann-Regeln gesteuert, wie selbst erzeugte Energie – etwa aus einem Windkraftwerk – zu handhaben ist. Für jede erzeugte Kilowattstunde (kWh) wird zunächst ein Token als Abrechnungseinheit erzeugt. Anschließend wird geprüft, ob die erzeugte Energie am Markt verkauft werden soll, oder aber einem Speicher zuzuführen ist. Diese Entscheidung erfolgt in Abhängigkeit vom aktuellen Strompreis, der z. B. über die Börse bereitgestellt wird.
 
 ### Einführung von ERP-Systemen als Standardsoftware
+
 #### Vorgehensmodell zur ERP-Einführung
 
 Die Realisierung von ERP-Systemen erfolgt in der Regel auf Grundlage von Standardsoftwareprodukten,
@@ -1618,6 +1627,7 @@ Unter **Business Intelligence (BI)** ist ein Gesamtansatz zu verstehen, mit dem 
 Die Grundlage von BI-Systemen bildet die **originäre Datenschicht**. Diese umfasst sämtliche Datenbestände, die für die Entscheidungsunterstützung aufzubereiten sind und aus unternehmensinternen bzw. -externen Quellen stammen können. Die Datenbestände werden in einem Data-Warehouse-System abgelegt, das als zentraler Datenspeicher dient und somit die **Bereitstellungsschicht** darstellt. Die bereitgestellten Daten können anschließend mithilfe von Anwendungsprogrammen verarbeitet werden, die auf der **Dialog- und Analyseschicht** angesiedelt sind. Neben Data-Mining-Systemen werden zu diesem Zweck häufig Berichtssysteme und Systeme für das Online Analytical Processing (OLAP) eingesetzt.
 
 ### Allegemeine Komponente von EUS
+
 #### Data-Warehouse-Konzept
 
 Ein **Data Warehouse** ist ein themenorientierter, integrierter, nicht flüchtiger und zeitvarianter Datenspeicher.
@@ -2075,10 +2085,11 @@ DevOps hat sich bislang als übergreifender Ansatz etabliert, der zur verbessert
 
 * **Culture**. DevOps sieht eine Kultur der Zusammenarbeit zwischen den Beteiligten vor. Dies sind insbesondere die Kunden, die Entwicklerteams und die Betriebsabteilung. Alle Beteiligten sollen sich gemeinsam für eine hohe Qualität und Kundenzufriedenheit verantwortlich fühlen.
 * **Automation**. DevOps versucht möglichst viele Routineaufgaben im Entwicklungs- und Betriebsprozess zu automatisieren, um dadurch Zeit- und Kostenvorteile zu nutzen. Ansätzen der kontinuierlichen Softwareauslieferung folgend, sieht DevOps eine Delivery Pipeline vor, die verschiedene Entwicklungs- und Betriebswerkzeuge miteinander verbindet.
-* Measurement**. Der DevOps-Ansatz beinhaltet die Messung von definierten Führungsgrößen/Metriken zur Beurteilung der Kundenzufriedenheit und der Steigerung der Produktivität. Dazu zählen beispielsweise die Durchlaufzeit von Deployments, die Wiederanlaufzeit nach Fehlern oder die Fehlerrate von Deployments.
+* **Measurement**. Der DevOps-Ansatz beinhaltet die Messung von definierten Führungsgrößen/Metriken zur Beurteilung der Kundenzufriedenheit und der Steigerung der Produktivität. Dazu zählen beispielsweise die Durchlaufzeit von Deployments, die Wiederanlaufzeit nach Fehlern oder die Fehlerrate von Deployments.
 * **Sharing**. Zur Verbesserung des Wissensmanagements zwischen allen Beteiligten sollen mit DevOps entsprechende Plattformen, Publikationen und Schulungsangebote entstehen. Auch regelmäßige Informationsveranstaltungen zur Darstellung der erreichten Erfolge zählen zu Maßnahmen in diesem Bereich.
 
 ### Projektmanagement
+
 #### Grundlegende Begriffe
 
 Die (Weiter-)Entwicklung von Software erfolgt typischerweise im Rahmen von Projekten. Dem nachfolgend dargestellten Begriffsverständnis folgend ist ein Projekt dann erfolgreich, wenn die im Leistungsverzeichnis dokumentierte technische Aufgabe erfüllt, der zur Bearbeitung veranschlagte Zeitraum eingehalten und die budgetierten Kosten nicht überschritten werden.
@@ -2167,7 +2178,7 @@ Das Ziel des Konfigurationsmanagements besteht darin sicherzustellen, dass ein P
 
 Das Konfigurationsmanagement überwacht die Konfigurationen während der gesamten Entwicklung, sodass die Zusammenhänge und Unterschiede zwischen früheren Konfigurationen und den aktuellen Konfigurationen jederzeit erkennbar sind. Auf diese Weise können beispielsweise auch Abweichungen von den Anforderungen und dem Entwurf des IS erkannt werden. Das Konfigurationsmanagement stellt außerdem sicher, dass jederzeit auf vorausgegangene Versionen zurückgegriffen werden kann. Dadurch sind Änderungen nachvollziehbar und überprüfbar. Konfigurationen sind verschiedene Ausprägungen desselben IS (z. B. lauffähiges Gesamtsystem). Dieses wird aus Versionen von Komponenten zusammengestellt für:
 
-• Eine bestimmte Systemsoftware,
+* Eine bestimmte Systemsoftware,
 * eine bestimmte Hardware,
 * eine bestimmte Arbeitsumgebung, und
 * einen bestimmten Leistungsumfang.
@@ -2179,9 +2190,15 @@ Dabei müssen folgende Probleme bei der Verwaltung von Komponenten berücksichti
 * unterschiedliche Zugriffsrechte auf die Komponenten.
 
 ## Kapitel 14
+
 ### Objektorientierte Softwareentwicklung
+
 ### Vorgehen bei der objektorientierten Softwareentwicklung
+
 ### Methoden für die Analyse
+
 ### Methoden für den Entwurf
+
 ### Methoden für die Implementierung und den Test
+
 ### Methoden für die Softwarewartung
