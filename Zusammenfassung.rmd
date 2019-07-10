@@ -1881,3 +1881,307 @@ Anhand der in Teil 2 eingeführten Ebenen des Business Engineering (s. Kapitel 6
 * Die zweite Kategorie bilden die **Prozesseffekte** auf der Organisationsebene. Sie beruhen auf den Effizienz- und Transparenzpotenzialen des Informations- und Kommunikationseffekts und schlagen sich spezifisch in den betroffenen Prozessen nieder.
 * Auf Ebene der Strategie lassen sich vor allem **Struktur- bzw. Akteurseffekte** identifizieren.
 * Ein vierter **Effekt** ist **auf überbetrieblicher Ebene** zu beobachten.
+
+## Kapitel 13: Phasenmodelle in der Softwareentwicklung
+
+Dieses Kapitel erläutert zunächst den Gegenstand und die Ziele der Softwareentwicklung. Es stellt die grundlegenden Entwicklungsstrategien und der Softwareentwicklungszyklus vor und beschreibt die Rolle, Probleme und die Techniken des Anforderungsmanagements. Dabei geht es auf die Problematik unklarer Anforderungen und Ziele in Pflichtenheft und Lastenheft ein. Es folgt die Vorstellung sowohl klassischer als auch agiler Vorgehensmodelle inklusive ihrer jeweiligen Vor- und Nachteile. Ergänzend dargestellt sind die Bereiche des Projekt-, Risiko-, Qualitäts- und Konfigurationsmanagements von Entwicklungsprojekten.
+
+### Gegenstand und Ziele
+
+Die **Softwareentwicklung** umfasst alle Aktivitäten der Softwareplanung, der Softwaredefinition, des Softwareentwurfs und der Softwareumsetzung unter Berücksichtigung von Kundenwünschen und geforderten Qualitätseigenschaften.
+
+Unabhängig von der Art der Softwareentwicklung haben Softwareprodukte bestimmte prozessbezogene wie auch ergebnisbezogene Qualitätsanforderungen zu erfüllen:
+
+* Änderbarkeit. Sie sollen leicht änderbar und anpassbar sein (Easy to Modify), beispielsweise durch Parametrisierung.
+* Allgemeingültigkeit. Komponenten der Software sollen mit geringem Änderungsaufwand auch für ähnliche Problemstellungen anwendbar sein.
+* Benutzerfreundlichkeit. Sie sollen dem Benutzer eine sichere, komfortable und leicht verständliche Handhabung ermöglichen. Dabei sollen sie über endbenutzerfähige, und in allen Komponenten gleich gestaltete Dialogelemente verfügen (Easy to Learn).
+* Effizienz. Si sollen ein angemessenes zeitliches Verhalten (z. B. kurze Antwortzeiten) bei geringem Ressourcenaufwand aufweisen.*• Funktionsabdeckung. Sie sollen die im Fachkonzept geforderten Funktionen vollständig enthalten.
+* Kompatibilität. Sie sollen sich mit anderen bereits vorhandenen Anwendungen leicht verbinden lassen, um Informationen austauschen zu können.
+* Portabilität. Sie sollen auf verschiedenen Hardware- und Systemsoftwareplattformen konsistent benutzbar sein (Easy to Use).
+* Produktivität. Sie sollen unter Benutzung portabler, ineinandergreifender Werkzeuge soweit wie möglich automatisiert entwickelbar sein.
+* Richtigkeit. Sie sind richtig (korrekt), wenn sie für jede Eingabe aus dem Definitionsbereich der Funktion eine richtige Ausgabe erzeuen.
+* Robustheit. Sie sollen möglichst alle falschen Eingaben erkennen und melden. Eingabefehler sollen nicht zu Systemabstürzen führen.
+* Sicherheit. Sie sollen Funktionen enthalten, die automatisiert vor Verlust der Daten schützen (beispielsweise bei einem Systemausfall).
+* Testbarkeit. Einzelne Komponenten der Software sollen unabhängig voneinander und ebenso wie die Gesamtanwendung leicht testbar sein.
+
+Die Vielschichtigkeit komplexer Software erfordert verschiedene Konzepte und Methoden die ineinander greifen müssen, um alle Entwicklungsphasen und Sichtweisen konsistent abzudecken. Die Methodenanwendung soll dabei nicht nur vollständig, pünktlich und wirtschaftlich sein. Die Arbeitsteiligkeit der Entwicklung und Einführung sowie die Langlebigkeit der Ergebnisse erfordern es, den Methodeneinsatz plan- bzw. steuerbar zu gestalten und validierbare/verifizierbare, zumindest aber nachvollziehbare Ergebnisse zu erzeugen. Ziel ist daher ein möglichst hoher Grad an Formalisierung und Standardisierung. Um dies  zu erreichen können verschiedene Entwicklungsstrategien und methodische Ansätze zum Einsatz kommen, die nachfolgend beschrieben sind.
+
+### Grundlegende Entwicklungsstrategien
+
+Grundsätzlich ist die Entwicklung eines komplexen Systems auf zwei verschiedene Arten möglich. Das Top-down-Vorgehen beschreibt das System zunächst auf vereinfachter und/oder aggregierter Ebene und verfeinert diese Beschreibung dann solange schrittweise, bis eine detaillierte Spezifikation vorliegt. Das Bottom-up-Vorgehen beschreibt die verschiedenen Bestandteile des Systems zunächst detailliert. Die Detailbeschreibungen werden dann sukzessive ergänzt und schließlich, u. U. vergröbert, zum Gesamtmodell des Systems integriert. Beide Vorgehensweisen haben Vor- und Nachteile:
+
+* Das Top-down-Vorgehen entspricht eher der menschlichen Vorgehensweise bei der Problemlösung. Die Gesamtsicht auf das System bleibt bei (konsistenten) Verfeinerungen dann erhalten, wenn schon am Anfang der Systembeschreibung eine „richtige“ Gesamtsicht vorliegt. Aber auch dann können die Verfeinerungen zu letztlich inkompatiblen Teilmodellen führen.
+* Das Bottom-up-Vorgehen erlaubt es, mit der Analyse übersichtlicher, wohlverstandener Teilprobleme zu beginnen. Allerdings ist die Integration der Teillösungen u. U. aufwändig, und die sich schließlich ergebende Gesamtsicht des Systems kann von der ursprünglichen Zielsetzung abweichen.
+
+Zur konkreten Umsetzung eines Entwicklungsvorgehens kommen **Methoden** zum Einsatz. Eine **Methode** enthält Aussagen über die Aktivitäten des Vorhabens und deren Reihenfolge, über die hierbei verwendeten Techniken, über die beteiligten Akteure bzw. Rollen sowie über die Repräsentation der Ergebnisse.
+
+Zur strukturierten Beschreibung von Aktivitätsfolgen (als ein wesentliches Element einer Methode) kommen **Vorgehensmodelle** zum Einsatz. Ein **Vorgehensmodell** enthält die zur Erreichung eines bestimmten Ergebnisses notwendigen Aktivitäten, und stellt diese in einer sachlogischen Reihenfolge dar.
+
+### Softwareentwicklungszyklus
+
+\centerline{\includegraphics[width=1\textwidth]{img/softwarezyklus.png}}
+
+\centerline{\includegraphics[width=1\textwidth]{img/wassermodell.png}}
+
+Die obige Abbildung zeigt die Abfolge der wichtigsten Phasen der Softwareentwicklung am Beispiel des Wasserfallmodells sowie die in den jeweiligen Phasen erzeugten Ergebnisse. Das hier dargestellte Wasserfallmodell ist linear zu durchlaufen und enthält keine Rücksprünge in frühere Phasen. Hierbei ist eine Phase zuerst vollständig abzuschließen, ehe der Übergang in die nächste Phase erfolgt. Man spricht in diesem Zusammenhang auch von Phasenmodellen. In der Praxis kommt es aber häufig vor, dass Fehler, geänderte Rahmenbedingungen oder neue Anforderungen einen Rücksprung in vorgelagerte Phasen erfordern. Daher sind im Laufe der Zeit Ansätze entstanden, die im Rahmen des Wasserfallmodells Rücksprünge in frühere Phasen erlauben, wobei allerdings der ursprüngliche Charakter eines einmaligen Phasendurchlaufs im Wesentlichen erhalten bleibt.
+
+Zusammengefasst sind die Inhalte der einzelnen Softwareentwicklungsphasen:
+
+* Die **Projektdefinitionsphase (Vorphase)** dient dazu, den Ist-Zustand des IS zu analysieren, wesentliche Anforderungen an die neue Software (bzw. Änderungswünsche) zu skizzieren und alternative Grobkonzepte zur Umsetzung dieser Anforderungen zu entwickeln sowie die Machbarkeit der Softwareentwicklung aus wirtschaftlichen, technischen, zeitlichen und organisatorischen Gesichtspunkten zu untersuchen.
+* Die **Anforderungsanalyse** dient dazu, aus den Arbeiten der Vorphase eine präzise, realisierungsunabhängige Beschreibung der zu entwickelnden Software abzuleiten. Die Ergebnisse dieser Phase sind ein Anforderungskatalog bzw. ein daraus entwickeltes Lastenheft, die die Anforderungen an Abläufe und Leistungen des zu entwickelnden Systems aus fachlicher Sicht detailliert beschreiben.
+* In der **Entwurfsphase** werden die Anforderungen auf eine informationstechnische Beschreibungsebene übertragen. Das Ergebnis dieser Phase wird oftmals IT-Konzept bezeichnet und enthält eine systematische Beschreibung der Daten- und Funktionssicht der zu entwickelnden Software sowie Informationen zu ihrer geplanten Einbettung in das übergeordnete IS aus dem Blickwinkel der Organisations- und Steuerungssicht.
+* Ein IT-Konzept wird in der **Implementierungsphase** durch Datenstrukturen und Algorithmen in die Konstrukte der jeweiligen Hard- und Softwareumgebung umgesetzt. Die als Ergebnis dieser Phase realisierten Softwarekomponenten können in einer Testumgebung durch Formulierung von Testfällen und Durchführung modulspezifischer Tests überprüft werden.
+* Die während des Komponententests isoliert voneinander betrachteten Softwarekomponenten werden in der **Integrations- und Testphase** zunächst zusammengefügt und einem sog. *Systemtest (Integrationstest)* unterzogen. Gleichzeitig oder danach erfolgt eine Portierung der Software in die Produktionsumgebung (*Installation*). Als Ergebnis dieser Phase wird die in der Produktionsumgebung getestete Software abgenommen und in die Betriebsphase überführt.
+* Während der **Betriebsphase** einer Software können zwei Arten von Softwareentwicklungsaktivitäten erfolgen. Entwicklungstätigkeiten aufgrund geänderter oder zusätzlicher funktionaler Anforderungen oder zur Beseitigung von Leistungsmängeln stellen *Aktualisierungen* oder *Erweiterungen* dar. Entwicklungstätigkeiten zur Korrektur von Entwurfs- oder Implementierungsfehlern werden als Wartung bezeichnet.
+
+Während aller Phasen der Softwareentwicklung sollte eine permanente Dokumentation erfolgen (z. B. in Form von Modellen der Strategie- und Prozessebene, Machbarkeitsstudien, Anforderungskataloge, IT-Konzept, Implementierungsdokumentation und Testbeschreibungen). Neben Entwicklungsdokumenten im engeren Sinne sind auch nutzerorientierte Benutzungs-, Installations- und Softwarehandbücher zu erstellen. Für die Beurteilung der Ergebnisse einer Softwareentwicklung besitzen die Verifikation und die Validation im Qualitätsmanagement eine besondere Bedeutung.
+
+Die **Verifikation** einer Systemkomponente (z. B. eines Softwareprodukts) bezeichnet die Überprüfung der Übereinstimmung zwischen der Systemkomponente und ihrer Spezifikation. Die hierfür typische Fragestellung lautet: „Entspricht die Softwarekomponente den bei der Entwicklung zugrunde gelegten Anforderungen?“
+
+Die **Validation** einer Systemkomponente (z. B. eines Softwareprodukts) bezeichnet die Überprüfung der Eignung bzw. des Wertes einer Systemkomponente bezogen auf ihren Einsatzzweck. Die hierfür typische Fragestellung lautet: „Ist eine Softwarekomponente so gestaltet, so dass sie im operativen Betrieb die Handlungen/Aufgabenbearbeitungen der geplanten Softwarenutzer möglichst umfassend und effizient unterstützt?“.
+
+### Requirements Engineering in der Softwareentwicklung
+
+Die **Anforderungsanalyse (Requirements Analysis)** dient zur Ermittlung von Zielstellungen und davon abgeleiteten Anforderungen eines Auftraggebers sowie der Stakeholder und späteren Nutzer bezüglich der zu entwickelnden Software.
+
+Als **Stakeholder** bezeichnet man einzelne Personen oder Personengruppen, die das Erreichen der Ziele oder der Aktivitäten einer Organisation beeinflussen können.
+
+Die von den Zielstellungen abgeleiteten *Anforderungen* sind für alle an der Softwareentwicklung beteiligten Personen eine Grundlage der Kommunikation und Diskussion des Leistungsumfangs einer zukünftigen Software. Eine **Anforderung** ist eine Aussage über eine Eigenschaft oder Leistung eines Produkts, eines Prozesses oder der am Prozess beteiligten Personen.
+
+* **Funktionale Anforderungen** adressieren die funktionalen Verhaltensweisen und Strukturen einer Software inklusive der relevanten Systemzustände. Zusätzlich umfassen sie auch die Inputs (z. B. Daten, manuelle Eingaben, Ereignisse) sowie die sich aus dem funktionalen Verhalten der Software ergebenden Outputs (z. B. Daten, Reaktionen des Systems).
+* **Nichtfunktionale Anforderungen** beziehen sich auf die Qualitätsattribute der gewünschten Funktionen (z. B. Zuverlässigkeit, Ressourcenauslastung Nutzerfreundlichkeit), die Anforderungen an die Gesamtanwendung (z. B. Notfallmaßnahmen, Mitarbeiterqualifikationen), die Vorgaben für die Softwareerstellung (z. B. Projektorganisation, verwendete Hilfsmittel) sowie Anforderungen an die Prüfung, Einführung und den Betrieb der Software.
+
+Darüber hinaus existieren weitere Klassifikationskriterien, die beispielhaft in der nächsten Abbildung mit entsprechenden Kriterienausprägungen dargestellt sind.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1308.png}}
+
+Die Anforderungsanalyse als Untersuchung einzelner Anforderungen und ihres Zusammenwirkens ist eine Kernaktivität im Rahmen des **Requirements Engineering (RE)**. Die Zielstellung des RE liegt in der strukturierten und systematisch betriebenen Zusammenstellung relevanter Anforderungen in Form von Anforderungskatalogen als Basis für die nachfolgende Softwareentwicklung.
+
+Die Erhebung und Analyse der Anforderungen an ein IS stellt einen besonders problematischen Teil in der Softwareentwicklung dar, denn Fehler oder Probleme in dieser frühen Phase der Entwicklung pflanzen sich häufig fort und sorgen dann für hohe Kosten in den späteren Phasen eines Projekts bzw. in der Betriebsphase einer Software. Notwendig ist hier eine enge Zusammenarbeit und ein intensiver Dialog zwischen dem systemnutzenden Fachbereich im Unternehmen (Auftraggeber) und den Softwareentwicklern (Auftragnehmer). Dabei bedarf es eines Entgegenkommens auf beiden Seiten, da der Fachbereich im seltensten Fällen die Fachbegriffe der Softwareentwickler kennt und umgekehrt der Softwareentwickler meist nicht über tiefgreifende Kenntnisse im Fachgebiet des Fachbereichs verfügt. Somit ist eine Art „Übersetzungsprozess“ zwischen der Sprache des Fachbereichs und der des Entwicklers notwendig, der im Dialog möglichst iterativ stattfindet.
+
+#### Vorgehen beim Requirements Engineering
+
+Die nächste Abbildung zeigt das Vorgehen im Requirements Engineering. Die aufgeführten Kernaktivitäten des Requirements Engineering umfassen vier Bereiche:
+
+\centerline{\includegraphics[width=1\textwidth]{img/1309.png}}
+
+* **Das Ermitteln von Anforderungen** dient der Erfassung der Ansprüche aller relevanten Stakeholder an ein IS unter Verwendung verschiedener Informationserhebungstechniken. Neben einer direkten Befragung der Stakeholder können weitere Informationsquellen (z. B. Organisationshandbücher, Dokumentationen und Berichte des Alt-Systems) herangezogen werden. Für die Ermittlung von Anforderungen gibt es einerseits analytische Methoden, wie z. B. die direkte Beobachtung, der Dokumenten-Review, das Interview (vorbereitete Fragen werden an die Stakeholder gestellt und deren Antworten protokolliert), die schriftliche Befragung (selbstständige Beantwortung eines Fragebogens) oder Workshops (kooperative Analyse oder Ausarbeitung eines Sachverhalts mit einer begrenzten Gruppe von Stakeholdern). Daneben existieren explorative Methoden, wie z. B. das explorative Prototyping (s. Kapitel 13 Abschnitt 5.2).
+* **Das Analysieren von Anforderungen** bezieht sich auf die Konsolidierung, gegenseitige Abgrenzung und Klassifizierung von Anforderungen zur Erreichung überdeckungs- und konfliktfreier Anforderungsinhalte und als Vorbereitung für die Anforderungspriorisierung. Die z. B. mit Hilfe von Klassifikationsansätzen strukturierten Anforderungen sind zwischen den Stakeholdern und Softwareentwicklern abzustimmen. Diese Abstimmung kann sich gegebenenfalls zu einem iterativen Prozess entwickeln, der zur Verfeinerung der Anforderungen führt.
+* **Das Spezifizieren von Anforderungen** fokussiert auf das Abbilden und Dokumentieren von vollständigen, konsistenten und eindeutigen Anforderungen in einer standardisierten Form. Am Ende dieses Schrittes stehen die dokumentierten und zusammengefassten Anforderungen in einem als *Anforderungskatalog* bezeichneten Dokument/Dokumentenbündel zur Verfügung.
+* Beim **Validieren von Anforderungen** werden noch einmal die Inhalte der dokumentierten Anforderungsspezifikationen mit den tatsächlichen Erwartungen der Stakeholder abgeglichen und Probleme (z. B. bezüglich Vollständigkeit, Detailgrad und Konsistenz) behoben. Gleichzeitig ist zu bewerten, ob eine nach diesen Anforderungen entwickelte Software von den zukünftigen Nutzern akzeptiert werden würde und mit vertretbarem Aufwand umsetzbar ist. Der fertige Anforderungskatalog ist eine wesentliche inhaltliche Basis für die im weiteren Projektverlauf anstehende Erstellung des Lasten- und des Pflichtenheftes.
+
+#### Lastenheft und Pflichtenheft
+
+Das **Lastenheft** (teils auch Kundenspezifikation genannt) wird von einem Auftraggeber (z.B. dem späteren Softwareverantwortlichen oder -nutzer) erarbeitet und hat die Gesamtheit der Anforderungen an die Lieferungen und Leistungen eines externen oder internen Auftragnehmers Softwareentwicklers zum Inhalt.
+
+\centerline{\includegraphics[width=1\textwidth]{img/lastenheft.png}}
+
+Das **Pflichtenheft** (teils auch Fachfeinkonzept, Sollkonzept oder Implementierungsspezifikation genannt) ist die Beschreibung der vom Auftragnehmer auf Basis eines Lastenheftes erarbeiteten Vorgaben für die Softwareumsetzung. Ein Pflichtenheft wird in der Regel als Teil eines Angebots vom Auftragnehmer erstellt. Das Pflichtenheft enthält eine Zusammenfassung aller fachlichen Anforderungen, die die zu entwickelnde Software aus der Sicht des Auftragnehmers erfüllen muss. Dabei geht es um den Funktions-, Leistungs- und Qualitätsumfang der geplanten Software. Das Pflichtenheft muss so abgefasst sein, dass es als Basis eines juristischen Vertrages dienen kann.
+
+### Vorgehensmodelle
+
+Das hier skizzierte Requirements Engineering liefert die fachlich-inhaltliche Basis für die Konstruktion von Software. Etablierte Vorgehensmodelle stehen im Mittelpunkt dieses Abschnitts.
+
+#### Phasenmodelle am Beispiel des V-Modells
+
+Das lineare Phasenmodell (Wasserfallmodell) sieht vor, alle Phasen der Softwareentwicklung nur einmal zu durchlaufen, d. h. zur nächsten Phase nur dann überzugehen, wenn die vorhergehende Phase vollständig und definitiv abgeschlossen wurde. Dazu sind die jeweiligen Phasenergebnisse ausführlich zu verifizieren bzw. zu validieren. Der Zwang, die Anforderungsanalyse vor dem Entwurf völlig abzuschließen, stellt oft zu hohe Anforderungen an die Abstraktionsfähigkeit und Vorstellungskraft der Beteiligten. Schließlich sehen Endbenutzer bei dieser Vorgehensweise erst sehr spät die entwickelte Software, so dass bei Akzeptanzproblemen oder Fehlern im Rahmen der Anforderungsdefinition umfangreiche und aufwändige Nachbesserungen durchzuführen sind.
+
+Das iterative, inkrementelle Phasenmodell (s. nächste Abbildung) versucht, die Nachteile des linearen Modells zu umgehen, indem nur in der Projektdefinitionsphase die Software in seiner Gesamtheit betrachtet wird, und danach Teile der Software (Inkremente) gebildet und jeweils getrennt nach dem Phasenmodell weiterentwickelt werden. Die Entwicklung der Gesamtsoftware erfolgt dann komponentenweise.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1310.png}}
+
+Bei dem iterativen und inkrementellen Phasenmodell wird die Software also in einer stufenweisen Vorgehensweise entwickelt. Die Entwicklung findet in Iterationen statt, d. h. die Stufen werden aufeinanderfolgend entwickelt. Jedes Inkrement ist inhaltlich weitgehend unabhängig von den anderen Inkrementen, so dass mit jeder Fertigstellung eines Inkrements bei der Lieferung eine lauffähige Software zur Verfügung steht. Ein Inkrement kann Gegenstand einer Iteration sein.
+
+Eine **Iteration** bezeichnet eine einzelne Durchführung eines bestimmten vorgegebenen Vorgehens. Bezogen auf die Softwareerstellung bringt eine iterative Vorgehensweise periodisch wiederkehrende, ähnliche Aufgaben der Softwareentwicklung mit sich.
+
+Das auf Boehm zurückgehende V-Modell ist im Wesentlichen ein Wasserfallmodell mit Rückkopplung, d. h. mit Integration einer ausdrücklichen Qualitätssicherung. Aktivitäten zur Verifikation und Validation sind feste Bestandteile des V-Modells (s. Testfälle und Anwendungsszenarien in der nächsten Abbildung).
+
+\centerline{\includegraphics[width=1\textwidth]{img/1311.png}}
+
+Klassische Vorgehensmodelle erfordern eine umfangreiche Projektdokumentation. Daraus können folgende Probleme resultieren:
+
+* Die Anforderungen müssen vor Beginn der Entwicklung vollständig vorhanden sein.
+* Der Auftraggeber hat Probleme, sämtliche Anforderungen konkret zu formulieren.
+* Einige Wünsche der Anwender ergeben sich erst nach der ersten Nutzung.
+* Von der Spezifikation der Anforderungen bis zum ersten Release der Software vergehen oft Monate oder Jahre.
+
+Auch wenn nicht alle dieser Probleme immer eintreten, ist dennoch festzustellen, dass die klassischen Phasenmodelle nicht flexibel genug sind, um auf dynamisch ändernde Rahmenbedingungen zu reagieren. Das Prototyping und die agile Softwareentwicklung verzichten auf umfangreiche Dokumentation und setzen auf einen frühzeitigen Beginn der Implementierung.
+
+#### Prototyping
+
+Je früher ein Fehler in der Softwareentwicklung gemacht und je später er bemerkt wird, umso teurer ist seine Beseitigung. Da man auf der Grundlage von Phasenmodellen viele Fehler erst in der Testphase erkennt, kann die Fehlerbeseitigung sehr teuer werden. *Prototyping* dient dazu, durch „Simulation“ einer Software (z. B. der Benutzeroberfläche mit den wichtigsten Funktionen) schon in frühen Phasen der Softwareentwicklung Endbenutzer einzubeziehen und dadurch fehlende oder fehlerhafte Anforderungen zu erkennen.
+
+Ein **Prototyp** einer Software ist eine frühe ausführbare Version, die bereits die relevanten grundlegenden Merkmale des späteren Produkts aufweist. Prototyping bezeichnet die Vorgehensweise, Prototypen solange iterativ zu entwickeln, zu bewerten und zu verfeinern, bis das endgültige Produkt entstanden ist.
+
+Prototyping erschwert das Projektmanagement, da aufgrund der schnellen Verfügbarkeit eines Prototyps und seiner Änderungsfreundlichkeit die Plan- und Steuerbarkeit des Projekts erheblich vermindert wird. Deshalb muss bei den Anwendern und beim Management der Eindruck vermieden werden, dass zum einen Änderungswünsche beliebig oft und lange geäußert werden dürfen, und dass zum anderen mit dem ersten Prototyp das Projekt schon fast abgeschlossen ist. Daher ist das Prototyping durch Steuerungsmechanismen zu ergänzen, die unnötige Iterationen verhindern und den Projektfortschritt messbar (z. B. durch Meilensteine) kontrollieren.
+
+Prototyping kann auf verschiedene Weise erfolgen:
+
+* **Exploratives Prototyping**. Sukzessive Klärung fachlicher Anforderungen durch wiederholte, schnelle Erzeugung (und Verwerfung) von Prototypen in einer Testumgebung. Das explorative Prototyping kann im Rahmen der Anforderungsanalyse in traditionelle Phasenmodelle eingebunden werden (s. Abb. 13.12).
+* **Experimentelles Prototyping**. Nachweis der Realisierbarkeit eines Entwurfs vor Einstieg in die Implementierungsphase eines traditionellen Phasenmodells. Auf diese Weise können technische Fragestellungen geklärt werden, die beispielsweise die Machbarkeit betreffen.
+* **Evolutionäres Prototyping**. Laufende Anpassung der sich in Entwicklung befindlichen Software an geänderte Anforderungen oder neue Erkenntnisse. Das evolutionäre Prototyping ist mit traditionellen Phasenmodellen unvereinbar.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1312.png}}
+
+Ein wichtiger Vorteil des Prototyping besteht darin, Akzeptanzprobleme und Fehler in frühen Phasen der Softwareentwicklung zu erkennen und sie damit wirtschaftlicher zu beseitigen. Allerdings wird eine gewisse Abhängigkeit von Prototyping-Werkzeugen und ihren jeweiligen Möglichkeiten geschaffen. Darüber hinaus legt ein Prototyp sowohl beim Entwickler wie auch beim Benutzer schon früh die weitere Vorgehensweise fest. Schließlich erhöht die frühe Verfügbarkeit des Prototyps den Druck auf die Entwickler (Freigabe vor Produktionsreife, schlechte Wartbarkeit, keine ausreichende Qualitätssicherung) und es besteht die Gefahr, dass sich das Entwicklungsprojekt durch ständige Nachbesserungswünsche verzögert. Die Vorteile des Prototyping sind deshalb nur dann nachhaltig, wenn es durch ein geeignetes Vorgehensmodell und Projektmanagement ergänzt wird.
+
+#### Agile Softwareentwicklung
+
+Agile Softwareentwicklung beabsichtigt, dem Kunden schnell einsetzbare Software zu liefern, die inkrementell in engem Kontakt zu ihm ausgebaut wird. Grundprinzipien der agilen Softwareentwicklung sind, dass
+
+* Individuen und Interaktion über Prozesse und Werkzeuge gestellt werden,
+* eine lauffähige Software über eine umfassende Dokumentation gestellt wird,
+* die Zusammenarbeit mit Kunden über Vertragsverhandlungen gestellt wird, und
+* die Reaktion auf Veränderung über die Befolgung eines Plans gestellt wird.
+
+Auch wenn der jeweils rechte Teil der oberen vier Aussagen ebenfalls eine gewisse Relevanz besitzt, so bewerten sie den linken, kursiv gedruckten Teil höher.
+
+##### Scrum
+
+Scrum folgt den Prinzipien der agilen Softwareentwicklung. Hierbei macht Scrum noch weniger Vorgaben bezüglich Vorgehensweise, Dokumentation und Test, als es generell schon bei der agilen Softwareentwicklung vorgesehen ist. Als Richtlinie für das Entwicklungsteam gelten eine Anzahl von Rollen, eine spezielle Besprechungsphilosophie und bestimmte Entwicklungszyklen. Von seiner Entwicklungsphilosophie kann Scrum in gewisser Weise als eine Art „schlanker Softwareentwicklungsprozess“ angesehen werden.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1313.png}}
+
+Scrum unterscheidet drei zentrale Rollen:
+
+* **Product Owner**. Er legt mit dem Team das Ziel und die Rahmenbedingungen der Projektaufgabe fest. Er priorisiert regelmäßig die Funktionalitäten/Anforderungen im Produkt-Backlog (s. Abb. 13.13) und legt dadurch fest, welche Softwareteile am wichtigsten sind. Weiterhin bestimmt er Auslieferungsdatum und Inhalt. Er akzeptiert die Arbeitsergebnisse bzw. weist sie zurück.
+* **Scrum Master**. Er ist verantwortlich für die Einhaltung der Scrum-Philosophie und -Methoden. Er sollte Projekthindernisse entfernen und sicherstellen, dass das Team produktiv zusammenarbeiten kann.
+* **Das Team** besteht typischerweise aus fünf bis zehn Personen. Alle Teammitglieder sollten Vollzeitmitglieder sein. Das Team arbeitet selbst organisiert über eine Anzahl von Entwicklungszyklen (Sprints) und hat das Recht und die Pflicht, selbst zu entscheiden, wie viele Funktionen/Anforderungen nach dem nächsten Sprint gemäß Sprint Backlog erledigt sein müssen (s. Abb. 13.13).
+
+Zentrales Element des Entwicklungszyklus von Scrum ist der Sprint. Scrum-Projekte schreiten in Serien von Sprints voran. Die angestrebte Dauer eines Sprints beträgt ungefähr einen Monat.
+
+Der Ausgangspunkt für die Zyklen sind die Anforderungen im Produkt-Backlog. Das Produkt-Backlog muss nicht von Beginn an vollständig sein, sondern es wird fortlaufend geführt. Die Anforderungen werden informell skizziert. Für einen Sprint wird ein Sprint Backlog erstellt. Die Software wird während des Sprints entworfen, kodiert und getestet.
+
+Im Sprint-Planungstreffen erläutert der Product Owner dem Team alle einzelnen Anforderungen des Produkt-Backlog, die gemäß der Priorisierung für den nächsten Sprint vorgesehen sind. Hierbei können diese Priorisierungen geändert werden, neue Anforderungen hinzukommen oder gestrichen werden. Weiterhin wird ein gemeinsames Ziel festgesetzt, das in Sprint Review Meetings die Basis für die Abnahme darstellt. An jedem Tag findet ein kurzes (maximal 15-minütiges) Daily Scrum Meeting statt. Das Team stellt sich gegenseitig die folgenden Fragen:
+
+* Welche Aufgaben wurden seit dem letzten Daily Scrum Meeting fertiggestellt?
+* Welche Aufgaben werden bis zum nächsten Daily Scrum Meeting bearbeitet?
+* Gibt es Probleme, die die nächsten Aufgaben behindern?
+
+Hierbei ist festzuhalten, dass diese Meetings nicht zur Problemlösung dienen. In den Sprint Review Meetings präsentiert das Team, was es während eines Sprints erreicht hat. Typischerweise erfolgt dies in Form einer Demonstration von neuen Funktionen oder der zugrunde liegenden Architektur. Zur Dokumentation sieht Scrum folgende Artefakte vor:
+
+* Alle Anforderungen sind als Listeneinträge im Produkt-Backlog festgehalten. Das Dokument umfasst alle vom Kunden geäußerten Anforderungen sowie technische Abhängigkeiten. Vor jedem Zyklus (Sprint) werden die Anforderungen des Produkt-Backlogs neu bewertet und priorisiert. Dabei können bestehende Anforderungen entfernt sowie neue Anforderungen hinzugefügt werden. Ein wesentliches Merkmal des Produkt-Backlogs ist die Tiefe der Beschreibung von einzelnen Anforderungen. Hoch priorisierte Anforderungen werden im Gegensatz zu niedrig priorisierten Anforderungen detaillierter beschrieben.
+* Das Sprint Backlog enthält alle Aufgaben die notwendig sind, um das Ziel des Sprints zu erfüllen. Bei der Planung des Sprints werden nur so viele Aufgaben eingeplant, wie das Team mit seinen Kapazitäten bewältigen kann. Für die einzelnen Aufgaben werden verantwortliche Teammitglieder benannt.
+
+#### DevOps
+
+Mit Aufkommen mobiler Anwendungen (Apps) hat die agile Softwareentwicklung eine verstärkte Aufmerksamkeit erfahren. Während bei der klassischen Entwicklung Releasezyklen von mehreren Monaten oder gar Jahren die Regel waren, so erwarten Anwender in der dynamischen „App Economy“ Entwicklungen und Aktualisierungen in erheblich kürzeren Zeiträumen (idealerweise wöchentlich).
+
+Das DevOps-Konzept setzt hier an, indem es eine Verbindung von Entwicklung (Development) und Betrieb (Operations) von Software vorsieht. Es versucht dabei die unterschiedlichen Zielsetzungen dieser beiden Bereiche abzustimmen: während die Entwicklung typischerweise in Projekten unter Zeitrestriktionen, in Abstimmung mit dem Kunden und häufig unter Nutzung innovativer Technologien stattfindet, zielt der laufende Betrieb auf eine hohe Stabilität der entwickelten Software und betrachtet jedes vorgesehene Update auch als eine potenzielle Gefährdung der Systemstabilität. Zudem sind zwischen beiden Bereichen häufig Defizite in der Zusammenarbeit anzutreffen, wenn die Entwicklungsabteilung ihr Projekt mit der Freigabe (Release) als abgeschlossen betrachtet und die Betriebsabteilung anschließend die Installation in der Produktivumgebung (Deployment) vornehmen soll.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1314.png}}
+
+DevOps hat sich bislang als übergreifender Ansatz etabliert, der zur verbesserten Zusammenarbeit von Kunden, Entwicklung und Betrieb zahlreiche Techniken, Prozesse und Entwicklungswerkzeuge verbindet. Als etabliert gelten vor allem die vier Grundprinzipien, die sich unter dem Akronym CAMS zusammenfassen lassen:
+
+* **Culture**. DevOps sieht eine Kultur der Zusammenarbeit zwischen den Beteiligten vor. Dies sind insbesondere die Kunden, die Entwicklerteams und die Betriebsabteilung. Alle Beteiligten sollen sich gemeinsam für eine hohe Qualität und Kundenzufriedenheit verantwortlich fühlen.
+* **Automation**. DevOps versucht möglichst viele Routineaufgaben im Entwicklungs- und Betriebsprozess zu automatisieren, um dadurch Zeit- und Kostenvorteile zu nutzen. Ansätzen der kontinuierlichen Softwareauslieferung folgend, sieht DevOps eine Delivery Pipeline vor, die verschiedene Entwicklungs- und Betriebswerkzeuge miteinander verbindet.
+* Measurement**. Der DevOps-Ansatz beinhaltet die Messung von definierten Führungsgrößen/Metriken zur Beurteilung der Kundenzufriedenheit und der Steigerung der Produktivität. Dazu zählen beispielsweise die Durchlaufzeit von Deployments, die Wiederanlaufzeit nach Fehlern oder die Fehlerrate von Deployments.
+* **Sharing**. Zur Verbesserung des Wissensmanagements zwischen allen Beteiligten sollen mit DevOps entsprechende Plattformen, Publikationen und Schulungsangebote entstehen. Auch regelmäßige Informationsveranstaltungen zur Darstellung der erreichten Erfolge zählen zu Maßnahmen in diesem Bereich.
+
+### Projektmanagement
+#### Grundlegende Begriffe
+
+Die (Weiter-)Entwicklung von Software erfolgt typischerweise im Rahmen von Projekten. Dem nachfolgend dargestellten Begriffsverständnis folgend ist ein Projekt dann erfolgreich, wenn die im Leistungsverzeichnis dokumentierte technische Aufgabe erfüllt, der zur Bearbeitung veranschlagte Zeitraum eingehalten und die budgetierten Kosten nicht überschritten werden.
+
+Ein **Projekt** ist ein Vorhaben, das im Wesentlichen durch die Einmaligkeit der Bedingungen in ihrer Gesamtheit gekennzeichnet ist, wie z.B. Zielvorgabe, zeitliche, finanzielle, personelle oder andere Begrenzungen, Abgrenzung gegenüber anderen Vorhaben und projektspezifische Organisation.
+
+**Projektmanagement** bezeichnet die Gesamtheit von Führungsaufgaben, -organisationen, -techniken und -mitteln für die Abwicklung sowohl aller Projekte als auch eines einzelnen Projekts.
+
+#### PMBOK und PRINCE2
+
+Im Rahmen der Unterstützung und Standardisierung der Abläufe im Projektmanagement sind vor allem zwei Handlungsrichtlinien hervorzuheben: Das **Project Management Book of Knowledge (PMBOK)** des Project Management Institute (PMI) und **PRINCE2** vom britischen Office of Government Commerce (OGC). Beide Standards dienen dazu, im Unternehmen bzw. in der Zusammenarbeit zwischen den Unternehmen eine einheitliche Sprache im Projektmanagement sowie ein gemeinsames Verständnis entstehen zu lassen. Detailliert beschriebene Themen und Wissensgebiete sorgen für ein fundiertes Know-how im Projektmanagement im Unternehmen bzw. vermitteln sog. Best Practices.
+
+#### Projektphasen
+
+\centerline{\includegraphics[width=1\textwidth]{img/1316.png}}
+
+Die in den Phasen durchzuführenden Aktivitäten werden in den folgenden Unterabschnitten erläutert. Zunächst soll jedoch unabhängig davon auf das Thema Projektorganisation eingegangen werden. Wie in der Definition eines Projekts festgehalten, kann man davon ausgehen, dass ein Projekt eigene personelle (wenn auch begrenzte) Ressourcen besitzt. Entsprechend den Aufgaben der Personen hat ein Projekt eine eigene Projektorganisation. Abb. 13.17 zeigt eine beispielhafte Projektorganisation mit den wichtigsten Projektrollen:
+
+\centerline{\includegraphics[width=1\textwidth]{img/1317.png}}
+
+* Der **Lenkungsausschuss** überwacht die Projektdurchführung hinsichtlich der erbrachten Leistungen, deren Qualität, des Ressourceneinsatzes und der Termine. Er nimmt die Projektergebnisse verantwortlich ab und entscheidet verbindlich über den Projektfortschritt. Er unterstützt die Klärung wichtiger Probleme und Konflikte. Der Lenkungsausschuss setzt sich zumeist aus Personen mit Entscheidungskompetenz (z. B. Mitgliedern der Geschäftsführung, Bereichsleitern, ggf. dem Auftraggeber und Sponsoren) zusammen.
+* Der **Auftraggeber** gibt die Ziele des Projekts vor und überprüft die Ergebnisse im Hinblick auf diese Ziele. Er hat ein Vetorecht bei Entscheidungen mit Auswirkungen auf die Ziele, den finanziellen Rahmen oder die Termine. Er kann Statusberichte und Informationen bei drohenden Termin- und Kostenüberschreitungen anfordern. Er unterstützt den Projektleiter bei fachlichen Fragen und stellt die nötigen Ressourcen für das Projekt zur Verfügung. Er nimmt die Projektleistungen ab und entlastet den Projektleiter bei Projektabschluss.
+* Die wichtigste Rolle in der Projektorganisation ist die des **Projektleiters (PL)**. Er stimmt sich mit dem Auftraggeber in allen Belangen des Projekts ab. Zu Beginn eines Projekts prüft er die Durchführbarkeit. Er bereitet die Infrastruktur für das Team vor und sorgt für bestmögliche Arbeitsbedingungen. Außerdem organisiert und moderiert er die Projektsitzungen und plant das Projekt. Er informiert den Auftraggeber bei drohenden Risiken sowie Planabweichungen und er führt regelmäßige Soll-Ist Vergleiche für Kosten, Termine und Ziele durch. Letztendlich ist er für die auftragsgemäße Projektdurchführung sowie die Einhaltung von Projektzielen, Terminen und Budget verantwortlich.
+* Die **Mitarbeiter** sind dem Projekt in Vollzeit oder zu einem definierten Prozentsatz zugeordnet. Sie erledigen die übertragenen Arbeitspakete selbstständig, dokumentieren die Arbeitsergebnisse, berichten Arbeitsfortschritte an den Projektleiter und arbeiten bei fachlichen Problemstellungen konstruktiv im Team mit.
+
+#### Projektstart
+
+Die Startphase eines Projekts ist gekennzeichnet durch die Voruntersuchung auf der Basis einer Projektidee (meist inklusive einer entsprechenden Machbarkeitsuntersuchung), die Durchführungsentscheidung auf der Grundlage der Voruntersuchung, sowie die Erstellung des Projektantrags (als Basis des Lastenhefts).
+
+Diese Aktivitäten sind mehr als informeller Projektstart zu sehen, da erst mit der verbindlichen Festschreibung der Ziele, der Anforderungen und des Projektumfangs sowie der Festlegung des Budgets und des Zeitrahmens ein Projekt entsteht. Dementsprechend erfolgt erst mit der Auftragsvergabe an einen (internen/externen) Auftraggeber auf der Basis eines Pflichtenhefts der formelle Projektstart.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1318.png}}
+
+#### Projektplanung
+
+Im Rahmen des Projektmanagements ist die Planung eine der zentralen Aufgaben. Hierbei sind die folgenden Aktivitäten zu unterscheiden:
+
+* **Projektstrukturierung**. Was ist alles zu tun?
+* **Meilensteinplanung**. Welches sind wichtige Ereignisse im Projektverlauf?
+* **Einsatzmittelbedarfsplanung**. Wie viel Arbeitsaufwand und welche sachlichen Einsatzmittel sind zur Erbringung von Arbeitsergebnissen notwendig?
+* **Ablauf- und Terminplanung**. In welcher Reihenfolge und zu welchen Terminen müssen die Arbeitspakete abgearbeitet werden?
+* **Kostenplanung**. Welche Kosten verursachen die einzelnen Arbeitspakete?
+* **Planoptimierung**. Stimmt der bis dahin geplante Projektverlauf mit den Wünschen des Auftraggebers überein?
+* **Risikomanagementplanung**. Sind die Aktivitäten des Risikomanagements für das Projekt*definiert?
+
+#### Projektdurchführung und Projektkontrolle
+
+Da die Wirklichkeit sich aber nicht immer an Pläne hält, muss der Projektleiter aktiv steuern um das Projekt plangemäß durchführen zu können, und bei drohender Planabweichung muss er bereits im Vorfeld Steuerungsmaßnahmen ergreifen um das Projekt im Plan zu halten.
+
+Der **Plan-Ist-Vergleich** ist das bekannteste und am weitesten verbreitete Instrument der Projektsteuerung. Das Ziel ist es, durch die Gegenüberstellung von ursprünglicher Planung (= Plan) und momentaner Situation (= Ist) Abweichungen transparent zu machen und deren Auswirkungen auf den weiteren Projektverlauf abzuschätzen. Wenn sich aus der Gegenüberstellung der Plan- und Ist-Daten eine Abweichung ergibt, die eine Planänderung erforderlich macht, werden die aktualisierten Plandaten Soll-Daten genannt. Man spricht dann auch von **Soll-Ist-Vergleich**. Der Plan-Ist-Vergleich kann für alle Steuerungsparameter (Termine, Aufwände, Kosten) gemacht werden.
+
+Alle Plan-Ist-Vergleiche und Trendanalysen dienen einzig dem Ziel, möglichst frühzeitig Abweichungen bei Terminen, Leistungen, Aufwänden oder Qualität erkennen und geeignete Gegenmaßnahmen ergreifen zu können. Die Steuerungsmaßnahmen haben „Nebenwirkungen“. Wenn man zum Beispiel einen drohenden Terminverzug durch den Einsatz von Gegenmaßnahmen abwenden will, so wirkt dies in der Regel auf Kosten und/oder die Leistung bzw. Qualität aus.
+
+#### Projektabschluss
+
+Der Projektabschluss ist der offizielle Schlusspunkt eines Projekts. Das Projektergebnis wurde vom Auftraggeber abgenommen. Es fallen keine weiteren Aufwände für die Erreichung des Projektziels an. Die Ziele des Projektabschlusses sind:
+
+* **Überleitung** des während des Projekts entstandenen IS in die Betriebs- und Wartungsphase.
+* **Auflösung** der Projektorganisation. Um die Voraussetzungen für einen geregelten Projektabschluss zu schaffen, muss der Projektleiter rechtzeitig die künftige Verwendung der Mitarbeiter klären. Dies kann einen Motivationsabfall zum Ende des Projekts vermeiden.
+* **Erfahrungssicherung**. Die Projektbeteiligten sollten ihre Erfahrungen aus der Planung, Durchführung und Steuerung des Projekts für Folgeprojekte zeitnah dokumentieren bzw. kommunizieren.
+* **Konfliktbewältigung**. Die in dem Projekt aufgetretenen Konflikte im Team oder auch mit dem Auftraggeber sollten jetzt noch einmal analysiert und wenn möglich abschließend bereinigt werden.
+
+#### Risikomanagement
+
+Ein **Risiko** ist ein unbestimmtes Ereignis, dessen Eintreten eine Gefahr für den Projekterfolg, d. h. für die zu erbringenden Leistungen, die Terminplanung und/oder die geplanten Einsatzmittel, darstellt. Ein Risiko hat eine Eintrittswahrscheinlichkeit sowie eine Auswirkung auf das Projekt bzw. das Unternehmen.
+
+Die Aufgabe des **Risikomanagements** ist es, Faktoren, die eine Gefahr für den Projekterfolg (die im Projektauftrag definierte Leistung in geplanter Zeit mit den geplanten Ressourcen im vorgegebenen Budget zu erbringen) darstellen, zu identifizieren, zu bewerten und entsprechende Gegenmaßnahmen vorzubereiten bzw. einzuleiten.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1325.png}}
+
+### Qualitätsmanagement
+
+Gemäß der Norm DIN EN ISO 9000:2015 wird **Qualität** als derjenige Grad bezeichnet, in dem ein Satz inhärenter Merkmale eines Objekts Anforderungen erfüllt.
+
+Die Anforderungen an das zu entwickelnde bzw. einzuführende IS werden im Laufe des Entwicklungsprojekts ergänzt und verfeinert. Die Aufgabe des Qualitätsmanagements besteht darin, die Erfüllung dieser Anforderungen zu überprüfen. Speziell für Softwarekomponenten von IS gelten neben den fachlichen Anforderungen auch die folgenden generellen Qualitätsmerkmale:
+
+* **Unmittelbare Gebrauchsfähigkeit**. Die Komponente muss sowohl für Benutzer wie auch für Administratoren akzeptabel sein. Benutzer akzeptieren eine Softwarekomponente, wenn sie benutzerfreundlich ist, d. h. eine verständliche und übersichtliche Oberfläche sowie effiziente und nachvollziehbare Dialogabläufe hat, Hilfefunktionen anbietet und vor allem schnelle Antwortzeiten bietet.
+* **Zuverlässigkeit**. Die Komponente muss darüber hinaus zuverlässig sein, also korrekt arbeiten, robust sein und den Datenschutz gewährleisten. Administratoren akzeptieren eine Softwarekomponente, wenn sie die Integrität des Gesamtsystems nicht gefährdet, geeignete Maßnahmen für die Datensicherheit und die Wiederherstellung bestimmter Zustände/Ergebnisse trifft und vor allem effizient mit den verfügbaren Ressourcen umgeht.
+* **Zukünftige Gebrauchsfähigkeit**. Wie gut sich die unmittelbare Gebrauchsfähigkeit auch in Zukunft aufrechterhalten lässt, richtet sich allgemein nach der Allgemeingültigkeit der Problemlösung, ihrer Wiederverwendbarkeit und vor allem ihrer Portabilität, d. h. Übertragbarkeit auf andere Rechner- bzw. Systemplattformen. Natürlich soll eine Softwarekomponente wartungsfreundlich sein, d. h. für andere Entwickler verständlich sein (Transparenz), Änderungen/Reparaturen nicht erschweren, anpassungsfähig und erweiterbar sein. Dazu zählt auch ein systematisch durchführbarer und wiederholbarer Test der Komponente.
+
+Neben diesen eher technischen Qualitätsmerkmalen ist sicherzustellen, dass eine Softwarekomponente **wirtschaftlich** ist (d. h. höheren Nutzen stiftet als Kosten verursacht), **revisionsfähig** ist (d. h. dokumentierte, nachvollziehbare Abläufe realisiert) und natürlich ausreichend **dokumentiert** ist, sodass Management, Entwickler, Administratoren, Revisoren und Benutzer die unterstützten Abläufe erschließen und nachvollziehen können.
+
+### Konfigurationsmanagement
+
+Das Ziel des Konfigurationsmanagements besteht darin sicherzustellen, dass ein Produkt bezüglich seiner funktionalen wie auch äußeren Merkmale jederzeit eindeutig identifizierbar ist. Diese Identifikation dient der systematischen Kontrolle von Änderungen und zur Sicherstellung der Integrität auch während der Nutzung des Produkts.
+
+Das Konfigurationsmanagement überwacht die Konfigurationen während der gesamten Entwicklung, sodass die Zusammenhänge und Unterschiede zwischen früheren Konfigurationen und den aktuellen Konfigurationen jederzeit erkennbar sind. Auf diese Weise können beispielsweise auch Abweichungen von den Anforderungen und dem Entwurf des IS erkannt werden. Das Konfigurationsmanagement stellt außerdem sicher, dass jederzeit auf vorausgegangene Versionen zurückgegriffen werden kann. Dadurch sind Änderungen nachvollziehbar und überprüfbar. Konfigurationen sind verschiedene Ausprägungen desselben IS (z. B. lauffähiges Gesamtsystem). Dieses wird aus Versionen von Komponenten zusammengestellt für:
+
+• Eine bestimmte Systemsoftware,
+* eine bestimmte Hardware,
+* eine bestimmte Arbeitsumgebung, und
+* einen bestimmten Leistungsumfang.
+
+Dabei müssen folgende Probleme bei der Verwaltung von Komponenten berücksichtigt werden:
+
+* Mehrfachverwendung von Komponenten,
+* Abhängigkeiten zwischen den Komponenten, oder
+* unterschiedliche Zugriffsrechte auf die Komponenten.
+
+## Kapitel 14
+### Objektorientierte Softwareentwicklung
+### Vorgehen bei der objektorientierten Softwareentwicklung
+### Methoden für die Analyse
+### Methoden für den Entwurf
+### Methoden für die Implementierung und den Test
+### Methoden für die Softwarewartung
