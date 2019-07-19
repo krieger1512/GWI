@@ -1905,7 +1905,8 @@ Unabhängig von der Art der Softwareentwicklung haben Softwareprodukte bestimmte
 * Änderbarkeit. Sie sollen leicht änderbar und anpassbar sein (Easy to Modify), beispielsweise durch Parametrisierung.
 * Allgemeingültigkeit. Komponenten der Software sollen mit geringem Änderungsaufwand auch für ähnliche Problemstellungen anwendbar sein.
 * Benutzerfreundlichkeit. Sie sollen dem Benutzer eine sichere, komfortable und leicht verständliche Handhabung ermöglichen. Dabei sollen sie über endbenutzerfähige, und in allen Komponenten gleich gestaltete Dialogelemente verfügen (Easy to Learn).
-* Effizienz. Si sollen ein angemessenes zeitliches Verhalten (z. B. kurze Antwortzeiten) bei geringem Ressourcenaufwand aufweisen.*• Funktionsabdeckung. Sie sollen die im Fachkonzept geforderten Funktionen vollständig enthalten.
+* Effizienz. Sie sollen ein angemessenes zeitliches Verhalten (z. B. kurze Antwortzeiten) bei geringem Ressourcenaufwand aufweisen.
+* Funktionsabdeckung. Sie sollen die im Fachkonzept geforderten Funktionen vollständig enthalten.
 * Kompatibilität. Sie sollen sich mit anderen bereits vorhandenen Anwendungen leicht verbinden lassen, um Informationen austauschen zu können.
 * Portabilität. Sie sollen auf verschiedenen Hardware- und Systemsoftwareplattformen konsistent benutzbar sein (Easy to Use).
 * Produktivität. Sie sollen unter Benutzung portabler, ineinandergreifender Werkzeuge soweit wie möglich automatisiert entwickelbar sein.
@@ -2133,7 +2134,7 @@ Im Rahmen des Projektmanagements ist die Planung eine der zentralen Aufgaben. Hi
 * **Ablauf- und Terminplanung**. In welcher Reihenfolge und zu welchen Terminen müssen die Arbeitspakete abgearbeitet werden?
 * **Kostenplanung**. Welche Kosten verursachen die einzelnen Arbeitspakete?
 * **Planoptimierung**. Stimmt der bis dahin geplante Projektverlauf mit den Wünschen des Auftraggebers überein?
-* **Risikomanagementplanung**. Sind die Aktivitäten des Risikomanagements für das Projekt*definiert?
+* **Risikomanagementplanung**. Sind die Aktivitäten des Risikomanagements für das Projekt definiert?
 
 #### Projektdurchführung und Projektkontrolle
 
@@ -2191,14 +2192,186 @@ Dabei müssen folgende Probleme bei der Verwaltung von Komponenten berücksichti
 
 ## Kapitel 14
 
+Dieses Kapitel beschreibt das systematische Vorgehen bei der Individualentwicklung von Software. Dies umfasst die Methoden in Analyse, Entwurf, Implementierung und Test von Software. Hierbei liegt der Schwerpunkt bei der objektorientierten Softwareentwicklung und den unterschiedlichen statischen und dynamischen Modellen, die UML anbietet.
+
 ### Objektorientierte Softwareentwicklung
+
+Die objektorientierte Softwareentwicklung hat seit den 90er-Jahren zunehmend an Bedeutung gewonnen. Hierbei waren neue Konzepte in der Programmierung der Ausgangspunkt. Historische Vorreiter waren die Programmiersprachen SIMULA und SMALLTALK. Die Norweger Nygaard, Myhrhaug und Dahl hatten Konzepte zur Bildung von Klassen in ihre Simulationssprache SIMULA eingeführt. Diese Klassenkonzepte ermöglichen es, Verhalten als Funktionen und Daten als Attribute gemeinsam für eine Anzahl gleichartiger Objekte zu definieren und zu verwenden. Kay und Goldberg haben diese Konzepte aufgenommen und verfeinert und mit der objektorientierten Programmiersprache SMALLTALK die Art und Weise zu programmieren neu definiert. Im Mittelpunkt der Programmierung stehen die Objekte, deren Verhalten und Datenstruktur in so genannten Klassen zusammengefasst und definiert werden. In SMALLTALK existieren bereits viele vordefinierte Klassen, deren Funktionalität genutzt bzw. mittels Vererbung an selbst entwickelte Klassen weitergegeben werden kann.
+
+Vererbung und damit Wiederverwendung waren die Konzepte, die zur Integration der Objektorientierung in den gesamten Entwicklungszyklus geführt haben. Die Wiederverwendung von Softwarekomponenten in Form von Klassen kann die Qualität von Software erhöhen und die Kosten reduzieren.
 
 ### Vorgehen bei der objektorientierten Softwareentwicklung
 
+Das Ziel der objektorientierten Entwicklung ist es, reale Handlungsabläufe in ein Softwaremodell zu übertragen. Sie fasst dazu die Realität als objektorientiertes System auf und ersetzt reale Objekte durch passende Modellobjekte. Ein (Anwendungs-) System, das den Prinzipien der objektorientierten Entwicklung folgt, besteht aus einer Menge von Objekten, die sich gegenseitig Nachrichten schicken. Der Empfang einer Nachricht löst dann eine Operation bei dem empfangenden Objekt aus.
+
+In der objektorientierten Entwicklung besitzt ein Objekt einen Zustand, beschrieben durch eine Anzahl von Attributen und ihre aktuellen Werte. Jedes Objekt hat ein Verhalten, das eine Anzahl von Operationen (auch als Methoden bezeichnet) charakterisiert. Jedes Objekt erhält eine Identität, die es von allen anderen Objekten unterscheidet. Objekte mit gleicher Struktur, gleichem Verhalten und gleichen Beziehungen, aber unterschiedlichen Attributwerten, werden in einer Klasse zusammengefasst. Aus einer Klasse und deren Beschreibung können neue Objekte erzeugt (Instance Creation) werden.
+
+Klassen fassen zwar wie Entitätstypen gleichartige Objekte zusammen, haben aber im Gegensatz zur konzeptionellen Datenmodellierung nicht nur (allen Objekten gemeinsame) Attribute, sondern auch (auf alle Objekte anwendbare) Operationen (auch als Methoden bezeichnet).
+
+Die wichtigsten Prinzipien der Objektorientierung sind:
+
+* **Kapselung**: Die Daten eines Objekts sind so eng mit seinen Funktionen verbunden, dass sie nach außen hin nur gemeinsam (d. h. als Ein- oder Ausgabedaten einer Operation) sichtbar werden. Die interne Struktur der Daten bleibt nach außen genauso wie alle nicht als „öffentlich“ deklarierten Funktionen verborgen.
+* **Vererbung**: Klassen sind durch Generalisierungsbeziehungen miteinander verbunden. Spezielle Klassen erben die Eigenschaften (z. B. Funktionen, Schnittstellen) ihrer übergeordneten Klasse. Sie ergänzen und/oder ersetzen diese generellen Eigenschaften durch speziellere oder zusätzliche Eigenschaften. Hierbei spricht man speziell auch von Polymorphie, wenn verschiedene Unterklassen dieselbe Botschaft verstehen, obwohl die technische Umsetzung der Reaktion auf diese Botschaft völlig unterschiedlich sein kann.
+* **Wiederverwendung**: Objektorientierte Anwendungen werden nicht auf der Basis einer zentralen Struktur (z. B. Hauptprogramm) entworfen und realisiert. Vielmehr werden sie auf der Grundlage wieder verwendbarer Klassendefinitionen zusammengesetzt. Wie bei Produktvarianten, die aus Komponenten zusammengesetzt werden, wird dadurch eine hohe Flexibilität mit einfacher Erweiterbarkeit verbunden.
+
+Generell ist die objektorientierte Systementwicklung nicht an ein bestimmtes Phasenmodell gebunden. Iterative, inkrementelle Phasenmodelle eignen sich jedoch besser für die objektorientierte Systementwicklung als ein lineares Phasenmodell, da sie die Wiederverwendung eher berücksichtigen können. Nach der maßgeblichen Mitarbeit an UML hat die Firma Rational 1999 ein eigenes Phasenmodell, den Unified Process, speziell für die objektorientierte Systementwicklung konzipiert. Der Rational Unified Process (RUP) benutzt UML. Der RUP ist ein inkrementelles und iteratives Phasenmodell. Jede Iteration besteht aus den Arbeitsschritten Anforderung, Analyse, Entwurf, Implementierung und Test.
+
 ### Methoden für die Analyse
 
+Der Kern der objektorientierten Analyse ist es, die Problemwelt aus der Sicht der Objekte, die in der realen Welt relevant sind, zu betrachten.
+
+#### Anwendungsfallgesteuerte Analyse
+
+Als Ausgangspunkt für die objektorientierte Analyse schlagen die meisten Phasenmodelle die Konstruktion von Anwendungsfalldiagrammen vor. Dieses Vorgehen wird auch als anwendungsfallgesteuerte Analyse bezeichnet.
+
+Ein Anwendungsfalldiagramm beschreibt die Sicht auf das System, wie es sich vom Verhalten her dem außen stehenden Nutzer darstellt. Es unterteilt das System funktional in Transaktionen oder auch Anwendungsfälle (Use Cases). Mit diesen Anwendungsfällen sind die Akteure (Actors), welche an dem Anwendungsfall beteiligt sind, verbunden (s. Abb. 14.2). Ein Anwendungsfall beschreibt in einer Sequenz von Ereignissen, wie die Akteure das System zur Durchführung einer Aufgabe einsetzen.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1402.png}}
+
+Die Detaillierung der Beschreibung von Anwendungsfällen kann variieren. Wichtige Elemente sind:
+
+* Verweis auf den Anwendungsfall im Diagramm,
+* Verweis auf Anforderungen im Fachkonzept,
+* Vorbedingung zur Durchführung des Anwendungsfalls,
+* Nachbedingung: Was für Auswirkungen hatte der Anwendungsfall auf das Softwaresystem,
+* Akteure,
+* auslösendes Ereignis,
+* Kurzbeschreibung, und
+* Ablauf, ggf. als Dialog zwischen Akteur und Software.
+
+Die detaillierte Beschreibung von Anwendungsfällen ist hilfreich und notwendig, um das Verhalten der Software in entsprechenden Diagrammen (wie z. B. Sequenz-, Kommunikations- und/oder Aktivitätsdiagrammen) beschreiben zu können. Diese Beschreibungen helfen auch, die wesentlichen Klassen des Klassendiagramms (statisches Modell) zu identifizieren.
+
+#### Klassendiagramme in der Analyse
+
+Zur Erstellung eines Klassendiagramms sind sechs Schritte durchzuführen:
+
+* Klassen identifizieren,
+* Assoziationen identifizieren,
+* Attribute identifizieren,
+* Vererbungsstrukturen identifizieren,
+* Assoziationen verfeinern, und
+* Attribute spezifizieren.
+
+Die Identifikation von Objekten, die Klassifikation dieser Objekte zu Objekttypen (Klassen) und der Aufbau der Beziehungen zwischen Klassen hat große Ähnlichkeit mit der konzeptionellen Datenmodellierung (s. Kapitel 9 Abschn. 5). Die objektorientierte Analyse sieht neben der Generalisierung von vornherein auch Aggregation und Referenzierungs- bzw. Verwendungsbeziehungen vor.
+
+Wenn zwei Klassen durch eine **Generalisierungsbeziehung** verbunden sind, so lassen sich Daten und Methoden des generellen Objekttyps auf den speziellen Objekttyp vererben. Die Beziehung heißt deshalb Vererbung. Klassen sind grafisch als Rechtecke dargestellt, deren Segmente neben der Klassenbezeichnung auch Attribute und Operationen enthalten. Kanten visualisieren Klassenbeziehungen, wobei ein Dreieck die Vererbung darstellt. Das Vererbungsprinzip bildet die Basis für die Wiederverwendung (s. Abb. 14.3).
+
+\centerline{\includegraphics[width=1\textwidth]{img/1403.png}}
+
+Wenn zwei Objekttypen durch eine Aggregation verbunden sind, so lassen sich Daten des aggregierten Typs aus Daten des detaillierten Typs (z. B. durch Zählung, Zusammenfassung, Summen- oder Durchschnittsbildung) ableiten. Man unterscheidet hier noch feiner nach Aggregation und Komposition. Aggregation ist eine Art von Beziehung, die genutzt wird, um eine Teil-Ganzes-Beziehung auszudrücken. Eine ungefüllte Raute stellt die Aggregation dar. Die Aggregation ist nichts anderes als eine abkürzende Schreibweise der Beziehung „Besteht aus“ und „Ist Teil von“. Eine Komposition (ausgefüllte Raute) ist eine stärkere Form der Aggregation (s. Abb. 14.4). Der Unterschied zur Aggregation ist, dass die Existenz eines Objekts, das Teil eines Ganzen ist, von der Existenz des Ganzen abhängig ist.
+
+\centerline{\includegraphics[width=1\textwidth]{img/14045.png}}
+
+Wenn zwei Objekttypen durch eine Referenzierungsbeziehung verbunden sind, die weder eine Generalisierung noch eine Aggregation ist, so spricht man von einer Assoziation (s. Abb. 14.5).
+
+Abb. 14.6 zeigt ein vereinfachtes Klassendiagramm, das neben den strukturellen Aspekten des abgebildeten Realitätsausschnitts auch einige funktionale Aspekte darstellt. Die (Min,Max)-Notation moderner semantischer Datenmodelle findet sich in UML in Form von Min..Max wieder.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1406.png}}
+
 ### Methoden für den Entwurf
+#### Objektorientierter Entwurf
+
+Das Ziel des objektorientierten Entwurfs ist es, die Analysemodelle soweit zu verfeinern und zu ergänzen, dass sie die Implementierung der geforderten Software erlauben.
+
+Eine wichtige Aufgabe des objektorientierten Entwurfs ist es, den Objekten die „Verantwortung“ (Operationen) zuzuweisen, so dass sie für die Lösung des Problems zusammenarbeiten können. Dies bedeutet auch, die Modelle gemäß technischer Erfordernisse zu ergänzen. In der Analyse steht die Frage nach dem „Was soll die Software leisten?“ im Vordergrund. Der Schwerpunkt beim Entwurf liegt bei der Frage: „Wie soll die Software die Anforderungen erfüllen?“.
+
+Mittels Sequenz- oder Kommunikationsdiagramm kann die Softwarefunktionalität entworfen und den beteiligten Klassen die notwendigen Operationen zugeordnet werden.
+
+##### Festlegung der Ablaufreihenfolge
+
+Die Ausgangspunkte für die Sequenzdiagramme sind zum einen detaillierte Szenario- bzw. Anwendungsfallbeschreibungen und zum anderen die Klassendiagramme aus der Analyse. Die Sequenzdiagramme dienen dazu, die zeitliche Abfolge des Aufrufs von Methoden festzulegen und die Methoden entsprechend den Klassen zuzuweisen. Abb. 14.8 zeigt die wichtigsten Notationselemente eines Sequenzdiagramms. Dies sind einerseits die Kommunikationspartner (Angestellter, Kunde, Auftrag und Bestandsartikel) mit ihren Lebenslinien (gestrichelte Linien) und andererseits die Nachrichten (Aufruf einer Methode des Kommunikationspartners) mit ihren gerichteten Kanten (Pfeile). Ein schmaler Balken über der Lebenslinie kennzeichnet die Ausführung von Aktionen.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1408.png}}
+
+##### Verfeinerung der Klassendiagramme
+
+Folgende Überarbeitungsschritte der Klassendiagramme sind im Rahmen des Entwurfs durchzuführen:
+
+* Identifiziere alle Klassen, die Teil der Softwarelösung sind. Dies erfolgt durch die Betrachtung/Analyse der Interaktionsdiagramme.
+* Zeichne alle diese Klassen in das neue Klassendiagramm.
+* Kopiere die Attribute in dieses Klassendiagramm.
+* Analysiere die Interaktionsdiagramme und füge entsprechende Methoden hinzu.
+* Füge Typinformationen zu Attributen und Methoden hinzu.
+* Füge Assoziationen hinzu, um die notwendige Sichtbarkeit von Attributen/Klassen zu unterstützen.
+* Füge Pfeile hinzu, um die Sichtbarkeit der Attribute anzuzeigen.
+
+Neben den in der Analyse beschriebenen Assoziationen existieren Assoziationen mit eigenen Attributen. Diese Assoziationen werden als eigene Klassen modelliert, die mit der Assoziation verknüpft werden. Die Assoziationsklasse dient dazu, eine Beziehung um Informationen zu ergänzen, die keiner der beteiligten Klassen sinnvoll zuordenbar sind (s. Abb. 14.9).
+
+\centerline{\includegraphics[width=1\textwidth]{img/140910.png}}
+
+Die Navigierbarkeit einer Assoziation stellt die Pfeilspitze am Ende einer Beziehung dar (s. Abb. 14.10). Eine Assoziation bildet eine Art Brücke zwischen zwei Typen: startet man bei der Instanz des einen beteiligten Typs, kann man über eine Objektbeziehung zur Instanz des zweiten Typs navigieren. Navigierbarkeit ist die Eigenschaft einer Beziehung, die anzeigt, inwieweit von der Quelle auf das Ziel zugegriffen werden kann. Navigierbarkeit bedeutet damit auch Sichtbarkeit. Wenn ein Objekt A eine Nachricht an B senden will, dann muss B für A sichtbar sein.
+
+Eine Klasse erhält Operationen während der Entwicklung von Interaktionsdiagrammen zugewiesen. Dies zeigt Abb. 14.11 am Beispiel der Auftragsbearbeitung für einen Neukunden.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1411.png}}
+
+##### Entwurfsmuster
+
+Ein **Entwurfsmuster (Pattern)** beschreibt ein bestimmtes, in einem bestimmten Kontext immer wiederkehrendes Entwurfsproblem sowie ein generisches Schema zur Lösung dieses Problems. Die wesentlichen Elemente eines Entwurfsmusters sind:
+
+* Name des Musters,
+* Beschreibung der Problemklasse, bei der das Muster anwendbar ist,
+* Beschreibung der Lösung, und
+* Beschreibung der Konsequenzen.
+
+##### Komponentenarchitektur
+
+Im Entwurf müssen die Festlegung einer Architektur und die Aufteilung der Klassen in einzelne Komponenten erfolgen. Die Architektur soll den statischen Aufbau der Komponenten sowie deren Schnittstellen und Interaktionen beschreiben. Hier kommen sowohl die Paketdiagramme als auch Komponenten- und Verteilungsdiagramme zum Einsatz.
+
+Wichtige Punkte in diesem Entwurfsschritt sind die Identifikation der Anwendungssubsysteme, die Definition der Abhängigkeiten zwischen den Subsystemen sowie die Identifikation von Schnittstellen. Abb. 14.13 zeigt das Paketdiagramm zur Auftragsmanagementanwendung. Beim Entwurf der Architektur sind zwei Grundregeln zu berücksichtigen:
+
+* Hohe Kohärenz (High Cohesion). Zusammengehörige Teile einer Software sollten in einem Subsystem zusammengefasst werden.
+* Geringe Kopplung (Low Coupling). Es sollten möglichst wenige Abhängigkeiten zwischen den einzelnen Subsystemen bestehen.
+
+\centerline{\includegraphics[width=1\textwidth]{img/1413.png}}
+
+#### Entwurf der Benutzeroberfläche
+
+Beim Entwurf der Benutzeroberfläche wird u. a. festgelegt,
+
+* Welche Datenelemente welchen Präsentationselementen (z. B. Fenstern, Bildschirmseiten) zugeordnet werden,
+* Welche Datenelemente wie angezeigt werden („Druckaufbereitung“ von Feldern, Anzahl der angezeigten Sätze einer Tabelle, Sortierung einer Tabelle),
+* Welche Präsentationselemente welche Eigenschaften haben (z. B. Fenstergröße, Fenstertitel, zusätzliche Schaltflächen), und
+* Welche Funktionalitäten die Oberfläche standardmäßig haben soll (z. B. Verknüpfung zweier Tabellen, Vorschlagslisten für Felder, Navigationshilfen).
 
 ### Methoden für die Implementierung und den Test
 
+Wenn alle relevanten Informationen im Rahmen des Entwurfs erfasst und unter Benutzung einer formalen Spezifikationssprache beschrieben sind, ist der Implementierungsprozess theoretisch automatisierbar: Die realisierungsunabhängig „codierten“ Spezifikationen müssen dann lediglich in die (formale) Realisierungssprache übersetzt werden.
+
+#### Codierung
+
+Manuelle Codierung ist die traditionelle Form der Implementierung. Zur Unterstützung der manuellen Codierung stehen verschiedene Werkzeuge zur Verfügung:
+
+* **Editoren** unterstützen die „Textverarbeitung“ des Programmcodes, etwa durch Such-, Kopier- und Formatierfunktionen. Außerdem ist es möglich, vorbereitete Anweisungen in Form von Textbausteinen in den Programmcode einzufügen (bold, italic).
+* **Debugger** erlauben es, manuell erstellten Code interaktiv zu testen. So können z. B. Prozeduren und Methoden schrittweise ausgeführt und die aktuellen Werte von Variablen kontrolliert werden.
+* **Bibliotheken** sind ein wichtiges Hilfsmittel für die Wiederverwendung von Code.
+* **Data Dictionaries** dienen zur modulübergreifenden Dokumentation von Datenstrukturen. In der prozeduralen Programmierung (ohne Nutzung relationaler Datenbanken) ist es notwendig, die Trennung von Anwendungen und Daten wenigstens durch eine anwendungsunabhängige Beschreibung der verschiedenen Datenelemente ansatzweise zu realisieren.
+
+#### Test
+
+**Testen** bezeichnet jede einzelne (im Allgemeinen stichprobenartige) Ausführung des Testobjekts, d. h. einer Komponente, eines integrierten Teilsystems oder einer gesamten Anwendung (in einer Version), um die (beobachteten) Ergebnisse im Hinblick auf gewisse Eigenschaften zu überprüfen.
+
+Ein **Fehler** ist die Nichterfüllung einer festgelegten Anforderung, eine Abweichung zwischen dem Ist-Verhalten (während der Ausführung der Tests oder des Betriebs festgestellt) und dem Soll-Verhalten (in der Spezifikation oder den Anforderungen festgelegt).
+
+\centerline{\includegraphics[width=1\textwidth]{img/1415.png}}
+
 ### Methoden für die Softwarewartung
+
+Jede Software ist sowohl in eine technische wie auch in eine organisatorische Umgebung eingebettet. Die organisatorische Umgebung und insbesondere die Geschäftsprozesse wandeln sich im Zeitablauf aufgrund von immer neuen Herausforderungen. In der technischen Umgebung ergeben sich ebenfalls neue Anforderungen: Die Hersteller der für den Betrieb einer Anwendung notwendigen Hardware und Systemsoftware bringen kontinuierlich neue Produkte und Versionen auf den Markt und stellen gleichzeitig die Wartung älterer Produkte ein.
+
+#### Software Reengineering
+
+Organisatorische und technische Veränderungen bedingen für IS einen Alterungsprozess, obwohl Software keinem physischen Verschleiß unterliegt. Das Ergebnis sind so genannte **Software-Altlasten**. Diese stellen das betriebliche Informationsmanagement regelmäßig vor die Frage, ob es die alten Softwareprodukte durch neue Anwendungen ersetzen oder aber weiterhin warten soll. Wartung bedeutet in aller Regel, dass die Anwendungen unter Beibehaltung ihres veralteten Technologiestands in einem betriebsfähigen Zustand zu halten sind. In einigen Branchen hat dieses Vorgehen dazu geführt, dass Unternehmen Software mit einer bis zu dreißigjährigen Entwicklungsgeschichte betreiben. Dadurch entstehen verschiedene Probleme:
+
+* Die Software orientiert sich häufig nicht an aktuellen Geschäftsprozessen. Stattdessen werden umgekehrt suboptimale Teilprozesse als Behelfslösungen geschaffen, um die Software möglichst unverändert weiternutzen zu können.
+* Der Technologiestand der alten und neuen Software in den Unternehmen ist sehr heterogen und erfordert deshalb für Betrieb und Wartung einen personell und technisch hohen Aufwand.
+* Die Modifikation der Software ist eine softwaretechnisch komplexe Aufgabe. Der Grund liegt darin, dass in der Regel entweder kein Fachkonzept verfügbar ist oder dass diese Informationen durch jahrelange Wartungsaktivitäten an Aktualität verloren haben.
+
+Auf die Lösung der genannten Probleme zielt das **Software Reengineering** ab. Im Gegensatz zur „konventionellen“ Wartung, die Modifikationen häufig auf Code-Ebene vornimmt, zielt das Reengineering darauf ab, zunächst die fehlenden konzeptionellen Informationen über eine Software-Altlast zu rekonstruieren. Diese Informationen bzw. die entstandenen Entwurfsdokumente können dann modifiziert und anschließend im Rahmen eines softwaretechnisch modernen Entwicklungsprozesses genutzt werden, um ein neues IS zu implementieren.
+
+#### Reverse Engineering
+
+Die wesentliche Teildisziplin des Software Reengineering ist die Rekonstruktion von Entwurfsdokumenten, das so genannte **Reverse Engineering**. Abhängig vom zu rekonstruierenden Entwurfsdokument, lassen sich zwei grundsätzliche Formen des Reverse Engineering unterscheiden:
+
+* Als **Daten-Reverse-Engineering** wird die Rekonstruktion konzeptioneller Informationen über die verwendeten Datenstrukturen bezeichnet. Es ist beispielsweise möglich, die Datenstrukturen, die einem Cobol-Programm zugrunde liegen, als konzeptionelles Datenschema in Entity-Relationship-Notation darzustellen.
+* Das **Oberflächen-Reverse-Engineering** dokumentiert die Ein- und Ausgabefunktionen einer Altsoftware in Form eines sog. Dialogmodells, sodass anschließend eine moderne Oberfläche realisierbar ist. Ein typisches Anwendungsbeispiel für das Oberflächen-Reverse Engineering ist die Migration zeichenorientierter Ein-/Ausgabemasken zu einer grafischen Benutzeroberfläche.
